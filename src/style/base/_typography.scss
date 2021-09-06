@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
 
 h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-weight: 400;
+}
+
 p,
 a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: $default-font-size;
 }
 
@@ -24,7 +28,30 @@ a:hover {
 
 .section-title {
   margin: 0px;
-  margin-bottom: 4.5rem;
+  margin-bottom: 2rem;
+  font-size: $big-font-size;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 2.8rem;
+  }
+}
+
+.section-small-title {
+  margin: 0px;
+  margin-bottom: 2rem;
+  font-size: $mid-font-size;
+  font-weight: bold;
+
+  @include respond(phone) {
+    font-size: 2.8rem;
+  }
+}
+
+.section-big-title {
+  margin: 0px;
+  margin-bottom: 2rem;
   font-size: $big-font-size;
   font-weight: bold;
   text-transform: uppercase;
@@ -39,14 +66,12 @@ a:hover {
 }
 
 .text-color-main {
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+  -webkit-text-fill-color: $white-color;
+  background: $secondary-color;
   // Responsive text purple style
   @include respond(phone) {
     background-image: none;
-    -webkit-text-fill-color: $secondary-color;
+    -webkit-text-fill-color: $white-color;
   }
 
   &:hover {
