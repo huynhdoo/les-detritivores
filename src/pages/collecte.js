@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { headData } from '../mock/data';
-
 export default () => {
   const { title, lang, description } = headData;
 
