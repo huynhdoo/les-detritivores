@@ -16,7 +16,7 @@ export default () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Page not found</title>
-        <html lang={lang || 'en'} />
+        <html lang={ lang } />
         <meta name="description" content="Page not found" />
       </Helmet>
       <section id="hero" className="jumbotron">
