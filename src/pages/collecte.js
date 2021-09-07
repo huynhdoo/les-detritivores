@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { headData } from '../mock/data';
+import { Container } from 'react-bootstrap'
 export default () => {
   const { title, lang, description } = headData;
 
@@ -12,9 +13,14 @@ export default () => {
         <html lang={lang || 'en'} />
         <meta name="description" content={description || 'Gatsby Simplefolio'} />
       </Helmet>
-      <div>
-          lorem ipsum
-      </div>
+      <section id="hero" className="jumbotron">
+      <Container>
+        <div className="section-big-title text-color-main">
+            Page non disponible
+        </div>
+      </Container>
+
+      </section>
     </>
   );
 };

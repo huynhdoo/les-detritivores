@@ -59,6 +59,7 @@ a:hover {
   @include respond(phone) {
     font-size: 2.8rem;
   }
+  transition: all 0.2s ease-in-out;
 }
 
 .dark-blue-text {
