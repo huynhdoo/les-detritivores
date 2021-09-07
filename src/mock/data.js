@@ -2,9 +2,9 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: 'LES DETRITIVORES | Collecte et compostage des biodéchets', // e.g: 'Name | Developer'
-  lang: 'fr', // e.g: en, es, fr, jp
-  description: "Coopérative engagée pour l'inclusion et l'environnement par la valorisation de la matière organique", // e.g: Welcome to my website
+  title: 'LES DETRITIVORES | Collecte et compostage des biodéchets',
+  lang: 'fr',
+  description: "Coopérative engagée pour l'inclusion et l'environnement par la valorisation de la matière organique",
 };
 
 // HERO DATA
@@ -27,7 +27,7 @@ export const aboutData = {
   paragraphTwo: "En contribuant à régénérer les sols agricoles par le compostage et le retour à la terre des restes alimentaires, nous favorisons des boucles organiques locales vertueuses de l'assiette à l'assiette pour des territoires plus résilients.",
   titleThree: 'Coopératif',
   paragraphThree: "En choisissant le mode d'organisation coopératif, nous avons posé un choix démocratique et économique à la hauteur des défis de notre époque : ouverture, créativité, réactivité pour des territoires plus innovants.",
-  resume: '', // if no resume, the button will not show up
+  resume: '',
 };
 
 // PROJECTS DATA
