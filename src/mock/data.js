@@ -38,8 +38,7 @@ export const projectsData = [
     title: 'Sensibilisation au tri des biodéchets',
     info: '',
     info2: '',
-    url: 'sensibilisation',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'sensibilisation'
   },
   {
     id: nanoid(),
@@ -47,8 +46,7 @@ export const projectsData = [
     title: 'Collecte des biodéchets',
     info: '',
     info2: '',
-    url: 'collecte',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'collecte'
   },
   {
     id: nanoid(),
@@ -56,8 +54,7 @@ export const projectsData = [
     title: 'Compostage local',
     info: '',
     info2: 'test',
-    url: 'compostage',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'compostage'
   },
   
   {
@@ -66,8 +63,7 @@ export const projectsData = [
     title: 'Vente de compost',
     info: '',
     info2: '',
-    url: 'compost',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'compost'
   },
   
 ];
