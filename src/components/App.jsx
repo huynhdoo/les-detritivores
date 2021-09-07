@@ -10,6 +10,7 @@ import { PortfolioProvider } from '../context/context';
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
+
 function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});

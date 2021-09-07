@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { headData } from '../mock/data';
 import { Container } from 'react-bootstrap'
+import FadeIn from "react-fade-in/lib/FadeIn";
 export default () => {
   const { title, lang, description } = headData;
 
@@ -13,14 +14,13 @@ export default () => {
         <html lang={ lang } />
         <meta name="description" content={ description } />
       </Helmet>
-      <section id="hero" className="jumbotron">
-      <Container>
-        <div className="section-big-title text-color-main">
-            Page non disponible
-        </div>
-      </Container>
-
-      </section>
+        <section id="hero" className="jumbotron">
+            <Container>
+              <FadeIn className="section-big-title text-color-main rounded">
+                  Page non disponible
+              </FadeIn>
+            </Container>
+        </section>
     </>
   );
 };

@@ -30,6 +30,7 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-fade-in": "^2.0.1",
     "react-github-btn": "^1.2.0",
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
