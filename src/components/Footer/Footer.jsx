@@ -3,8 +3,6 @@ import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
-import { githubButtons } from '../../mock/data';
-
 const Footer = () => {
   const { footer } = useContext(PortfolioContext);
   const { networks } = footer;
