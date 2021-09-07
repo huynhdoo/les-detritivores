@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './style/main.scss';
 export default function HTML({
   htmlAttributes,
   headComponents,
