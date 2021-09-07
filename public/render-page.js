@@ -2129,6 +2129,17 @@ exports.shallowCompare = shallowCompare;
 
 /***/ }),
 
+/***/ "./node_modules/bootstrap/dist/css/bootstrap.min.css":
+/*!***********************************************************!*\
+  !*** ./node_modules/bootstrap/dist/css/bootstrap.min.css ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./node_modules/gatsby-link/index.js":
 /*!*******************************************!*\
   !*** ./node_modules/gatsby-link/index.js ***!
@@ -30810,13 +30821,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* eslint-disable react/require-default-props */
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _style_main_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style/main.scss */ "./src/style/main.scss");
+/* harmony import */ var _style_main_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_main_scss__WEBPACK_IMPORTED_MODULE_3__);
 
-/* eslint-disable react/no-danger */
 
-/* eslint-disable react/forbid-prop-types */
-
-/* eslint-disable jsx-a11y/html-has-lang */
 
 
 function HTML({
@@ -30851,6 +30861,17 @@ HTML.propTypes = {
   body: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   postBodyComponents: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.array
 };
+
+/***/ }),
+
+/***/ "./src/style/main.scss":
+/*!*****************************!*\
+  !*** ./src/style/main.scss ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
