@@ -1,5 +1,12 @@
 import { nanoid } from 'nanoid';
-
+/*import axios from 'axios';
+const [Text, setText] = useState("");
+  axios.get('https://api.storyblok.com/v2/cdn/stories/project?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt&cv=1631095460', {
+    }).then((response) => {
+      setText(response.data.story.content)
+      console.log(response.data)
+    }).catch(e => console.error(e))
+*/
 // HEAD DATA
 export const headData = {
   title: 'LES DETRITIVORES | Collecte et compostage des biodéchets',
@@ -27,7 +34,6 @@ export const aboutData = {
   paragraphTwo: "En contribuant à régénérer les sols agricoles par le compostage et le retour à la terre des restes alimentaires, nous favorisons des boucles organiques locales vertueuses de l'assiette à l'assiette pour des territoires plus résilients.",
   titleThree: 'Coopératif',
   paragraphThree: "En choisissant le mode d'organisation coopératif, nous avons posé un choix démocratique et économique à la hauteur des défis de notre époque : ouverture, créativité, réactivité pour des territoires plus innovants.",
-  resume: '',
 };
 
 // PROJECTS DATA

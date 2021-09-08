@@ -22,14 +22,21 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Simplefolio`,
-        short_name: `Simplefolio`,
+        name: `Les Detritivores`,
+        short_name: `Detritivores`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#02aab0`,
         display: `standalone`,
         icon: 'src/images/favicon.png',
       },
+    },
+    {
+      resolve: 'gatsby-source-storyblok',
+      options: {
+        accessToken: '4Sl5OG2kesCX0K97UTd0Wwtt',
+        version: 'draft',
+      }
     },
   ],
 };

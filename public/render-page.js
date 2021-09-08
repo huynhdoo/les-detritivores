@@ -117,8 +117,8 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-manifest/gatsby-ssr */ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "name": "Gatsby Simplefolio",
-    "short_name": "Simplefolio",
+    "name": "Les Detritivores",
+    "short_name": "Detritivores",
     "start_url": "/",
     "background_color": "#fff",
     "theme_color": "#02aab0",

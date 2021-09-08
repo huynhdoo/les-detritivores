@@ -1,12 +1,18 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
-
+//import axios from 'axios';
 const Footer = () => {
   const { footer } = useContext(PortfolioContext);
   const { networks } = footer;
+   /* const [Text, setText] = useState("");
 
+    axios.get('https://api.storyblok.com/v2/cdn/stories/project?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt&cv=1631095460', {
+    }).then((response) => {
+      setText(response.data.story.content)
+      console.log(response.data)
+    }).catch(e => console.error(e))*/
   return (
     <footer className="footer navbar-static-bottom">
       <Container>

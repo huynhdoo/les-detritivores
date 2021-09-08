@@ -1,12 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
+import axios from 'axios';
 
 const Contact = () => {
-  const { contact } = useContext(PortfolioContext);
-  const { cta, phone, address, btn, email } = contact;
+  const [Text, setText] = useState("");
+
+    axios.get('https://api.storyblok.com/v2/cdn/stories/project?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt&cv=1631095460', {
+    }).then((response) => {
+      setText(response.data.story.content)
+      console.log(response.data)
+    }).catch(e => console.error(e))
 
   return (
     <section id="contact">
@@ -15,21 +20,21 @@ const Contact = () => {
         <Fade bottom duration={1000} delay={800} distance="30px">
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">
-              { cta }
+              { Text.cta }
             </p>
             <p className="contact-wrapper__text">
-              { address }
+              { Text.address }
             </p>
             <p className="contact-wrapper__text">
-              { phone }
+              { Text.phone }
             </p>
             <a
               target="_blank"
               rel="noopener noreferrer"
               className="cta-btn cta-btn--resume"
-              href={ email ? `mailto:${email}` : '' }
+              href={ Text.email ? `mailto:${Text.email}` : '' }
             >
-              { btn }
+              { Text.buttonName }
             </a>
           </div>
         </Fade>

@@ -3,17 +3,15 @@ import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import { headData } from '../mock/data';
 
 export default () => {
-  const { lang } = headData;
 
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Page not found</title>
-        <html lang={ lang } />
+        <html lang="fr" />
         <meta name="description" content="Page not found" />
       </Helmet>
       <section id="hero" className="jumbotron">

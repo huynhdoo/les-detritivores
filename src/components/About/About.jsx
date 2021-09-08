@@ -4,13 +4,15 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
+import axios from 'axios';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { title, img, text, titleOne, paragraphOne, titleTwo, paragraphTwo, titleThree, paragraphThree, resume } = about;
+  const { title, img, text, titleOne, paragraphOne, titleTwo, paragraphTwo, titleThree, paragraphThree } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [Text, setText] = useState("");
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -22,53 +24,49 @@ const About = () => {
     }
   }, []);
 
+  axios.get('https://api.storyblok.com/v2/cdn/stories/project?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt&cv=1631095460', {
+    }).then((response) => {
+      setText(response.data.story.content)
+      console.log(response.data)
+    }).catch(e => console.error(e))
+
   return (
     <section id="about">
       <Container>
-        <Title title={title} />
+        <Title title={Text.titleDefault} />
         <p>
-          {text}
+          {Text.text}
         </p>
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
+                <AboutImg alt="profile picture" filename={Text.img} />
               </div>
             </Fade>
+            
           </Col>
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <h2 className="section-small-title">
-                  { titleOne }
+                  { Text.titleOne }
                 </h2>
                 <p className="about-wrapper__info-text">
-                  { paragraphOne }
+                  { Text.paragraphOne }
                 </p>
                 <h2 className="section-small-title">
-                  {titleTwo}
+                  { Text.titleTwo }
                 </h2>
                 <p className="about-wrapper__info-text">
-                  { paragraphTwo }
+                  { Text.paragraphTwo }
                 </p>
                 <h2 className="section-small-title">
-                  { titleThree }
+                  { Text.titleThree }
                 </h2>
                 <p className="about-wrapper__info-text">
-                  { paragraphThree }
+                  { Text.paragraphThree }
                 </p>
-                {resume && (
-                  <span className="d-flex mt-3">
-                    <a
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      Resume
-                    </a>
-                  </span>
-                )}
               </div>
             </Fade>
           </Col>
