@@ -4,7 +4,6 @@ const [Text, setText] = useState("");
   axios.get('https://api.storyblok.com/v2/cdn/stories/project?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt&cv=1631095460', {
     }).then((response) => {
       setText(response.data.story.content)
-      console.log(response.data)
     }).catch(e => console.error(e))
 */
 // HEAD DATA
