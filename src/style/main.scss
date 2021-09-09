@@ -27,4 +27,18 @@
   transform: rotate(-5deg);
 }
 .textHero {
+  overflow-wrap: break-word;
+  font-size: 2rem;
+}
+.bold {
+  font-weight: bold;
+}
+
+.hero {
+  width: 65%;
+  display: flex;
+  margin: 0;
+}
+body {
+  overflow: auto;
 }
