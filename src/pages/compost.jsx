@@ -19,11 +19,11 @@ export default () => {
         <meta name="description" content={ Text.description } />
       </Helmet>
       <section id="hero" className="jumbotron">
-            <Container>
-              <FadeIn className="section-big-title text-color-main rounded">
-                  La page n'existe pas.
-              </FadeIn>
-            </Container>
+          <Container>
+            <FadeIn className="section-big-title text-color-main rounded">
+                La page n'existe pas.
+            </FadeIn>
+          </Container>
         </section>
     </>
   );

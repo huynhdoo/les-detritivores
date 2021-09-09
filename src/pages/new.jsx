@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
+import Test from '../components/Test';
 import axios from 'axios';
-import {Container} from "react-bootstrap";
-import FadeIn from "react-fade-in"; 
-
 export default () => {
 
   const [Text, setText] = useState("");
@@ -19,13 +17,7 @@ export default () => {
         <html lang="fr" />
         <meta name="description" content={ Text.description } />
       </Helmet>
-      <section id="hero" className="jumbotron">
-            <Container>
-              <FadeIn className="section-big-title text-color-main rounded">
-                  La page n'existe pas.
-              </FadeIn>
-            </Container>
-        </section>
+      <Test />
     </>
   );
 };

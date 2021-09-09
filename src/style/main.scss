@@ -13,6 +13,18 @@
 @import './sections/about';
 @import './sections/contact';
 @import './sections/hero';
+@import './sections/new';
 @import './sections/projects';
 
 @import './vendor/css/font-awesome.min.css';
+
+.logos {
+  height: 100px;
+}
+.whoarewe {
+  font-size: 8rem;
+  color: #e94e1a;
+  transform: rotate(-5deg);
+}
+.textHero {
+}
