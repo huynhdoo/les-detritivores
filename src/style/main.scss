@@ -63,7 +63,7 @@ p {
 }
 .usages-font {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
 }
 section {
   padding: 2.5rem 0rem !important;
@@ -77,6 +77,13 @@ section {
 
 .bg-green {
   background-color: #263b29;
+}
+.bg-orange {
+  background-color: #e94e1a;
+}
+.circle {
+  width: 180px;
+  margin: 0 auto;
 }
 .offers {
   transform: rotate(-5deg);
@@ -119,6 +126,29 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
+}
+.linesmall {
+  background-color: #e94e1a;
+  height: 3px;
+  border-radius: 2px;
+  width: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: rotate(-5deg);
+  float: right;
+  margin-right: -7px;
+}
+.linesmallgreen {
+  background-color: #263b29;
+  height: 3px;
+  border-radius: 2px;
+  width: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: rotate(-5deg);
+  float: right;
 }
 @media (max-width: 75rem) {
   #start {

@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import logo from "../images/logo-new.png";
 import '../style/main.scss';
-
+import Icons from "../components/Icons";
 function Test() {
      const [Text, setText] = useState("");
     axios.get('https://api.storyblok.com/v2/cdn/stories/preview?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt&cv=1631095460', {
@@ -27,7 +27,7 @@ function Test() {
         </section>
 
         <section className="">
-        <div class="container">
+        <div class="container d-flex">
             <div class="row">
               <div class="col">
                 <iframe
@@ -41,19 +41,21 @@ function Test() {
                   className="d-flex justify-content-start rounded"
                 />
               </div>
-              <div>
+              <div class="col">
                 <h1 className="orange">Nos Usagers</h1>
-                <img src="" alt="" />
-                <p className="sf usages-font">LES RESTAURATEURS</p>
-                <p className="sf usages-font">LA RESTAURATION COLLECTIVE</p>
-                <p className="sf usages-font">LES COLLECTIVITES</p>
-                <p className="sf usages-font">LES PARTICULIERS</p>
+                <div className="rounded-circle bg-orange circle">
+                    <Icons icon="people" />
+                </div>
+                <p className="sf usages-font">LES RESTAURATEURS <div class="linesmall" /></p>
+                <p className="sf usages-font">LA RESTAURATION COLLECTIVE <div class="linesmall" /></p>
+                <p className="sf usages-font">LES COLLECTIVITES <div class="linesmall" /></p>
+                <p className="sf usages-font">LES PARTICULIERS <div class="linesmall" /></p>
               </div>
             </div>
           </div>
         </section>
         <section className="our-engagements">
-          <h1 className="whoarewe pb-6 green">{Text.titleDefault}</h1>
+          <h1 className="whoarewe pb-6 green">{Text.titleDefault} <div class="linesmallgreen" /></h1>
           <div class="container">
             <div class="row">
               <div class="col">
@@ -100,6 +102,7 @@ function Test() {
             
           </div>
         </section>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1XOia2gftrOlLKRAYs-Mtca0qugXyahfh&hl=fr" width="640" height="480"></iframe>
     </>
   );
 }
