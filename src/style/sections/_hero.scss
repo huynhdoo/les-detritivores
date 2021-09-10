@@ -1,13 +1,13 @@
 #hero {
   min-height: 100vh;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   border-bottom: 0px;
   background: $white-color;
   font-weight: 400;
   color: $white-color;
-  padding: 0rem 5.6rem;
+  padding: 0rem 6rem;
   margin-bottom: 0;
   top: 0;
   left: 0;
@@ -15,14 +15,8 @@
   right: 0;
   z-index: -1;
 
-  // If you want to set a background image on the hero section, uncomment these with yout custom image
-
-  background: url("/image/equipe.jpg");
-  background-position: center;
-  background-size: cover;
-
   @include respond(phone) {
-    padding: 0rem $default-font-size;
+    padding: 0rem 5rem $default-font-size;
   }
 
   .hero-title {

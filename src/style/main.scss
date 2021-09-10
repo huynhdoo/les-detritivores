@@ -18,27 +18,112 @@
 
 @import './vendor/css/font-awesome.min.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/sf-ui-display');
 .logos {
   height: 100px;
+  margin-top: 10px;
 }
 .whoarewe {
   font-size: 8rem;
-  color: #e94e1a;
   transform: rotate(-5deg);
+  font-weight: 700;
 }
 .textHero {
   overflow-wrap: break-word;
   font-size: 2rem;
 }
+.fira {
+  font-family: 'Fira Sans', sans-serif;
+}
 .bold {
   font-weight: bold;
 }
-
-.hero {
-  width: 65%;
-  display: flex;
-  margin: 0;
+.pb-6 {
+  padding-bottom: 3.25rem;
 }
 body {
-  overflow: auto;
+  overflow-x: hidden;
+}
+.usage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 0 auto;
+}
+p {
+  font-family: 'SF UI Display', sans-serif;
+}
+.light {
+  font-weight: 300;
+}
+.sf {
+  font-family: 'SF UI Display', sans-serif;
+}
+.usages-font {
+  font-size: 20px;
+  font-weight: 500;
+}
+section {
+  padding: 2.5rem 0rem !important;
+}
+.orange {
+  color: #e94e1a;
+}
+.green {
+  color: #263b29;
+}
+
+.bg-green {
+  background-color: #263b29;
+}
+.offers {
+  transform: rotate(-5deg);
+  color: #fff;
+  padding: 2.5rem;
+}
+.offersize {
+  transform: rotate(-5deg);
+}
+.size {
+  font-size: 8.5rem;
+}
+.offer {
+}
+.collect {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 3.3fr 0.1fr;
+  grid-template-rows: 1fr 1fr 1.2fr;
+  gap: 0% 0px;
+  grid-template-areas:
+    '. column1 .'
+    '. column2 .'
+    '. column3 .';
+}
+.column1 {
+  grid-area: column1;
+}
+.column2 {
+  grid-area: column2;
+}
+.column3 {
+  grid-area: column3;
+}
+.line {
+  background-color: #e94e1a;
+  height: 6px;
+  border-radius: 2px;
+  width: 160px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@media (max-width: 75rem) {
+  #start {
+    height: 120px !important;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
 }
