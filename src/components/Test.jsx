@@ -109,27 +109,25 @@ function Test() {
                 <h1 className="size">NOS OFFRES</h1>
               </div>
 
-            <div className="pb-6 d-grid gap-3 justify-content-center mt-6 sizes">
-              <div>
+            <div className="pb-6 d-grid gap-2 justify-content-center mt-6 sizes">
                 <div>
                     <p classname="light">
-                  <h1 className="orange">COLLECTE</h1>
+                    <h1 className="orange">COLLECTE</h1>
                       En camions ou à vélos, nos équipes passent régulièrement collecter vos bacs de biodéchets
                     </p>
                 </div>
                 <div>
                     <p classname="light">
-                  <h1 className="orange">SENSIBILISATION</h1>
+                    <h1 className="orange">SENSIBILISATION</h1>
                       Vous accompagner dans votre démarche environnementale et vous sensibiliser est notre priorité !
                     </p>
                 </div>
                 <div>
                     <p classname="light">
-                  <h1 className="orange">COMPOST</h1>
+                    <h1 className="orange">COMPOST</h1>
                       100% local, coopératif et solidaire: le compost que nous vous proposons a décidément tout pour plaire !
                     </p>
                 </div>
-              </div>
             </div>
           </Fade>
         </section>
@@ -142,7 +140,41 @@ function Test() {
             </div>
           </Fade>
         </section>
-
+        <section className="contact">
+          <div className="container">
+            <h1 className="contacts pb-6 orange">Contact</h1>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <p className="phone">Téléphone: 05 56 67 14 47</p>
+                </div>
+                <div class="col">
+                  <p className="mail">Mail: <a className="number" href="mailto:bonjour@les-detritivores.co">bonjour@les-detritivores.co</a></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <h2 className="green text-wrap">NOS BUREAUX</h2>
+                  <span className="bold smalltext">65 Quai de Brazza,<br /> 33100 Bordeaux</span>
+                  <h2 className="green text-wrap">NOTRE PLATEFORME <br /> DE COMPOSTAGE</h2>
+                  <span className="bold smalltext">16 Quai de Brazza<br /> 33100 Bordeaux</span>
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                  <h2 className="green text-wrap">Rejoignez-nous sur les réseaux sociaux</h2>
+                  <div className="socialmedia">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer id="footer">
+          <div className="d-flex justify-content-end">
+            <img src={logo} className="logo-footer" />
+          </div>
+        </footer>
     </>
   );
 }
