@@ -19,10 +19,17 @@ function Test() {
       setIsDesktop(false);
     }
   }, []);
-    axios.get('https://api.storyblok.com/v2/cdn/stories/preview?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt&cv=1631095460', {
-    }).then((response) => {
-      setText(response.data.story.content)
-    }).catch(e => console.error(e))
+
+let enable = true;
+  enable 
+    ? 
+      axios.get('https://api.storyblok.com/v2/cdn/stories/preview?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt&cv=1631095460', {
+      }).then((response) => {
+        setText(response.data.story.content)
+      }).catch(e => console.error(e)) 
+    :
+      console.log(`axios is disabled`) 
+
   return (
       <>
         <div id="start">
@@ -33,7 +40,7 @@ function Test() {
               <h1 className="whoarewe pb-6 orange">
                 {Text.titleHero}
               </h1>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
             <div className="d-flex justify-content-center px-3">
                 <p className="textHero text-wrap text-break light">Depuis 2015, notre Société Coopérative d’Intérêt Collectif et entreprise d’insertion, LES DETRITIVORES vous<br/> accompagne dans la gestion de vos restes alimentaires (biodéchets) en vous proposant un service <br />professionnel de <span className="bold">sensibilisation</span>, de <span className="bold">collecte</span>, de <span className="bold">valorisation</span> et de <span className="bold">compostage</span> des déchets organiques<br /> générés sur le territoire néo-aquitain.</p>
             </div>
@@ -41,7 +48,7 @@ function Test() {
         </section>
 
         <section className="">
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
             <div className="container-xxl d-flex">
                 <div className="row">
                   <div className="col">
@@ -71,8 +78,8 @@ function Test() {
           </Fade>
         </section>
         <section className="our-engagements">
-            <h1 className="whoarewe pb-6 green">{Text.titleDefault}</h1>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <h1 className="whoarewe pb-6 green">{Text.titleDefault}</h1>
+          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
             <div className="container">
               <div className="row">
                 <div className="col">
@@ -104,7 +111,7 @@ function Test() {
           </Fade>
         </section>
         <section className="offer">
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
               <div className="bg-green offers">
                 <h1 className="size">NOS OFFRES</h1>
               </div>
@@ -133,7 +140,7 @@ function Test() {
         </section>
         <div className="spacing bg-green" />
         <section className="trust">
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
             <h1 className="orange">ILS NOUS FONT CONFIANCE</h1>
             <div className="pb-6 d-flex justify-content-center p-2">
                 <div className="trusting bg-green"></div>
