@@ -86,20 +86,24 @@ section {
   margin: 0 auto;
 }
 .offers {
-  transform: rotate(-5deg);
+  transform: rotate(-5deg) scale(1.2) !important;
   color: #fff;
   padding: 2.5rem;
 }
 .offersize {
-  transform: rotate(-5deg);
+  transform: rotate(-5deg) scale(1) !important;
 }
 .size {
   font-size: 8.5rem;
 }
 .offer {
 }
+.sizes {
+  margin-top: 4rem;
+  padding: 8rem;
+}
 .trust {
-  margin-bottom: 1rem;
+  margin-top: 4rem;
 }
 .collect {
   display: grid;
@@ -168,16 +172,27 @@ section {
 .i4ewOd-UzWXSb {
   border: none !important;
 }
-
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
 .spacing {
   width: 100%;
-  transform: rotate(-5deg);
+  transform: rotate(-5deg) scale(1.2) !important;
   height: 2rem;
   overflow-y: hidden;
 }
 .ml-mb {
   margin-left: 10rem;
   margin-bottom: 0.5rem;
+}
+.boom {
+  width: 150px;
+  opacity: 0.5;
+  z-index: 2;
+  margin: 0 auto;
 }
 
 @media (max-width: 75rem) {
@@ -189,5 +204,5 @@ section {
 
 .trusting {
   width: 100%;
-  height: 50px;
+  height: 30vh;
 }

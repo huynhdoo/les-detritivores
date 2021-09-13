@@ -30,13 +30,13 @@ function Test() {
         </div>
 
         <section className="">
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <h1 className="whoarewe pb-6 orange">
                 {Text.titleHero}
               </h1>
-              <div className="d-flex justify-content-center px-3">
-                  <p className="textHero text-wrap text-break light">Depuis 2015, notre Société Coopérative d’Intérêt Collectif et entreprise d’insertion, LES DETRITIVORES vous<br/> accompagne dans la gestion de vos restes alimentaires (biodéchets) en vous proposant un service <br />professionnel de <span className="bold">sensibilisation</span>, de <span className="bold">collecte</span>, de <span className="bold">valorisation</span> et de <span className="bold">compostage</span> des déchets organiques<br /> générés sur le territoire néo-aquitain.</p>
-              </div>
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <div className="d-flex justify-content-center px-3">
+                <p className="textHero text-wrap text-break light">Depuis 2015, notre Société Coopérative d’Intérêt Collectif et entreprise d’insertion, LES DETRITIVORES vous<br/> accompagne dans la gestion de vos restes alimentaires (biodéchets) en vous proposant un service <br />professionnel de <span className="bold">sensibilisation</span>, de <span className="bold">collecte</span>, de <span className="bold">valorisation</span> et de <span className="bold">compostage</span> des déchets organiques<br /> générés sur le territoire néo-aquitain.</p>
+            </div>
           </Fade>
         </section>
 
@@ -52,7 +52,7 @@ function Test() {
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
-                      title="Embedded youtube"
+                      title=""
                       className="d-flex justify-content-start rounded"
                     />
                   </div>
@@ -71,25 +71,34 @@ function Test() {
           </Fade>
         </section>
         <section className="our-engagements">
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
             <h1 className="whoarewe pb-6 green">{Text.titleDefault}</h1>
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
             <div className="container">
               <div className="row">
                 <div className="col">
                   <h1 className="orange">ENVIRONNEMENTAUX</h1>
+                    <div className="bg-orange rounded-circle boom">
+                      <Icons icon="ptt5" /> 
+                    </div>
                   <p>Nous œuvrons pour une <span className="bold">utilisation raisonnable</span> des ressources naturelles, nous luttons contre le gaspillage alimentaire et contribuons à la diminution des émissions de CO2.</p>
                   <img src="" />
                 </div>
                 <div className="col">
                   <h1 className="orange">SOCIAUX</h1>
-                  <p>Nous créons des emplois pérennes pour des personnes éloignées du <br /> marché du travail. <br />
-                  Nos salariés bénéficient d’un <span className="bold">accompagnement professionnel</span> individuel et/ou collectif.
-                  <br /><br />Chez les DETRITIVORES, chaque <br /> compétence détenue est valorisée !</p>
-                </div>
-                <div className="col">
-                  <h1 className="orange">COOPÉRATIFS</h1>
-                  <p>En tant que société coopérative, nous attachons à rassembler l’ensemble des acteurs engagés sur le territoire vers la construction d’une économie plus <span className="bold">inclusive</span>, plus <span className="bold">organique</span> et <span className="bold">plus ouverte</span>.</p>
-                </div>
+                    <div className="bg-orange rounded-circle boom">
+                      <Icons icon="ptt13" /> 
+                    </div>
+                    <p>Nous créons des emplois pérennes pour des personnes éloignées du <br /> marché du travail. <br />
+                    Nos salariés bénéficient d’un <span className="bold">accompagnement professionnel</span> individuel et/ou collectif.
+                    <br /><br />Chez les DETRITIVORES, chaque <br /> compétence détenue est valorisée !</p>
+                  </div>
+                  <div className="col">
+                    <h1 className="orange">COOPÉRATIFS</h1>
+                    <div className="bg-orange rounded-circle boom">
+                      <Icons icon="ptt3" /> 
+                    </div>
+                    <p>En tant que société coopérative, nous attachons à rassembler l’ensemble des acteurs engagés sur le territoire vers la construction d’une économie plus <span className="bold">inclusive</span>, plus <span className="bold">organique</span> et <span className="bold">plus ouverte</span>.</p>
+                  </div>
               </div>
             </div>
           </Fade>
@@ -100,7 +109,7 @@ function Test() {
                 <h1 className="size">NOS OFFRES</h1>
               </div>
 
-            <div className="pb-6 d-grid gap-3 justify-content-center mt-6">
+            <div className="pb-6 d-grid gap-3 justify-content-center mt-6 sizes">
               <div>
                 <div>
                     <p classname="light">
