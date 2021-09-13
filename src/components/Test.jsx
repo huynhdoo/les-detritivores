@@ -19,7 +19,6 @@ function Test() {
         <section className="">
             <h1 className="whoarewe pb-6 orange">
               {Text.titleHero}
-              <div className="line" />
             </h1>
             <div className="d-flex justify-content-center px-3">
                 <p className="textHero text-break light">Depuis 2015, notre Société Coopérative d’Intérêt Collectif et entreprise d’insertion, LES DETRITIVORES vous accompagne dans la gestion de vos restes alimentaires (biodéchets) en vous proposant un service professionnel de <span className="bold">sensibilisation</span>, de <span className="bold">collecte</span>, de <span className="bold">valorisation</span> et de <span className="bold">compostage</span> des déchets organiques générés sur le territoire néo-aquitain.</p>
@@ -27,12 +26,12 @@ function Test() {
         </section>
 
         <section className="">
-        <div class="container d-flex">
+        <div class="container-xxl d-flex">
             <div class="row">
               <div class="col">
                 <iframe
                   width="853"
-                  height="480"
+                  height="510"
                   src={`https://www.youtube.com/embed/_X-pd2E-AxA`}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -41,21 +40,21 @@ function Test() {
                   className="d-flex justify-content-start rounded"
                 />
               </div>
-              <div class="col">
+              <div class="col ml-mb">
                 <h1 className="orange">Nos Usagers</h1>
                 <div className="rounded-circle bg-orange circle">
                     <Icons icon="people" />
                 </div>
-                <p className="sf usages-font">LES RESTAURATEURS <div class="linesmall" /></p>
-                <p className="sf usages-font">LA RESTAURATION COLLECTIVE <div class="linesmall" /></p>
-                <p className="sf usages-font">LES COLLECTIVITES <div class="linesmall" /></p>
-                <p className="sf usages-font">LES PARTICULIERS <div class="linesmall" /></p>
+                <p className="sf usages-font">LES RESTAURATEURS</p>
+                <p className="sf usages-font">LA RESTAURATION COLLECTIVE</p>
+                <p className="sf usages-font">LES COLLECTIVITES</p>
+                <p className="sf usages-font">LES PARTICULIERS</p>
               </div>
             </div>
           </div>
         </section>
         <section className="our-engagements">
-          <h1 className="whoarewe pb-6 green">{Text.titleDefault} <div class="linesmallgreen" /></h1>
+          <h1 className="whoarewe pb-6 green">{Text.titleDefault}</h1>
           <div class="container">
             <div class="row">
               <div class="col">
@@ -81,28 +80,37 @@ function Test() {
               <h1 className="size">NOS OFFRES</h1>
             </div>
 
-          <div class="pb-6 d-flex justify-content-center">
-            <h1 className="orange">COLLECTE</h1>
-              <p classname="light">
-                En camions ou à vélos, nos équipes passent régulièrement collecter vos bacs de biodéchets
-              </p>
-            <h1 className="orange">SENSIBILISATION</h1>
-              <p classname="light">
-                Vous accompagner dans votre démarche environnementale et vous sensibiliser est notre priorité !
-              </p>
-            <h1 className="orange">COMPOST</h1>
-              <p classname="light">
-                100% local, coopératif et solidaire: le compost que nous vous proposons a décidément tout pour plaire !
-              </p>   
+          <div class="pb-6 d-grid gap-3 justify-content-center mt-6">
+            <div>
+              <div>
+                  <p classname="light">
+                <h1 className="orange">COLLECTE</h1>
+                    En camions ou à vélos, nos équipes passent régulièrement collecter vos bacs de biodéchets
+                  </p>
+              </div>
+              <div>
+                  <p classname="light">
+                <h1 className="orange">SENSIBILISATION</h1>
+                    Vous accompagner dans votre démarche environnementale et vous sensibiliser est notre priorité !
+                  </p>
+              </div>
+              <div>
+                  <p classname="light">
+                <h1 className="orange">COMPOST</h1>
+                    100% local, coopératif et solidaire: le compost que nous vous proposons a décidément tout pour plaire !
+                  </p>
+              </div>
+            </div>
           </div>
         </section>
+        <div class="spacing bg-green" />
         <section>
           <h1 className="orange">ILS NOUS FONT CONFIANCE</h1>
           <div className="pb-6 d-flex justify-content-center">
             
           </div>
         </section>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1XOia2gftrOlLKRAYs-Mtca0qugXyahfh&hl=fr" width="640" height="480"></iframe>
+
     </>
   );
 }

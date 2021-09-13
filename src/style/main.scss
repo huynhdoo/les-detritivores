@@ -157,3 +157,28 @@ section {
     clip-path: none;
   }
 }
+
+.i4ewOd-pzNkMb-haAclf {
+  display: none !important;
+}
+
+.i4ewOd-UzWXSb {
+  border: none !important;
+}
+
+.spacing {
+  width: 100%;
+  transform: rotate(-5deg);
+  height: 2rem;
+}
+.ml-mb {
+  margin-left: 10rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 75rem) {
+  .ml-mb {
+    margin-left: -19rem;
+    margin-bottom: 2.5rem;
+  }
+}
