@@ -111,11 +111,10 @@ let enable = true;
           </Fade>
         </section>
         <section className="offer">
-          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
               <div className="bg-green offers">
                 <h1 className="size">NOS OFFRES</h1>
               </div>
-
+          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
             <div className="pb-6 d-grid gap-2 justify-content-center mt-6 sizes">
                 <div>
                     <p classname="light">
