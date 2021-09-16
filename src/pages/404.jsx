@@ -5,7 +5,6 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 
 export default () => {
-
   return (
     <>
       <Helmet>

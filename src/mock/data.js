@@ -7,7 +7,7 @@ export const projectsData = [
     title: 'Sensibilisation au tri des biodéchets',
     info: '',
     info2: '',
-    url: 'sensibilisation'
+    url: 'sensibilisation',
   },
   {
     id: nanoid(),
@@ -15,7 +15,7 @@ export const projectsData = [
     title: 'Collecte des biodéchets',
     info: '',
     info2: '',
-    url: 'collecte'
+    url: 'collecte',
   },
   {
     id: nanoid(),
@@ -23,18 +23,17 @@ export const projectsData = [
     title: 'Compostage local',
     info: '',
     info2: 'test',
-    url: 'compostage'
+    url: 'compostage',
   },
-  
+
   {
     id: nanoid(),
     img: 'vente.jpg',
     title: 'Vente de compost',
     info: '',
     info2: '',
-    url: 'compost'
+    url: 'compost',
   },
-  
 ];
 
 export const footerData = {
