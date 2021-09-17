@@ -139,8 +139,8 @@ const Icons = ({ icon }) => {
     case 'instagram':
       return (
         <svg
-          width="45"
-          height="45"
+          width="30"
+          height="30"
           aria-hidden="true"
           focusable="false"
           data-prefix="fab"

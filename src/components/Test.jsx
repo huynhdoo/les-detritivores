@@ -156,6 +156,10 @@ function Test() {
                   En camions ou à vélos, nos
                   <br /> équipes passent régulièrement
                   <br /> collecter vos bacs de biodéchets
+                  <br />
+                  <a style={{ fontWeight: 'bold' }} href="http://">
+                    Lire Plus...
+                  </a>
                 </p>
               </p>
             </div>
@@ -171,6 +175,10 @@ function Test() {
                   Vous accompagner dans votre
                   <br /> démarche environnementale et
                   <br /> vous sensibiliser est notre priorité !
+                  <br />
+                  <a style={{ fontWeight: 'bold' }} href="http://">
+                    Lire Plus...
+                  </a>
                 </p>
               </p>
             </div>
@@ -187,6 +195,10 @@ function Test() {
                   <br /> solidaire: le compost que nous
                   <br /> vous proposons a décidément
                   <br /> tout pour plaire !
+                  <br />
+                  <a style={{ fontWeight: 'bold' }} href="http://">
+                    Lire Plus...
+                  </a>
                 </p>
               </p>
             </div>
@@ -222,26 +234,41 @@ function Test() {
               </div>
             </div>
             <div class="row">
-              <div className="contact">
-                <div class="col">
-                  <h2 className="green text-wrap size">NOS BUREAUX</h2>
-                  <span className="bold smalltext">
-                    65 Quai de Brazza,
-                    <br /> 33100 Bordeaux
-                  </span>
-                  <h2 className="green text-wrap">
-                    NOTRE PLATEFORME <br /> DE COMPOSTAGE
-                  </h2>
-                  <span className="bold smalltext">
-                    16 Quai de Brazza
-                    <br /> 33100 Bordeaux
-                  </span>
-                </div>
+              <div class="col">
+                <h2 className="green text-wrap size">NOS BUREAUX</h2>
+                <span className="bold smalltext">
+                  65 Quai de Brazza,
+                  <br /> 33100 Bordeaux
+                </span>
+                <h2 className="green text-wrap size">
+                  NOTRE PLATEFORME <br /> DE COMPOSTAGE
+                </h2>
+                <span className="bold smalltext">
+                  16 Quai de Brazza
+                  <br /> 33100 Bordeaux
+                </span>
               </div>
               <div class="col"></div>
               <div class="col">
                 <h2 className="green text-wrap">Rejoignez-nous sur les réseaux sociaux</h2>
-                <div className="socialmedia"></div>
+                <div className="socialmedia">
+                  <div className="bg-orange p-ding">
+                    <Icons icon="linkedin" />
+                  </div>
+                  <a className="text-social" href="http://">
+                    Linkedin
+                  </a>
+                  <Icons icon="facebook" />{' '}
+                  <a className="text-social" href="http://">
+                    Facebook
+                  </a>
+                  <div className="bg-orange p-ding">
+                    <Icons icon="instagram" />
+                  </div>
+                  <a className="text-social" href="http://">
+                    Instagram
+                  </a>
+                </div>
               </div>
             </div>
           </div>

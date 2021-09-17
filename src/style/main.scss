@@ -152,7 +152,7 @@ a {
   transform: rotate(-5deg) scale(1) !important;
 }
 .size {
-  font-size: 8.5rem;
+  font-size: 4.5rem;
 }
 .sizes {
   margin-top: 4rem;
@@ -160,6 +160,13 @@ a {
 }
 .trust {
   margin-top: 4rem;
+}
+.p-ding {
+  padding: 10px;
+  border-radius: 50px;
+}
+.text-social {
+  display: inline-flex;
 }
 .collect {
   display: grid;
