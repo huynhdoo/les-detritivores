@@ -16,6 +16,7 @@
   z-index: -1;
   background: url('/image/equipe.jpg');
   background-size: cover;
+
   @include respond(phone) {
     padding: 0rem 5rem $default-font-size;
   }

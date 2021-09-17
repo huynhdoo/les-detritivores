@@ -97,7 +97,7 @@ function Test() {
                 <div className="bg-orange rounded-circle boom">
                   <Icons icon="ptt5" />
                 </div>
-                <p>
+                <p className="semi">
                   Nous œuvrons pour une <span className="bold">utilisation raisonnable</span> des
                   ressources naturelles, nous luttons contre le gaspillage alimentaire et
                   contribuons à la diminution des émissions de CO2.
@@ -109,7 +109,7 @@ function Test() {
                 <div className="bg-orange rounded-circle boom">
                   <Icons icon="ptt13" />
                 </div>
-                <p>
+                <p className="semi">
                   Nous créons des emplois pérennes pour des personnes éloignées du <br /> marché du
                   travail. <br />
                   Nos salariés bénéficient d’un{' '}
@@ -125,7 +125,7 @@ function Test() {
                 <div className="bg-orange rounded-circle boom">
                   <Icons icon="ptt3" />
                 </div>
-                <p>
+                <p className="semi">
                   En tant que société coopérative, nous attachons à rassembler l’ensemble des
                   acteurs engagés sur le territoire vers la construction d’une économie plus{' '}
                   <span className="bold">inclusive</span>, plus{' '}
@@ -148,23 +148,46 @@ function Test() {
                 <div className="bg-green c-boxs">
                   <Icons icon="camion" />
                 </div>
-                <h1 className="orange">COLLECTE</h1>
-                En camions ou à vélos, nos équipes passent régulièrement collecter vos bacs de
-                biodéchets
+                <h1 className="orange d-flex justify-content-center px-12 d-low offers-text ">
+                  COLLECTE
+                </h1>
+                <p className="d-low-2">
+                  {' '}
+                  En camions ou à vélos, nos
+                  <br /> équipes passent régulièrement
+                  <br /> collecter vos bacs de biodéchets
+                </p>
               </p>
             </div>
             <div>
               <p classname="light" style={{ display: 'flex' }}>
-                <h1 className="orange">SENSIBILISATION</h1>
-                Vous accompagner dans votre démarche environnementale et vous sensibiliser est notre
-                priorité !
+                <div className="bg-green c-boxs">
+                  <Icons icon="happystar" />
+                </div>
+                <h1 className="orange d-flex justify-content-center px-12 d-low offers-text ">
+                  SENSIBILISATION
+                </h1>
+                <p className="d-low-2">
+                  Vous accompagner dans votre
+                  <br /> démarche environnementale et
+                  <br /> vous sensibiliser est notre priorité !
+                </p>
               </p>
             </div>
             <div>
               <p classname="light" style={{ display: 'flex' }}>
-                <h1 className="orange">COMPOST</h1>
-                100% local, coopératif et solidaire: le compost que nous vous proposons a décidément
-                tout pour plaire !
+                <div className="bg-green c-boxs">
+                  <Icons icon="flowers" />
+                </div>
+                <h1 className="orange d-flex justify-content-center px-12 d-low offers-text ">
+                  COMPOST
+                </h1>
+                <p className="d-low-2">
+                  100% local, coopératif et
+                  <br /> solidaire: le compost que nous
+                  <br /> vous proposons a décidément
+                  <br /> tout pour plaire !
+                </p>
               </p>
             </div>
           </div>
