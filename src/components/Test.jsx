@@ -59,7 +59,7 @@ function Test() {
 
       <section className="">
         <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-          <div className="container-xxl d-flex">
+          <div className="container-fluid d-flex">
             <div className="row">
               <div className="col">
                 <iframe
@@ -73,7 +73,7 @@ function Test() {
                   className="d-flex justify-content-start rounded"
                 />
               </div>
-              <div className="col ml-mb">
+              <div className="col ml-mb m-p">
                 <h1 className="orange">Nos Usagers</h1>
                 <div className="rounded-circle bg-orange circle">
                   <Icons icon="people" />
@@ -142,23 +142,26 @@ function Test() {
           <h1 className="size">NOS OFFRES</h1>
         </div>
         <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-          <div className="pb-6 d-grid gap-2 justify-content-center mt-6 sizes">
+          <div className="pb-6 d-grid gap-2 justify-content-center mt-6 sizes container-fluid">
             <div>
-              <p classname="light">
+              <p classname="light" style={{ display: 'flex' }}>
+                <div className="bg-green c-boxs">
+                  <Icons icon="camion" />
+                </div>
                 <h1 className="orange">COLLECTE</h1>
                 En camions ou à vélos, nos équipes passent régulièrement collecter vos bacs de
                 biodéchets
               </p>
             </div>
             <div>
-              <p classname="light">
+              <p classname="light" style={{ display: 'flex' }}>
                 <h1 className="orange">SENSIBILISATION</h1>
                 Vous accompagner dans votre démarche environnementale et vous sensibiliser est notre
                 priorité !
               </p>
             </div>
             <div>
-              <p classname="light">
+              <p classname="light" style={{ display: 'flex' }}>
                 <h1 className="orange">COMPOST</h1>
                 100% local, coopératif et solidaire: le compost que nous vous proposons a décidément
                 tout pour plaire !
@@ -170,7 +173,7 @@ function Test() {
       <div className="spacing bg-green" />
       <section className="trust">
         <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-          <h1 className="orange">ILS NOUS FONT CONFIANCE</h1>
+          <h1 className="orange size">ILS NOUS FONT CONFIANCE</h1>
           <div className="pb-6 d-flex justify-content-center p-2">
             <div className="trusting bg-green"></div>
           </div>
@@ -181,32 +184,36 @@ function Test() {
           <h1 className="contacts pb-6 orange">Contact</h1>
           <div class="container">
             <div class="row">
-              <div class="col">
-                <p className="phone">Téléphone: 05 56 67 14 47</p>
-              </div>
-              <div class="col">
-                <p className="mail">
-                  Mail:{' '}
-                  <a className="number" href="mailto:bonjour@les-detritivores.co">
-                    bonjour@les-detritivores.co
-                  </a>
-                </p>
+              <div className="contact">
+                <div class="col">
+                  <p className="phone">Téléphone: 05 56 67 14 47</p>
+                </div>
+                <div class="col">
+                  <p className="mail">
+                    Mail:{' '}
+                    <a className="number" href="mailto:bonjour@les-detritivores.co">
+                      bonjour@les-detritivores.co
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
             <div class="row">
-              <div class="col">
-                <h2 className="green text-wrap">NOS BUREAUX</h2>
-                <span className="bold smalltext">
-                  65 Quai de Brazza,
-                  <br /> 33100 Bordeaux
-                </span>
-                <h2 className="green text-wrap">
-                  NOTRE PLATEFORME <br /> DE COMPOSTAGE
-                </h2>
-                <span className="bold smalltext">
-                  16 Quai de Brazza
-                  <br /> 33100 Bordeaux
-                </span>
+              <div className="contact">
+                <div class="col">
+                  <h2 className="green text-wrap size">NOS BUREAUX</h2>
+                  <span className="bold smalltext">
+                    65 Quai de Brazza,
+                    <br /> 33100 Bordeaux
+                  </span>
+                  <h2 className="green text-wrap">
+                    NOTRE PLATEFORME <br /> DE COMPOSTAGE
+                  </h2>
+                  <span className="bold smalltext">
+                    16 Quai de Brazza
+                    <br /> 33100 Bordeaux
+                  </span>
+                </div>
               </div>
               <div class="col"></div>
               <div class="col">

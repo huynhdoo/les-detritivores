@@ -67,6 +67,9 @@ p {
 .light {
   font-weight: 300;
 }
+.test {
+  display: flex;
+}
 .sf {
   font-family: 'SF UI Display', sans-serif;
 }
@@ -194,13 +197,6 @@ a {
   transform: rotate(-5deg);
   float: right;
 }
-@media (max-width: 75rem) {
-  #start {
-    height: 120px !important;
-    -webkit-clip-path: none;
-    clip-path: none;
-  }
-}
 
 .i4ewOd-pzNkMb-haAclf {
   display: none !important;
@@ -222,7 +218,7 @@ a {
   overflow-y: hidden;
 }
 .ml-mb {
-  margin-left: 10rem;
+  margin-left: 15rem;
   margin-bottom: 0.5rem;
 }
 .boom {
@@ -233,6 +229,21 @@ a {
 }
 
 @media (max-width: 75rem) {
+  #start {
+    height: 120px !important;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .whoarewe {
+    font-size: 5rem;
+    transform: rotate(-5deg);
+    font-weight: 700;
+  }
+
+  .size {
+    font-size: 4.5rem;
+  }
   .ml-mb {
     margin-left: -0.5rem;
     margin-bottom: 2.5rem;
@@ -248,20 +259,24 @@ a {
     background-color: $primary-color;
     background-image: linear-gradient(135deg, $primary-color 0%, $primary-color 100%);
     color: $white-color;
-    height: 50vh;
+    height: 17% !important;
     border-top: 0px;
     -webkit-clip-path: polygon(100% 3%, 0 100%, 100% 100%);
     clip-path: polygon(100% 3%, 0 100%, 100% 100%);
     padding-bottom: 10%;
-
+    padding: 0;
     @include respond(tab-land) {
-      height: 50vh;
+      height: 17% !important;
       -webkit-clip-path: none;
       clip-path: none;
+      padding: 0 !important;
     }
   }
   .d-back {
     margin-bottom: 1rem;
+  }
+  .m-p {
+    margin-top: 5%;
   }
 }
 .cards {
@@ -288,4 +303,9 @@ a {
     -webkit-clip-path: none;
     clip-path: none;
   }
+}
+.c-boxs {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }
