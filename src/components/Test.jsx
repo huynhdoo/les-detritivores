@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
-import logo from '../images/logo-new.png';
+import { Link } from 'gatsby';
 import '../style/main.scss';
 import Icons from '../components/Icons';
 import Fade from 'react-reveal/Fade';
+import FadeIn from 'react-fade-in';
 function Test() {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -40,7 +41,9 @@ function Test() {
       </div>
 
       <section className="">
-        <h1 className="whoarewe pb-6 orange">{Text.titleHero}</h1>
+        <FadeIn>
+          <h1 className="whoarewe pb-6 orange">{Text.titleHero}</h1>
+        </FadeIn>
         <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
           <div className="d-flex justify-content-center px-3">
             <p className="textHero text-wrap text-break light">
@@ -74,7 +77,9 @@ function Test() {
                 />
               </div>
               <div className="col ml-mb m-p">
-                <h1 className="orange">Nos Usagers</h1>
+                <FadeIn>
+                  <h1 className="orange">Nos Usagers</h1>
+                </FadeIn>
                 <div className="rounded-circle bg-orange circle">
                   <Icons icon="people" />
                 </div>
@@ -88,7 +93,9 @@ function Test() {
         </Fade>
       </section>
       <section className="our-engagements">
-        <h1 className="whoarewe pb-6 green">{Text.titleDefault}</h1>
+        <FadeIn>
+          <h1 className="whoarewe pb-6 green">{Text.titleDefault}</h1>
+        </FadeIn>
         <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
           <div className="container">
             <div className="row">
@@ -139,7 +146,9 @@ function Test() {
       </section>
       <section className="offer">
         <div className="bg-green offers">
-          <h1 className="size">NOS OFFRES</h1>
+          <FadeIn>
+            <h1 className="size">NOS OFFRES</h1>
+          </FadeIn>
         </div>
         <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
           <div className="pb-6 d-grid gap-2 justify-content-center mt-6 sizes container-fluid">
@@ -157,9 +166,9 @@ function Test() {
                   <br /> équipes passent régulièrement
                   <br /> collecter vos bacs de biodéchets
                   <br />
-                  <a style={{ fontWeight: 'bold' }} href="http://">
+                  <Link style={{ fontWeight: 'bold' }} to="/collect">
                     Lire Plus...
-                  </a>
+                  </Link>
                 </p>
               </p>
             </div>
@@ -176,9 +185,9 @@ function Test() {
                   <br /> démarche environnementale et
                   <br /> vous sensibiliser est notre priorité !
                   <br />
-                  <a style={{ fontWeight: 'bold' }} href="http://">
+                  <Link style={{ fontWeight: 'bold' }} to="/sensibilisation">
                     Lire Plus...
-                  </a>
+                  </Link>
                 </p>
               </p>
             </div>
@@ -216,7 +225,9 @@ function Test() {
       </section>
       <section className="">
         <div className="container">
-          <h1 className="contacts pb-6 orange">Contact</h1>
+          <FadeIn>
+            <h1 className="contacts pb-6 orange">Contact</h1>
+          </FadeIn>
           <div class="container">
             <div class="row">
               <div className="contact">

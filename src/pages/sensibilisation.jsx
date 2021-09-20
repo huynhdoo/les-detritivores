@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import axios from 'axios';
-import { Container } from 'react-bootstrap';
 import FadeIn from 'react-fade-in';
-
+import Icons from '../components/Icons';
+import { Link } from 'gatsby';
 export default () => {
   const [Text, setText] = useState('');
   axios
@@ -23,13 +23,33 @@ export default () => {
         <html lang="fr" />
         <meta name="description" content={Text.description} />
       </Helmet>
-      <section id="hero" className="jumbotron">
-        <Container>
-          <FadeIn className="section-big-title text-color-main rounded">
-            La page n'existe pas.
-          </FadeIn>
-        </Container>
-      </section>
+      <div id="start">
+        <div className="d-flex justify-content-start d-back">
+          <Link className="arrow-color" to="/new">
+            <div className="arrow-position">
+              <Icons icon="arrow" />
+            </div>
+          </Link>
+        </div>
+      </div>
+
+      <FadeIn>
+        <div class="container-fluid p-slide pb-11">
+          <div class="row">
+            <div class="col align-self-center">
+              <div className="box-test"></div>
+            </div>
+            <div class="col">
+              <h1 className="orange big-font-size-xxl rotate">SENSIBILISATION</h1>
+            </div>
+          </div>
+        </div>
+      </FadeIn>
+      <footer id="footer" className="fixed-bottom">
+        <div className="d-flex justify-content-end">
+          <Icons icon="logo" className="logo-footer" />
+        </div>
+      </footer>
     </>
   );
 };
