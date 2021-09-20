@@ -59,7 +59,7 @@ function Test() {
 
       <section className="">
         <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-          <div className="container-fluid d-flex">
+          <div className="container-fluid d-flex center-container">
             <div className="row">
               <div className="col">
                 <iframe
