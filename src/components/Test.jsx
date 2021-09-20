@@ -144,7 +144,7 @@ function Test() {
         <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
           <div className="pb-6 d-grid gap-2 justify-content-center mt-6 sizes container-fluid">
             <div>
-              <p classname="light" style={{ display: 'flex' }}>
+              <p classname="light" style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <div className="bg-green c-boxs">
                   <Icons icon="camion" />
                 </div>
@@ -164,7 +164,7 @@ function Test() {
               </p>
             </div>
             <div>
-              <p classname="light" style={{ display: 'flex' }}>
+              <p classname="light" style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <div className="bg-green c-boxs">
                   <Icons icon="happystar" />
                 </div>
@@ -183,7 +183,7 @@ function Test() {
               </p>
             </div>
             <div>
-              <p classname="light" style={{ display: 'flex' }}>
+              <p classname="light" style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <div className="bg-green c-boxs">
                   <Icons icon="flowers" />
                 </div>
@@ -218,22 +218,26 @@ function Test() {
         <div className="container">
           <h1 className="contacts pb-6 orange">Contact</h1>
           <div class="container">
-            <div class="row"></div>
+            <div class="row">
+              <div className="contact">
+                <div class="col">
+                  <p className="phone">
+                    <h1 className="">Téléphone</h1>:{' '}
+                    <span className="phone-text">05 56 67 14 47</span>
+                  </p>
+                </div>
+                <div class="col">
+                  <p className="mail">
+                    <h1 className="mail-title"> Mail</h1>:{' '}
+                    <a className="number" href="mailto:bonjour@les-detritivores.co">
+                      bonjour@les-detritivores.co
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
             <div class="row">
               <div class="col">
-                <div className="contact">
-                  <div class="col">
-                    <p className="phone">Téléphone: 05 56 67 14 47</p>
-                  </div>
-                  <div class="col">
-                    <p className="mail">
-                      Mail:{' '}
-                      <a className="number" href="mailto:bonjour@les-detritivores.co">
-                        bonjour@les-detritivores.co
-                      </a>
-                    </p>
-                  </div>
-                </div>
                 <h2 className="green text-wrap size text-b">NOS BUREAUX</h2>
                 <span className="smalltext big-font text-b">
                   65 Quai de Brazza,
@@ -273,7 +277,7 @@ function Test() {
           </div>
         </div>
       </section>
-      <footer id="footer">
+      <footer id="footer" className="fixed-bottom">
         <div className="d-flex justify-content-end">
           <Icons icon="logo" className="logo-footer" />
         </div>

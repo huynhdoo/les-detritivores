@@ -4,8 +4,8 @@ const Icons = ({ icon, className }) => {
     case 'arrow':
       return (
         <svg
-          width="30"
-          height="30"
+          width="40"
+          height="40"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"

@@ -22,7 +22,7 @@
 @import url('http://fonts.cdnfonts.com/css/sf-ui-display');
 .logos {
   height: 100px;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .logo-footer {
   height: 100px;
@@ -39,7 +39,7 @@
   font-weight: 700;
 }
 .contact {
-  display: table;
+  display: inline-flex;
 }
 .textHero {
   overflow-wrap: break-word;
@@ -53,6 +53,9 @@
 }
 .pb-6 {
   padding-bottom: 3.25rem;
+}
+.p-slide {
+  margin: 0;
 }
 body {
   overflow-x: hidden;
@@ -107,6 +110,11 @@ section {
 .phone {
   font-size: 1.9rem;
   margin: 0 auto;
+  display: flex;
+}
+.phone-text {
+  margin-top: 0.2%;
+  margin-left: 1%;
 }
 .px-12 {
   padding-right: 6.5rem !important;
@@ -114,6 +122,13 @@ section {
 }
 .mail {
   font-size: 1.9rem;
+}
+.mail-title {
+  display: inline-flex;
+}
+.arrow-position {
+  margin-top: 7rem;
+  margin-left: 2rem;
 }
 .number:hover {
   color: #263b29;
@@ -256,13 +271,49 @@ a {
 .offers-text {
   font-size: 6rem;
 }
+.big-font-size {
+  font-size: 5rem;
+}
+.i4ewOd-pzNkMb-haAclf {
+  display: none !important;
+}
+.yePe5c-haAclf .yePe5c-d75Caf {
+  display: none !important;
+}
+.card-num {
+  display: flex;
+}
+.card-image {
+  margin-top: 2rem;
+}
+.card-number {
+  font-weight: bold;
+  font-size: 4rem;
+}
+.card-number-text {
+  text-align: start;
+  margin-left: 1.5rem;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.card-intro {
+  font-size: 2.5rem;
+}
+.arrow-color {
+  color: #fff !important;
+}
+.arrow-color:hover {
+  opacity: 0.75;
+}
 @media (max-width: 75rem) {
   #start {
     height: 120px !important;
-    -webkit-clip-path: none;
-    clip-path: none;
+    clip-path: polygon(0 0, 100% 0%, 100% 68%, 0% 100%) !important;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 68%, 0% 100%) !important;
   }
-
+  .p-responsive {
+    margin: 0 auto;
+  }
   .whoarewe {
     font-size: 5rem;
     transform: rotate(-5deg);
@@ -289,9 +340,9 @@ a {
     color: $white-color;
     height: 17% !important;
     border-top: 0px;
-    -webkit-clip-path: polygon(100% 3%, 0 100%, 100% 100%);
-    clip-path: polygon(100% 3%, 0 100%, 100% 100%);
-    padding-bottom: 10%;
+    -webkit-clip-path: polygon(100% 3%, 0 100%, 100% 100%) !important;
+    clip-path: polygon(100% 3%, 0 100%, 100% 100%) !important;
+    padding-bottom: 8%;
     padding: 0;
     @include respond(tab-land) {
       height: 17% !important;
@@ -299,6 +350,19 @@ a {
       clip-path: none;
       padding: 0 !important;
     }
+    .logo-footer {
+      height: 100px;
+      margin-top: 10%;
+      padding-right: 1%;
+    }
+  }
+  .arrow-position {
+    margin-top: 3.5rem;
+    margin-left: 2rem;
+  }
+  .logos {
+    height: 100px;
+    margin-top: 0rem;
   }
   .d-back {
     margin-bottom: 1rem;
@@ -308,8 +372,8 @@ a {
   }
 }
 .cards {
-  width: 320px;
-  height: 210px;
+  width: 350px;
+  height: 240px;
 }
 .trusting {
   width: 100%;
@@ -324,7 +388,7 @@ a {
   border-top: 0px;
   -webkit-clip-path: polygon(100% 3%, 0 100%, 100% 100%);
   clip-path: polygon(100% 3%, 0 100%, 100% 100%);
-  padding-bottom: 10%;
+  padding-bottom: 8%;
 
   @include respond(tab-land) {
     height: 18px;
@@ -348,4 +412,5 @@ a {
 }
 .big-font {
   font-size: 2rem;
+  font-weight: 600;
 }
