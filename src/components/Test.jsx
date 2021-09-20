@@ -36,7 +36,7 @@ function Test() {
   return (
     <>
       <div id="start">
-        <img src={logo} className="logos" />
+        <Icons icon="logo" className="logos" />
       </div>
 
       <section className="">
@@ -214,36 +214,35 @@ function Test() {
           </div>
         </Fade>
       </section>
-      <section className="contact">
+      <section className="">
         <div className="container">
           <h1 className="contacts pb-6 orange">Contact</h1>
           <div class="container">
-            <div class="row">
-              <div className="contact">
-                <div class="col">
-                  <p className="phone">Téléphone: 05 56 67 14 47</p>
-                </div>
-                <div class="col">
-                  <p className="mail">
-                    Mail:{' '}
-                    <a className="number" href="mailto:bonjour@les-detritivores.co">
-                      bonjour@les-detritivores.co
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div class="row"></div>
             <div class="row">
               <div class="col">
-                <h2 className="green text-wrap size">NOS BUREAUX</h2>
-                <span className="bold smalltext">
+                <div className="contact">
+                  <div class="col">
+                    <p className="phone">Téléphone: 05 56 67 14 47</p>
+                  </div>
+                  <div class="col">
+                    <p className="mail">
+                      Mail:{' '}
+                      <a className="number" href="mailto:bonjour@les-detritivores.co">
+                        bonjour@les-detritivores.co
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <h2 className="green text-wrap size text-b">NOS BUREAUX</h2>
+                <span className="smalltext big-font text-b">
                   65 Quai de Brazza,
                   <br /> 33100 Bordeaux
                 </span>
-                <h2 className="green text-wrap size">
+                <h2 className="green text-wrap size text-b">
                   NOTRE PLATEFORME <br /> DE COMPOSTAGE
                 </h2>
-                <span className="bold smalltext">
+                <span className="smalltext big-font text-b">
                   16 Quai de Brazza
                   <br /> 33100 Bordeaux
                 </span>
@@ -276,7 +275,7 @@ function Test() {
       </section>
       <footer id="footer">
         <div className="d-flex justify-content-end">
-          <img src={logo} className="logo-footer" />
+          <Icons icon="logo" className="logo-footer" />
         </div>
       </footer>
     </>

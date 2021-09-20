@@ -22,7 +22,7 @@
 @import url('http://fonts.cdnfonts.com/css/sf-ui-display');
 .logos {
   height: 100px;
-  margin-top: 10px;
+  margin-top: 3rem;
 }
 .logo-footer {
   height: 100px;
@@ -37,6 +37,9 @@
 .contacts {
   font-size: 8rem;
   font-weight: 700;
+}
+.contact {
+  display: table;
 }
 .textHero {
   overflow-wrap: break-word;
@@ -339,4 +342,10 @@ a {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+}
+.text-b {
+  display: flex;
+}
+.big-font {
+  font-size: 2rem;
 }
