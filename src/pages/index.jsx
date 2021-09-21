@@ -14,8 +14,9 @@ import Trust from '../components/Trust';
 import Contact from '../components/Contact';
 import Intro from '../components/Intro';
 import { Template } from '../components/Template';
+import { Title } from '../components/Title';
 
-function Test() {
+function Home() {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [Text, setText] = useState('');
@@ -53,7 +54,7 @@ function Test() {
       <Template>
         <section className="">
           <FadeIn>
-            <h1 className="whoarewe pb-6 orange">{Text.titleHero}</h1>
+            <Title className="whoarewe pb-6 orange" title={Text.titleHero} />
           </FadeIn>
           <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
             <Intro />
@@ -67,7 +68,7 @@ function Test() {
         </section>
         <section className="our-engagements">
           <FadeIn>
-            <h1 className="whoarewe pb-6 green">{Text.titleDefault}</h1>
+            <Title className="whoarewe pb-6 green" title={Text.titleDefault} />
           </FadeIn>
           <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
             <Engagements />
@@ -76,7 +77,7 @@ function Test() {
         <section className="offer">
           <div className="bg-green offers">
             <FadeIn>
-              <h1 className="size">NOS OFFRES</h1>
+              <Title className="size" title="NOS OFFRES" />
             </FadeIn>
           </div>
           <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
@@ -99,4 +100,4 @@ function Test() {
   );
 }
 
-export default Test;
+export default Home;
