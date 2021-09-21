@@ -278,11 +278,59 @@ a {
 .big-font-size {
   font-size: 4rem;
 }
+.big-font-size-md {
+  font-size: 2rem;
+}
 .big-font-size-xxl {
   font-size: 9rem;
 }
 .pb-11 {
-  padding-top: 9.5rem;
+  padding-top: 4.5rem;
+}
+.m-12 {
+  margin: 4rem;
+}
+.ml-2 {
+  margin-left: 3rem !important;
+}
+.mb-3 {
+  margin-top: 3rem;
+}
+.slides {
+  margin-top: -3rem;
+}
+.slider {
+  width: 300px;
+}
+.slider-imgs {
+  width: 290px;
+  height: 184px;
+}
+.grids {
+  display: inline-grid;
+}
+.buttons {
+  padding-top: 2rem;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  color: #fff !important;
+  border-radius: 50px;
+  border: none;
+  width: 25rem;
+
+  margin-left: 27%;
+}
+.buttons-b {
+  padding-top: 2rem;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  width: 59rem;
+}
+.negative {
+  margin-top: -2rem;
 }
 .box-test {
   width: 730px;
@@ -313,6 +361,10 @@ a {
   font-weight: 300;
   font-size: 2rem;
 }
+
+.choice-text {
+  text-align: start;
+}
 .card-intro {
   font-size: 2.5rem;
 }
@@ -322,6 +374,29 @@ a {
 .arrow-color:hover {
   opacity: 0.75;
 }
+.text-start {
+  text-align: start;
+}
+.sensibilisation {
+  margin-top: 5rem;
+}
+.sens {
+  margin: 7rem;
+}
+.text-assign {
+  font-size: 2rem;
+  text-align: justify;
+}
+.atelier {
+  text-align: start;
+  margin-top: -5rem;
+}
+.d-ajust {
+  margin-right: 2.5rem;
+}
+.compost-btns {
+  margin-top: 13rem;
+}
 @media (max-width: 75rem) {
   #start {
     height: 120px !important;
@@ -330,6 +405,17 @@ a {
   }
   .p-responsive {
     margin: 0 auto;
+  }
+  .buttons {
+    padding-top: 2rem;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    width: 25rem;
+
+    margin-left: 10%;
   }
   .whoarewe {
     font-size: 5rem;

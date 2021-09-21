@@ -50,15 +50,15 @@ const Offer = () => {
             <Icons icon="flowers" />
           </div>
           <h1 className="orange d-flex justify-content-center px-12 d-low offers-text ">COMPOST</h1>
-          <p className="d-low-2">
+          <p className="d-low-2 d-ajust">
             100% local, coopératif et
             <br /> solidaire: le compost que nous
             <br /> vous proposons a décidément
             <br /> tout pour plaire !
             <br />
-            <a style={{ fontWeight: 'bold' }} href="http://">
+            <Link style={{ fontWeight: 'bold' }} to="/compost">
               Lire Plus...
-            </a>
+            </Link>
           </p>
         </p>
       </div>

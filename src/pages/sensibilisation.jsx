@@ -40,7 +40,31 @@ export default () => {
               <div className="box-test"></div>
             </div>
             <div class="col">
-              <h1 className="orange big-font-size-xxl rotate">SENSIBILISATION</h1>
+              <h1 className="orange big-font-size-xxl rotate pb-2 text-start">SENSIBILISATION</h1>
+              <div className="sensibilisation">
+                <p className="bold big-font-size-md choice-text">
+                  Choisissez nos actions de sensibilisation pour mobiliser l’ensemble
+                  <br />
+                  de vos collaborateurs, convives et équipes autour de la notion de <br />
+                  biodéchets et de recyclage !
+                </p>
+              </div>
+              <div className="sens">
+                <p className="light text-assign">
+                  Réalisée sur le temps du midi <br /> Présentation de l’écosystème de la SCIC SA
+                  LES <br />
+                  DETRITIVORES
+                  <br /> Présentation des étapes d’élaboration de notre compost <br />
+                  Présentation de notre plateforme de compostage 100% <br />
+                  bordelaise
+                </p>
+              </div>
+              <div className="atelier">
+                <p className="bold big-font-size-md">
+                  Jeux, animations, ateliers autour du tri et du recyclage : notre <br />{' '}
+                  sensibilisation se veut conviviale et riche en partages !
+                </p>
+              </div>
             </div>
           </div>
         </div>
