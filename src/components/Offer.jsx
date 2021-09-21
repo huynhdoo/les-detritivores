@@ -19,7 +19,7 @@ const Offer = () => {
             <br /> équipes passent régulièrement
             <br /> collecter vos bacs de biodéchets
             <br />
-            <Link style={{ fontWeight: 'bold' }} to="/collect">
+            <Link style={{ fontWeight: 'bold' }} to="/collecte">
               Lire Plus...
             </Link>
           </p>

@@ -11,7 +11,7 @@ const Collect = () => {
     <>
       <div id="start">
         <div className="d-flex justify-content-start d-back">
-          <Link className="arrow-color" to="/new">
+          <Link className="arrow-color" to="/">
             <div className="arrow-position">
               <Icons icon="arrow" />
             </div>
