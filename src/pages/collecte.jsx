@@ -70,7 +70,7 @@ const Collect = () => {
                     src="https://www.google.com/maps/d/embed?mid=1XOia2gftrOlLKRAYs-Mtca0qugXyahfh&hl=fr&output=embed&iwloc=near"
                     width="500"
                     height="380"
-                  ></iframe>
+                  />
                 </div>
               </div>
             </div>
