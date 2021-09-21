@@ -106,6 +106,16 @@ const Devis = () => {
                 </div>
                 <div class="col">
                   <h1 className="orange big-font-size-xxl rotate">DEMANDE DE DEVIS</h1>
+                  <div className="pt-5">
+                    <h1 className="bold">Vous aussi, valorisez vos biodéchets.</h1>
+                    <p className="light big-font-size-md text-start">
+                      Vous souhaitez produisez une quantité significative de déchets or ganiques et
+                      souhaitez obtenir une évaluation du coût de collecte et de traitement des
+                      Détritivores ?<br />
+                      <br /> N’hésitez pas à renseigner le plus précisément possible ce formulaire
+                      et nous reviendrons vers vous dans les meilleurs délais !{' '}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
