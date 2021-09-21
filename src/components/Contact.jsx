@@ -42,7 +42,10 @@ const Contact = () => {
           </div>
           <div class="col"></div>
           <div class="col">
-            <h2 className="green text-wrap">Rejoignez-nous sur les réseaux sociaux</h2>
+            <h2 className="green text-wrap big-font-size text-stop">
+              Rejoignez-nous sur les
+              <br /> réseaux sociaux
+            </h2>
             <div className="socialmedia">
               <div className="socials">
                 <div className="bg-orange p-ding">

@@ -3,7 +3,6 @@ import '../style/main.scss';
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Icons from '../components/Icons';
 import Fade from 'react-reveal/Fade';
 import FadeIn from 'react-fade-in';
 import { Helmet } from 'react-helmet';
@@ -14,6 +13,7 @@ import Offer from '../components/Offer';
 import Trust from '../components/Trust';
 import Contact from '../components/Contact';
 import Intro from '../components/Intro';
+import { Template } from '../components/Template';
 
 function Test() {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -50,58 +50,51 @@ function Test() {
         <html lang="fr" />
         <meta name="description" content={Text.description} />
       </Helmet>
-      <div id="start">
-        <Icons icon="logo" className="logos" />
-      </div>
-
-      <section className="">
-        <FadeIn>
-          <h1 className="whoarewe pb-6 orange">{Text.titleHero}</h1>
-        </FadeIn>
-        <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-          <Intro />
-        </Fade>
-      </section>
-
-      <section className="">
-        <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-          <Usagers />
-        </Fade>
-      </section>
-      <section className="our-engagements">
-        <FadeIn>
-          <h1 className="whoarewe pb-6 green">{Text.titleDefault}</h1>
-        </FadeIn>
-        <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-          <Engagements />
-        </Fade>
-      </section>
-      <section className="offer">
-        <div className="bg-green offers">
+      <Template>
+        <section className="">
           <FadeIn>
-            <h1 className="size">NOS OFFRES</h1>
+            <h1 className="whoarewe pb-6 orange">{Text.titleHero}</h1>
           </FadeIn>
-        </div>
-        <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-          <Offer />
-        </Fade>
-      </section>
-      <div className="spacing bg-green" />
-      <section className="trust">
-        <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-          <Trust />
-        </Fade>
-      </section>
-      <section className="">
-        <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-          <Contact />
-        </Fade>
-      </section>
-      <footer id="footer" className="fixed-bottom">
-        <div className="d-flex justify-content-end">
-          <Icons icon="logo" className="logo-footer" />
-        </div>
-      </footer>
+          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
+            <Intro />
+          </Fade>
+        </section>
+
+        <section className="">
+          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
+            <Usagers />
+          </Fade>
+        </section>
+        <section className="our-engagements">
+          <FadeIn>
+            <h1 className="whoarewe pb-6 green">{Text.titleDefault}</h1>
+          </FadeIn>
+          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
+            <Engagements />
+          </Fade>
+        </section>
+        <section className="offer">
+          <div className="bg-green offers">
+            <FadeIn>
+              <h1 className="size">NOS OFFRES</h1>
+            </FadeIn>
+          </div>
+          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
+            <Offer />
+          </Fade>
+        </section>
+        <div className="spacing bg-green" />
+        <section className="trust">
+          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
+            <Trust />
+          </Fade>
+        </section>
+        <section className="">
+          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
+            <Contact />
+          </Fade>
+        </section>
+      </Template>
     </>
   );
 }
