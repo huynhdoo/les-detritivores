@@ -64,13 +64,13 @@ export default () => {
                   </p>
                 </div>
                 <div className="row">
-                  <div className="col slider">
+                  <div className="col-sm-8 slider">
                     <img className="slider-imgs rounded" src={pic1} alt="" />
                   </div>
-                  <div className="col slider">
+                  <div className="col-sm-8 slider">
                     <img className="slider-imgs rounded" src={pic1} alt="" />
                   </div>
-                  <div className="col slider">
+                  <div className="col-sm-8 slider">
                     <img className="slider-imgs rounded" src={pic1} alt="" />
                   </div>
                 </div>
