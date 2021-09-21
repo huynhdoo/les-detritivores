@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 
-export default () => {
+const Page404 = () => {
   return (
     <>
       <Helmet>
@@ -35,3 +35,4 @@ export default () => {
     </>
   );
 };
+export default Page404;

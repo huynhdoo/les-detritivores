@@ -5,7 +5,7 @@ import FadeIn from 'react-fade-in';
 import { Link } from 'gatsby';
 import pic1 from '../images/pic1.jpeg';
 import { TemplatePages } from '../components/TemplatePages';
-export default () => {
+const Compost = () => {
   const [Text, setText] = useState('');
   axios
     .get(
@@ -90,3 +90,4 @@ export default () => {
     </>
   );
 };
+export default Compost;

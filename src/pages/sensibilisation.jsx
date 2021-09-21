@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import axios from 'axios';
 import FadeIn from 'react-fade-in';
 import { TemplatePages } from '../components/TemplatePages';
-export default () => {
+const Sensibilisation = () => {
   const [Text, setText] = useState('');
   axios
     .get(
@@ -63,3 +63,4 @@ export default () => {
     </>
   );
 };
+export default Sensibilisation;
