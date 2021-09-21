@@ -30,7 +30,7 @@ function Test() {
   enable
     ? axios
         .get(
-          `https://api.storyblok.com/v2/cdn/stories/preview?version=draft&token=${process.env.TOKEN}&cv=1631095460`
+          `https://api.storyblok.com/v2/cdn/stories/preview?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt&cv=1631095460`
         )
         .then((response) => {
           setText(response.data.story.content);

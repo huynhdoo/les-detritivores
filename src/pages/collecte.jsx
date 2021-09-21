@@ -75,7 +75,7 @@ const Collect = () => {
               <div>
                 <h1 className="big-font-size">Où intervenons-nous ?</h1>
                 <iframe
-                  src="https://www.google.com/maps/d/embed?mid=1XOia2gftrOlLKRAYs-Mtca0qugXyahfh&hl=fr"
+                  src="https://www.google.com/maps/d/embed?mid=1XOia2gftrOlLKRAYs-Mtca0qugXyahfh&hl=fr&output=embed&iwloc=near"
                   width="500"
                   height="380"
                 ></iframe>
