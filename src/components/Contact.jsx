@@ -53,7 +53,9 @@ const Contact = () => {
                 </a>
               </div>
               <div className="socials">
-                <Icons icon="facebook" />{' '}
+                <div className="bg-orange p-ding">
+                  <Icons icon="facebook" />{' '}
+                </div>
                 <a className="text-social m-lef" href="http://">
                   Facebook
                 </a>
