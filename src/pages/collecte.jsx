@@ -37,25 +37,27 @@ const Collect = () => {
                     <div className="card-num">
                       <span className="card-number orange">1</span>
                       <p className="card-number-text">
-                        Contactez-nous afin que nous évaluons les volumes de biodéchets générés par
-                        votre entité et que nous définissions un rythme de collecte.Notre mot
-                        d’ordre : s’adapter à vos besoins !
+                        Contactez-nous afin que nous évaluons les volumes de
+                        <br /> biodéchets générés par votre entité et que nous
+                        <br /> définissions un rythme de collecte.
+                        <br /> Notre mot d’ordre : s’adapter à vos besoins !
                       </p>
                     </div>
                     <div className="card-num">
                       <span className="card-number orange">2</span>
                       <p className="card-number-text">
-                        Les collectes peuvent débuter ! A chaque passage, notre équipe de
-                        Collectivores échangera votre bac plein contre un bac vide désinfecté :
-                        simple et efficace !
+                        Les collectes peuvent débuter ! A chaque passage,
+                        <br /> notre équipe de Collectivores échangera votre bac plein
+                        <br /> contre un bac vide désinfecté : simple et efficace !
                       </p>
                     </div>
                     <div className="card-num">
                       <span className="card-number orange">3</span>
                       <p className="card-number-text">
-                        Une fois collectées, vos biodéchets sont acheminés dans nos locaux pour y
-                        être pesés : étape essentielle à la réalisation d’un reporting propre à
-                        chacun de nos usagers.
+                        Une fois collectées, vos biodéchets sont acheminés
+                        <br /> dans nos locaux pour y être pesés : étape essentielle à<br /> la
+                        réalisation d’un reporting propre à chacun de nos
+                        <br /> usagers.
                       </p>
                     </div>
                   </div>
