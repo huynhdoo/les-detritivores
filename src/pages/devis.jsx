@@ -6,7 +6,7 @@ const Devis = () => {
     <>
       <div id="start">
         <div className="d-flex justify-content-start d-back">
-          <Link className="arrow-color" to="/">
+          <Link className="arrow-color" to="/compost">
             <div className="arrow-position">
               <Icons icon="arrow" />
             </div>
