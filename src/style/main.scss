@@ -159,7 +159,7 @@ a {
 }
 .circle {
   width: 180px;
-  margin: 0 auto;
+  margin: 5% auto;
 }
 .offers {
   transform: rotate(-5deg) scale(1.2) !important;
@@ -237,6 +237,15 @@ a {
 }
 .big-font-size-md {
   font-size: 2rem;
+}
+.big-font-size-xl {
+  font-size: 4rem;
+}
+iframe {
+  border-radius: 2% !important;
+}
+.i4ewOd-pzNkMb-haAclf iframe {
+  display: none;
 }
 .big-font-size-xxl {
   font-size: 9rem;
@@ -321,6 +330,9 @@ a {
 .i4ewOd-pzNkMb-haAclf,
 .QUIbkc {
   display: none !important;
+}
+.space-usages {
+  margin-top: 2rem;
 }
 .yePe5c-haAclf .yePe5c-d75Caf {
   display: none !important;

@@ -19,15 +19,17 @@ const Usagers = () => {
         </div>
         <div className="col ml-mb m-p">
           <FadeIn>
-            <h1 className="orange">Nos Usagers</h1>
+            <h1 className="orange big-font-size-xl">Nos Usagers</h1>
           </FadeIn>
           <div className="rounded-circle bg-orange circle">
             <Icons icon="people" />
           </div>
-          <p className="sf usages-font">LES RESTAURATEURS</p>
-          <p className="sf usages-font">LA RESTAURATION COLLECTIVE</p>
-          <p className="sf usages-font">LES COLLECTIVITES</p>
-          <p className="sf usages-font">LES PARTICULIERS</p>
+          <div className="space-usages">
+            <p className="sf usages-font">LES RESTAURATEURS</p>
+            <p className="sf usages-font">LA RESTAURATION COLLECTIVE</p>
+            <p className="sf usages-font">LES COLLECTIVITES</p>
+            <p className="sf usages-font">LES PARTICULIERS</p>
+          </div>
         </div>
       </div>
     </div>
