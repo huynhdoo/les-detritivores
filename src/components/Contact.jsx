@@ -44,22 +44,28 @@ const Contact = () => {
           <div class="col">
             <h2 className="green text-wrap">Rejoignez-nous sur les réseaux sociaux</h2>
             <div className="socialmedia">
-              <div className="bg-orange p-ding">
-                <Icons icon="linkedin" />
+              <div className="socials">
+                <div className="bg-orange p-ding">
+                  <Icons icon="linkedin" />
+                </div>
+                <a className="text-social m-lef " href="http://">
+                  Linkedin
+                </a>
               </div>
-              <a className="text-social" href="http://">
-                Linkedin
-              </a>
-              <Icons icon="facebook" />{' '}
-              <a className="text-social" href="http://">
-                Facebook
-              </a>
-              <div className="bg-orange p-ding">
-                <Icons icon="instagram" />
+              <div className="socials">
+                <Icons icon="facebook" />{' '}
+                <a className="text-social m-lef" href="http://">
+                  Facebook
+                </a>
               </div>
-              <a className="text-social" href="http://">
-                Instagram
-              </a>
+              <div className="socials">
+                <div className="bg-orange p-ding">
+                  <Icons icon="instagram" />
+                </div>
+                <a className="text-social m-lef" href="http://">
+                  Instagram
+                </a>
+              </div>
             </div>
           </div>
         </div>

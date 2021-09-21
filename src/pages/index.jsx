@@ -100,7 +100,9 @@ function Test() {
         </Fade>
       </section>
       <section className="">
-        <Contact />
+        <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
+          <Contact />
+        </Fade>
       </section>
       <footer id="footer" className="fixed-bottom">
         <div className="d-flex justify-content-end">
