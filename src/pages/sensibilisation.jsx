@@ -29,7 +29,7 @@ export default () => {
               <div class="col align-self-center">
                 <div className="box-test"></div>
               </div>
-              <div class="col">
+              <div class="col c-resp">
                 <h1 className="orange big-font-size-xxl rotate pb-2 text-start">SENSIBILISATION</h1>
                 <div className="sensibilisation">
                   <p className="bold big-font-size-md choice-text">
