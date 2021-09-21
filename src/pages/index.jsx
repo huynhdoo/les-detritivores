@@ -1,16 +1,20 @@
-import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
 import '../style/main.scss';
+
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Icons from '../components/Icons';
 import Fade from 'react-reveal/Fade';
 import FadeIn from 'react-fade-in';
 import { Helmet } from 'react-helmet';
+
 import Usagers from '../components/Usagers';
 import Engagements from '../components/Engagements';
 import Offer from '../components/Offer';
 import Trust from '../components/Trust';
 import Contact from '../components/Contact';
+import Intro from '../components/Intro';
+
 function Test() {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -55,18 +59,7 @@ function Test() {
           <h1 className="whoarewe pb-6 orange">{Text.titleHero}</h1>
         </FadeIn>
         <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-          <div className="d-flex justify-content-center px-3">
-            <p className="textHero text-wrap text-break light">
-              Depuis 2015, notre Société Coopérative d’Intérêt Collectif et entreprise d’insertion,
-              LES DETRITIVORES vous
-              <br /> accompagne dans la gestion de vos restes alimentaires (biodéchets) en vous
-              proposant un service <br />
-              professionnel de <span className="bold">sensibilisation</span>, de{' '}
-              <span className="bold">collecte</span>, de <span className="bold">valorisation</span>{' '}
-              et de <span className="bold">compostage</span> des déchets organiques
-              <br /> générés sur le territoire néo-aquitain.
-            </p>
-          </div>
+          <Intro />
         </Fade>
       </section>
 
