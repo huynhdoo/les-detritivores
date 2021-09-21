@@ -8,8 +8,8 @@ import { TemplatePages } from '../components/TemplatePages';
 const Collect = () => {
   return (
     <>
-      <TemplatePages link="/">
-        <FadeIn>
+      <TemplatePages link="/" isFixed="true">
+        <FadeIn className="if-p">
           <div class="container-fluid p-slide">
             <div class="row">
               <div class="col">
@@ -27,7 +27,7 @@ const Collect = () => {
                   </div>
                 </section>
               </div>
-              <div class="col-xl">
+              <div class="col-xl-6">
                 <div className="">
                   <h1 className="orange big-font-size-xxl rotate">COLLECTE</h1>
                   <p className="bold card-intro">

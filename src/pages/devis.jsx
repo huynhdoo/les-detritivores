@@ -9,7 +9,7 @@ const Devis = () => {
   }
   return (
     <>
-      <TemplatePages link="/compost">
+      <TemplatePages link="/compost" isFixed="true">
         <FadeIn>
           <div class="container-fluid p-slide pb-11">
             <div class="container">

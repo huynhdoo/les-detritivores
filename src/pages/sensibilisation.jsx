@@ -22,7 +22,7 @@ export default () => {
         <html lang="fr" />
         <meta name="description" content={Text.description} />
       </Helmet>
-      <TemplatePages link="/">
+      <TemplatePages link="/" isFixed="true">
         <FadeIn>
           <div class="container-fluid p-slide pb-11">
             <div class="row">
