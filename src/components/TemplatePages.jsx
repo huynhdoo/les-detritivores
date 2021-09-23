@@ -37,11 +37,7 @@ const TemplatePages = ({ children, link, isFixed }) => {
         </div>
       </div>
       {children}
-      <footer
-        id="footer"
-        className={isFixed ? `fixed-bottom` : ``}
-        {...(isDesktop ? `fixed-bottom` : ``)}
-      >
+      <footer id="footer" className={isDesktop ? `fixed-bottom` : ``}>
         <div className="d-flex justify-content-end">
           <Icons icon="logo" className="logo-footer" />
         </div>

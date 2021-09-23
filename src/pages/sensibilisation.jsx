@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import axios from 'axios';
 import FadeIn from 'react-fade-in';
 import { TemplatePages } from '../components/TemplatePages';
+import Icons from '../components/Icons';
 const Sensibilisation = () => {
   const [Text, setText] = useState('');
   axios
@@ -22,7 +23,7 @@ const Sensibilisation = () => {
         <html lang="fr" />
         <meta name="description" content={Text.description} />
       </Helmet>
-      <TemplatePages link="/" isFixed="false">
+      <TemplatePages link="/" isFixed="true">
         <FadeIn>
           <div className="container-fluid p-slide pb-11">
             <div className="row">
@@ -41,6 +42,7 @@ const Sensibilisation = () => {
                     de vos collaborateurs, convives et équipes autour de la notion de <br />
                     biodéchets et de recyclage !
                   </p>
+                  <Icons icon="curved-arrow" />
                 </div>
                 <div className="sens">
                   <p className="light text-assign">
