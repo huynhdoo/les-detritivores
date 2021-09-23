@@ -23,13 +23,6 @@ const Template = ({ children }) => {
       <div id="start">
         <Icons icon="logo" className="logos" />
       </div>
-      <div class="row justify-content-md-center">
-        <div class="col col-lg-2">
-          <div className="bg-green wheelchair">
-            <Icons icon="wheelchair" />
-          </div>
-        </div>
-      </div>
       {children}
       <footer id="footer">
         <div className="d-flex justify-content-end">
