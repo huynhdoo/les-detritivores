@@ -14,7 +14,9 @@ const Contact = () => {
             <div className="col">
               <p className="phone">
                 <h1 className="text-start">Téléphone</h1>:{' '}
-                <span className="phone-text">05 56 67 14 47</span>
+                <a href="tel:0556671447" className="phone-text">
+                  05 56 67 14 47
+                </a>
               </p>
             </div>
             <div className="col">
