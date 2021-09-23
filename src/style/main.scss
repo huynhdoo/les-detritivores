@@ -311,12 +311,13 @@ iframe {
 }
 .slider {
   width: 300px;
+  padding: 0.5rem;
 }
 .slider-imgs {
   width: 290px;
   height: 184px;
 }
-.grids {
+.fleex {
   display: inline-grid;
 }
 .spacings {
@@ -440,7 +441,7 @@ iframe {
   margin-right: 2.5rem;
 }
 .compost-btns {
-  margin-top: 13rem;
+  margin-top: 4rem;
 }
 .big-font-size-sm {
   font-size: 2rem;
@@ -515,6 +516,11 @@ iframe {
   .t-res {
     text-align: start;
   }
+  .fleex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .text-stop {
     text-align: start !important;
   }
@@ -571,14 +577,27 @@ iframe {
   }
   .buttons {
     padding-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-bottom: 2rem;
     color: #fff;
     border-radius: 50px;
     border: none;
-    width: 25rem;
-
-    margin-left: 10%;
+    width: 19rem;
+    margin-left: 0;
+    height: 6rem;
+  }
+  .buttons-b {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    width: 45rem;
+  }
+  .sp {
+    margin-top: 3rem;
+    padding: 0.2rem;
   }
   .whoarewe {
     font-size: 5rem;

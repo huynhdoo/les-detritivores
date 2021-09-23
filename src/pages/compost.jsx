@@ -58,14 +58,16 @@ const Compost = () => {
                       fleurs c’est également participer à la végétalisation de notre territoire.
                     </p>
                   </div>
+                </div>
+                <div className="container-fluid">
                   <div className="row">
-                    <div className="col-sm-8 slider">
+                    <div className="col slider">
                       <img className="slider-imgs rounded" src={pic1} alt="" />
                     </div>
-                    <div className="col-sm-8 slider">
+                    <div className="col slider">
                       <img className="slider-imgs rounded" src={pic1} alt="" />
                     </div>
-                    <div className="col-sm-8 slider">
+                    <div className="col slider">
                       <img className="slider-imgs rounded" src={pic1} alt="" />
                     </div>
                   </div>
@@ -76,7 +78,7 @@ const Compost = () => {
                   <h1 className="orange bold font-size-md">
                     Vous souhaitez acheter du compost auprès de <br /> la SCIC SA LES DETRITIVORES ?
                   </h1>
-                  <div className="grids">
+                  <div className="fleex">
                     <Link className="bg-green buttons" to="/devis">
                       COMMANDEZ-LE ICI
                     </Link>
