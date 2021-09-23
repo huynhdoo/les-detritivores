@@ -1,7 +1,7 @@
 import React from 'react';
 const Intro = () => {
   return (
-    <div className="d-flex justify-content-center px-3">
+    <div className="d-flex justify-content-center px-3 p-spaces">
       <p className="textHero text-wrap text-break light">
         Depuis 2015, notre Société Coopérative d’Intérêt Collectif et entreprise d’insertion, LES
         DETRITIVORES vous

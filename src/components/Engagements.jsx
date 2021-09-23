@@ -2,7 +2,7 @@ import React from 'react';
 import Icons from './Icons';
 const Engagements = () => {
   return (
-    <div className="container">
+    <div className="container p-spaces">
       <div className="row">
         <div className="col">
           <h1 className="orange">ENVIRONNEMENTAUX</h1>

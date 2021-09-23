@@ -192,14 +192,15 @@ a {
   display: inline-flex;
 }
 .linesmall {
-  height: 3px;
-  border-radius: 2px;
-  width: 100px;
+  height: 0.8rem;
+  border-bottom-right-radius: 2rem;
+  width: 15rem;
   -webkit-transform: rotate(-5deg);
   transform: rotate(-5deg);
   margin: 0 auto;
   position: absolute;
-  margin-left: 22rem;
+  margin-left: 24rem;
+  margin-top: -3rem;
 }
 .absolute {
   position: absolute;
@@ -387,6 +388,9 @@ iframe {
 .sens {
   margin: 7rem;
 }
+.bg-black {
+  background-color: #000;
+}
 .text-assign {
   font-size: 2rem;
   text-align: justify;
@@ -406,6 +410,57 @@ iframe {
 }
 .if-p {
   padding: 1rem;
+}
+.card-span {
+  border-bottom: 4px solid #e94e1a;
+  height: 0%;
+  transform: rotate(-5deg);
+}
+.p-spaces {
+  margin-top: 5rem;
+}
+.ms-negative {
+  margin-left: 4rem;
+}
+.line-sm {
+  height: 0.4rem;
+  border-bottom-right-radius: 2rem;
+  width: 10rem;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  margin: 0 auto;
+  position: absolute;
+  /* margin-right: 27rem; */
+  margin-top: 3rem;
+  margin-left: -4rem;
+}
+.only-text {
+  text-align: left !important;
+  padding-bottom: 2rem !important;
+}
+.linesmall-2 {
+  height: 0.8rem;
+  border-bottom-right-radius: 2rem;
+  width: 15rem;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  margin: 0 auto;
+  position: absolute;
+  margin-right: 4rem;
+  margin-left: -5rem;
+  /* margin-top: -3rem; */
+  margin-top: 9rem;
+}
+.linesmall-sm {
+  height: 3px;
+  border-radius: 2px;
+  width: 100px;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  margin: 0 auto;
+  position: absolute;
+  margin-left: 21rem;
+  margin-top: 5rem;
 }
 @media (max-width: 75rem) {
   #start {
@@ -428,12 +483,36 @@ iframe {
   .text-stop {
     text-align: start !important;
   }
+  .linesmall-2 {
+    height: 0.5rem;
+    border-bottom-right-radius: 2rem;
+    width: 11rem;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    margin: 0 auto;
+    position: absolute;
+    margin-right: 4rem;
+    margin-left: -6rem;
+    /* margin-top: -3rem; */
+    margin-top: 6rem;
+  }
   .box-test {
     width: 430px;
     height: 385px;
     background-color: #263b29;
     border-radius: 2rem;
     margin: 0 auto;
+  }
+  .linesmall {
+    height: 3px;
+    border-radius: 2px;
+    width: 100px;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    margin: 0 auto;
+    position: absolute;
+    margin-left: 13rem;
+    margin-top: -1rem;
   }
   .buttons {
     padding-top: 2rem;
@@ -473,7 +552,7 @@ iframe {
     transform: rotate(-5deg);
     margin: 0 auto;
     position: absolute;
-    margin-left: 30rem;
+    margin-left: 12rem;
   }
   #footer {
     background-color: $primary-color;

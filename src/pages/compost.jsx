@@ -30,7 +30,11 @@ const Compost = () => {
             <div className="row">
               <div className="col">
                 <div className="ml-2">
-                  <h1 className="orange big-font-size-xxl rotate pb-2 text-start">COMPOST</h1>
+                  <h1 className="orange big-font-size-xxl rotate pb-2 text-start">
+                    COMPOST
+                    <span className="linesmall-2 bg-black" />
+                  </h1>
+
                   <div>
                     <p className="bold text-start big-font-size-md pb-2 mb-3">
                       Mais que deviennent les restes alimentaires <br /> collectés auprès de nos

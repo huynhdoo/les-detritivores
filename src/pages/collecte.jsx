@@ -29,13 +29,16 @@ const Collect = () => {
               </div>
               <div className="col-xl-6">
                 <div className="">
-                  <h1 className="orange big-font-size-xxl rotate">COLLECTE</h1>
+                  <h1 className="orange big-font-size-xxl rotate only-text">
+                    COLLECTE
+                    <span className="linesmall-2 bg-black" />
+                  </h1>
                   <p className="bold card-intro">
                     Ensemble, organisons la collecte et le recyclage de vos biodéchets !
                   </p>
                   <div className="step-card">
                     <div className="card-num">
-                      <span className="card-number orange">1</span>
+                      <span className="card-number orange card-span">1</span>
                       <p className="card-number-text">
                         Contactez-nous afin que nous évaluons les volumes de
                         <br /> biodéchets générés par votre entité et que nous
@@ -44,7 +47,7 @@ const Collect = () => {
                       </p>
                     </div>
                     <div className="card-num">
-                      <span className="card-number orange">2</span>
+                      <span className="card-number orange card-span">2</span>
                       <p className="card-number-text">
                         Les collectes peuvent débuter ! A chaque passage,
                         <br /> notre équipe de Collectivores échangera votre bac plein
@@ -52,7 +55,7 @@ const Collect = () => {
                       </p>
                     </div>
                     <div className="card-num">
-                      <span className="card-number orange">3</span>
+                      <span className="card-number orange card-span">3</span>
                       <p className="card-number-text">
                         Une fois collectées, vos biodéchets sont acheminés
                         <br /> dans nos locaux pour y être pesés : étape essentielle à<br /> la

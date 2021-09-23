@@ -1,26 +1,28 @@
 import { Link } from 'gatsby';
-import React, { useState, useEffect, useLayoutEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Icons from './Icons';
 
 const Offer = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [size, setSize] = useState([0, 0]);
-  useLayoutEffect(() => {
-    function updateSize() {
-      setSize([window.innerWidth, window.innerHeight]);
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+      setIsMobile(true);
+      setIsDesktop(false);
+    } else {
+      setIsMobile(false);
+      setIsDesktop(true);
     }
-    window.addEventListener('resize', updateSize);
-    updateSize();
-    return () => window.removeEventListener('resize', updateSize);
-  }, []);
+  };
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
       setIsMobile(false);
+      window.addEventListener('resize', handleResize);
     } else {
       setIsMobile(true);
       setIsDesktop(false);
+      window.addEventListener('resize', handleResize);
     }
   }, []);
   return (
@@ -33,7 +35,7 @@ const Offer = () => {
                 <div className="bg-green c-boxs">
                   <Icons icon="camion" />
                 </div>
-                <h1 className="orange d-flex justify-content-center px-12 d-low offers-text ">
+                <h1 className="orange d-flex justify-content-center px-12 d-low offers-text">
                   COLLECTE
                 </h1>
                 <p className="d-low-2">

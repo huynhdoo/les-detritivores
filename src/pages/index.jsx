@@ -54,7 +54,7 @@ function Home() {
       <Template>
         <section className="">
           <FadeIn>
-            <Title className="whoarewe pb-6 orange" title={Text.titleHero} />
+            <Title className="whoarewe orange" title={Text.titleHero} color="orange" />
           </FadeIn>
           <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
             <Intro />
@@ -68,7 +68,7 @@ function Home() {
         </section>
         <section className="our-engagements">
           <FadeIn>
-            <Title className="whoarewe pb-6 green" title={Text.titleDefault} />
+            <Title className="whoarewe green" title={Text.titleDefault} color="green" />
           </FadeIn>
           <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
             <Engagements />

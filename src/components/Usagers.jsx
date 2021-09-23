@@ -25,10 +25,19 @@ const Usagers = () => {
             <Icons icon="people" />
           </div>
           <div className="space-usages">
-            <p className="sf usages-font">LES RESTAURATEURS</p>
-            <p className="sf usages-font">LA RESTAURATION COLLECTIVE</p>
-            <p className="sf usages-font">LES COLLECTIVITES</p>
-            <p className="sf usages-font">LES PARTICULIERS</p>
+            <p className="sf usages-font">
+              LES RESTAURATEURS <span className="line-sm bg-orange" />
+            </p>
+            <p className="sf usages-font">
+              LA RESTAURATION COLLECTIVE
+              <span className="line-sm bg-orange" />
+            </p>
+            <p className="sf usages-font">
+              LES COLLECTIVITES <span className="line-sm bg-orange" />
+            </p>
+            <p className="sf usages-font">
+              LES PARTICULIERS <span className="line-sm bg-orange" />
+            </p>
           </div>
         </div>
       </div>
