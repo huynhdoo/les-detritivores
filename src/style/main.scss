@@ -475,6 +475,20 @@ iframe {
   text-align: left !important;
   padding-bottom: 2rem !important;
 }
+.big-font-size-pm {
+  font-size: 7rem;
+}
+.line-custom {
+  height: 0.8rem;
+  border-bottom-right-radius: 2rem;
+  width: 15rem;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  margin: 0 auto;
+  position: absolute;
+  margin-left: -11rem;
+  margin-top: 8rem;
+}
 .linesmall-2 {
   height: 0.8rem;
   border-bottom-right-radius: 2rem;

@@ -123,7 +123,10 @@ const Devis = () => {
                   </form>
                 </div>
                 <div class="col">
-                  <h1 className="orange big-font-size-xxl rotate">DEMANDE DE DEVIS</h1>
+                  <h1 className="orange big-font-size-pm rotate">
+                    DEMANDE DE DEVIS
+                    <span className="bg-dark line-custom" />
+                  </h1>
                   <div className="pt-5">
                     <h1 className="bold">Vous aussi, valorisez vos biodéchets.</h1>
                     <p className="light big-font-size-md text-start">
