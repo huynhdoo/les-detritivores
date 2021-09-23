@@ -42,7 +42,7 @@ const Contact = () => {
               <br /> 33100 Bordeaux
             </span>
           </div>
-          <div className="col"></div>
+          <div className="col disable"></div>
           <div className="col">
             <h2 className="green text-wrap big-font-size text-stop">
               Rejoignez-nous sur les
