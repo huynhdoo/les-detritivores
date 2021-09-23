@@ -29,10 +29,7 @@ const Contact = () => {
         </div>
         <div className="row">
           <div className="col">
-            <h2 className="green text-wrap size text-b t-res">
-              NOS BUREAUX
-              <span className="linesmall-sm bg-orange" />
-            </h2>
+            <h2 className="green text-wrap size text-b t-res">NOS BUREAUX</h2>
             <span className="smalltext big-font text-b text-start">
               65 Quai de Brazza,
               <br /> 33100 Bordeaux
