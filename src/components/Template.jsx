@@ -1,22 +1,13 @@
 import Icons from './Icons';
-import React, { useEffect } from 'react';
+import React from 'react';
 import useSound from 'use-sound';
-import sound from '../sounds/sound.mp3';
-
-export default function useKeypress(key, action) {
-  useEffect(() => {
-    function onKeyup(e) {
-      if (e.key === key) action();
-    }
-    window.addEventListener('keyup', onKeyup);
-    return () => window.removeEventListener('keyup', onKeyup);
-  }, []);
-}
+import useKeypress from 'react-use-keypress';
+import playing from '../sounds/sound.mp3';
 
 const Template = ({ children }) => {
-  const [play] = useSound(sound);
+  const [play] = useSound(playing);
 
-  useKeypress('s', () => {
+  useKeypress(['s', 'altGraphKey'], () => {
     play();
   });
   return (
