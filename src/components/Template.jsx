@@ -1,7 +1,7 @@
 import Icons from './Icons';
 import React, { useEffect } from 'react';
 import useSound from 'use-sound';
-import links from '../sounds/sound.mp3';
+import sound from '../sounds/sound.mp3';
 
 export default function useKeypress(key, action) {
   useEffect(() => {
@@ -12,8 +12,9 @@ export default function useKeypress(key, action) {
     return () => window.removeEventListener('keyup', onKeyup);
   }, []);
 }
+
 const Template = ({ children }) => {
-  const [play] = useSound(links);
+  const [play] = useSound(sound);
 
   useKeypress('s', () => {
     play();
