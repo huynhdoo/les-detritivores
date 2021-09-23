@@ -13,7 +13,19 @@ const Template = ({ children }) => {
   return (
     <>
       <div id="start">
-        <Icons icon="logo" className="logos" />
+        <div class="justify-content-md-end">
+          <div className="row">
+            <div class="col">
+              <div onClick={() => play()} className="wheelchair">
+                <Icons icon="wheelchair" />
+              </div>
+            </div>
+            <div className="col">
+              <Icons icon="logo" className="logos" />
+            </div>
+            <div className="col"></div>
+          </div>
+        </div>
       </div>
       {children}
       <footer id="footer">
