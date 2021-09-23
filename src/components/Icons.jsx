@@ -487,6 +487,8 @@ const Icons = ({ icon, className }) => {
           fill="#fff"
           stroke="#fff"
           viewBox="0 0 200 200"
+          width="120px"
+          height="150px"
         >
           <g id="Layer_1" data-name="Layer 1">
             <path

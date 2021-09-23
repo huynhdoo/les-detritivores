@@ -191,6 +191,9 @@ a {
 .text-social {
   display: inline-flex;
 }
+.rounded-custom {
+  border-radius: 1.25rem !important;
+}
 .linesmall {
   height: 0.8rem;
   border-bottom-right-radius: 2rem;
@@ -223,7 +226,6 @@ a {
 }
 .boom {
   width: 150px;
-  opacity: 0.5;
   z-index: 2;
   margin: 0 auto;
 }

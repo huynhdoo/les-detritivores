@@ -14,7 +14,7 @@ const Usagers = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title=""
-            className="d-flex justify-content-start rounded"
+            className="d-flex justify-content-start rounded-custom"
           />
         </div>
         <div className="col ml-mb m-p">
