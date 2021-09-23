@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import FadeIn from 'react-fade-in';
-import { useForm, ValidationError } from '@formspree/react';
+import { ValidationError } from '@formspree/react';
 import { TemplatePages } from '../components/TemplatePages';
+import emailjs from 'emailjs-com';
+
 const Devis = () => {
-  const [state, handleSubmit] = useForm('mpzkbozg');
-  if (state.succeeded) {
-    return <p>Thanks !</p>;
-  }
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_rokwexl', 'template_ouppyny', form.current, 'user_oJffpgzTLzwypyik9qTyZ')
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <TemplatePages link="/compost" isFixed="true">
@@ -15,34 +29,39 @@ const Devis = () => {
             <div class="container">
               <div class="row">
                 <div class="col">
-                  <form onSubmit={handleSubmit}>
+                  <form ref={form} onSubmit={sendEmail}>
                     <div>
                       <div className="d-flex">
                         <div class="col-md-6">
                           <div className="row row-cols-auto">
                             <div class="form-group">
-                              <label class="label text-start" for="name">
+                              <label class="label text-start" for="who">
                                 Vous êtes:*
                               </label>
-                              <input type="text" class="form-control" name="name" id="name" />
+                              <input type="text" class="form-control" name="who" id="who" />
                             </div>
                             <div class="form-group">
-                              <label class="label" for="name">
+                              <label class="label" for="servis">
                                 Nombre de repas servis par
                               </label>
-                              <input type="text" class="form-control" name="name" id="name" />
+                              <input type="text" class="form-control" name="servis" id="servis" />
                             </div>
                             <div class="form-group">
-                              <label class="label" for="name">
+                              <label class="label" for="struct">
                                 Structure:*
                               </label>
-                              <input type="text" class="form-control" name="name" id="name" />
+                              <input type="text" class="form-control" name="struct" id="struct" />
                             </div>
                             <div class="form-group">
-                              <label class="label" for="name">
+                              <label class="label" for="fonction">
                                 Fonction:*
                               </label>
-                              <input type="text" class="form-control" name="name" id="name" />
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="fonction"
+                                id="fonction"
+                              />
                             </div>
                             <div class="form-group">
                               <label class="label" for="name">
@@ -51,22 +70,27 @@ const Devis = () => {
                               <input type="text" class="form-control" name="name" id="name" />
                             </div>
                             <div class="form-group">
-                              <label class="label" for="name">
+                              <label class="label" for="username">
                                 Prénom:*
                               </label>
-                              <input type="text" class="form-control" name="name" id="name" />
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="username"
+                                id="username"
+                              />
                             </div>
                             <div class="form-group">
-                              <label class="label" for="name">
+                              <label class="label" for="email">
                                 Email:*
                               </label>
-                              <input type="text" class="form-control" name="name" id="name" />
+                              <input type="text" class="form-control" name="email" id="email" />
                             </div>
                             <div class="form-group">
-                              <label class="label" for="name">
+                              <label class="label" for="phone">
                                 Téléphone:*
                               </label>
-                              <input type="text" class="form-control" name="name" id="name" />
+                              <input type="text" class="form-control" name="phone" id="phone" />
                             </div>
                             <div class="col-md-10">
                               <div class="form-group">
@@ -82,11 +106,6 @@ const Devis = () => {
                                 ></textarea>
                               </div>
                             </div>
-                            <ValidationError
-                              prefix="Message"
-                              field="message"
-                              errors={state.errors}
-                            />
                             <br />
                             <div class="col-md-10 p-2">
                               <div class="form-group">
