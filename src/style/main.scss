@@ -57,6 +57,17 @@
 .p-slide {
   margin: 0;
 }
+.linesmall-c {
+  height: 0.8rem;
+  border-bottom-right-radius: 2rem;
+  width: 15rem;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  margin: 0 auto;
+  position: absolute;
+  margin-left: -9rem;
+  margin-top: 9rem;
+}
 body {
   overflow-x: hidden;
 }
@@ -514,6 +525,20 @@ iframe {
   }
   .disable {
     display: none;
+  }
+  .linesmall-c {
+    height: 0.5rem;
+    border-bottom-right-radius: 2rem;
+    width: 12rem;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    margin: 0 auto;
+    position: absolute;
+    margin-left: -9rem;
+    margin-top: 5.5rem;
+  }
+  .c-resp {
+    margin-top: 2rem;
   }
   .ms-negative {
     margin-left: 6rem !important;

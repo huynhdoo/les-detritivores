@@ -22,7 +22,7 @@ const Sensibilisation = () => {
         <html lang="fr" />
         <meta name="description" content={Text.description} />
       </Helmet>
-      <TemplatePages link="/" isFixed="true">
+      <TemplatePages link="/" isFixed="false">
         <FadeIn>
           <div className="container-fluid p-slide pb-11">
             <div className="row">
@@ -30,7 +30,10 @@ const Sensibilisation = () => {
                 <div className="box-test"></div>
               </div>
               <div className="col c-resp">
-                <h1 className="orange big-font-size-xxl rotate pb-2 text-start">SENSIBILISATION</h1>
+                <h1 className="orange big-font-size-xxl rotate pb-2 text-start">
+                  SENSIBILISATION
+                  <span className="linesmall-c bg-black" />
+                </h1>
                 <div className="sensibilisation">
                   <p className="bold big-font-size-md choice-text">
                     Choisissez nos actions de sensibilisation pour mobiliser l’ensemble
