@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import FadeIn from 'react-fade-in';
-import { ValidationError } from '@formspree/react';
 import { TemplatePages } from '../components/TemplatePages';
 import emailjs from 'emailjs-com';
 
@@ -11,7 +10,7 @@ const Devis = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_rokwexl', 'template_ouppyny', form.current, 'user_oJffpgzTLzwypyik9qTyZ')
+      .sendForm('service_x3956pw', 'template_ouppyny', form.current, 'user_oJffpgzTLzwypyik9qTyZ')
       .then(
         (result) => {
           console.log(result.text);
