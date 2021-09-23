@@ -5,7 +5,7 @@ const Engagements = () => {
     <div className="container p-spaces">
       <div className="row">
         <div className="col">
-          <h1 className="orange">ENVIRONNEMENTAUX</h1>
+          <h1 className="orange m-text">ENVIRONNEMENTAUX</h1>
           <div className="bg-orange rounded-circle boom">
             <Icons icon="ptt5" />
           </div>
@@ -17,7 +17,7 @@ const Engagements = () => {
           <img src="" />
         </div>
         <div className="col">
-          <h1 className="orange">SOCIAUX</h1>
+          <h1 className="orange m-text">SOCIAUX</h1>
           <div className="bg-orange rounded-circle boom">
             <Icons icon="ptt13" />
           </div>
@@ -34,7 +34,7 @@ const Engagements = () => {
           </p>
         </div>
         <div className="col">
-          <h1 className="orange">COOPÉRATIFS</h1>
+          <h1 className="orange m-text">COOPÉRATIFS</h1>
           <div className="bg-orange rounded-circle boom">
             <Icons icon="ptt3" />
           </div>

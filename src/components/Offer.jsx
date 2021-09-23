@@ -101,7 +101,7 @@ const Offer = () => {
           <div className="container b-res">
             <div className="row">
               <div className="col">
-                <h1 className="orange">COLLECTE</h1>
+                <h1 className="orange m-text">COLLECTE</h1>
                 <div className="bg-green rounded-circle boom-offer">
                   <Icons icon="camion" />
                 </div>
@@ -118,7 +118,7 @@ const Offer = () => {
                 <img src="" />
               </div>
               <div className="col">
-                <h1 className="orange">SENSIBILISATION</h1>
+                <h1 className="orange m-text">SENSIBILISATION</h1>
                 <div className="bg-green rounded-circle boom-offer">
                   <Icons icon="happystar" />
                 </div>
@@ -133,7 +133,7 @@ const Offer = () => {
                 </p>
               </div>
               <div className="col">
-                <h1 className="orange">COMPOST</h1>
+                <h1 className="orange m-text">COMPOST</h1>
                 <div className="bg-green rounded-circle boom-offer">
                   <Icons icon="flowers" />
                 </div>
