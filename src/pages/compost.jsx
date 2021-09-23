@@ -26,9 +26,9 @@ const Compost = () => {
       </Helmet>
       <TemplatePages link="/" isFixed="true">
         <FadeIn>
-          <div class="container-fluid p-slide">
-            <div class="row">
-              <div class="col">
+          <div className="container-fluid p-slide">
+            <div className="row">
+              <div className="col">
                 <div className="ml-2">
                   <h1 className="orange big-font-size-xxl rotate pb-2 text-start">COMPOST</h1>
                   <div>
@@ -67,7 +67,7 @@ const Compost = () => {
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div className="col">
                 <div className="compost-btns">
                   <h1 className="orange bold font-size-md">
                     Vous souhaitez acheter du compost auprès de <br /> la SCIC SA LES DETRITIVORES ?

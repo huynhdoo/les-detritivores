@@ -24,12 +24,12 @@ const Sensibilisation = () => {
       </Helmet>
       <TemplatePages link="/" isFixed="true">
         <FadeIn>
-          <div class="container-fluid p-slide pb-11">
-            <div class="row">
-              <div class="col align-self-center">
+          <div className="container-fluid p-slide pb-11">
+            <div className="row">
+              <div className="col align-self-center">
                 <div className="box-test"></div>
               </div>
-              <div class="col c-resp">
+              <div className="col c-resp">
                 <h1 className="orange big-font-size-xxl rotate pb-2 text-start">SENSIBILISATION</h1>
                 <div className="sensibilisation">
                   <p className="bold big-font-size-md choice-text">

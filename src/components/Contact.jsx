@@ -7,16 +7,16 @@ const Contact = () => {
       <FadeIn>
         <h1 className="contacts pb-6 orange">Contact</h1>
       </FadeIn>
-      <div class="container">
-        <div class="row">
+      <div className="container">
+        <div className="row">
           <div className="contact">
-            <div class="col">
+            <div className="col">
               <p className="phone">
                 <h1 className="text-start">Téléphone</h1>:{' '}
                 <span className="phone-text">05 56 67 14 47</span>
               </p>
             </div>
-            <div class="col">
+            <div className="col">
               <p className="mail text-stop">
                 <h1 className="mail-title"> Mail</h1>:{' '}
                 <a className="number big-font-size-sm" href="mailto:bonjour@les-detritivores.co">
@@ -26,8 +26,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
+        <div className="row">
+          <div className="col">
             <h2 className="green text-wrap size text-b t-res">NOS BUREAUX</h2>
             <span className="smalltext big-font text-b text-start">
               65 Quai de Brazza,
@@ -41,8 +41,8 @@ const Contact = () => {
               <br /> 33100 Bordeaux
             </span>
           </div>
-          <div class="col"></div>
-          <div class="col">
+          <div className="col"></div>
+          <div className="col">
             <h2 className="green text-wrap big-font-size text-stop">
               Rejoignez-nous sur les
               <br /> réseaux sociaux

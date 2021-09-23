@@ -10,9 +10,9 @@ const Collect = () => {
     <>
       <TemplatePages link="/" isFixed="true">
         <FadeIn className="if-p">
-          <div class="container-fluid p-slide">
-            <div class="row">
-              <div class="col">
+          <div className="container-fluid p-slide">
+            <div className="row">
+              <div className="col">
                 <section className="justify-content-start">
                   <div className="d-table p-responsive">
                     <div className="card-image">
@@ -27,7 +27,7 @@ const Collect = () => {
                   </div>
                 </section>
               </div>
-              <div class="col-xl-6">
+              <div className="col-xl-6">
                 <div className="">
                   <h1 className="orange big-font-size-xxl rotate">COLLECTE</h1>
                   <p className="bold card-intro">
@@ -63,7 +63,7 @@ const Collect = () => {
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div className="col">
                 <div>
                   <h1 className="big-font-size">Où intervenons-nous ?</h1>
                   <iframe
