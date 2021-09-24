@@ -7,7 +7,7 @@ const Offer = () => {
   const [isMobile, setIsMobile] = useState(false);
   const handleResize = () => {
     // You save my day. https://stackoverflow.com/questions/44480053/how-to-detect-if-screen-size-has-changed-to-mobile-in-react
-    if (window.innerWidth >= 425) {
+    if (window.innerWidth < 1000) {
       setIsMobile(true);
       setIsDesktop(false);
     } else {
