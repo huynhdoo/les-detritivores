@@ -589,8 +589,8 @@ iframe {
     margin-top: 2rem;
   }
   .ms-negative {
-    margin-left: 6rem !important;
-    margin-top: -4rem !important;
+    margin-left: 1rem !important;
+    margin-top: -3rem !important;
   }
   .box-test {
     width: 430px;
@@ -635,7 +635,7 @@ iframe {
     padding: 0.2rem;
   }
   .whoarewe {
-    font-size: 5rem;
+    font-size: 3.5rem;
     transform: rotate(-5deg);
     font-weight: 700;
   }
@@ -664,6 +664,9 @@ iframe {
     margin: 0 auto;
     border-radius: 5px !important;
   }
+  .maps {
+    width: 300px;
+  }
   .linesmall {
     height: 3px;
     border-radius: 2px;
@@ -672,7 +675,11 @@ iframe {
     transform: rotate(-5deg);
     margin: 0 auto;
     position: absolute;
-    margin-left: 12rem;
+    margin-left: 7rem;
+  }
+  .contacts {
+    font-size: 5rem;
+    font-weight: 700;
   }
   #footer {
     background-color: $primary-color;
