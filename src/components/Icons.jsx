@@ -733,6 +733,7 @@ const Icons = ({ icon, className }) => {
           </g>
         </svg>
       );
+    default:
   }
   return icon;
 };

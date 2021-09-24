@@ -13,7 +13,7 @@ const Usagers = () => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            title=""
+            title="YouTube"
             className="d-flex justify-content-start rounded-custom"
           />
         </div>

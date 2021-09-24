@@ -14,7 +14,7 @@ const Engagements = () => {
             ressources naturelles, nous luttons contre le gaspillage alimentaire et contribuons à la
             diminution des émissions de CO2.
           </p>
-          <img src="" />
+          <img src="" alt="" />
         </div>
         <div className="col">
           <h1 className="orange m-text">SOCIAUX</h1>
