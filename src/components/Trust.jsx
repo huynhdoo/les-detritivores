@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Icons from './Icons';
+
 const Trust = () => {
   const images = ['logo', 'logo', 'logo', 'logo', 'logo', 'logo'];
   const delay = 2500;
@@ -24,6 +25,7 @@ const Trust = () => {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index]);
+
   return (
     <>
       <h1 className="orange size">ILS NOUS FONT CONFIANCE</h1>
