@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet';
 import axios from 'axios';
 import FadeIn from 'react-fade-in';
 import { Link } from 'gatsby';
-import pic1 from '../images/pic1.jpeg';
 import { TemplatePages } from '../components/TemplatePages';
 const Compost = () => {
   const [Text, setText] = useState('');
@@ -62,13 +61,13 @@ const Compost = () => {
                 <div className="container-fluid">
                   <div className="row">
                     <div className="col slider">
-                      <img className="slider-imgs rounded" src={pic1} alt="" />
+                      <img className="slider-imgs rounded" src="../images/pic1.jpeg" alt="" />
                     </div>
                     <div className="col slider">
-                      <img className="slider-imgs rounded" src={pic1} alt="" />
+                      <img className="slider-imgs rounded" src="../images/pic1.jpeg" alt="" />
                     </div>
                     <div className="col slider">
-                      <img className="slider-imgs rounded" src={pic1} alt="" />
+                      <img className="slider-imgs rounded" src="../images/pic1.jpeg" alt="" />
                     </div>
                   </div>
                 </div>

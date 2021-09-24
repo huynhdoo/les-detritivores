@@ -13,7 +13,7 @@ const Contact = () => {
           <div className="contact">
             <div className="col">
               <p className="phone">
-                <h1 className="text-start">Téléphone</h1>:{' '}
+                <h1 className="text-start sizes-p">Téléphone</h1>:{' '}
                 <a href="tel:0556671447" className="phone-text">
                   05 56 67 14 47
                 </a>
@@ -21,7 +21,7 @@ const Contact = () => {
             </div>
             <div className="col">
               <p className="mail text-stop">
-                <h1 className="mail-title"> Mail</h1>:{' '}
+                <h1 className="mail-title sizes-p"> Mail</h1>:{' '}
                 <a className="number big-font-size-sm" href="mailto:bonjour@les-detritivores.co">
                   bonjour@les-detritivores.co
                 </a>

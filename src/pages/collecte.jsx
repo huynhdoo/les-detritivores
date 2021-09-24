@@ -1,7 +1,4 @@
 import React from 'react';
-import image1 from '../images/image1.jpeg';
-import image2 from '../images/image2.jpeg';
-import image3 from '../images/image4.jpeg';
 import FadeIn from 'react-fade-in';
 import { TemplatePages } from '../components/TemplatePages';
 
@@ -16,13 +13,13 @@ const Collect = () => {
                 <section className="justify-content-start">
                   <div className="d-table p-responsive">
                     <div className="card-image">
-                      <img className="cards rounded" src={image1} alt="" srcset="" />
+                      <img className="cards rounded" src="../images/image1.jpeg" alt="" srcset="" />
                     </div>
                     <div className="card-image">
-                      <img className="cards rounded" src={image2} alt="" srcset="" />
+                      <img className="cards rounded" src="../images/image2.jpeg" alt="" srcset="" />
                     </div>
                     <div className="card-image">
-                      <img className="cards rounded" src={image3} alt="" srcset="" />
+                      <img className="cards rounded" src="../images/image3.jpeg" alt="" srcset="" />
                     </div>
                   </div>
                 </section>
