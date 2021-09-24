@@ -29,7 +29,7 @@ const Trust = () => {
   return (
     <>
       <h1 className="orange size">ILS NOUS FONT CONFIANCE</h1>
-      <div className="pb-6 d-flex justify-content-center">
+      <div className="pb-6 d-flex justify-content-center p-cst">
         <div className="trusting bg-green">
           <div
             className="partener slideshowSlider"
