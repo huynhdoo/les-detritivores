@@ -1660,7 +1660,7 @@ var plugins = [{
     "background_color": "#fff",
     "theme_color": "#02aab0",
     "display": "standalone",
-    "icon": "src/images/favicon.png",
+    "icon": "C:\\Users\\AmineOUHANI\\Documents\\Projets\\les-detritivores/images/favicon.png",
     "legacy": true,
     "theme_color_in_head": true,
     "cache_busting_mode": "query",
