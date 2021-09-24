@@ -78,6 +78,7 @@
 }
 body {
   overflow-x: hidden;
+  user-select: none;
 }
 .usage {
   display: grid;
