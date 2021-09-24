@@ -22,6 +22,7 @@ const Trust = () => {
     return () => {
       resetTimeout();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index]);
   return (
     <>
