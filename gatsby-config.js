@@ -28,7 +28,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#02aab0`,
         display: `standalone`,
-        icon: 'src/images/favicon.png',
+        icon: 'public/images/favicon.png',
       },
     },
     {
@@ -36,7 +36,7 @@ module.exports = {
       options: {
         accessToken: '4Sl5OG2kesCX0K97UTd0Wwtt',
         version: 'draft',
-      }
+      },
     },
   ],
 };
