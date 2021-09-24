@@ -20,6 +20,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;900&display=swap');
 @import url('http://fonts.cdnfonts.com/css/sf-ui-display');
+:root {
+  /* scroll-behavior: smooth; */
+  scroll-behavior: unset !important;
+}
 .logos {
   height: 100px;
   margin-top: 2rem;

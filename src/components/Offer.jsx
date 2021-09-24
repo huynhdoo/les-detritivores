@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Icons from './Icons';
 import { BrowserView, MobileView } from 'react-device-detect';
 
