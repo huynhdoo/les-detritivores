@@ -31,7 +31,7 @@ const Sensibilisation = () => {
                 <div className="box-test"></div>
               </div>
               <div className="col c-resp">
-                <h1 className="orange big-font-size-xxl rotate pb-2 text-start">
+                <h1 className="orange big-font-size-xxl font-size-smm rotate pb-2 text-start">
                   SENSIBILISATION
                   <span className="linesmall-c bg-black" />
                 </h1>

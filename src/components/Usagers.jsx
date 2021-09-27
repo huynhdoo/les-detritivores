@@ -14,7 +14,7 @@ const Usagers = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title="YouTube"
-            className="d-flex justify-content-start rounded-custom"
+            className="d-flex justify-content-start rounded-custom video"
           />
         </div>
         <div className="col ml-mb m-p">
