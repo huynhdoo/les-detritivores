@@ -43,30 +43,18 @@ function Home() {
     }
   }, []);
 
-  let enable = true;
-  enable
-    ? axios
-        .get(
-          `https://api.storyblok.com/v2/cdn/stories/preview?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt&cv=1631095460`
-        )
-        .then((response) => {
-          setText(response.data.story.content);
-        })
-        .catch((e) => console.error(e))
-    : console.log(`axios is disabled`);
-
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{Text.title}</title>
+        <title>LES DETRITIVORES | Collecte et compostage des biodéchets</title>
         <html lang="fr" />
-        <meta name="description" content={Text.description} />
+        <meta name="description" content="" />
       </Helmet>
       <Template>
         <section className="">
           <FadeIn>
-            <Title className="whoarewe orange" title={Text.titleHero} color="orange" />
+            <Title className="whoarewe orange" title="QUI SOMMES NOUS ?" color="orange" />
           </FadeIn>
           <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
             <Intro />

@@ -5,7 +5,7 @@ import FadeIn from 'react-fade-in';
 import { Link } from 'gatsby';
 import { TemplatePages } from '../components/TemplatePages';
 const Compost = () => {
-  const [Text, setText] = useState('');
+  /*const [Text, setText] = useState('');
   axios
     .get(
       'https://api.storyblok.com/v2/cdn/stories/preview?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt&cv=1631095460',
@@ -14,14 +14,14 @@ const Compost = () => {
     .then((response) => {
       setText(response.data.story.content);
     })
-    .catch((e) => console.error(e));
+    .catch((e) => console.error(e)); */
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{Text.title}</title>
+        <title>Compostage</title>
         <html lang="fr" />
-        <meta name="description" content={Text.description} />
+        <meta name="description" content="" />
       </Helmet>
       <TemplatePages link="/" isFixed="true">
         <FadeIn>
