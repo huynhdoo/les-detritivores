@@ -371,10 +371,9 @@ iframe {
 .negative {
   margin-top: -2rem;
 }
-.box-test {
+.image-sensibilisation {
   width: 730px;
   height: 500px;
-  background-color: #263b29;
   border-radius: 2rem;
   margin: 0 auto;
 }
@@ -577,6 +576,13 @@ iframe {
   .disable {
     display: none;
   }
+  .sliding {
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+    border-radius: 40px;
+    margin-top: 2.5rem;
+  }
   .line-sm {
     height: 0.4rem;
     border-bottom-right-radius: 2rem;
@@ -609,10 +615,9 @@ iframe {
     margin-left: 1rem !important;
     margin-top: -3rem !important;
   }
-  .box-test {
+  .image-sensibilisation {
     width: 330px;
     height: 260px;
-    background-color: #263b29;
     border-radius: 2rem;
     margin: 0 auto;
   }

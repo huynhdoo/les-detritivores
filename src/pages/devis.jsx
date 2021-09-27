@@ -1,24 +1,68 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import FadeIn from 'react-fade-in';
 import { TemplatePages } from '../components/TemplatePages';
-import emailjs from 'emailjs-com';
 
 const Devis = () => {
-  const form = useRef();
+  const [who, setWho] = useState('');
+  const [numbers, setNumbers] = useState('');
+  const [fonction, setFonction] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [name, setName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [structure, setStructure] = useState('');
+  const [message, setMessage] = useState('');
 
-  const sendEmail = (e) => {
+  const onMailChange = (e) => {
+    setEmail(e.target.value);
+  };
+  const onWhoChange = (e) => {
+    setWho(e.target.value);
+  };
+
+  const onNumberChange = (e) => {
+    setNumbers(e.target.value);
+  };
+  const onPhoneChange = (e) => {
+    setPhone(e.target.value);
+  };
+  const onStructureChange = (e) => {
+    setStructure(e.target.value);
+  };
+  const onLastNameChange = (e) => {
+    setLastName(e.target.value);
+  };
+  const onFonctionChange = (e) => {
+    setFonction(e.target.value);
+  };
+  const onNameChange = (e) => {
+    setName(e.target.value);
+  };
+
+  const onMessageChange = (e) => {
+    setMessage(e.target.value);
+  };
+
+  const onSubmit = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm('service_x3956pw', 'template_ouppyny', form.current, 'user_oJffpgzTLzwypyik9qTyZ')
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (
+      !name ||
+      !email ||
+      !message ||
+      !who ||
+      !numbers ||
+      !fonction ||
+      !phone ||
+      !lastName ||
+      !structure
+    )
+      return <h1>Please fill out the form completely.</h1>;
+    window.open(
+      `mailto:aouhani@actes-atlantique.fr?body=${encodeURIComponent(
+        `Hey, It's ${name} (${email})\n\n${message}`
+      )}`
+    );
+    <h1>Thanks for your message!</h1>;
   };
   return (
     <>
@@ -27,100 +71,91 @@ const Devis = () => {
           <div class="container-fluid p-slide pb-11">
             <div class="container">
               <div class="row">
-                <div class="col">
-                  <form ref={form} onSubmit={sendEmail}>
-                    <div>
-                      <div className="d-flex">
-                        <div class="col-md-6">
-                          <div className="row row-cols-auto">
-                            <div class="form-group">
-                              <label class="label text-start" for="who">
-                                Vous êtes:*
-                              </label>
-                              <input type="text" class="form-control" name="who" id="who" />
-                            </div>
-                            <div class="form-group">
-                              <label class="label" for="servis">
-                                Nombre de repas servis par
-                              </label>
-                              <input type="text" class="form-control" name="servis" id="servis" />
-                            </div>
-                            <div class="form-group">
-                              <label class="label" for="struct">
-                                Structure:*
-                              </label>
-                              <input type="text" class="form-control" name="struct" id="struct" />
-                            </div>
-                            <div class="form-group">
-                              <label class="label" for="fonction">
-                                Fonction:*
-                              </label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                name="fonction"
-                                id="fonction"
-                              />
-                            </div>
-                            <div class="form-group">
-                              <label class="label" for="name">
-                                Nom:*
-                              </label>
-                              <input type="text" class="form-control" name="name" id="name" />
-                            </div>
-                            <div class="form-group">
-                              <label class="label" for="username">
-                                Prénom:*
-                              </label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                name="username"
-                                id="username"
-                              />
-                            </div>
-                            <div class="form-group">
-                              <label class="label" for="email">
-                                Email:*
-                              </label>
-                              <input type="text" class="form-control" name="email" id="email" />
-                            </div>
-                            <div class="form-group">
-                              <label class="label" for="phone">
-                                Téléphone:*
-                              </label>
-                              <input type="text" class="form-control" name="phone" id="phone" />
-                            </div>
-                            <div class="col-md-10">
-                              <div class="form-group">
-                                <label class="label" for="#">
-                                  Message
-                                </label>
-                                <textarea
-                                  name="message"
-                                  class="form-control"
-                                  id="message"
-                                  cols="30"
-                                  rows="4"
-                                ></textarea>
-                              </div>
-                            </div>
-                            <br />
-                            <div class="col-md-10 p-2">
-                              <div class="form-group">
-                                <input
-                                  type="submit"
-                                  value="Envoyer"
-                                  class="btn bg-orange c-btn rounded-pill"
-                                />
-                                <div class="submitting"></div>
-                              </div>
-                            </div>
+                <div class="col-xl">
+                  <div>
+                    <form onSubmit={onSubmit}>
+                      <div className="grid row row-cols-2">
+                        <div class="form-group">
+                          <label class="label text-start" for="who">
+                            Vous êtes:*
+                          </label>
+                          <input onChange={onWhoChange} type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label class="label" for="servis">
+                            Nombre de repas servis par
+                          </label>
+                          <input onChange={onNumberChange} type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label class="label" for="struct">
+                            Structure:*
+                          </label>
+                          <input
+                            onChange={onStructureChange}
+                            type="text"
+                            class="form-control"
+                            name="struct"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label class="label" for="fonction">
+                            Fonction:*
+                          </label>
+                          <input onChange={onFonctionChange} type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label class="label" for="name">
+                            Nom:*
+                          </label>
+                          <input change={onNameChange} type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label class="label" for="username">
+                            Prénom:*
+                          </label>
+                          <input change={onLastNameChange} type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label class="label" for="email">
+                            Email:*
+                          </label>
+                          <input onChange={onMailChange} type="email" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label class="label" for="phone">
+                            Téléphone:*
+                          </label>
+                          <input onChange={onPhoneChange} type="number" class="form-control" />
+                        </div>
+                        <div class="col-md-10">
+                          <div class="form-group">
+                            <label class="label" for="#">
+                              Message
+                            </label>
+                            <textarea
+                              onChange={onMessageChange}
+                              class="form-control"
+                              cols="30"
+                              rows="4"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <br />
+                        <div class="col-md-10 p-2">
+                          <div class="form-group">
+                            <button
+                              aria-label="Submit"
+                              type="submit"
+                              class="btn bg-orange c-btn rounded-pill"
+                            >
+                              Envoyer
+                            </button>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </form>
+                    </form>
+                  </div>
                 </div>
                 <div class="col">
                   <h1 className="orange big-font-size-pm rotate">

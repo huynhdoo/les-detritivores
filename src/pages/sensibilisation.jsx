@@ -28,7 +28,12 @@ const Sensibilisation = () => {
           <div className="container-fluid p-slide pb-11">
             <div className="row">
               <div className="col align-self-center">
-                <div className="box-test"></div>
+                <img
+                  className="image-sensibilisation"
+                  src="../images/sensibilisation.jpeg"
+                  alt=""
+                  srcset=""
+                />
               </div>
               <div className="col c-resp">
                 <h1 className="orange big-font-size-xxl font-size-smm rotate pb-2 text-start">
