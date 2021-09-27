@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
-import axios from 'axios';
 import FadeIn from 'react-fade-in';
 import { TemplatePages } from '../components/TemplatePages';
 import Icons from '../components/Icons';
