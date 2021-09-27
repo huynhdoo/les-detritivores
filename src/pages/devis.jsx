@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import FadeIn from 'react-fade-in';
 import Icons from '../components/Icons';
+import { Helmet } from 'react-helmet';
 import { TemplatePages } from '../components/TemplatePages';
+import { useForm } from 'react-hook-form';
 
 const Devis = () => {
   const [who, setWho] = useState('');
@@ -13,7 +15,11 @@ const Devis = () => {
   const [lastName, setLastName] = useState('');
   const [structure, setStructure] = useState('');
   const [message, setMessage] = useState('');
-
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   const onMailChange = (e) => {
     setEmail(e.target.value);
   };
@@ -42,29 +48,20 @@ const Devis = () => {
     setMessage(e.target.value);
   };
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    if (
-      !name ||
-      !email ||
-      !message ||
-      !who ||
-      !numbers ||
-      !fonction ||
-      !phone ||
-      !lastName ||
-      !structure
-    )
-      return <h1>Please fill out the form completely.</h1>;
+  const onSubmit = (data) =>
     window.open(
       `mailto:aouhani@actes-atlantique.fr?body=${encodeURIComponent(
-        `[Devis] \n\n Vous êtes: ${who} \n Nombre de repas servis par j: ${who} \n Structure: ${structure}\n Fonction: ${fonction}\n Nom: ${name}\n Prénom: ${lastName}\n Email: ${email}\n Téléphone: ${phone}\n\n${message}`
+        `[Devis] \n\n Vous êtes: ${data.who} \n Nombre de repas servis par j: ${data.numbers} \n Structure: ${data.struct}\n Fonction: ${data.fonction}\n Nom: ${data.name}\n Prénom: ${data.lastName}\n Email: ${data.email}\n Téléphone: ${data.phone}\n\n${data.message}`
       )}`
     );
-    <h1>Thanks for your message!</h1>;
-  };
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Demande de devis</title>
+        <html lang="fr" />
+        <meta name="description" content="" />
+      </Helmet>
       <TemplatePages link="/compost">
         <FadeIn>
           <div class="container-fluid p-slide pb-11">
@@ -72,19 +69,39 @@ const Devis = () => {
               <div class="row">
                 <div class="col-xl">
                   <div className="m-submit">
-                    <form onSubmit={onSubmit}>
+                    <form onSubmit={handleSubmit(onSubmit)}>
                       <div className="grid row row-cols-2 solutionfound">
                         <div class="form-group">
                           <label class="label text-start" for="who">
                             Vous êtes:*
                           </label>
-                          <input onChange={onWhoChange} type="text" class="form-control" />
+                          <input
+                            onChange={onWhoChange}
+                            type="text"
+                            class="form-control"
+                            {...register('who', { required: true })}
+                          />
+                          {errors.who && (
+                            <span role="alert" className="alert">
+                              Champs obligatoire.
+                            </span>
+                          )}
                         </div>
                         <div class="form-group">
                           <label class="label" for="servis">
                             Nombre de repas servis par
                           </label>
-                          <input onChange={onNumberChange} type="number" class="form-control" />
+                          <input
+                            onChange={onNumberChange}
+                            type="number"
+                            class="form-control"
+                            {...register('numbers', { required: true })}
+                          />
+                          {errors.numbers && (
+                            <span role="alert" className="alert">
+                              Champs obligatoire.
+                            </span>
+                          )}
                         </div>
                         <div class="form-group">
                           <label class="label" for="struct">
@@ -95,37 +112,93 @@ const Devis = () => {
                             type="text"
                             class="form-control"
                             name="struct"
+                            {...register('struct', { required: true })}
                           />
+                          {errors.struct && (
+                            <span role="alert" className="alert">
+                              Champs obligatoire.
+                            </span>
+                          )}
                         </div>
                         <div class="form-group">
                           <label class="label" for="fonction">
                             Fonction:*
                           </label>
-                          <input onChange={onFonctionChange} type="text" class="form-control" />
+                          <input
+                            onChange={onFonctionChange}
+                            type="text"
+                            class="form-control"
+                            {...register('fonction', { required: true })}
+                          />
+                          {errors.fonction && (
+                            <span role="alert" className="alert">
+                              Champs obligatoire.
+                            </span>
+                          )}
                         </div>
                         <div class="form-group">
                           <label class="label" for="name">
                             Nom:*
                           </label>
-                          <input onChange={onNameChange} type="text" class="form-control" />
+                          <input
+                            onChange={onNameChange}
+                            type="text"
+                            class="form-control"
+                            {...register('name', { required: true })}
+                          />
+                          {errors.name && (
+                            <span role="alert" className="alert">
+                              Champs obligatoire.
+                            </span>
+                          )}
                         </div>
                         <div class="form-group">
                           <label class="label" for="username">
                             Prénom:*
                           </label>
-                          <input onChange={onLastNameChange} type="text" class="form-control" />
+                          <input
+                            onChange={onLastNameChange}
+                            type="text"
+                            class="form-control"
+                            {...register('lastName', { required: true })}
+                          />
+                          {errors.lastName && (
+                            <span role="alert" className="alert">
+                              Champs obligatoire.
+                            </span>
+                          )}
                         </div>
                         <div class="form-group">
                           <label class="label" for="email">
                             Email:*
                           </label>
-                          <input onChange={onMailChange} type="email" class="form-control" />
+                          <input
+                            onChange={onMailChange}
+                            type="email"
+                            class="form-control"
+                            {...register('email', { required: true })}
+                          />
+                          {errors.email && (
+                            <span role="alert" className="alert">
+                              Champs obligatoire.
+                            </span>
+                          )}
                         </div>
                         <div class="form-group">
                           <label class="label" for="phone">
                             Téléphone:*
                           </label>
-                          <input onChange={onPhoneChange} type="number" class="form-control" />
+                          <input
+                            onChange={onPhoneChange}
+                            type="number"
+                            class="form-control"
+                            {...register('phone', { required: true })}
+                          />
+                          {errors.phone && (
+                            <span role="alert" className="alert">
+                              Champs obligatoire.
+                            </span>
+                          )}
                         </div>
                         <div class="col-md-10 m-message">
                           <div class="form-group">
@@ -137,7 +210,13 @@ const Devis = () => {
                               class="form-control"
                               cols="30"
                               rows="4"
-                            ></textarea>
+                              {...register('message', { required: true })}
+                            />
+                            {errors.message && (
+                              <span role="alert" className="alert">
+                                Champs obligatoire.
+                              </span>
+                            )}
                           </div>
                         </div>
                         <br />
