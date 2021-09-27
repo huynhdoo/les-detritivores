@@ -82,9 +82,11 @@ const Devis = () => {
                             {...register('who', { required: true })}
                           />
                           {errors.who && (
-                            <span role="alert" className="alert">
-                              Champs obligatoire.
-                            </span>
+                            <FadeIn>
+                              <span role="alert" className="alert">
+                                Champs obligatoire.
+                              </span>
+                            </FadeIn>
                           )}
                         </div>
                         <div class="form-group">
@@ -98,9 +100,11 @@ const Devis = () => {
                             {...register('numbers', { required: true })}
                           />
                           {errors.numbers && (
-                            <span role="alert" className="alert">
-                              Champs obligatoire.
-                            </span>
+                            <FadeIn>
+                              <span role="alert" className="alert">
+                                Champs obligatoire.
+                              </span>
+                            </FadeIn>
                           )}
                         </div>
                         <div class="form-group">
@@ -115,9 +119,11 @@ const Devis = () => {
                             {...register('struct', { required: true })}
                           />
                           {errors.struct && (
-                            <span role="alert" className="alert">
-                              Champs obligatoire.
-                            </span>
+                            <FadeIn>
+                              <span role="alert" className="alert">
+                                Champs obligatoire.
+                              </span>
+                            </FadeIn>
                           )}
                         </div>
                         <div class="form-group">
@@ -131,9 +137,11 @@ const Devis = () => {
                             {...register('fonction', { required: true })}
                           />
                           {errors.fonction && (
-                            <span role="alert" className="alert">
-                              Champs obligatoire.
-                            </span>
+                            <FadeIn>
+                              <span role="alert" className="alert">
+                                Champs obligatoire.
+                              </span>
+                            </FadeIn>
                           )}
                         </div>
                         <div class="form-group">
@@ -147,9 +155,11 @@ const Devis = () => {
                             {...register('name', { required: true })}
                           />
                           {errors.name && (
-                            <span role="alert" className="alert">
-                              Champs obligatoire.
-                            </span>
+                            <FadeIn>
+                              <span role="alert" className="alert">
+                                Champs obligatoire.
+                              </span>
+                            </FadeIn>
                           )}
                         </div>
                         <div class="form-group">
@@ -163,9 +173,11 @@ const Devis = () => {
                             {...register('lastName', { required: true })}
                           />
                           {errors.lastName && (
-                            <span role="alert" className="alert">
-                              Champs obligatoire.
-                            </span>
+                            <FadeIn>
+                              <span role="alert" className="alert">
+                                Champs obligatoire.
+                              </span>
+                            </FadeIn>
                           )}
                         </div>
                         <div class="form-group">
@@ -179,9 +191,11 @@ const Devis = () => {
                             {...register('email', { required: true })}
                           />
                           {errors.email && (
-                            <span role="alert" className="alert">
-                              Champs obligatoire.
-                            </span>
+                            <FadeIn>
+                              <span role="alert" className="alert">
+                                Champs obligatoire.
+                              </span>
+                            </FadeIn>
                           )}
                         </div>
                         <div class="form-group">
@@ -195,9 +209,11 @@ const Devis = () => {
                             {...register('phone', { required: true })}
                           />
                           {errors.phone && (
-                            <span role="alert" className="alert">
-                              Champs obligatoire.
-                            </span>
+                            <FadeIn>
+                              <span role="alert" className="alert">
+                                Champs obligatoire.
+                              </span>
+                            </FadeIn>
                           )}
                         </div>
                         <div class="col-md-10 m-message">
@@ -213,9 +229,11 @@ const Devis = () => {
                               {...register('message', { required: true })}
                             />
                             {errors.message && (
-                              <span role="alert" className="alert">
-                                Champs obligatoire.
-                              </span>
+                              <FadeIn>
+                                <span role="alert" className="alert">
+                                  Champs obligatoire.
+                                </span>
+                              </FadeIn>
                             )}
                           </div>
                         </div>
