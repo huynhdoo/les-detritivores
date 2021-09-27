@@ -60,7 +60,7 @@ const Sensibilisation = () => {
                   </p>
                 </div>
                 <div className="atelier">
-                  <p className="bold big-font-size-md">
+                  <p className="bold big-font-size-md choice-text">
                     Jeux, animations, ateliers autour du tri et du recyclage : notre <br />{' '}
                     sensibilisation se veut conviviale et riche en partages !
                   </p>
