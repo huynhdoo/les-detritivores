@@ -85,7 +85,7 @@ const Devis = () => {
                           <label class="label" for="servis">
                             Nombre de repas servis par
                           </label>
-                          <input onChange={onNumberChange} type="text" class="form-control" />
+                          <input onChange={onNumberChange} type="number" class="form-control" />
                         </div>
                         <div class="form-group">
                           <label class="label" for="struct">
