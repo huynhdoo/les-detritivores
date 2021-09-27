@@ -57,12 +57,10 @@ const Devis = () => {
       return <h1>Please fill out the form completely.</h1>;
     window.open(
       `mailto:aouhani@actes-atlantique.fr?body=${encodeURIComponent(
-        `Hey, It's ${name} (${email})\n\n${message}`
+        `[Devis] \n\n Vous êtes: ${who} \n Nombre de repas servis par j: ${who} \n Structure: ${structure}\n Fonction: ${fonction}\n Nom: ${name}\n Prénom: ${lastName}\n Email: ${email}\n Téléphone: ${phone}\n\n${message}`
       )}`
     );
     <h1>Thanks for your message!</h1>;
-
-    console.log(`${name} ${email} ${numbers} ${who} ${fonction} ${phone} ${lastName} ${structure}`);
   };
   return (
     <>
@@ -108,13 +106,13 @@ const Devis = () => {
                           <label class="label" for="name">
                             Nom:*
                           </label>
-                          <input change={onNameChange} type="text" class="form-control" />
+                          <input onChange={onNameChange} type="text" class="form-control" />
                         </div>
                         <div class="form-group">
                           <label class="label" for="username">
                             Prénom:*
                           </label>
-                          <input change={onLastNameChange} type="text" class="form-control" />
+                          <input onChange={onLastNameChange} type="text" class="form-control" />
                         </div>
                         <div class="form-group">
                           <label class="label" for="email">
