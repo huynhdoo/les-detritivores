@@ -5,7 +5,7 @@ import { TemplatePages } from '../components/TemplatePages';
 const Collect = () => {
   return (
     <>
-      <TemplatePages link="/" isFixed="true">
+      <TemplatePages link="/">
         <FadeIn className="if-p">
           <div className="container-fluid p-slide">
             <div className="row">

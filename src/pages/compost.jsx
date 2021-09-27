@@ -22,7 +22,7 @@ const Compost = () => {
         <html lang="fr" />
         <meta name="description" content="" />
       </Helmet>
-      <TemplatePages link="/" isFixed="true">
+      <TemplatePages link="/">
         <FadeIn>
           <div className="container-fluid p-slide">
             <div className="row">

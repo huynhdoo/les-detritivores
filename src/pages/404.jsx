@@ -13,7 +13,7 @@ const Page404 = () => {
         <html lang="fr" />
         <meta name="description" content="Page not found" />
       </Helmet>
-      <TemplatePages isFixed="true" link="/">
+      <TemplatePages link="/">
         <Container>
           <div class="row">
             <div class="col-sm disable"></div>

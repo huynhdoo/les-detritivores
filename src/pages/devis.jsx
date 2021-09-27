@@ -64,7 +64,7 @@ const Devis = () => {
   };
   return (
     <>
-      <TemplatePages link="/compost" isFixed="true">
+      <TemplatePages link="/compost">
         <FadeIn>
           <div class="container-fluid p-slide pb-11">
             <div class="container">
