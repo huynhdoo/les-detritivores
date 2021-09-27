@@ -15,6 +15,7 @@ const Sensibilisation = () => {
       setText(response.data.story.content);
     })
     .catch((e) => console.error(e));
+
   return (
     <>
       <Helmet>
