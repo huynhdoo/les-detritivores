@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import Fade from 'react-reveal/Fade';
 import FadeIn from 'react-fade-in';
 import { Helmet } from 'react-helmet';
@@ -19,7 +18,6 @@ import { Title } from '../components/Title';
 function Home() {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [Text, setText] = useState('');
 
   const handleResize = () => {
     // You save my day. https://stackoverflow.com/questions/44480053/how-to-detect-if-screen-size-has-changed-to-mobile-in-react
@@ -68,7 +66,7 @@ function Home() {
         </section>
         <section className="our-engagements">
           <FadeIn>
-            <Title className="whoarewe green" title={Text.titleDefault} color="green" />
+            <Title className="whoarewe green" title="Nos Engagements" color="green" />
           </FadeIn>
           <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
             <Engagements />
