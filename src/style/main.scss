@@ -164,6 +164,13 @@ section {
 .mail {
   font-size: 1.9rem;
 }
+form {
+  font-size: 2rem !important;
+}
+.solutionfound {
+  transform: scale(1.5);
+  margin-top: 10rem;
+}
 .mail-title {
   display: inline-flex;
 }
@@ -342,7 +349,14 @@ iframe {
 }
 .form-control:focus {
   border-color: #e94e1a !important;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px #e94e1ac9;
+  box-shadow: 0 0 0 0.2rem #ee764ec9 !important;
+}
+.btn:focus {
+  border-color: #e94e1a !important;
+  box-shadow: 0 0 0 0.2rem #ee764ec9 !important;
+}
+.btn:hover {
+  background-color: #e46a41f3;
 }
 .socials {
   display: inline-flex;
@@ -354,7 +368,6 @@ iframe {
 }
 .form-control:hover {
   border-color: #e94e1a !important;
-  box-shadow: 0 0 11px #e94e1ac9;
 }
 .c-btn {
   color: #fff !important;
@@ -544,6 +557,11 @@ iframe {
 .p-cst {
   margin-top: 3rem;
 }
+label {
+  font-size: 1rem !important;
+  display: flex;
+  padding: 0.2rem;
+}
 @media (max-width: 75rem) {
   #start {
     height: 120px !important;
@@ -575,6 +593,14 @@ iframe {
   }
   .t-res {
     text-align: start;
+  }
+  .solutionfound {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.2);
+    margin-top: 0rem;
+  }
+  .rep {
+    margin-top: 5rem;
   }
   .fleex {
     display: flex;

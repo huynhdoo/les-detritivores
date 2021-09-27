@@ -74,7 +74,7 @@ const Devis = () => {
                 <div class="col-xl">
                   <div className="m-submit">
                     <form onSubmit={onSubmit}>
-                      <div className="grid row row-cols-2">
+                      <div className="grid row row-cols-2 solutionfound">
                         <div class="form-group">
                           <label class="label text-start" for="who">
                             Vous êtes:*
@@ -157,7 +157,7 @@ const Devis = () => {
                     </form>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col rep">
                   <h1 className="orange big-font-size-pm rotate">
                     DEMANDE DE DEVIS
                     <span className="bg-dark line-custom" />
