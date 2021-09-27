@@ -530,6 +530,9 @@ iframe {
   margin-left: 21rem;
   margin-top: 5rem;
 }
+.curved-icn {
+  width: 50px;
+}
 .slideshowSlider {
   white-space: nowrap;
   transition: ease 1000ms;
@@ -662,6 +665,9 @@ label {
   }
   .video {
     width: 350px;
+  }
+  .curved-icn {
+    display: none;
   }
   .linesmall-c {
     height: 0.3rem;

@@ -80,7 +80,7 @@ const Compost = () => {
                     <Link className="bg-green buttons" to="/devis">
                       COMMANDEZ-LE ICI
                     </Link>
-                    <span className="big-font-size-md">ou</span>
+                    <span className="big-font-size-md orange bold">ou</span>
                     <button className="bg-green buttons-b">
                       RETROUVEZ-LE DANS NOS MAGASINS PARTENAIRES
                     </button>

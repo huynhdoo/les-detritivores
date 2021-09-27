@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FadeIn from 'react-fade-in';
+import Icons from '../components/Icons';
 import { TemplatePages } from '../components/TemplatePages';
 
 const Devis = () => {
@@ -169,6 +170,9 @@ const Devis = () => {
                       <br /> N’hésitez pas à renseigner le plus précisément possible ce formulaire
                       et nous reviendrons vers vous dans les meilleurs délais !{' '}
                     </p>
+                  </div>
+                  <div className="curved-icn">
+                    <Icons icon="curved-arrow" />
                   </div>
                 </div>
               </div>
