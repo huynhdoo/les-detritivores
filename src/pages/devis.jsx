@@ -19,7 +19,6 @@ const Devis = () => {
   const onWhoChange = (e) => {
     setWho(e.target.value);
   };
-
   const onNumberChange = (e) => {
     setNumbers(e.target.value);
   };
@@ -38,7 +37,6 @@ const Devis = () => {
   const onNameChange = (e) => {
     setName(e.target.value);
   };
-
   const onMessageChange = (e) => {
     setMessage(e.target.value);
   };
@@ -63,6 +61,8 @@ const Devis = () => {
       )}`
     );
     <h1>Thanks for your message!</h1>;
+
+    console.log(`${name} ${email} ${numbers} ${who} ${fonction} ${phone} ${lastName} ${structure}`);
   };
   return (
     <>
@@ -72,7 +72,7 @@ const Devis = () => {
             <div class="container">
               <div class="row">
                 <div class="col-xl">
-                  <div>
+                  <div className="m-submit">
                     <form onSubmit={onSubmit}>
                       <div className="grid row row-cols-2">
                         <div class="form-group">
@@ -128,7 +128,7 @@ const Devis = () => {
                           </label>
                           <input onChange={onPhoneChange} type="number" class="form-control" />
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-md-10 m-message">
                           <div class="form-group">
                             <label class="label" for="#">
                               Message
@@ -142,7 +142,7 @@ const Devis = () => {
                           </div>
                         </div>
                         <br />
-                        <div class="col-md-10 p-2">
+                        <div class="col-md-10 p-2 m-btn">
                           <div class="form-group">
                             <button
                               aria-label="Submit"
