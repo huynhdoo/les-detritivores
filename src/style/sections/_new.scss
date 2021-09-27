@@ -3,14 +3,14 @@
   background-image: linear-gradient(135deg, $primary-color 0%, $primary-color 100%);
 
   color: $white-color;
-  height: 18px;
+  height: 18rem;
   border-top: 0px;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 42%, 0% 100%) !important;
   clip-path: polygon(0 0, 100% 0%, 100% 42%, 0% 100%) !important;
   padding-bottom: 10% !important;
 
   @include respond(tab-land) {
-    height: 18px;
+    height: 18rem;
     -webkit-clip-path: none;
     clip-path: none;
   }

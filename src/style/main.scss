@@ -740,7 +740,7 @@ iframe {
     border-top: 0px;
     -webkit-clip-path: polygon(100% 3%, 0 100%, 100% 100%) !important;
     clip-path: polygon(100% 3%, 0 100%, 100% 100%) !important;
-    padding-bottom: 8%;
+    height: 10%;
     padding: 0;
     @include respond(tab-land) {
       height: 17% !important;
@@ -786,7 +786,7 @@ iframe {
   border-top: 0px;
   -webkit-clip-path: polygon(100% 3%, 0 100%, 100% 100%);
   clip-path: polygon(100% 3%, 0 100%, 100% 100%);
-  padding-bottom: 8%;
+  height: 10%;
 
   @include respond(tab-land) {
     height: 18px;
