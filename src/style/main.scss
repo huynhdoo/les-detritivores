@@ -602,6 +602,20 @@ iframe {
   .disable {
     display: none;
   }
+  .big-font-size-pm {
+    font-size: 3rem;
+  }
+  .line-custom {
+    height: 0.5rem;
+    border-bottom-right-radius: 2rem;
+    width: 11rem;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    margin: 0 auto;
+    position: absolute;
+    margin-left: -8rem;
+    margin-top: 4rem;
+  }
   .sliding {
     display: inline-block;
     height: 150px;
