@@ -21,12 +21,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;900&display=swap');
 @import url('//fonts.cdnfonts.com/css/sf-ui-display');
 :root {
-  /* scroll-behavior: smooth; */
   scroll-behavior: unset !important;
 }
 .logos {
   height: 100px;
   margin-top: 2rem;
+}
+.notfound {
+  font-size: 1.5rem;
+}
+.box-notfound {
+  background-color: #263b29;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #fff;
+  width: 30rem;
+  margin: 0 auto;
+  height: 16vh;
 }
 .logo-footer {
   height: 100px;

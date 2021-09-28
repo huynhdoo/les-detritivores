@@ -1,7 +1,7 @@
 import React from 'react';
 import FadeIn from 'react-fade-in';
 import { TemplatePages } from '../components/TemplatePages';
-import { StaticImage } from 'gatsby-plugin-image';
+import Image from '../components/Image';
 const Collect = () => {
   return (
     <>
@@ -13,28 +13,13 @@ const Collect = () => {
                 <section className="justify-content-start">
                   <div className="d-table p-responsive">
                     <div className="card-image">
-                      <StaticImage
-                        className="cards rounded"
-                        src="../images/image1.jpeg"
-                        alt=""
-                        srcset=""
-                      />
+                      <Image className="cards rounded" picture="../images/image1.jpeg" />
                     </div>
                     <div className="card-image">
-                      <StaticImage
-                        className="cards rounded"
-                        src="../images/image2.jpeg"
-                        alt=""
-                        srcset=""
-                      />
+                      <Image className="cards rounded" picture="../images/image2.jpeg" />
                     </div>
                     <div className="card-image">
-                      <StaticImage
-                        className="cards rounded"
-                        src="../images/image3.jpeg"
-                        alt=""
-                        srcset=""
-                      />
+                      <Image className="cards rounded" picture="../images/image3.jpeg" />
                     </div>
                   </div>
                 </section>

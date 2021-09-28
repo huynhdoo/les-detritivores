@@ -3,8 +3,7 @@ import { Helmet } from 'react-helmet';
 import FadeIn from 'react-fade-in';
 import { TemplatePages } from '../components/TemplatePages';
 import Icons from '../components/Icons';
-import { StaticImage } from 'gatsby-plugin-image';
-
+import Image from '../components/Image';
 const Sensibilisation = () => {
   return (
     <>
@@ -19,12 +18,7 @@ const Sensibilisation = () => {
           <div className="container-fluid p-slide pb-11">
             <div className="row">
               <div className="col align-self-center">
-                <StaticImage
-                  className="image-sensibilisation"
-                  src="../images/sensibilisation.jpeg"
-                  alt=""
-                  srcset=""
-                />
+                <Image className="image-sensibilisation" picture="../images/sensibilisation.jpeg" />
               </div>
               <div className="col c-resp">
                 <h1 className="orange big-font-size-xxl font-size-smm rotate pb-2 text-start">
