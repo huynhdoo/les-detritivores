@@ -8,7 +8,7 @@ const Image = ({ className, picture }) => {
     );
   }
 
-  return <img className={className} src={picture} />;
+  return <img className={className} src={picture} alt="" />;
 };
 
 export default Image;

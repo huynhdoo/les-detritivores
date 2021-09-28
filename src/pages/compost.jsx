@@ -61,13 +61,13 @@ const Compost = () => {
                 <div className="container-fluid">
                   <div className="row">
                     <div className="col slider">
-                      <Image className="slider-imgs rounded" picture="../images/pic1.jpeg" />
+                      <Image className="slider-imgs rounded" picture="../../pic1.jpeg" />
                     </div>
                     <div className="col slider">
-                      <Image className="slider-imgs rounded" picture="../images/pic1.jpeg" />
+                      <Image className="slider-imgs rounded" picture="../../pic1.jpeg" />
                     </div>
                     <div className="col slider">
-                      <Image className="slider-imgs rounded" picture="../images/pic1.jpeg" />
+                      <Image className="slider-imgs rounded" picture="../../pic1.jpeg" />
                     </div>
                   </div>
                 </div>

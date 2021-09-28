@@ -13,13 +13,13 @@ const Collect = () => {
                 <section className="justify-content-start">
                   <div className="d-table p-responsive">
                     <div className="card-image">
-                      <Image className="cards rounded" picture="../images/image1.jpeg" />
+                      <Image className="cards rounded" picture={'../../image1.jpeg'} />
                     </div>
                     <div className="card-image">
-                      <Image className="cards rounded" picture="../images/image2.jpeg" />
+                      <Image className="cards rounded" picture="../../image2.jpeg" />
                     </div>
                     <div className="card-image">
-                      <Image className="cards rounded" picture="../images/image3.jpeg" />
+                      <Image className="cards rounded" picture="../../image3.jpeg" />
                     </div>
                   </div>
                 </section>
