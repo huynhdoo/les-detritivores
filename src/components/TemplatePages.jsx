@@ -2,9 +2,11 @@ import Icons from './Icons';
 import React from 'react';
 import { Link } from 'gatsby';
 import { isMobile } from 'react-device-detect';
+import ImportCSS from './ImportCSS';
 const TemplatePages = ({ children, link }) => {
   return (
     <>
+      <ImportCSS />
       <div id="start">
         <div className="d-flex justify-content-start d-back">
           <Link className="arrow-color" to={link}>
