@@ -6,7 +6,7 @@ const Mobile = () => {
   return (
     <div className="container b-res">
       <div className="row">
-        <div className="col">
+        <div className="col-sm">
           <h1 className="orange m-text">COLLECTE</h1>
           <div className="bg-green rounded-circle boom-offer">
             <Icons icon="camion" />
@@ -22,7 +22,7 @@ const Mobile = () => {
             </Link>
           </p>
         </div>
-        <div className="col">
+        <div className="col-sm">
           <h1 className="orange m-text">SENSIBILISATION</h1>
           <div className="bg-green rounded-circle boom-offer">
             <Icons icon="happystar" />
@@ -37,7 +37,7 @@ const Mobile = () => {
             </Link>
           </p>
         </div>
-        <div className="col">
+        <div className="col-sm">
           <h1 className="orange m-text">COMPOST</h1>
           <div className="bg-green rounded-circle boom-offer">
             <Icons icon="flowers" />
