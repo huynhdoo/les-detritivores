@@ -18,7 +18,7 @@ const Devis = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitSuccessful },
   } = useForm();
   const onMailChange = (e) => {
     setEmail(e.target.value);
