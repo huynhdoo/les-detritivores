@@ -4,6 +4,7 @@ import FadeIn from 'react-fade-in';
 import { TemplatePages } from '../components/TemplatePages';
 import Icons from '../components/Icons';
 import { StaticImage } from 'gatsby-plugin-image';
+
 const Sensibilisation = () => {
   return (
     <>
@@ -20,7 +21,7 @@ const Sensibilisation = () => {
               <div className="col align-self-center">
                 <StaticImage
                   className="image-sensibilisation"
-                  src="../../public/images/sensibilisation.jpeg"
+                  src="../images/sensibilisation.jpeg"
                   alt=""
                   srcset=""
                 />

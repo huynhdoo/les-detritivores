@@ -15,7 +15,7 @@ const Collect = () => {
                     <div className="card-image">
                       <StaticImage
                         className="cards rounded"
-                        src="../../public/images/image1.jpeg"
+                        src="../images/image1.jpeg"
                         alt=""
                         srcset=""
                       />
@@ -23,7 +23,7 @@ const Collect = () => {
                     <div className="card-image">
                       <StaticImage
                         className="cards rounded"
-                        src="../../public/images/image2.jpeg"
+                        src="../images/image2.jpeg"
                         alt=""
                         srcset=""
                       />
@@ -31,7 +31,7 @@ const Collect = () => {
                     <div className="card-image">
                       <StaticImage
                         className="cards rounded"
-                        src="../../public/images/image3.jpeg"
+                        src="../images/image3.jpeg"
                         alt=""
                         srcset=""
                       />

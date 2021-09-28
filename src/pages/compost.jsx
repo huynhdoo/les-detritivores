@@ -63,21 +63,21 @@ const Compost = () => {
                     <div className="col slider">
                       <StaticImage
                         className="slider-imgs rounded"
-                        src="../../public/images/pic1.jpeg"
+                        src="../images/pic1.jpeg"
                         alt=""
                       />
                     </div>
                     <div className="col slider">
                       <StaticImage
                         className="slider-imgs rounded"
-                        src="../../public/images/pic1.jpeg"
+                        src="../images/pic1.jpeg"
                         alt=""
                       />
                     </div>
                     <div className="col slider">
                       <StaticImage
                         className="slider-imgs rounded"
-                        src="../../public/images/pic1.jpeg"
+                        src="../images/pic1.jpeg"
                         alt=""
                       />
                     </div>
