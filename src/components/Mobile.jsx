@@ -21,7 +21,6 @@ const Mobile = () => {
               Lire Plus...
             </Link>
           </p>
-          <img src="" alt="" />
         </div>
         <div className="col">
           <h1 className="orange m-text">SENSIBILISATION</h1>
