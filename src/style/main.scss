@@ -570,6 +570,8 @@ label {
 }
 .alert {
   font-size: 1rem;
+  display: flex;
+  padding: 0 !important;
 }
 @media (max-width: 75rem) {
   #start {

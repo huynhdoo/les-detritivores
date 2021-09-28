@@ -6,15 +6,15 @@ import { TemplatePages } from '../components/TemplatePages';
 import { useForm } from 'react-hook-form';
 
 const Devis = () => {
-  const [who, setWho] = useState('');
-  const [numbers, setNumbers] = useState('');
-  const [fonction, setFonction] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [name, setName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [structure, setStructure] = useState('');
-  const [message, setMessage] = useState('');
+  const [, setWho] = useState('');
+  const [, setNumbers] = useState('');
+  const [, setFonction] = useState('');
+  const [, setEmail] = useState('');
+  const [, setPhone] = useState('');
+  const [, setName] = useState('');
+  const [, setLastName] = useState('');
+  const [, setStructure] = useState('');
+  const [, setMessage] = useState('');
   const {
     register,
     handleSubmit,
