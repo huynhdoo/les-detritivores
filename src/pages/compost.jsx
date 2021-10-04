@@ -4,6 +4,7 @@ import FadeIn from 'react-fade-in';
 import { Link } from 'gatsby';
 import { TemplatePages } from '../components/TemplatePages';
 import Image from '../components/Image';
+import Page from 'react-page-loading';
 const Compost = () => {
   /*const [Text, setText] = useState('');
   axios
@@ -23,75 +24,79 @@ const Compost = () => {
         <html lang="fr" />
         <meta name="description" content="" />
       </Helmet>
-      <TemplatePages link="/">
-        <FadeIn>
-          <div className="container-fluid p-slide">
-            <div className="row">
-              <div className="col">
-                <div className="ml-2">
-                  <h1 className="orange big-font-size-xxl rotate pb-2 text-start">
-                    COMPOST
-                    <span className="linesmall-2 bg-black" />
-                  </h1>
+      <Page loader={'comet-spin'} color={'#263b29'} size={50}>
+        <TemplatePages link="/">
+          <FadeIn>
+            <div className="container-fluid p-slide">
+              <div className="row">
+                <div className="col">
+                  <div className="ml-2">
+                    <h1 className="orange big-font-size-xxl rotate pb-2 text-start">
+                      COMPOST
+                      <span className="linesmall-2 bg-black" />
+                    </h1>
 
-                  <div>
-                    <p className="bold text-start big-font-size-md pb-2 mb-3">
-                      Mais que deviennent les restes alimentaires <br /> collectés auprès de nos
-                      usagers ?
-                    </p>
+                    <div>
+                      <p className="bold text-start big-font-size-md pb-2 mb-3">
+                        Mais que deviennent les restes alimentaires <br /> collectés auprès de nos
+                        usagers ?
+                      </p>
+                    </div>
+                    <div className="negative">
+                      <p className="light big-font-size-md m-12 text-start">
+                        Nous compostons vos déchets à proximité de leurs lieux de collecte afin de
+                        limiter la pollution liée au transport. Bichonnés et choyés, vos déchets
+                        sont recyclés pour enrichir les sols.Apporter du compost à la Terre permet
+                        de la fertiliser et de la structurer pour l’épanouissement de vos
+                        plantations. Mettre une dose de compsot dans vos fleurs c’est également
+                        participer à la végétalisation de notre territoire
+                      </p>
+                    </div>
+                    <div>
+                      <p className="light big-font-size-md m-12 text-start">
+                        Apporter du compost à la Terre permet de la fertiliser et de la structurer
+                        pour l’épanouissement de vos plantations. Mettre une dose de compsot dans
+                        vos fleurs c’est également participer à la végétalisation de notre
+                        territoire.
+                      </p>
+                    </div>
                   </div>
-                  <div className="negative">
-                    <p className="light big-font-size-md m-12 text-start">
-                      Nous compostons vos déchets à proximité de leurs lieux de collecte afin de
-                      limiter la pollution liée au transport. Bichonnés et choyés, vos déchets sont
-                      recyclés pour enrichir les sols.Apporter du compost à la Terre permet de la
-                      fertiliser et de la structurer pour l’épanouissement de vos plantations.
-                      Mettre une dose de compsot dans vos fleurs c’est également participer à la
-                      végétalisation de notre territoire
-                    </p>
-                  </div>
-                  <div>
-                    <p className="light big-font-size-md m-12 text-start">
-                      Apporter du compost à la Terre permet de la fertiliser et de la structurer
-                      pour l’épanouissement de vos plantations. Mettre une dose de compsot dans vos
-                      fleurs c’est également participer à la végétalisation de notre territoire.
-                    </p>
+                  <div className="container-fluid">
+                    <div className="row">
+                      <div className="col slider">
+                        <Image className="slider-imgs rounded" picture="../../pic1.jpeg" />
+                      </div>
+                      <div className="col slider">
+                        <Image className="slider-imgs rounded" picture="../../pic1.jpeg" />
+                      </div>
+                      <div className="col slider">
+                        <Image className="slider-imgs rounded" picture="../../pic1.jpeg" />
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="container-fluid">
-                  <div className="row">
-                    <div className="col slider">
-                      <Image className="slider-imgs rounded" picture="../../pic1.jpeg" />
+                <div className="col">
+                  <div className="compost-btns">
+                    <h1 className="orange bold font-size-md">
+                      Vous souhaitez acheter du compost auprès de <br /> la SCIC SA LES DETRITIVORES
+                      ?
+                    </h1>
+                    <div className="fleex">
+                      <Link className="bg-green buttons" to="/devis">
+                        COMMANDEZ-LE ICI
+                      </Link>
+                      <span className="big-font-size-md orange bold">ou</span>
+                      <button className="bg-green buttons-b">
+                        RETROUVEZ-LE DANS NOS MAGASINS PARTENAIRES
+                      </button>
                     </div>
-                    <div className="col slider">
-                      <Image className="slider-imgs rounded" picture="../../pic1.jpeg" />
-                    </div>
-                    <div className="col slider">
-                      <Image className="slider-imgs rounded" picture="../../pic1.jpeg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="compost-btns">
-                  <h1 className="orange bold font-size-md">
-                    Vous souhaitez acheter du compost auprès de <br /> la SCIC SA LES DETRITIVORES ?
-                  </h1>
-                  <div className="fleex">
-                    <Link className="bg-green buttons" to="/devis">
-                      COMMANDEZ-LE ICI
-                    </Link>
-                    <span className="big-font-size-md orange bold">ou</span>
-                    <button className="bg-green buttons-b">
-                      RETROUVEZ-LE DANS NOS MAGASINS PARTENAIRES
-                    </button>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </FadeIn>
-      </TemplatePages>
+          </FadeIn>
+        </TemplatePages>
+      </Page>
     </>
   );
 };

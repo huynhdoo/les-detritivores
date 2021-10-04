@@ -11,6 +11,7 @@ import Contact from '../components/Contact';
 import Intro from '../components/Intro';
 import { Template } from '../components/Template';
 import { Title } from '../components/Title';
+import Page from 'react-page-loading';
 
 function Home() {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -46,51 +47,53 @@ function Home() {
         <html lang="fr" />
         <meta name="description" content="" />
       </Helmet>
-      <Template>
-        <section className="">
-          <FadeIn>
-            <Title className="whoarewe orange" title="QUI SOMMES NOUS ?" color="orange" />
-          </FadeIn>
-          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-            <Intro />
-          </Fade>
-        </section>
-
-        <section className="">
-          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-            <Usagers />
-          </Fade>
-        </section>
-        <section className="our-engagements">
-          <FadeIn>
-            <Title className="whoarewe green" title="Nos Engagements" color="green" />
-          </FadeIn>
-          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-            <Engagements />
-          </Fade>
-        </section>
-        <section className="offer">
-          <div className="bg-green offers">
+      <Page loader={'comet-spin'} color={'#263b29'} size={50}>
+        <Template>
+          <section className="">
             <FadeIn>
-              <Title className="size" title="NOS OFFRES" />
+              <Title className="whoarewe orange" title="QUI SOMMES NOUS ?" color="orange" />
             </FadeIn>
-          </div>
-          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-            <Offer />
-          </Fade>
-        </section>
-        <div className="spacing bg-green" />
-        <section className="trust">
-          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-            <Trust />
-          </Fade>
-        </section>
-        <section className="">
-          <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-            <Contact />
-          </Fade>
-        </section>
-      </Template>
+            <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
+              <Intro />
+            </Fade>
+          </section>
+
+          <section className="">
+            <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
+              <Usagers />
+            </Fade>
+          </section>
+          <section className="our-engagements">
+            <FadeIn>
+              <Title className="whoarewe green" title="Nos Engagements" color="green" />
+            </FadeIn>
+            <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
+              <Engagements />
+            </Fade>
+          </section>
+          <section className="offer">
+            <div className="bg-green offers">
+              <FadeIn>
+                <Title className="size" title="NOS OFFRES" />
+              </FadeIn>
+            </div>
+            <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
+              <Offer />
+            </Fade>
+          </section>
+          <div className="spacing bg-green" />
+          <section className="trust">
+            <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
+              <Trust />
+            </Fade>
+          </section>
+          <section className="">
+            <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
+              <Contact />
+            </Fade>
+          </section>
+        </Template>
+      </Page>
     </>
   );
 }
