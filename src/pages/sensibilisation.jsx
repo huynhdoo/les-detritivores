@@ -20,7 +20,7 @@ const Sensibilisation = () => {
               <div className="col align-self-center">
                 <Image className="image-sensibilisation" picture="../../sensibilisation.jpeg" />
               </div>
-              <div className="col c-resp">
+              <div className="col c-resp deskt-720">
                 <h1 className="orange big-font-size-xxl font-size-smm rotate pb-2 text-start">
                   SENSIBILISATION
                   <span className="linesmall-c bg-black" />

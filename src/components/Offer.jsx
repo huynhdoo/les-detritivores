@@ -21,7 +21,7 @@ const Offer = () => {
               <br /> équipes passent régulièrement
               <br /> collecter vos bacs de biodéchets
               <br />
-              <Link style={{ fontWeight: 'bold' }} to="/collecte">
+              <Link className="watch" style={{ fontWeight: 'bold' }} to="/collecte">
                 Lire Plus...
               </Link>
             </p>
@@ -36,7 +36,7 @@ const Offer = () => {
               <br /> démarche environnementale et
               <br /> vous sensibiliser est notre priorité !
               <br />
-              <Link style={{ fontWeight: 'bold' }} to="/sensibilisation">
+              <Link className="watch" style={{ fontWeight: 'bold' }} to="/sensibilisation">
                 Lire Plus...
               </Link>
             </p>
@@ -52,7 +52,7 @@ const Offer = () => {
               <br /> vous proposons a décidément
               <br /> tout pour plaire !
               <br />
-              <Link style={{ fontWeight: 'bold' }} to="/compost">
+              <Link className="watch" style={{ fontWeight: 'bold' }} to="/compost">
                 Lire Plus...
               </Link>
             </p>

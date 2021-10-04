@@ -11,26 +11,22 @@ const Contact = () => {
       <div className="container">
         <div className="row">
           <div className="contact">
-            <div className="col">
-              <p className="phone">
-                <h1 className="text-start sizes-p">Téléphone:</h1>
-                <a href="tel:0556671447" className="phone-text">
-                  05 56 67 14 47
-                </a>
-              </p>
-            </div>
-            <div className="col">
-              <p className="mail text-stop">
-                <h1 className="mail-title sizes-p"> Mail:</h1>
-                <a className="number big-font-size-sm" href="mailto:bonjour@les-detritivores.co">
-                  bonjour@les-detritivores.co
-                </a>
-              </p>
-            </div>
+            <div className="col"></div>
           </div>
         </div>
         <div className="row">
           <div className="col">
+            <h1 className="green text-wrap size text-b t-res">Téléphone</h1>
+            <a href="tel:0556671447" className="smalltext big-font text-b text-start">
+              05 56 67 14 47
+            </a>
+            <h1 className="green text-wrap size text-b t-res"> Mail</h1>
+            <a
+              className="smalltext big-font text-b text-start"
+              href="mailto:bonjour@les-detritivores.co"
+            >
+              bonjour@les-detritivores.co
+            </a>
             <h2 className="green text-wrap size text-b t-res">NOS BUREAUX</h2>
             <span className="smalltext big-font text-b text-start">
               65 Quai de Brazza,
@@ -46,7 +42,7 @@ const Contact = () => {
           </div>
           <div className="col disable"></div>
           <div className="col">
-            <h2 className="green text-wrap big-font-size text-stop">
+            <h2 className="green text-wrap size text-start">
               Rejoignez-nous sur les
               <br /> réseaux sociaux
             </h2>

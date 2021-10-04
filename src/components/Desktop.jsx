@@ -17,7 +17,7 @@ const Desktop = () => {
             <br /> équipes passent régulièrement
             <br /> collecter vos bacs de biodéchets
             <br />
-            <Link style={{ fontWeight: 'bold' }} to="/collecte">
+            <Link className="watch" style={{ fontWeight: 'bold' }} to="/collecte">
               Lire Plus...
             </Link>
           </p>
@@ -36,7 +36,7 @@ const Desktop = () => {
             <br /> démarche environnementale et
             <br /> vous sensibiliser est notre priorité !
             <br />
-            <Link style={{ fontWeight: 'bold' }} to="/sensibilisation">
+            <Link className="watch" style={{ fontWeight: 'bold' }} to="/sensibilisation">
               Lire Plus...
             </Link>
           </p>
