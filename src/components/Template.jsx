@@ -30,7 +30,7 @@ const Template = ({ children }) => {
       </div>
       {children}
       <footer id="footer">
-        <div className="d-flex justify-content-end">
+        <div className="d-flex justify-content-end footers">
           <Icons icon="logo" className="logo-footer" />
         </div>
       </footer>

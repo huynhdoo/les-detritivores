@@ -23,6 +23,10 @@
 :root {
   scroll-behavior: unset !important;
 }
+html,
+body {
+  overflow-x: hidden !important;
+}
 .logos {
   height: 100px;
   margin-top: 2rem;
@@ -650,6 +654,7 @@ label {
     height: 400px;
   }
 }
+
 @media (max-width: 75rem) {
   #start {
     height: 120px !important;
@@ -948,6 +953,7 @@ label {
     height: 18px;
     -webkit-clip-path: none;
     clip-path: none;
+    display: grid !important;
   }
 }
 .c-boxs {
