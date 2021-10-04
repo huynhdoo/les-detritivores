@@ -1,7 +1,4 @@
 import React from 'react';
-import Desktop from './Desktop';
-import Mobile from './Mobile';
-import { isMobile } from 'react-device-detect';
 import Icons from './Icons';
 import { Link } from 'gatsby';
 import FadeIn from 'react-fade-in';
