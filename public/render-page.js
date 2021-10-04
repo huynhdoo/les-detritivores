@@ -5002,7 +5002,7 @@ function HTML({
     content: "ie=edge"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
     name: "viewport",
-    content: "width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86, shrink-to-fit=no"
+    content: "width=device-width, initial-scale=1, shrink-to-fit=no"
   }), headComponents), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("body", bodyAttributes, preBodyComponents, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     key: "body",
     id: "___gatsby",

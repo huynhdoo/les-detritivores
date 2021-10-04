@@ -48,12 +48,18 @@ const Devis = () => {
     setMessage(e.target.value);
   };
 
-  const onSubmit = (data) =>
-    window.open(
-      `mailto:aouhani@actes-atlantique.fr?body=${encodeURIComponent(
-        `[Devis] \n\n Vous êtes: ${data.who} \n Nombre de repas servis par j: ${data.numbers} \n Structure: ${data.struct}\n Fonction: ${data.fonction}\n Nom: ${data.name}\n Prénom: ${data.lastName}\n Email: ${data.email}\n Téléphone: ${data.phone}\n\n${data.message}`
-      )}`
-    );
+  const onSubmit = (data) => {
+    fetch(`http://localhost:3001/send`, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ ...data }),
+    })
+      .then((response) => response.json())
+      .then((body) => console.log(body));
+  };
   return (
     <>
       <Helmet>
@@ -87,6 +93,7 @@ const Devis = () => {
                               onChange={onWhoChange}
                               type="text"
                               class="form-control"
+                              name="who"
                               {...register('who', { required: true })}
                             />
                             {errors.who && (
@@ -105,6 +112,7 @@ const Devis = () => {
                               onChange={onNumberChange}
                               type="number"
                               class="form-control"
+                              name="numbers"
                               {...register('numbers', { required: true })}
                             />
                             {errors.numbers && (
@@ -142,6 +150,7 @@ const Devis = () => {
                               onChange={onFonctionChange}
                               type="text"
                               class="form-control"
+                              name="fonction"
                               {...register('fonction', { required: true })}
                             />
                             {errors.fonction && (
@@ -160,6 +169,7 @@ const Devis = () => {
                               onChange={onNameChange}
                               type="text"
                               class="form-control"
+                              name="name"
                               {...register('name', { required: true })}
                             />
                             {errors.name && (
@@ -178,6 +188,7 @@ const Devis = () => {
                               onChange={onLastNameChange}
                               type="text"
                               class="form-control"
+                              name="lastname"
                               {...register('lastName', { required: true })}
                             />
                             {errors.lastName && (
@@ -196,6 +207,7 @@ const Devis = () => {
                               onChange={onMailChange}
                               type="email"
                               class="form-control"
+                              name="email"
                               {...register('email', { required: true })}
                             />
                             {errors.email && (
@@ -214,6 +226,7 @@ const Devis = () => {
                               onChange={onPhoneChange}
                               type="number"
                               class="form-control"
+                              name="phone"
                               {...register('phone', { required: true })}
                             />
                             {errors.phone && (
@@ -234,6 +247,7 @@ const Devis = () => {
                                 class="form-control"
                                 cols="30"
                                 rows="4"
+                                name="message"
                                 {...register('message', { required: true })}
                               />
                               {errors.message && (
