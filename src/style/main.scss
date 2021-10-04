@@ -638,11 +638,27 @@ label {
     }
   }
 }
+@media (max-width: 71.625rem) {
+  .s {
+    justify-content: center;
+    display: flex;
+  }
+}
+@media (min-width: 34.125rem) and (max-width: 70rem) {
+  .video {
+    width: 600px;
+    height: 400px;
+  }
+}
 @media (max-width: 75rem) {
   #start {
     height: 120px !important;
     clip-path: polygon(0 0, 100% 0%, 100% 68%, 0% 100%) !important;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 68%, 0% 100%) !important;
+  }
+  .video {
+    width: 350px;
+    height: 200px;
   }
   .p-responsive {
     margin: 0 auto;
@@ -698,8 +714,11 @@ label {
     margin: 0 auto;
     position: absolute;
     margin-right: 4rem;
-    margin-left: -6rem;
+    margin-left: 24rem;
     margin-top: 6rem;
+  }
+  .yup {
+    display: contents;
   }
   .disable {
     display: none;
@@ -753,9 +772,6 @@ label {
   .card-intro {
     font-size: 2rem;
   }
-  .video {
-    width: 350px;
-  }
   .curved-icn {
     display: none;
   }
@@ -767,8 +783,8 @@ label {
     transform: rotate(-5deg);
     margin: 0 auto;
     position: absolute;
-    margin-left: -9rem;
-    margin-top: 5.5rem;
+    margin-left: -7rem;
+    margin-top: 4rem;
   }
   .c-resp {
     margin-top: 2rem;
@@ -952,7 +968,8 @@ label {
   font-size: 1.8rem;
   font-weight: 500;
 }
-
+@media (max-width: 1102px) {
+}
 @media (max-width: 39.375rem) {
   .m-message {
     margin-left: 8.5rem !important;

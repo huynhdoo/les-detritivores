@@ -17,12 +17,12 @@ const Contact = () => {
         <div className="row">
           <div className="col">
             <h1 className="green text-wrap size text-b t-res">Téléphone</h1>
-            <a href="tel:0556671447" className="smalltext big-font text-b text-start">
+            <a href="tel:0556671447" className="smalltext big-font text-b text-start watch">
               05 56 67 14 47
             </a>
             <h1 className="green text-wrap size text-b t-res"> Mail</h1>
             <a
-              className="smalltext big-font text-b text-start"
+              className="smalltext big-font text-b text-start watch"
               href="mailto:bonjour@les-detritivores.co"
             >
               bonjour@les-detritivores.co
@@ -51,7 +51,7 @@ const Contact = () => {
                 <div className="bg-orange p-ding">
                   <Icons icon="linkedin" />
                 </div>
-                <a className="text-social m-lef " href="http://">
+                <a className="text-social m-lef watch " href="http://">
                   Linkedin
                 </a>
               </div>
@@ -59,7 +59,7 @@ const Contact = () => {
                 <div className="bg-orange p-ding">
                   <Icons icon="facebook" />{' '}
                 </div>
-                <a className="text-social m-lef" href="http://">
+                <a className="text-social m-lef watch" href="http://">
                   Facebook
                 </a>
               </div>
@@ -67,7 +67,7 @@ const Contact = () => {
                 <div className="bg-orange p-ding">
                   <Icons icon="instagram" />
                 </div>
-                <a className="text-social m-lef" href="http://">
+                <a className="text-social m-lef watch" href="http://">
                   Instagram
                 </a>
               </div>

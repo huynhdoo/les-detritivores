@@ -21,7 +21,7 @@ const Sensibilisation = () => {
                 <Image className="image-sensibilisation" picture="../../sensibilisation.jpeg" />
               </div>
               <div className="col c-resp deskt-720">
-                <h1 className="orange big-font-size-xxl font-size-smm rotate pb-2 text-start">
+                <h1 className="orange big-font-size-xxl font-size-smm rotate pb-2 text-start yup">
                   SENSIBILISATION
                   <span className="linesmall-c bg-black" />
                 </h1>

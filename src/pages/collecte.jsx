@@ -26,7 +26,7 @@ const Collect = () => {
               </div>
               <div className="col-xl-6">
                 <div className="">
-                  <h1 className="orange big-font-size-xxl rotate only-text">
+                  <h1 className="orange big-font-size-xxl rotate only-text s">
                     COLLECTE
                     <span className="linesmall-2 bg-black" />
                   </h1>
