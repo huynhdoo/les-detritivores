@@ -49,7 +49,7 @@ const Devis = () => {
   };
 
   const onSubmit = (data) => {
-    fetch(`http://localhost:3001/send`, {
+    fetch(`https://detritivores-api.imveny.repl.co/send`, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
