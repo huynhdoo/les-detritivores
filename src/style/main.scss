@@ -31,6 +31,20 @@ body {
   height: 100px;
   margin-top: 2rem;
 }
+.message {
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #e94e1a;
+  border-radius: 1rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 6rem;
+}
+.c-tests {
+  height: 70rem;
+}
 .notfound {
   font-size: 1.5rem;
 }
@@ -648,10 +662,16 @@ label {
     display: flex;
   }
 }
-@media (min-width: 34.125rem) and (max-width: 70rem) {
+@media (min-width: 35rem) and (max-width: 65rem) {
   .video {
-    width: 600px;
-    height: 400px;
+    width: 600px !important;
+    height: 400px !important;
+  }
+}
+@media (min-width: 55.75rem) and (max-width: 64.5rem) {
+  .video {
+    width: 600px !important;
+    height: 400px !important;
   }
 }
 
@@ -691,6 +711,17 @@ label {
   .t-res {
     text-align: start;
   }
+  .message {
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #e94e1a;
+    border-radius: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 6rem;
+  }
   .solutionfound {
     -webkit-transform: scale(1.5);
     transform: scale(1.2);
@@ -719,7 +750,7 @@ label {
     margin: 0 auto;
     position: absolute;
     margin-right: 4rem;
-    margin-left: 24rem;
+    margin-left: -7rem;
     margin-top: 6rem;
   }
   .yup {

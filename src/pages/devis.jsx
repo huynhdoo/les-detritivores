@@ -65,7 +65,14 @@ const Devis = () => {
       <Page loader={'comet-spin'} color={'#263b29'} size={50}>
         <TemplatePages link="/compost">
           <FadeIn>
-            <div class="container-fluid p-slide pb-11">
+            {isSubmitSuccessful && (
+              <FadeIn>
+                <span role="message" className="message">
+                  Message bien envoyer.
+                </span>
+              </FadeIn>
+            )}
+            <div class="container-fluid p-slide pb-11 c-tests">
               <div class="container">
                 <div class="row">
                   <div class="col-xl">
