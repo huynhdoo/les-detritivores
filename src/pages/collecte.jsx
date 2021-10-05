@@ -11,7 +11,7 @@ const Collect = () => {
           <FadeIn className="if-p">
             <div className="container-fluid p-slide">
               <div className="row">
-                <div className="col-md-3">
+                <div className="col-sm-3">
                   <section className="justify-content-start">
                     <div className="d-table p-responsive">
                       <div className="card-image">
@@ -26,7 +26,7 @@ const Collect = () => {
                     </div>
                   </section>
                 </div>
-                <div className="col-sm-4">
+                <div className="col-md-18">
                   <div className="">
                     <h1 className="orange big-font-size-xxl rotate only-text s">
                       COLLECTE
