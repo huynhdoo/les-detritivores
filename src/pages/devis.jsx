@@ -49,7 +49,7 @@ const Devis = () => {
   };
 
   const onSubmit = (data) => {
-    fetch(`https://detritivores-api.imveny.repl.co/send`, {
+    fetch(`http://localhost:3001/send`, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -280,7 +280,7 @@ const Devis = () => {
                       DEMANDE DE DEVIS
                       <span className="bg-dark line-custom" />
                     </h1>
-                    <div className="pt-5">
+                    <div className="pt-2">
                       <h1 className="bold">Vous aussi, valorisez vos biodéchets.</h1>
                       <p className="light big-font-size-md text-start">
                         Vous souhaitez produisez une quantité significative de déchets or ganiques

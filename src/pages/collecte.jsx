@@ -7,7 +7,7 @@ const Collect = () => {
   return (
     <>
       <Page loader={'comet-spin'} color={'#263b29'} size={50}>
-        <TemplatePages link="/">
+        <TemplatePages link="/" classN="fixed-bottom">
           <FadeIn className="if-p">
             <div className="container-fluid p-slide">
               <div className="row">
@@ -30,7 +30,7 @@ const Collect = () => {
                   <div className="">
                     <h1 className="orange big-font-size-xxl rotate only-text s">
                       COLLECTE
-                      <span className="linesmall-2 bg-black" />
+                      <span className="linesmall-4 bg-black" />
                     </h1>
                     <p className="bold card-intro">
                       Ensemble, organisons la collecte et le recyclage de vos biodéchets !

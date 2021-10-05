@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { isMobile } from 'react-device-detect';
 import ImportCSS from './ImportCSS';
-const TemplatePages = ({ children, link }) => {
+const TemplatePages = ({ children, link, classN }) => {
   return (
     <>
       <ImportCSS />
@@ -17,7 +17,7 @@ const TemplatePages = ({ children, link }) => {
         </div>
       </div>
       {children}
-      <footer id="footer" className={isMobile ? `` : `fixed-bottom`}>
+      <footer id="footer" className={isMobile ? '' : classN}>
         <div className="d-flex justify-content-end footers">
           <Icons icon="logo" className="logo-footer" />
         </div>

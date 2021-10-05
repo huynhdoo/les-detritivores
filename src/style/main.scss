@@ -67,6 +67,9 @@ body {
   transform: rotate(-5deg);
   font-weight: 700;
 }
+.pt-2 {
+  padding-top: 2rem !important;
+}
 .pt-5 {
   padding-top: 10rem !important;
 }
@@ -450,7 +453,7 @@ iframe {
   text-align: start;
   margin-left: 1.5rem;
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 .choice-text {
@@ -656,6 +659,14 @@ label {
     }
   }
 }
+.linesmall-4 {
+  border-bottom-right-radius: 2rem;
+  height: 0.8rem;
+  margin: 10rem 0rem 0 -7rem;
+  position: absolute;
+  transform: rotate(-5deg);
+  width: 11rem;
+}
 @media (max-width: 71.625rem) {
   .s {
     justify-content: center;
@@ -752,6 +763,20 @@ label {
     margin-right: 4rem;
     margin-left: -7rem;
     margin-top: 6rem;
+  }
+  .text-yes {
+    margin-left: 4rem;
+  }
+  .text-no {
+    margin-left: 7rem;
+  }
+  .linesmall-4 {
+    border-bottom-right-radius: 2rem;
+    height: 0.5rem;
+    margin: 6rem 4rem 0 24rem;
+    position: absolute;
+    transform: rotate(-5deg);
+    width: 11rem;
   }
   .yup {
     display: contents;

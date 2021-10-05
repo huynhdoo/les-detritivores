@@ -25,18 +25,18 @@ const Compost = () => {
         <meta name="description" content="" />
       </Helmet>
       <Page loader={'comet-spin'} color={'#263b29'} size={50}>
-        <TemplatePages link="/">
+        <TemplatePages link="/" classN="fixed-bottom">
           <FadeIn>
             <div className="container-fluid p-slide">
               <div className="row">
                 <div className="col">
                   <div className="ml-2">
-                    <h1 className="orange big-font-size-xxl rotate pb-2 text-start">
+                    <h1 className="orange big-font-size-xxl rotate pb-2 text-start text-no">
                       COMPOST
                       <span className="linesmall-2 bg-black" />
                     </h1>
 
-                    <div>
+                    <div className="text-yes">
                       <p className="bold text-start big-font-size-md pb-2 mb-3">
                         Mais que deviennent les restes alimentaires <br /> collectés auprès de nos
                         usagers ?
