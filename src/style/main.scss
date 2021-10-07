@@ -618,19 +618,60 @@ label {
   color: #e94e1a !important;
   transition: all 0.5s;
 }
+@media (min-width: 75rem) and (max-width: 85.75rem) {
+  .deskt-720 {
+    margin-top: 2rem !important;
+    margin-right: 6rem !important;
+  }
+  .image-sensibilisation {
+    border-radius: 2rem !important;
+    margin: 0 auto !important;
+    height: 309px !important;
+  }
+}
+@media (min-width: 82.5rem) and (max-width: 85.75rem) {
+  .image-sensibilisation {
+    border-radius: 2rem !important;
+    margin: 0 auto !important;
+    height: 410px !important;
+  }
+}
 @media (min-width: 75rem) and (max-width: 90.625rem) {
   .deskt-720 {
     margin-top: 2rem;
     margin-right: 7rem;
   }
-}
-@media (min-width: 75rem) and (max-width: 90.625rem) {
-  .deskt-720 {
-    margin-top: 2rem;
-    margin-left: 30rem;
+  .image-sensibilisation {
+    border-radius: 2rem;
+    margin: 0 auto;
+    height: 442px;
+  }
+  .linesmall-c {
+    height: 0.8rem;
+    border-bottom-right-radius: 2rem;
+    width: 15rem;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    margin: 0 auto;
+    position: absolute;
+    margin-left: -11rem;
+    margin-top: 9rem;
   }
 }
 
+@media (min-width: 75rem) and (max-width: 97rem) {
+  .linesmall-c {
+    height: 0.8rem;
+    border-bottom-right-radius: 2rem;
+    width: 15rem;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    margin: 0 auto;
+    position: absolute;
+    margin-left: -11rem;
+    margin-top: 9rem;
+  }
+}
 @media (max-width: 85.5rem) {
   .sliding {
     display: inline-block;
