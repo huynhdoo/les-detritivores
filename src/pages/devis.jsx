@@ -86,7 +86,7 @@ const Devis = () => {
                       <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="grid row row-cols-2 solutionfound">
                           <div className="form-group">
-                            <label className="label text-start" for="who">
+                            <label className="label text-start" htmlFor="who">
                               Vous êtes:*
                             </label>
                             <input
@@ -105,7 +105,7 @@ const Devis = () => {
                             )}
                           </div>
                           <div className="form-group">
-                            <label className="label" for="servis">
+                            <label className="label" htmlFor="servis">
                               Nombre de repas servis par
                             </label>
                             <input
@@ -124,7 +124,7 @@ const Devis = () => {
                             )}
                           </div>
                           <div className="form-group">
-                            <label className="label" for="struct">
+                            <label className="label" htmlFor="struct">
                               Structure:*
                             </label>
                             <input
@@ -143,7 +143,7 @@ const Devis = () => {
                             )}
                           </div>
                           <div className="form-group">
-                            <label className="label" for="fonction">
+                            <label className="label" htmlFor="fonction">
                               Fonction:*
                             </label>
                             <input
@@ -162,7 +162,7 @@ const Devis = () => {
                             )}
                           </div>
                           <div className="form-group">
-                            <label className="label" for="name">
+                            <label className="label" htmlFor="name">
                               Nom:*
                             </label>
                             <input
@@ -181,7 +181,7 @@ const Devis = () => {
                             )}
                           </div>
                           <div className="form-group">
-                            <label className="label" for="username">
+                            <label className="label" htmlFor="username">
                               Prénom:*
                             </label>
                             <input
@@ -200,7 +200,7 @@ const Devis = () => {
                             )}
                           </div>
                           <div className="form-group">
-                            <label className="label" for="email">
+                            <label className="label" htmlFor="email">
                               Email:*
                             </label>
                             <input
@@ -219,7 +219,7 @@ const Devis = () => {
                             )}
                           </div>
                           <div className="form-group">
-                            <label className="label" for="phone">
+                            <label className="label" htmlFor="phone">
                               Téléphone:*
                             </label>
                             <input
@@ -239,7 +239,7 @@ const Devis = () => {
                           </div>
                           <div className="col-md-10 m-message">
                             <div className="form-group">
-                              <label className="label" for="#">
+                              <label className="label" htmlFor="#">
                                 Message
                               </label>
                               <textarea

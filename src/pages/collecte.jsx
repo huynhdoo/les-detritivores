@@ -74,7 +74,6 @@ const Collect = () => {
                       width="500"
                       height="380"
                       className="maps"
-                      frameborder="0"
                       loading="lazy"
                       style={{ border: 0 }}
                       allowFullScreen
