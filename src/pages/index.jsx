@@ -59,6 +59,7 @@ function Home() {
           </section>
 
           <section className="">
+            <h1>test</h1>
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
               <Usagers />
             </Fade>
