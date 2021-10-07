@@ -424,10 +424,9 @@ iframe {
   margin-top: -2rem;
 }
 .image-sensibilisation {
-  width: 730px;
-  height: 500px;
   border-radius: 2rem;
   margin: 0 auto;
+  height: 530px;
 }
 .i4ewOd-pzNkMb-haAclf,
 #map-canvas,
@@ -621,10 +620,17 @@ label {
 }
 @media (min-width: 75rem) and (max-width: 90.625rem) {
   .deskt-720 {
-    margin-left: 30rem;
     margin-top: 2rem;
+    margin-right: 7rem;
   }
 }
+@media (min-width: 75rem) and (max-width: 90.625rem) {
+  .deskt-720 {
+    margin-top: 2rem;
+    margin-left: 26rem;
+  }
+}
+
 @media (max-width: 85.5rem) {
   .sliding {
     display: inline-block;
