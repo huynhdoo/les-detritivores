@@ -14,9 +14,9 @@ const Template = ({ children }) => {
     <>
       <ImportCSS />
       <div id="start">
-        <div class="justify-content-md-end">
+        <div className="justify-content-md-end">
           <div className="row">
-            <div class="col">
+            <div className="col">
               <div onClick={() => play()} className="wheelchair">
                 <Icons icon="wheelchair" />
               </div>

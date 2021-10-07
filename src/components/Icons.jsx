@@ -380,7 +380,7 @@ const Icons = ({ icon, className }) => {
           xmlns="http://www.w3.org/2000/svg"
           stroke="#fff"
           fill="#fff"
-          stroke-width="0"
+          strokeWidth="0"
           viewBox="0 0 200 200"
         >
           <g id="Layer_1" data-name="Layer 1">
@@ -522,7 +522,7 @@ const Icons = ({ icon, className }) => {
           focusable="false"
           data-prefix="fas"
           data-icon="wheelchair"
-          class="svg-inline--fa fa-wheelchair fa-w-16"
+          className="svg-inline--fa fa-wheelchair fa-w-16"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -540,7 +540,7 @@ const Icons = ({ icon, className }) => {
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          stroke-width="1"
+          strokeWidth="1"
           fill="#fff"
           stroke="#fff"
           viewBox="0 0 200 200"

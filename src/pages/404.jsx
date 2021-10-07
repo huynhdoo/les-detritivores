@@ -15,9 +15,9 @@ const Page404 = () => {
       </Helmet>
       <TemplatePages link="/">
         <Container>
-          <div class="row">
-            <div class="col-sm disable"></div>
-            <div class="col-sm">
+          <div className="row">
+            <div className="col-sm disable"></div>
+            <div className="col-sm">
               <Fade bottom duration={1000} delay={500} distance="30px">
                 <h1 className="hero-title text-center c-s">
                   Désolé, cette page n'existe pas{' '}
@@ -27,7 +27,7 @@ const Page404 = () => {
                 </h1>
               </Fade>
             </div>
-            <div class="col-sm disable"></div>
+            <div className="col-sm disable"></div>
           </div>
         </Container>
       </TemplatePages>

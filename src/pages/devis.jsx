@@ -78,21 +78,21 @@ const Devis = () => {
                 </span>
               </FadeIn>
             )}
-            <div class="container-fluid p-slide pb-11 c-tests">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xl">
+            <div className="container-fluid p-slide pb-11 c-tests">
+              <div className="container">
+                <div className="row">
+                  <div className="col-xl">
                     <div className="m-submit">
                       <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="grid row row-cols-2 solutionfound">
-                          <div class="form-group">
-                            <label class="label text-start" for="who">
+                          <div className="form-group">
+                            <label className="label text-start" for="who">
                               Vous êtes:*
                             </label>
                             <input
                               onChange={onWhoChange}
                               type="text"
-                              class="form-control"
+                              className="form-control"
                               name="who"
                               {...register('who', { required: true })}
                             />
@@ -104,14 +104,14 @@ const Devis = () => {
                               </FadeIn>
                             )}
                           </div>
-                          <div class="form-group">
-                            <label class="label" for="servis">
+                          <div className="form-group">
+                            <label className="label" for="servis">
                               Nombre de repas servis par
                             </label>
                             <input
                               onChange={onNumberChange}
                               type="number"
-                              class="form-control"
+                              className="form-control"
                               name="numbers"
                               {...register('numbers', { required: true })}
                             />
@@ -123,14 +123,14 @@ const Devis = () => {
                               </FadeIn>
                             )}
                           </div>
-                          <div class="form-group">
-                            <label class="label" for="struct">
+                          <div className="form-group">
+                            <label className="label" for="struct">
                               Structure:*
                             </label>
                             <input
                               onChange={onStructureChange}
                               type="text"
-                              class="form-control"
+                              className="form-control"
                               name="struct"
                               {...register('struct', { required: true })}
                             />
@@ -142,14 +142,14 @@ const Devis = () => {
                               </FadeIn>
                             )}
                           </div>
-                          <div class="form-group">
-                            <label class="label" for="fonction">
+                          <div className="form-group">
+                            <label className="label" for="fonction">
                               Fonction:*
                             </label>
                             <input
                               onChange={onFonctionChange}
                               type="text"
-                              class="form-control"
+                              className="form-control"
                               name="fonction"
                               {...register('fonction', { required: true })}
                             />
@@ -161,14 +161,14 @@ const Devis = () => {
                               </FadeIn>
                             )}
                           </div>
-                          <div class="form-group">
-                            <label class="label" for="name">
+                          <div className="form-group">
+                            <label className="label" for="name">
                               Nom:*
                             </label>
                             <input
                               onChange={onNameChange}
                               type="text"
-                              class="form-control"
+                              className="form-control"
                               name="name"
                               {...register('name', { required: true })}
                             />
@@ -180,14 +180,14 @@ const Devis = () => {
                               </FadeIn>
                             )}
                           </div>
-                          <div class="form-group">
-                            <label class="label" for="username">
+                          <div className="form-group">
+                            <label className="label" for="username">
                               Prénom:*
                             </label>
                             <input
                               onChange={onLastNameChange}
                               type="text"
-                              class="form-control"
+                              className="form-control"
                               name="lastname"
                               {...register('lastName', { required: true })}
                             />
@@ -199,14 +199,14 @@ const Devis = () => {
                               </FadeIn>
                             )}
                           </div>
-                          <div class="form-group">
-                            <label class="label" for="email">
+                          <div className="form-group">
+                            <label className="label" for="email">
                               Email:*
                             </label>
                             <input
                               onChange={onMailChange}
                               type="email"
-                              class="form-control"
+                              className="form-control"
                               name="email"
                               {...register('email', { required: true })}
                             />
@@ -218,14 +218,14 @@ const Devis = () => {
                               </FadeIn>
                             )}
                           </div>
-                          <div class="form-group">
-                            <label class="label" for="phone">
+                          <div className="form-group">
+                            <label className="label" for="phone">
                               Téléphone:*
                             </label>
                             <input
                               onChange={onPhoneChange}
                               type="number"
-                              class="form-control"
+                              className="form-control"
                               name="phone"
                               {...register('phone', { required: true })}
                             />
@@ -237,14 +237,14 @@ const Devis = () => {
                               </FadeIn>
                             )}
                           </div>
-                          <div class="col-md-10 m-message">
-                            <div class="form-group">
-                              <label class="label" for="#">
+                          <div className="col-md-10 m-message">
+                            <div className="form-group">
+                              <label className="label" for="#">
                                 Message
                               </label>
                               <textarea
                                 onChange={onMessageChange}
-                                class="form-control"
+                                className="form-control"
                                 cols="30"
                                 rows="4"
                                 name="message"
@@ -260,12 +260,12 @@ const Devis = () => {
                             </div>
                           </div>
                           <br />
-                          <div class="col-md-10 p-2 m-btn">
-                            <div class="form-group">
+                          <div className="col-md-10 p-2 m-btn">
+                            <div className="form-group">
                               <button
                                 aria-label="Submit"
                                 type="submit"
-                                class="btn bg-orange c-btn rounded-pill"
+                                className="btn bg-orange c-btn rounded-pill"
                               >
                                 Envoyer
                               </button>
@@ -275,7 +275,7 @@ const Devis = () => {
                       </form>
                     </div>
                   </div>
-                  <div class="col rep">
+                  <div className="col rep">
                     <h1 className="orange big-font-size-pm rotate">
                       DEMANDE DE DEVIS
                       <span className="bg-dark line-custom" />
