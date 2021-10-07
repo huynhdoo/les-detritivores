@@ -73,9 +73,7 @@ const Devis = () => {
           <FadeIn>
             {isSubmitSuccessful && (
               <FadeIn>
-                <span role="message" className="message">
-                  Message bien envoyer.
-                </span>
+                <span className="message">Message bien envoyer.</span>
               </FadeIn>
             )}
             <div className="container-fluid p-slide pb-11 c-tests">
