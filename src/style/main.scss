@@ -703,11 +703,19 @@ label {
     margin-left: -6rem;
   }
 }
+.maps {
+  width: 420px;
+  height: 250px;
+}
 @media (min-width: 768px) {
   .col-md-18 {
     flex: 0 0 auto;
     width: 36%;
-    margin-left: 1rem;
+    margin-left: 4rem;
+  }
+  .col-md-20 {
+    flex: 0 0 auto;
+    width: 35%;
   }
 }
 @media (min-width: 35rem) and (max-width: 89.813rem) {
@@ -994,7 +1002,8 @@ label {
     border-radius: 5px !important;
   }
   .maps {
-    width: 300px;
+    width: 350px !important;
+    height: 240px !important;
   }
   .linesmall {
     height: 3px;
