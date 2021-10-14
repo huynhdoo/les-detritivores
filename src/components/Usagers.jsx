@@ -5,7 +5,7 @@ const Usagers = () => {
   return (
     <div className="container-fluid d-flex center-container">
       <div className="row">
-        <div className="col">
+        <div className="col m-pse">
           <iframe
             width="853"
             height="510"
