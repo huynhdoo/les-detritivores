@@ -38,7 +38,7 @@ const Contact = () => {
               <h1 className="green text-wrap size text-b t-res">NOUS RENCONTRER</h1>
               <span className="smalltext big-font text-b text-start">
                 <a
-                  className="smalltext big-font text-b text-start"
+                  className="smalltext big-font text-b text-start watch"
                   target="_blank"
                   href="https://www.google.com/maps/place/65+Quai+de+Brazza,+33100+Bordeaux/@44.8554532,-0.550648,17z/data=!3m1!4b1!4m5!3m4!1s0xd5528a21e17e1b7:0x8b0813175afece1c!8m2!3d44.8554494!4d-0.5484593"
                 >

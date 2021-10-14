@@ -625,10 +625,13 @@ label {
 }
 .watch-link {
   background-color: #e94e1a !important;
-  transition: all 0.5s;
+  transition: 0.5s;
   padding: 1rem;
   color: #fff !important;
   border-radius: 1.5rem;
+}
+.watch-link:hover {
+  transition: 0.5s;
 }
 .socialsbtn {
   margin-left: 0.5rem;
@@ -824,6 +827,13 @@ label {
 .logo-espace {
   margin-top: 2rem;
   margin-left: 4rem;
+}
+.watch {
+  transition: 0.2s;
+}
+.watch:hover {
+  color: #e94e1a !important;
+  transition: 0.2s;
 }
 
 @media (max-width: 75rem) {
