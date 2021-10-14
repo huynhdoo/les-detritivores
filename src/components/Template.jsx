@@ -18,7 +18,7 @@ const Template = ({ children }) => {
           <div className="row">
             <div className="col">
               <div onClick={() => play()} className="wheelchair">
-                <Icons icon="wheelchair" />
+                <Icons icon="assistive" />
               </div>
             </div>
             <div className="col">
