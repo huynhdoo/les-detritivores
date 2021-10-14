@@ -31,6 +31,10 @@ body {
   height: 100px;
   margin-top: 2rem;
 }
+.logos-space {
+  height: 100px;
+  margin-top: 2rem;
+}
 .message {
   color: #fff;
   font-size: 1.5rem;
@@ -616,6 +620,9 @@ label {
 .join {
   margin-top: 1rem;
 }
+.pb-2 {
+  margin-bottom: 1rem;
+}
 .watch-link {
   background-color: #e94e1a !important;
   transition: all 0.5s;
@@ -814,6 +821,10 @@ label {
     height: 400px !important;
   }
 }
+.logo-espace {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
 
 @media (max-width: 75rem) {
   #start {
@@ -828,6 +839,14 @@ label {
   .p-responsive {
     margin: 0 auto;
   }
+  .logo-espace {
+    margin-top: 1rem;
+    margin-left: 8rem;
+  }
+  .logos-space {
+    height: 80px;
+    margin-top: 0rem;
+  }
   .big-font-size-xxl {
     font-size: 5rem;
   }
@@ -835,6 +854,9 @@ label {
     margin-left: 3.5rem;
     margin-bottom: 0.5rem;
     margin-top: 1rem;
+  }
+  .pb-2 {
+    margin-bottom: 2rem;
   }
   .m-btn {
     margin-left: 3.5rem;

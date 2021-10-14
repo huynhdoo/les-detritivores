@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="container">
       <FadeIn>
-        <Title className="contacts pb-6 orange" title="Contact" color="orange ms-negative" />
+        <Title className="contacts pb-2 orange" title="Contact" color="orange ms-negative" />
       </FadeIn>
       <div className="container">
         <div className="row">
