@@ -613,10 +613,22 @@ label {
   padding: 0 !important;
   margin: 0 auto !important;
 }
-.watch:hover {
-  text-decoration: underline;
-  color: #e94e1a !important;
+.join {
+  margin-top: 1rem;
+}
+.watch-link {
+  background-color: #e94e1a !important;
   transition: all 0.5s;
+  padding: 1rem;
+  color: #fff !important;
+  border-radius: 1.5rem;
+}
+.socialsbtn {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+.more {
+  margin-left: 0.5rem;
 }
 @media (min-width: 75rem) and (max-width: 85.75rem) {
   .deskt-720 {

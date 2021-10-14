@@ -16,59 +16,64 @@ const Contact = () => {
         </div>
         <div className="row">
           <div className="col">
-            <h1 className="green text-wrap size text-b t-res">Téléphone</h1>
-            <a href="tel:0556671447" className="smalltext big-font text-b text-start watch">
+            <h1 className="green text-wrap size text-b t-res">NOUS APPELER</h1>
+            <a
+              href="tel:0556671447"
+              target="_blank"
+              className="smalltext big-font text-b text-start watch"
+            >
               05 56 67 14 47
             </a>
-            <h1 className="green text-wrap size text-b t-res"> Mail</h1>
-            <a
-              className="smalltext big-font text-b text-start watch"
-              href="mailto:bonjour@les-detritivores.co"
-            >
-              bonjour@les-detritivores.co
-            </a>
-            <h2 className="green text-wrap size text-b t-res">NOS BUREAUX</h2>
-            <span className="smalltext big-font text-b text-start">
-              65 Quai de Brazza,
-              <br /> 33100 Bordeaux
-            </span>
-            <h2 className="green text-wrap size text-b text-start">
-              NOTRE PLATEFORME <br /> DE COMPOSTAGE
-            </h2>
-            <span className="smalltext big-font text-b text-start">
-              16 Quai de Brazza
-              <br /> 33100 Bordeaux
-            </span>
+            <div className="join">
+              <h1 className="green text-wrap size text-b t-res">NOUS ÉCRIRE</h1>
+              <a
+                className="smalltext big-font text-b text-start watch"
+                href="mailto:bonjour@les-detritivores.co"
+                target="_blank"
+              >
+                bonjour@les-detritivores.co
+              </a>
+            </div>
+            <div className="join">
+              <h1 className="green text-wrap size text-b t-res">NOUS RENCONTRER</h1>
+              <span className="smalltext big-font text-b text-start">
+                <a
+                  className="smalltext big-font text-b text-start"
+                  target="_blank"
+                  href="https://www.google.com/maps/place/65+Quai+de+Brazza,+33100+Bordeaux/@44.8554532,-0.550648,17z/data=!3m1!4b1!4m5!3m4!1s0xd5528a21e17e1b7:0x8b0813175afece1c!8m2!3d44.8554494!4d-0.5484593"
+                >
+                  65 Quai de Brazza,
+                  <br /> 33100 Bordeaux
+                </a>
+              </span>
+            </div>
           </div>
           <div className="col disable"></div>
           <div className="col">
-            <h2 className="green text-wrap size text-start">
-              Rejoignez-nous sur les
-              <br /> réseaux sociaux
-            </h2>
+            <h1 className="green text-wrap size text-start">SUIVEZ-NOUS</h1>
             <div className="socialmedia">
               <div className="socials">
-                <div className="bg-orange p-ding">
-                  <Icons icon="linkedin" />
-                </div>
-                <a className="text-social m-lef watch " href="http://">
-                  Linkedin
+                <a className="text-social m-lef watch " href="http://" rel="noreferrer">
+                  <div className="bg-orange p-ding">
+                    <Icons icon="linkedin" />
+                  </div>
+                  <span className="socialsbtn">Linkedin</span>
                 </a>
               </div>
               <div className="socials">
-                <div className="bg-orange p-ding">
-                  <Icons icon="facebook" />{' '}
-                </div>
-                <a className="text-social m-lef watch" href="http://">
-                  Facebook
+                <a className="text-social m-lef watch" href="http://" rel="noreferrer">
+                  <div className="bg-orange p-ding">
+                    <Icons icon="facebook" />{' '}
+                  </div>
+                  <span className="socialsbtn">Facebook</span>
                 </a>
               </div>
               <div className="socials">
-                <div className="bg-orange p-ding">
-                  <Icons icon="instagram" />
-                </div>
-                <a className="text-social m-lef watch" href="http://">
-                  Instagram
+                <a className="text-social m-lef watch" href="http://" rel="noreferrer">
+                  <div className="bg-orange p-ding">
+                    <Icons icon="instagram" />
+                  </div>
+                  <span className="socialsbtn">Instagram</span>
                 </a>
               </div>
             </div>
