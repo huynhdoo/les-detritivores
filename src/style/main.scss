@@ -63,7 +63,7 @@ body {
 }
 .logo-footer {
   height: 100px;
-  margin-top: 2%;
+  margin-top: 1%;
   padding-right: 1%;
 }
 .whoarewe {
@@ -582,11 +582,10 @@ iframe {
 }
 .sliding {
   display: inline-block;
-
-  height: 200px;
+  height: 180px;
   width: 100%;
   border-radius: 40px;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 .m-message {
   margin-left: 2.5rem;
@@ -698,10 +697,10 @@ label {
 @media (max-width: 85.5rem) {
   .sliding {
     display: inline-block;
-    height: 200px;
+    height: 150px;
     width: 100%;
     border-radius: 40px;
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
   .size {
     font-size: 2.5rem;
@@ -1132,9 +1131,9 @@ label {
       padding: 0 !important;
     }
     .logo-footer {
-      height: 100px;
-      margin-top: 10%;
-      padding-right: 1%;
+      height: 70px;
+      margin-top: 4rem;
+      margin-bottom: 1rem;
     }
   }
   .arrow-position {
@@ -1142,8 +1141,8 @@ label {
     margin-left: 2rem;
   }
   .logos {
-    height: 100px;
-    margin-top: 0rem;
+    height: 80px;
+    margin-top: 1rem;
   }
   .d-back {
     margin-bottom: 1rem;
@@ -1211,9 +1210,9 @@ label {
 @media (max-width: 117.5rem) {
   .sliding {
     display: inline-block;
-    height: 200px;
+    height: 150px;
     width: 100%;
     border-radius: 40px;
-    margin-top: 2rem;
+    margin-top: 5.5rem;
   }
 }

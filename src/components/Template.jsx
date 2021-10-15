@@ -3,7 +3,6 @@ import React from 'react';
 import useSound from 'use-sound';
 import useKeypress from 'react-use-keypress';
 import playing from '../sounds/sound.mp3';
-import ImportCSS from './ImportCSS';
 const Template = ({ children }) => {
   const [play] = useSound(playing);
 
@@ -12,7 +11,6 @@ const Template = ({ children }) => {
   });
   return (
     <>
-      <ImportCSS />
       <div id="start">
         <div className="justify-content-md-end">
           <div className="row">

@@ -2,14 +2,12 @@ import Icons from './Icons';
 import React, { useState, useRef } from 'react';
 import { Link } from 'gatsby';
 import { isMobile } from 'react-device-detect';
-import ImportCSS from './ImportCSS';
 import { Overlay } from 'react-bootstrap';
 const TemplatePages = ({ children, link, classN }) => {
   const [show, setShow] = useState(false);
   const target = useRef(null);
   return (
     <>
-      <ImportCSS />
       <div id="start">
         <div className="d-flex justify-content-start d-back">
           <Link

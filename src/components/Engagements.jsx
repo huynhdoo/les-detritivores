@@ -4,7 +4,7 @@ const Engagements = () => {
   return (
     <div className="container p-spaces">
       <div className="row">
-        <div className="col">
+        <div className="col-sm">
           <h1 className="orange m-text">ENVIRONNEMENTAUX</h1>
           <div className="bg-orange rounded-circle boom">
             <Icons icon="ptt5" />
@@ -15,7 +15,7 @@ const Engagements = () => {
             diminution des émissions de CO2.
           </p>
         </div>
-        <div className="col">
+        <div className="col-sm">
           <h1 className="orange m-text">SOCIAUX</h1>
           <div className="bg-orange rounded-circle boom">
             <Icons icon="ptt13" />
@@ -32,7 +32,7 @@ const Engagements = () => {
             Chez les DETRITIVORES, chaque <br /> compétence détenue est valorisée !
           </p>
         </div>
-        <div className="col">
+        <div className="col-sm">
           <h1 className="orange m-text">COOPÉRATIFS</h1>
           <div className="bg-orange rounded-circle boom">
             <Icons icon="ptt3" />

@@ -12,7 +12,8 @@ import Intro from '../components/Intro';
 import { Template } from '../components/Template';
 import { Title } from '../components/Title';
 import Page from 'react-page-loading';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../style/main.scss';
 function Home() {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
