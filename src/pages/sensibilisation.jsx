@@ -15,7 +15,7 @@ const Sensibilisation = () => {
         <meta name="description" content="" />
       </Helmet>
       <Page loader={'comet-spin'} color={'#263b29'} size={50}>
-        <TemplatePages link="/">
+        <TemplatePages link="/" classN="fixed-bottom">
           <FadeIn>
             <div className="container-fluid p-slide pb-11">
               <div className="row">
@@ -34,7 +34,6 @@ const Sensibilisation = () => {
                       de vos collaborateurs, convives et équipes autour de la notion de <br />
                       biodéchets et de recyclage !
                     </p>
-                    <Icons icon="curved-arrow" />
                   </div>
                   <div className="sens">
                     <p className="light text-assign">
