@@ -29,8 +29,8 @@ const Contact = ({
             <a
               href="tel:0556671447"
               target="_blank"
-              rel="noopener"
               className="smalltext big-font text-b text-start watch"
+              rel="noopener"
             >
               {number}
             </a>
