@@ -43,7 +43,7 @@ function Home() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{Text.title}</title>
+        <title>{Text.content}</title>
         <html lang="fr" />
         <meta name="description" content={Text.content} />
       </Helmet>
@@ -51,7 +51,7 @@ function Home() {
         <Template>
           <section>
             <FadeIn>
-              <Title className="whoarewe orange" title="QUI SOMMES NOUS ?" color="orange" />
+              <Title className="whoarewe orange" title={Text.title} color="orange" />
             </FadeIn>
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
               <Intro introText={Parser(Text.introText)} />
