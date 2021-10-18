@@ -43,15 +43,15 @@ function Home() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{Text.content}</title>
+        <title>{Text.title}</title>
         <html lang="fr" />
-        <meta name="description" content={Text.content} />
+        <meta name="description" content={Text.introTitle} />
       </Helmet>
       <Page loader={'comet-spin'} color={'#263b29'} size={50}>
         <Template>
           <section>
             <FadeIn>
-              <Title className="whoarewe orange" title={Text.title} color="orange" />
+              <Title className="whoarewe orange" title={Text.introTitle} color="orange" />
             </FadeIn>
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
               <Intro introText={Parser(Text.introText)} />
