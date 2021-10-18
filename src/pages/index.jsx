@@ -1,3 +1,6 @@
+/**
+ * IMPORTS
+ **/
 import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import FadeIn from 'react-fade-in';
@@ -5,6 +8,9 @@ import { Helmet } from 'react-helmet';
 import axios from 'axios';
 import Parser from 'react-html-parser';
 
+/**
+ * COMPONENTS
+ **/
 import Usagers from '../components/Usagers';
 import Engagements from '../components/Engagements';
 import Offer from '../components/Offer';
@@ -15,21 +21,23 @@ import { Template } from '../components/Template';
 import { Title } from '../components/Title';
 import Page from 'react-page-loading';
 
+/**
+ * CSS
+ **/
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
-function Home() {
+const Index = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [Text, setText] = useState('');
   axios
     .get(
-      `https://api.storyblok.com/v2/cdn/stories/preview?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt&cv=1631095460`
+      `https://api.storyblok.com/v2/cdn/stories/preview?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt`
     )
     .then((response) => {
       setText(response.data.story.content);
     })
     .catch((e) => console.error(e));
-
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -130,6 +138,6 @@ function Home() {
       </Page>
     </>
   );
-}
+};
 
-export default Home;
+export default Index;
