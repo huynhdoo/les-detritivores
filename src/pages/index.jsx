@@ -92,15 +92,12 @@ function Home() {
             </div>
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
               <Offer
-                //Collecte Content
                 collectTitle={Text.collectTitle}
                 collectText={ReactHtmlParser(Text.collectText)}
                 collectLink={Text.collectLink}
-                //Sensibilisation Content
                 sensibilisationTitle={Text.sensibilisationTitle}
                 sensibilisationText={ReactHtmlParser(Text.sensibilisationText)}
                 sensibilisationLink={Text.sensibilisationLink}
-                //Compost Content
                 compostTitle={Text.compostTitle}
                 compostText={ReactHtmlParser(Text.compostText)}
                 compostLink={Text.compostLink}
