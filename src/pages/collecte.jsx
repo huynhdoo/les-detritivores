@@ -27,7 +27,7 @@ const Collect = () => {
                   </section>
                 </div>
                 <div className="col-md-18">
-                  <div className="">
+                  <div>
                     <h1 className="orange big-font-size-xxl rotate only-text s">
                       COLLECTE
                       <span className="linesmall-4 bg-black" />

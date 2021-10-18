@@ -49,7 +49,7 @@ function Home() {
       </Helmet>
       <Page loader={'comet-spin'} color={'#263b29'} size={50}>
         <Template>
-          <section className="">
+          <section>
             <FadeIn>
               <Title className="whoarewe orange" title="QUI SOMMES NOUS ?" color="orange" />
             </FadeIn>
@@ -58,7 +58,7 @@ function Home() {
             </Fade>
           </section>
 
-          <section className="">
+          <section>
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
               <Usagers
                 usagesTitle={Text.usagesTitle}
@@ -112,7 +112,7 @@ function Home() {
               <Trust trustTitle={Text.trustTitle} />
             </Fade>
           </section>
-          <section className="">
+          <section>
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
               <Contact
                 contactTitle={Text.contactTitle}
