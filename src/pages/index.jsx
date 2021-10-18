@@ -45,7 +45,7 @@ function Home() {
         <meta charSet="utf-8" />
         <title>{Text.title}</title>
         <html lang="fr" />
-        <meta name="description" content={Text.introTitle} />
+        <meta name="description" content={Text.title} />
       </Helmet>
       <Page loader={'comet-spin'} color={'#263b29'} size={50}>
         <Template>
