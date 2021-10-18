@@ -1,7 +1,7 @@
 import React from 'react';
 import FadeIn from 'react-fade-in';
 import Icons from './Icons';
-const Usagers = () => {
+const Usagers = ({ usagesTitle, restaurant, restaurantCollective, collectivites, particular }) => {
   return (
     <div className="container-fluid d-flex center-container">
       <div className="row">
@@ -18,24 +18,24 @@ const Usagers = () => {
         </div>
         <div className="col ml-mb m-p">
           <FadeIn>
-            <h1 className="orange big-font-size-xl">Nos Usagers</h1>
+            <h1 className="orange big-font-size-xl">{usagesTitle}</h1>
           </FadeIn>
           <div className="rounded-circle bg-orange circle">
             <Icons icon="people" />
           </div>
           <div className="space-usages">
             <p className="sf usages-font">
-              LES RESTAURATEURS <span className="line-sm bg-orange" />
+              {restaurant} <span className="line-sm bg-orange" />
             </p>
             <p className="sf usages-font">
-              LA RESTAURATION COLLECTIVE
+              {restaurantCollective}
               <span className="line-sm bg-orange" />
             </p>
             <p className="sf usages-font">
-              LES COLLECTIVITES <span className="line-sm bg-orange" />
+              {collectivites} <span className="line-sm bg-orange" />
             </p>
             <p className="sf usages-font">
-              LES PARTICULIERS <span className="line-sm bg-orange" />
+              {particular} <span className="line-sm bg-orange" />
             </p>
           </div>
         </div>

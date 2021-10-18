@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Icons from './Icons';
 
-const Trust = () => {
+const Trust = ({ trustTitle }) => {
   const images = ['logo', 'logo', 'logo', 'logo', 'logo', 'logo'];
   const delay = 2500;
   const [index, setIndex] = React.useState(0);
@@ -27,7 +27,7 @@ const Trust = () => {
 
   return (
     <>
-      <h1 className="orange size">ILS NOUS FONT CONFIANCE</h1>
+      <h1 className="orange size">{trustTitle}</h1>
       <div className="pb-6 d-flex justify-content-center p-cst">
         <div className="trusting bg-green">
           <div

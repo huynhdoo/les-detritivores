@@ -1,19 +1,15 @@
 import React from 'react';
 import Icons from './Icons';
-const Engagements = () => {
+const Engagements = ({ environementTitle, environement }) => {
   return (
     <div className="container p-spaces">
       <div className="row">
         <div className="col-sm">
-          <h1 className="orange m-text">ENVIRONNEMENTAUX</h1>
+          <h1 className="orange m-text">{environementTitle}</h1>
           <div className="bg-orange rounded-circle boom">
             <Icons icon="ptt5" />
           </div>
-          <p className="semi">
-            Nous œuvrons pour une <span className="bold">utilisation raisonnable</span> des
-            ressources naturelles, nous luttons contre le gaspillage alimentaire et contribuons à la
-            diminution des émissions de CO2.
-          </p>
+          <p className="semi">{environement}</p>
         </div>
         <div className="col-sm">
           <h1 className="orange m-text">SOCIAUX</h1>

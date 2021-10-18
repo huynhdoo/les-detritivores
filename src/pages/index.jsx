@@ -14,32 +14,30 @@ import { Title } from '../components/Title';
 import Page from 'react-page-loading';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
+import axios from 'axios';
+import ReactHtmlParser from 'react-html-parser';
 function Home() {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-
-  const handleResize = () => {
-    // You save my day. https://stackoverflow.com/questions/44480053/how-to-detect-if-screen-size-has-changed-to-mobile-in-react
-    if (window.innerWidth < 769) {
-      setIsMobile(true);
-      setIsDesktop(false);
-    } else {
-      setIsMobile(false);
-      setIsDesktop(true);
-    }
-  };
+  const [Text, setText] = useState('');
+  axios
+    .get(
+      'https://api.storyblok.com/v2/cdn/stories/preview?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt&cv=1631095460',
+      {}
+    )
+    .then((response) => {
+      setText(response.data.story.content);
+    })
+    .catch((e) => console.error(e));
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
       setIsMobile(false);
-      window.addEventListener('resize', handleResize);
     } else {
       setIsMobile(true);
       setIsDesktop(false);
-      window.addEventListener('resize', handleResize);
     }
   }, []);
-
   return (
     <>
       <Helmet>
@@ -55,42 +53,73 @@ function Home() {
               <Title className="whoarewe orange" title="QUI SOMMES NOUS ?" color="orange" />
             </FadeIn>
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-              <Intro />
+              <Intro introText={ReactHtmlParser(Text.introText)} />
             </Fade>
           </section>
 
           <section className="">
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-              <Usagers />
+              <Usagers
+                usagesTitle={Text.usagesTitle}
+                restaurant={Text.restaurantTitle}
+                restaurantCollective={Text.restaurantCollective}
+                collectivites={Text.collectivites}
+                particular={Text.particular}
+              />
             </Fade>
           </section>
           <section className="our-engagements">
             <FadeIn>
-              <Title className="whoarewe green" title="Nos Engagements" color="green" />
+              <Title className="whoarewe green" title={Text.ourEngagement} color="green" />
             </FadeIn>
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-              <Engagements />
+              <Engagements
+                environementTitle={Text.environementTitle}
+                environement={ReactHtmlParser(Text.environement)}
+              />
             </Fade>
           </section>
           <section className="offer">
             <div className="bg-green offers">
               <FadeIn>
-                <Title className="size" title="NOS OFFRES" />
+                <Title className="size" title={Text.offerTitle} />
               </FadeIn>
             </div>
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-              <Offer />
+              <Offer
+                //Collecte Content
+                collectTitle={Text.collectTitle}
+                collectText={ReactHtmlParser(Text.collectText)}
+                collectLink={Text.collectLink}
+                //Sensibilisation Content
+                sensibilisationTitle={Text.sensibilisationTitle}
+                sensibilisationText={ReactHtmlParser(Text.sensibilisationText)}
+                sensibilisationLink={Text.sensibilisationLink}
+                //Compost Content
+                compostTitle={Text.compostTitle}
+                compostText={ReactHtmlParser(Text.compostText)}
+                compostLink={Text.compostLink}
+              />
             </Fade>
           </section>
           <div className="spacing bg-green" />
           <section className="trust">
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-              <Trust />
+              <Trust trustTitle={Text.trustTitle} />
             </Fade>
           </section>
           <section className="">
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-              <Contact />
+              <Contact
+                contactTitle={Text.contactTitle}
+                number={Text.number}
+                mail={Text.mail}
+                adress={ReactHtmlParser(Text.adress)}
+                linkadress={Text.linkadress}
+                linkFacebook={Text.linkFacebook}
+                linkInstagram={Text.linkInstagram}
+                linkLinkedin={Text.linkLinkedin}
+              />
             </Fade>
           </section>
         </Template>

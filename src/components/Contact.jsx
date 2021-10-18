@@ -2,11 +2,20 @@ import React from 'react';
 import FadeIn from 'react-fade-in';
 import Icons from './Icons';
 import { Title } from './Title';
-const Contact = () => {
+const Contact = ({
+  contactTitle,
+  number,
+  mail,
+  adress,
+  linkadress,
+  linkLinkedin,
+  linkInstagram,
+  linkFacebook,
+}) => {
   return (
     <div className="container">
       <FadeIn>
-        <Title className="contacts pb-2 orange" title="Contact" color="orange ms-negative" />
+        <Title className="contacts pb-2 orange" title={contactTitle} color="orange ms-negative" />
       </FadeIn>
       <div className="container">
         <div className="row">
@@ -22,16 +31,16 @@ const Contact = () => {
               target="_blank"
               className="smalltext big-font text-b text-start watch"
             >
-              05 56 67 14 47
+              {number}
             </a>
             <div className="join">
               <h1 className="green text-wrap size text-b t-res">NOUS ÉCRIRE</h1>
               <a
                 className="smalltext big-font text-b text-start watch"
-                href="mailto:bonjour@les-detritivores.co"
+                href={`mailto: ${mail}`}
                 target="_blank"
               >
-                bonjour@les-detritivores.co
+                {mail}
               </a>
             </div>
             <div className="join">
@@ -40,10 +49,9 @@ const Contact = () => {
                 <a
                   className="smalltext big-font text-b text-start watch"
                   target="_blank"
-                  href="https://www.google.com/maps/place/65+Quai+de+Brazza,+33100+Bordeaux/@44.8554532,-0.550648,17z/data=!3m1!4b1!4m5!3m4!1s0xd5528a21e17e1b7:0x8b0813175afece1c!8m2!3d44.8554494!4d-0.5484593"
+                  href={linkadress}
                 >
-                  65 Quai de Brazza,
-                  <br /> 33100 Bordeaux
+                  {adress}
                 </a>
               </span>
             </div>
@@ -53,7 +61,7 @@ const Contact = () => {
             <h1 className="green text-wrap size text-start">SUIVEZ-NOUS</h1>
             <div className="socialmedia">
               <div className="socials">
-                <a className="text-social m-lef watch " href="http://" rel="noreferrer">
+                <a className="text-social m-lef watch " href={linkLinkedin} rel="noreferrer">
                   <div className="bg-orange p-ding">
                     <Icons icon="linkedin" />
                   </div>
@@ -61,7 +69,7 @@ const Contact = () => {
                 </a>
               </div>
               <div className="socials">
-                <a className="text-social m-lef watch" href="http://" rel="noreferrer">
+                <a className="text-social m-lef watch" href={linkFacebook} rel="noreferrer">
                   <div className="bg-orange p-ding">
                     <Icons icon="facebook" />{' '}
                   </div>
@@ -69,7 +77,7 @@ const Contact = () => {
                 </a>
               </div>
               <div className="socials">
-                <a className="text-social m-lef watch" href="http://" rel="noreferrer">
+                <a className="text-social m-lef watch" href={linkInstagram} rel="noreferrer">
                   <div className="bg-orange p-ding">
                     <Icons icon="instagram" />
                   </div>
