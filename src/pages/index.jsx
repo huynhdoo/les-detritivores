@@ -76,6 +76,10 @@ function Home() {
               <Engagements
                 environementTitle={Text.environementTitle}
                 environement={ReactHtmlParser(Text.environement)}
+                socialTitle={Text.socialTitle}
+                socialText={ReactHtmlParser(Text.socialText)}
+                cooperationTitle={Text.CooperationTitle}
+                cooperationText={ReactHtmlParser(Text.CooperationText)}
               />
             </Fade>
           </section>
