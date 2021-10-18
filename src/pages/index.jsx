@@ -41,9 +41,9 @@ function Home() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>LES DETRITIVORES | Collecte et compostage des biodéchets</title>
+        <title>{Text.title}</title>
         <html lang="fr" />
-        <meta name="description" content="" />
+        <meta name="description" content={Text.content} />
       </Helmet>
       <Page loader={'comet-spin'} color={'#263b29'} size={50}>
         <Template>
