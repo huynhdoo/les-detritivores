@@ -65,6 +65,8 @@ function Home() {
                 restaurantCollective={Text.restaurantCollective}
                 collectivites={Text.collectivites}
                 particular={Text.particular}
+                youtubeVideoLink={Text.youtubeVideoLink}
+                youtubeTitle={Text.youtubeTitle}
               />
             </Fade>
           </section>

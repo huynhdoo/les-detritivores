@@ -29,6 +29,7 @@ const Contact = ({
             <a
               href="tel:0556671447"
               target="_blank"
+              rel="noopener"
               className="smalltext big-font text-b text-start watch"
             >
               {number}
@@ -39,6 +40,7 @@ const Contact = ({
                 className="smalltext big-font text-b text-start watch"
                 href={`mailto: ${mail}`}
                 target="_blank"
+                rel="noopener"
               >
                 {mail}
               </a>
@@ -49,6 +51,7 @@ const Contact = ({
                 <a
                   className="smalltext big-font text-b text-start watch"
                   target="_blank"
+                  rel="noopener"
                   href={linkadress}
                 >
                   {adress}

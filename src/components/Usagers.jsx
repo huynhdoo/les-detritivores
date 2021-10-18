@@ -1,7 +1,15 @@
 import React from 'react';
 import FadeIn from 'react-fade-in';
 import Icons from './Icons';
-const Usagers = ({ usagesTitle, restaurant, restaurantCollective, collectivites, particular }) => {
+const Usagers = ({
+  usagesTitle,
+  restaurant,
+  restaurantCollective,
+  collectivites,
+  particular,
+  youtubeVideoLink,
+  youtubeTitle,
+}) => {
   return (
     <div className="container-fluid d-flex center-container">
       <div className="row">
@@ -9,10 +17,10 @@ const Usagers = ({ usagesTitle, restaurant, restaurantCollective, collectivites,
           <iframe
             width="853"
             height="510"
-            src={`https://www.youtube.com/embed/_X-pd2E-AxA`}
+            src={youtubeVideoLink}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            title="YouTube"
+            title={youtubeTitle}
             className="d-flex justify-content-start rounded-custom video"
           />
         </div>

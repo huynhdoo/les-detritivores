@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import FadeIn from 'react-fade-in';
 import { TemplatePages } from '../components/TemplatePages';
-import Icons from '../components/Icons';
 import Image from '../components/Image';
 import Page from 'react-page-loading';
 const Sensibilisation = () => {
