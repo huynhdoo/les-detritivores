@@ -15,7 +15,7 @@ import Page from 'react-page-loading';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 import axios from 'axios';
-import ReactHtmlParser from 'react-html-parser';
+import Parser from 'react-html-parser';
 function Home() {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -28,6 +28,7 @@ function Home() {
       setText(response.data.story.content);
     })
     .catch((e) => console.error(e));
+
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -52,7 +53,7 @@ function Home() {
               <Title className="whoarewe orange" title="QUI SOMMES NOUS ?" color="orange" />
             </FadeIn>
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-              <Intro introText={ReactHtmlParser(Text.introText)} />
+              <Intro introText={Parser(Text.introText)} />
             </Fade>
           </section>
 
@@ -76,11 +77,11 @@ function Home() {
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
               <Engagements
                 environementTitle={Text.environementTitle}
-                environement={ReactHtmlParser(Text.environement)}
+                environement={Parser(Text.environement)}
                 socialTitle={Text.socialTitle}
-                socialText={ReactHtmlParser(Text.socialText)}
+                socialText={Parser(Text.socialText)}
                 cooperationTitle={Text.CooperationTitle}
-                cooperationText={ReactHtmlParser(Text.CooperationText)}
+                cooperationText={Parser(Text.CooperationText)}
               />
             </Fade>
           </section>
@@ -93,13 +94,13 @@ function Home() {
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
               <Offer
                 collectTitle={Text.collectTitle}
-                collectText={ReactHtmlParser(Text.collectText)}
+                collectText={Parser(Text.collectText)}
                 collectLink={Text.collectLink}
                 sensibilisationTitle={Text.sensibilisationTitle}
-                sensibilisationText={ReactHtmlParser(Text.sensibilisationText)}
+                sensibilisationText={Parser(Text.sensibilisationText)}
                 sensibilisationLink={Text.sensibilisationLink}
                 compostTitle={Text.compostTitle}
-                compostText={ReactHtmlParser(Text.compostText)}
+                compostText={Parser(Text.compostText)}
                 compostLink={Text.compostLink}
               />
             </Fade>
@@ -116,7 +117,7 @@ function Home() {
                 contactTitle={Text.contactTitle}
                 number={Text.number}
                 mail={Text.mail}
-                adress={ReactHtmlParser(Text.adress)}
+                adress={Parser(Text.adress)}
                 linkadress={Text.linkadress}
                 linkFacebook={Text.linkFacebook}
                 linkInstagram={Text.linkInstagram}
