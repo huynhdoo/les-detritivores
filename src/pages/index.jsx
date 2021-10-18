@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import FadeIn from 'react-fade-in';
 import { Helmet } from 'react-helmet';
+import axios from 'axios';
+import Parser from 'react-html-parser';
 
 import Usagers from '../components/Usagers';
 import Engagements from '../components/Engagements';
@@ -12,10 +14,9 @@ import Intro from '../components/Intro';
 import { Template } from '../components/Template';
 import { Title } from '../components/Title';
 import Page from 'react-page-loading';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
-import axios from 'axios';
-import Parser from 'react-html-parser';
 function Home() {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
