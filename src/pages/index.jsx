@@ -26,6 +26,7 @@ import Page from 'react-page-loading';
  **/
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
+
 const Index = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
