@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FadeIn from 'react-fade-in';
 import Icons from '../components/Icons';
 import { Helmet } from 'react-helmet';
 import { TemplatePages } from '../components/TemplatePages';
 import Page from 'react-page-loading';
 import DevisForm from '../components/DevisForm';
+import axios from 'axios';
 const Devis = () => {
+  const [Text, setText] = useState('');
+  axios
+    .get(
+      'https://api.storyblok.com/v2/cdn/stories/preview?version=draft&token=4Sl5OG2kesCX0K97UTd0Wwtt&cv=1631095460',
+      {}
+    )
+    .then((response) => {
+      setText(response.data.story.content);
+    })
+    .catch((e) => console.error(e));
   return (
     <>
       <Helmet>
@@ -27,18 +38,12 @@ const Devis = () => {
                   </div>
                   <div className="col rep">
                     <h1 className="orange big-font-size-pm rotate">
-                      DEMANDE DE DEVIS
+                      {Text.moneyTitle}
                       <span className="bg-dark line-custom" />
                     </h1>
                     <div className="pt-2">
                       <h1 className="bold">Vous aussi, valorisez vos biodéchets.</h1>
-                      <p className="light big-font-size-md text-start">
-                        Vous souhaitez produisez une quantité significative de déchets or ganiques
-                        et souhaitez obtenir une évaluation du coût de collecte et de traitement des
-                        Détritivores ?<br />
-                        <br /> N’hésitez pas à renseigner le plus précisément possible ce formulaire
-                        et nous reviendrons vers vous dans les meilleurs délais !{' '}
-                      </p>
+                      <p className="light big-font-size-md text-start">{Text.moneyText}</p>
                     </div>
                     <div className="curved-icn">
                       <Icons icon="curved-arrow" />
