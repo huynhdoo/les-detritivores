@@ -31,7 +31,6 @@ function MyApp({ Component, pageProps }: AppProps) {
                   data-prefix="fas"
                   data-icon="assistive-listening-systems"
                   class="svg-inline--fa fa-assistive-listening-systems fa-w-16"
-                  role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                   width="30px"
