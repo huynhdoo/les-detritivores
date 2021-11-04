@@ -1,6 +1,6 @@
 const Loading = () => {
   return (
-    <div className="flex space-x-1">
+    <div className="flex space-x-1 justify-center">
       <svg
         className="animate-spin h-5 w-5 text-gray-900 dark:text-gray-100"
         xmlns="http://www.w3.org/2000/svg"
