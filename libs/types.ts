@@ -1,5 +1,3 @@
-import { Richtext } from "storyblok-js-client";
-
 export type Content = {
   content: {
     mail: string;
@@ -14,7 +12,7 @@ export type Content = {
         }
       ];
     };
-    introText: Richtext;
+    introText: string;
     MoneyTitle: string;
     introTitle: string;
     linkadress: string;
