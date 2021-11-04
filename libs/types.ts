@@ -14,7 +14,7 @@ export type Content = {
         }
       ];
     };
-    introText: Richtext | undefined;
+    introText: Richtext;
     MoneyTitle: string;
     introTitle: string;
     linkadress: string;
