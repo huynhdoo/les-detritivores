@@ -19,7 +19,8 @@
     "paths": {
       "@components": ["./components"],
       "@libs": ["./libs"],
-      "@styles": ["./styles"]
+      "@styles": ["./styles"],
+      "@static": ["/static"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
