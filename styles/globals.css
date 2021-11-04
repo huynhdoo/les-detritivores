@@ -3,7 +3,7 @@
 
 body {
   font-family: "Fira Sans", sans-serif;
-  @apply bg-white dark:bg-black;
+  @apply bg-white dark:bg-black overflow-x-hidden;
 }
 p {
   font-family: SF UI Display, sans-serif;

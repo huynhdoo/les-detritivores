@@ -6,11 +6,16 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        phone: "320px",
+      },
       width: {
         250: "53.313rem",
+        150: "30rem",
       },
       height: {
         250: "31.875rem",
+        150: "25rem",
       },
       colors: {
         transparent: "transparent",
