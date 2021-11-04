@@ -67,7 +67,7 @@ const Home: NextPage = () => {
                   </>
                 )}
               </div>
-              <div className="flex flex-col items-start justify-center max-w-xl lg:max-w-6xl mb-16 dark:text-white space-y-10">
+              <div className="flex flex-col items-start justify-center max-w-xl lg:max-w-6xl mb-16 dark:text-white space-y-10 smph:text-xs md:px-10 lg:px-10">
                 <Fade
                   left={isDesktop}
                   bottom={isMobile}
@@ -109,40 +109,28 @@ const Home: NextPage = () => {
                       <div className="flex flex-col justify-center">
                         {data ? (
                           <>
-                            <span>
-                              {data?.content.restaurantTitle}
-                              <div className="w-20 h-1 bg-orangeDDTV absolute flex items-end justify-end -rotate-3" />
-                            </span>
+                            <span>{data?.content.restaurantTitle}</span>
                           </>
                         ) : (
                           <Loading />
                         )}
                         {data ? (
                           <>
-                            <span>
-                              {data?.content.restaurantCollective}
-                              <div className="w-20 h-1 bg-orangeDDTV absolute flex items-end justify-end -rotate-3" />
-                            </span>
+                            <span>{data?.content.restaurantCollective}</span>
                           </>
                         ) : (
                           <Loading />
                         )}
                         {data ? (
                           <>
-                            <span>
-                              {data?.content.collectives}
-                              <div className="w-20 h-1 bg-orangeDDTV absolute flex items-end justify-end -rotate-3" />
-                            </span>
+                            <span>{data?.content.collectives}</span>
                           </>
                         ) : (
                           <Loading />
                         )}
                         {data ? (
                           <>
-                            <span>
-                              {data?.content.particular}
-                              <div className="w-20 h-1 bg-orangeDDTV absolute flex items-end justify-end -rotate-3" />
-                            </span>
+                            <span>{data?.content.particular}</span>
                           </>
                         ) : (
                           <Loading />
