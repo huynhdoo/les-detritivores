@@ -17,6 +17,7 @@
     "react-dom": "^18.0.0-alpha-6c3dcc7a4-20211027",
     "react-fade-in": "^2.0.1",
     "react-html-parser": "^2.0.2",
+    "react-intersection-observer": "^8.32.2",
     "react-reveal": "^1.2.2",
     "storyblok-js-client": "^4.1.5",
     "superjson": "^1.8.0",

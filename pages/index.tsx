@@ -115,7 +115,7 @@ const Home: NextPage = () => {
                             </span>
                           </>
                         ) : (
-                          "chargement.."
+                          <Loading />
                         )}
                         {data ? (
                           <>
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
                             </span>
                           </>
                         ) : (
-                          "chargement.."
+                          <Loading />
                         )}
                         {data ? (
                           <>
@@ -135,7 +135,7 @@ const Home: NextPage = () => {
                             </span>
                           </>
                         ) : (
-                          "chargement.."
+                          <Loading />
                         )}
                         {data ? (
                           <>
@@ -145,7 +145,7 @@ const Home: NextPage = () => {
                             </span>
                           </>
                         ) : (
-                          "chargement.."
+                          <Loading />
                         )}
                       </div>
                     </div>
