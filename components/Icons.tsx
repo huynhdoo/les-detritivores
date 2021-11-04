@@ -234,5 +234,6 @@ const Icons = ({ icons, className }) => {
         </>
       );
   }
+  return icons;
 };
 export default Icons;
