@@ -1,10 +1,17 @@
 const colors = require("tailwindcss/colors");
 module.exports = {
+  important: true,
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+      width: {
+        250: "53.313rem",
+      },
+      height: {
+        250: "31.875rem",
+      },
       colors: {
         transparent: "transparent",
         current: "currentColor",
@@ -30,6 +37,8 @@ module.exports = {
         trueGray: colors.trueGray,
         coolGray: colors.coolGray,
         blueGray: colors.blueGray,
+        orangeDDTV: "#e94e1a",
+        greenDDTV: "#263b29",
       },
     },
   },

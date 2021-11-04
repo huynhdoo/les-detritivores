@@ -1,23 +1,16 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  @apply overflow-hidden;
-}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;900&display=swap");
+@import url("//fonts.cdnfonts.com/css/sf-ui-display");
 
 body {
+  font-family: "Fira Sans", sans-serif;
   @apply bg-white dark:bg-black;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+p {
+  font-family: SF UI Display, sans-serif;
 }
-
-* {
-  box-sizing: border-box;
+span {
+  font-family: SF UI Display, sans-serif;
+  @apply text-xl font-bold;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -37,7 +30,30 @@ a {
 ::-webkit-scrollbar-corner {
   display: none;
 }
+.swal-button {
+  @apply !bg-orangeDDTV;
+}
+.swal-button:not([disabled]):hover {
+  @apply !bg-orangeDDTV;
+}
+.swal-button:not([disabled]):focus {
+  @apply !bg-orangeDDTV;
+}
+.swal-icon--custom {
+  @apply !w-48;
+}
 
+#start {
+  @apply bg-greenDDTV bg-gradient-to-r from-greenDDTV to-greenDDTV h-48 border-t-0 text-white pb-1;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 42%, 0% 100%) !important;
+  clip-path: polygon(0 0, 100% 0%, 100% 42%, 0% 100%) !important;
+}
+
+#footer {
+  @apply bg-greenDDTV bg-gradient-to-r from-greenDDTV to-greenDDTV h-40 md:h-44 sm:h-52 md:w-auto border-t-0 text-white overflow-y-hidden;
+  -webkit-clip-path: polygon(100% 3%, 0 100%, 100% 100%);
+  clip-path: polygon(100% 3%, 0 100%, 100% 100%);
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
