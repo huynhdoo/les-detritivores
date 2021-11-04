@@ -202,7 +202,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
         {data ? (
           <footer id="footer">
-            <div className="flex justify-end items-center space-x-2 mr-2 mt-4 sm:mt-5">
+            <div className="flex justify-end items-center space-x-2 mr-2 mt-8 sm:mt-5">
               <div className="mt-4 ml-4">
                 <ToggleTheme />
               </div>

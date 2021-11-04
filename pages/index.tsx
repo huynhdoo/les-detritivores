@@ -67,7 +67,7 @@ const Home: NextPage = () => {
                   </>
                 )}
               </div>
-              <div className="flex flex-col items-start justify-center max-w-xl lg:max-w-6xl mx-auto mb-16 dark:text-white space-y-10">
+              <div className="flex flex-col items-start justify-center max-w-xl lg:max-w-6xl mb-16 dark:text-white space-y-10">
                 <Fade
                   left={isDesktop}
                   bottom={isMobile}
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
                     {data ? useRichText(data.content.introText) : <Loading />}
                   </p>
                 </Fade>
-                <div className="flex justify-start sm:mx-12 md:mx-24 mx-16">
+                <div className="flex justify-start sm:mx-12 md:mx-14 mx-0">
                   <div className="block md:block sm:grid lg:grid grid-flow-col lg:grid-flow-col auto-rows-max space-x-14">
                     <div className="">
                       <iframe
