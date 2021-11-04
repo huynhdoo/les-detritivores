@@ -3,11 +3,11 @@ module.exports = {
   important: true,
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "class", // or 'media' or 'class'
+  darkMode: "class",
   theme: {
     extend: {
       screens: {
-        phone: "320px",
+        smph: "320px",
       },
       width: {
         250: "53.313rem",
