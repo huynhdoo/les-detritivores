@@ -40,7 +40,7 @@ const Home: NextPage = () => {
           delay={500}
           distance="30px"
         >
-          <div className="flex flex-col justify-center px-8 my-20 overflow-hidden">
+          <div className="flex flex-col justify-center px-8 my-20 overflow-hidden items-center">
             <Fade
               left={isDesktop}
               bottom={isMobile}
