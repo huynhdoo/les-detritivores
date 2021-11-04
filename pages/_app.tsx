@@ -6,6 +6,7 @@ import useSWR from "swr";
 import { Content } from "libs/types";
 import fetcher from "libs/fetcher";
 import Loading from "components/Loading";
+import ToggleTheme from "components/toggleTheme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { data } = useSWR<Content>(`/api/storyblok`, fetcher);
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider defaultTheme="light" attribute="class">
         <div id="start">
           <div className="flex justify-center">
+            <ToggleTheme />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 173.35 111.2"
