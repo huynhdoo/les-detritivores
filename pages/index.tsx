@@ -76,7 +76,7 @@ const Home: NextPage = () => {
                   distance="30px"
                 >
                   <p className="font-light text-xl text-center">
-                    {useRichText(data ? data.content.introText : <Loading />)}
+                    {data ? useRichText(data.content.introText) : <Loading />}
                   </p>
                 </Fade>
                 <div className="flex justify-start">

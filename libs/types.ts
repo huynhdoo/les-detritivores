@@ -12,7 +12,7 @@ export type Content = {
         }
       ];
     };
-    introText: string;
+    introText: any;
     MoneyTitle: string;
     introTitle: string;
     linkadress: string;
