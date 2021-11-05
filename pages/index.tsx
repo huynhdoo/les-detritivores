@@ -80,7 +80,7 @@ const Home: NextPage = () => {
                   </p>
                 </Fade>
                 <div className="flex justify-start sm:mx-12 md:mx-14 mx-0">
-                  <div className="block md:block sm:grid lg:grid grid-flow-col lg:grid-flow-col auto-rows-max md:space-x-14 lg:space-x-14">
+                  <div className="block md:block sm:grid lg:grid grid-flow-col lg:grid-flow-col auto-rows-max md:space-x-0 lg:space-x-32">
                     <div className="">
                       <iframe
                         src={data?.content.youtubeVideoLink}
@@ -90,7 +90,7 @@ const Home: NextPage = () => {
                         className="flex justify-start rounded-2xl w-72 lg:w-250 h-52 lg:h-250 md:w-96 md:h-72 sm:w-150 sm:h-150 sm:mx-12 md:mx-1 mx-16"
                       />
                     </div>
-                    <div className="flex flex-col items-center justify-center">
+                    <div className="flex flex-col items-center justify-center w-full">
                       <h1 className="pb-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600">
                         {data ? (
                           <FadeIn>{data?.content.usagesTitle}</FadeIn>
@@ -106,7 +106,7 @@ const Home: NextPage = () => {
                           className="text-white fill-current"
                         />
                       </div>
-                      <div className="flex flex-col justify-center">
+                      <div className="flex flex-col justify-center items-center space-y-2 mt-2">
                         {data ? (
                           <>
                             <span>{data?.content.restaurantTitle}</span>
