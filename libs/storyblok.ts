@@ -13,3 +13,7 @@ export const useRichText = (data: Richtext) => {
   });
   return Parser(story.richTextResolver.render(data));
 };
+
+export const Convert = (data: string) => {
+  return Parser(data);
+};

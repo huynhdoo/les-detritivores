@@ -19,6 +19,15 @@ span {
 .lcUbOd {
   @apply !hidden !shadow-none;
 }
+.swal-modal {
+  @apply bg-white dark:bg-gray-900;
+}
+.swal-title {
+  @apply !text-gray-900 dark:!text-warmGray-50;
+}
+.swal-text {
+  @apply !text-gray-900 dark:!text-warmGray-50;
+}
 .eaptOe {
   @apply !shadow-none;
 }

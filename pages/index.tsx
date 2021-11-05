@@ -8,11 +8,12 @@ import swal from "sweetalert";
 import Carousel from "react-elastic-carousel";
 
 import { Content } from "libs/types";
-import { useRichText } from "libs/storyblok";
+import { Convert, useRichText } from "libs/storyblok";
 
 import Loading from "components/Loading";
 import Icons from "components/Icons";
 import { images } from "libs/constant";
+
 const Home: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -26,7 +27,7 @@ const Home: NextPage = () => {
     }
     swal({
       title: "Bienvenue chez Les Détritivores !",
-      icon: "/static/images/logo.png",
+      icon: "/static/images/logo.svg",
       text: "Psst... Notre site est en cours de développement",
     }).then(() => {});
   }, []);
@@ -284,7 +285,7 @@ const Home: NextPage = () => {
                           <h1 className="text-xl font-bold text-orangeDDTV">
                             {data.content.collectTitle}
                           </h1>
-                          <div className="bg-greenDDTV w-36 rounded-full m-auto">
+                          <div className="bg-greenDDTV w-36 rounded-full m-auto dark:bg-orangeDDTV">
                             <Icons
                               icons="bike"
                               className="fill-current text-white h-36"
@@ -298,7 +299,7 @@ const Home: NextPage = () => {
                           <h1 className="text-xl font-bold text-orangeDDTV">
                             {data.content.sensibilisationTitle}
                           </h1>
-                          <div className="bg-greenDDTV w-36 rounded-full m-auto">
+                          <div className="bg-greenDDTV w-36 rounded-full m-auto dark:bg-orangeDDTV">
                             <Icons
                               icons="happystar"
                               className="fill-current text-white h-36"
@@ -312,7 +313,7 @@ const Home: NextPage = () => {
                           <h1 className="text-xl font-bold text-orangeDDTV">
                             {data.content.compostTitle}
                           </h1>
-                          <div className="bg-greenDDTV w-36 rounded-full m-auto">
+                          <div className="bg-greenDDTV w-36 rounded-full m-auto dark:bg-orangeDDTV">
                             <Icons
                               icons="flowers"
                               className="fill-current text-white h-36"
@@ -372,8 +373,60 @@ const Home: NextPage = () => {
                           rel="noopener"
                           className="text-left hover:text-orangeDDTV transition p-1"
                         >
-                          {useRichText(data.content.adress)}
+                          {Convert(data.content.adress)}
                         </a>
+                      </div>
+                      <div className="flex flex-col"></div>
+                      <div className="flex flex-col space-y-2">
+                        <h1 className="text-3xl text-greenDDTV font-bold dark:text-orangeDDTV">
+                          SUIVEZ-NOUS
+                        </h1>
+                        <div className="mt-5 space-y-2">
+                          <div className="flex space-x-2">
+                            <div className="bg-orangeDDTV rounded-full w-10 p-1 h-10">
+                              <Icons
+                                icons="linkedin"
+                                className="text-white fill-current h-6 w-6 m-auto mt-1"
+                              />
+                            </div>
+                            <a
+                              className="text-xl hover:text-orangeDDTV transition items-center mt-0.5"
+                              target="_blank"
+                              href={data.content.linkLinkedin}
+                            >
+                              Linkedin
+                            </a>
+                          </div>
+                          <div className="flex space-x-2">
+                            <div className="bg-orangeDDTV rounded-full w-10 p-1 h-10">
+                              <Icons
+                                icons="instagram"
+                                className="text-white fill-current h-6 w-6 m-auto mt-1"
+                              />
+                            </div>
+                            <a
+                              className="text-xl hover:text-orangeDDTV transition items-center mt-0.5"
+                              rel="noopener"
+                              href={data.content.linkInstagram}
+                            >
+                              Instagram
+                            </a>
+                          </div>
+                          <div className="flex space-x-2">
+                            <div className="bg-orangeDDTV rounded-full w-10 p-1 h-10">
+                              <Icons
+                                icons="facebook"
+                                className="text-white fill-current h-6 w-6 m-auto mt-1"
+                              />
+                            </div>
+                            <a
+                              className="text-xl hover:text-orangeDDTV transition items-center mt-0.5"
+                              href={data.content.linkFacebook}
+                            >
+                              Facebook
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

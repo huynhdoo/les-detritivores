@@ -2,7 +2,7 @@ export type Content = {
   content: {
     mail: string;
     Title: string;
-    adress: any;
+    adress: string;
     number: string;
     mapsLink: string;
     MoneyText: any;
@@ -32,5 +32,8 @@ export type Content = {
     sensibilisationText: any;
     environement: any;
     compostText: any;
+    linkFacebook: string;
+    linkLinkedin: string;
+    linkInstagram: string;
   };
 };
