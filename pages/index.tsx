@@ -41,14 +41,14 @@ const Home: NextPage = () => {
           delay={500}
           distance="30px"
         >
-          <div className="flex flex-col justify-center px-8 my-20 overflow-hidden items-center">
-            <Fade
-              left={isDesktop}
-              bottom={isMobile}
-              duration={500}
-              delay={500}
-              distance="30px"
-            >
+          <Fade
+            left={isDesktop}
+            bottom={isMobile}
+            duration={500}
+            delay={500}
+            distance="30px"
+          >
+            <div className="flex flex-col justify-center px-8 my-20 overflow-hidden items-center">
               <div className="flex-col justify-center items-center text-center mb-10">
                 {data ? (
                   <Fade
@@ -69,17 +69,9 @@ const Home: NextPage = () => {
                 )}
               </div>
               <div className="flex flex-col items-start justify-center max-w-xl lg:max-w-6xl mb-16 dark:text-white space-y-10 smph:text-xs md:px-10 lg:px-10">
-                <Fade
-                  left={isDesktop}
-                  bottom={isMobile}
-                  duration={500}
-                  delay={500}
-                  distance="30px"
-                >
-                  <p className="font-light text-xl text-center mx-0 smph:mx-4 sm:mx-12 md:mx-12">
-                    {data ? useRichText(data.content.introText) : <Loading />}
-                  </p>
-                </Fade>
+                <p className="font-light text-xl text-center mx-0 smph:mx-4 sm:mx-12 md:mx-12">
+                  {data ? useRichText(data.content.introText) : <Loading />}
+                </p>
                 <div className="flex justify-start sm:mx-12 md:mx-14 mx-0">
                   <div className="block md:block sm:grid lg:grid grid-flow-col lg:grid-flow-col auto-rows-max md:space-x-0 lg:space-x-32">
                     <div className="">
@@ -141,8 +133,8 @@ const Home: NextPage = () => {
                   </div>
                 </div>
               </div>
-            </Fade>
-          </div>
+            </div>
+          </Fade>
           <Fade
             left={isDesktop}
             bottom={isMobile}
@@ -167,15 +159,15 @@ const Home: NextPage = () => {
               </div>
             </div>
 
-            <div className="flex-col justify-center items-center text-center mt-10">
-              {data ? (
-                <Fade
-                  left={isDesktop}
-                  bottom={isMobile}
-                  duration={500}
-                  delay={500}
-                  distance="30px"
-                >
+            {data ? (
+              <Fade
+                left={isDesktop}
+                bottom={isMobile}
+                duration={500}
+                delay={500}
+                distance="30px"
+              >
+                <div className="flex-col justify-center items-center text-center mt-10">
                   <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-greenDDTV to-green-700 dark:bg-gradient-to-t dark:from-orangeDDTV dark:to-orange-600 transition -rotate-3">
                     {data.content.ourEngagement}
                   </h1>
@@ -254,29 +246,37 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                </Fade>
-              ) : (
-                <>
-                  <Loading />
-                </>
-              )}
-            </div>
-            <div className="bg-greenDDTV dark:bg-orangeDDTV mt-20 -rotate-6 transform scale-125 h-20 !overflow-x-hidden">
-              <div className="flex items-center justify-center my-5">
-                <h1 className="text-white font-bold text-4xl">
-                  {data.content.offerTitle}
-                </h1>
+                </div>
+              </Fade>
+            ) : (
+              <>
+                <Loading />
+              </>
+            )}
+            <Fade
+              left={isDesktop}
+              bottom={isMobile}
+              duration={500}
+              delay={500}
+              distance="30px"
+            >
+              <div className="bg-greenDDTV dark:bg-orangeDDTV mt-20 -rotate-6 transform scale-125 h-20 !overflow-x-hidden transition-all">
+                <div className="flex items-center justify-center my-5">
+                  <h1 className="text-white font-bold text-4xl">
+                    {data.content.offerTitle}
+                  </h1>
+                </div>
               </div>
-            </div>
-            <div className="flex-col justify-center items-center text-center mt-20">
-              {data ? (
-                <Fade
-                  left={isDesktop}
-                  bottom={isMobile}
-                  duration={500}
-                  delay={500}
-                  distance="30px"
-                >
+            </Fade>
+            {data ? (
+              <Fade
+                left={isDesktop}
+                bottom={isMobile}
+                duration={500}
+                delay={500}
+                distance="30px"
+              >
+                <div className="flex-col justify-center items-center text-center mt-20">
                   <div className="mt-5">
                     <div className="">
                       <div className="max-w-7xl mx-auto grid md:grid-cols-12 grid-cols-3 justify-center">
@@ -325,13 +325,13 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                </Fade>
-              ) : (
-                <>
-                  <Loading />
-                </>
-              )}
-            </div>
+                </div>
+              </Fade>
+            ) : (
+              <>
+                <Loading />
+              </>
+            )}
             <div className="flex-col justify-center items-center text-center mt-20">
               <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 dark:bg-gradient-to-t dark:from-orangeDDTV dark:to-orange-600 transition">
                 {data.content.contactTitle}
