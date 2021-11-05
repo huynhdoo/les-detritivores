@@ -75,12 +75,12 @@ const Home: NextPage = () => {
                   delay={500}
                   distance="30px"
                 >
-                  <p className="font-light text-xl text-center sm:text-md">
+                  <p className="font-light text-xl text-center mx-0 smph:mx-4 sm:mx-12 md:mx-12">
                     {data ? useRichText(data.content.introText) : <Loading />}
                   </p>
                 </Fade>
                 <div className="flex justify-start sm:mx-12 md:mx-14 mx-0">
-                  <div className="block md:block sm:grid lg:grid grid-flow-col lg:grid-flow-col auto-rows-max space-x-14">
+                  <div className="block md:block sm:grid lg:grid grid-flow-col lg:grid-flow-col auto-rows-max md:space-x-14 lg:space-x-14">
                     <div className="">
                       <iframe
                         src={data?.content.youtubeVideoLink}
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
                         )}
                         {data ? (
                           <>
-                            <span>{data?.content.collectives}</span>
+                            <span>{data?.content.collectivites}</span>
                           </>
                         ) : (
                           <Loading />

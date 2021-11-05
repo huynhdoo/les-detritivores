@@ -33,7 +33,7 @@ export type Content = {
     contactTitle: string;
     restaurantTitle: string;
     restaurantCollective: string;
-    collectives: string;
+    collectivites: string;
     particular: string;
   };
 };
