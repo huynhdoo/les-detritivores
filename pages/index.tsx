@@ -181,20 +181,29 @@ const Home: NextPage = () => {
                   </h1>
                   <div className="mt-5">
                     <div className="">
-                      <div className="max-w-7xl mx-auto grid grid-cols-12 justify-center">
+                      <div className="max-w-7xl mx-auto grid md:grid-cols-12 grid-cols-3 justify-center">
                         <div className="col-span-4 space-y-5">
                           <h1 className="text-xl font-bold text-orangeDDTV">
                             {data.content.environementTitle}
                           </h1>
                           <div className="bg-orangeDDTV w-36 rounded-full m-auto">
                             <Icons
-                              icons="bike"
+                              icons="environement"
                               className="fill-current text-white h-36"
                             />
                           </div>
-                          <p className="font-light text-lg">
+                          <p className="font-light text-lg mx-1">
                             {useRichText(data.content.environement)}
                           </p>
+                          <div className="justify-center">
+                            <button className="bg-orangeDDTV text-white p-2 rounded-2xl inline-flex ">
+                              <Icons
+                                icons="plus"
+                                className="text-white fill-current w-5 h-5 mr-1 mt-0.5"
+                              />
+                              En savoir plus
+                            </button>
+                          </div>
                         </div>
                         <div className="col-span-4 space-y-5">
                           <h1 className="text-xl font-bold text-orangeDDTV">
@@ -206,9 +215,18 @@ const Home: NextPage = () => {
                               className="fill-current text-white h-36"
                             />
                           </div>
-                          <p className="font-light text-lg">
+                          <p className="font-light text-lg mx-1">
                             {useRichText(data.content.socialText)}
                           </p>
+                          <div className="justify-center">
+                            <button className="bg-orangeDDTV text-white p-2 rounded-2xl inline-flex ">
+                              <Icons
+                                icons="plus"
+                                className="text-white fill-current w-5 h-5 mr-1 mt-0.5"
+                              />
+                              En savoir plus
+                            </button>
+                          </div>
                         </div>
                         <div className="col-span-4 space-y-5">
                           <h1 className="text-xl font-bold text-orangeDDTV">
@@ -220,8 +238,88 @@ const Home: NextPage = () => {
                               className="fill-current text-white h-36"
                             />
                           </div>
-                          <p className="font-light text-lg">
+                          <p className="font-light text-lg mx-1">
                             {useRichText(data.content.CooperationText)}
+                          </p>
+                          <div className="justify-center">
+                            <button className="bg-orangeDDTV text-white p-2 rounded-2xl inline-flex ">
+                              <Icons
+                                icons="plus"
+                                className="text-white fill-current w-5 h-5 mr-1 mt-0.5"
+                              />
+                              En savoir plus
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Fade>
+              ) : (
+                <>
+                  <Loading />
+                </>
+              )}
+            </div>
+            <div className="bg-greenDDTV dark:bg-orangeDDTV mt-20 -rotate-6 transform scale-125 h-20 !overflow-x-hidden">
+              <div className="flex items-center justify-center my-5">
+                <h1 className="text-white font-bold text-4xl">
+                  {data.content.offerTitle}
+                </h1>
+              </div>
+            </div>
+            <div className="flex-col justify-center items-center text-center mt-20">
+              {data ? (
+                <Fade
+                  left={isDesktop}
+                  bottom={isMobile}
+                  duration={500}
+                  delay={500}
+                  distance="30px"
+                >
+                  <div className="mt-5">
+                    <div className="">
+                      <div className="max-w-7xl mx-auto grid md:grid-cols-12 grid-cols-3 justify-center">
+                        <div className="col-span-4 space-y-5">
+                          <h1 className="text-xl font-bold text-orangeDDTV">
+                            {data.content.collectTitle}
+                          </h1>
+                          <div className="bg-greenDDTV w-36 rounded-full m-auto">
+                            <Icons
+                              icons="bike"
+                              className="fill-current text-white h-36"
+                            />
+                          </div>
+                          <p className="font-light text-lg mx-1">
+                            {useRichText(data.content.collectText)}
+                          </p>
+                        </div>
+                        <div className="col-span-4 space-y-5">
+                          <h1 className="text-xl font-bold text-orangeDDTV">
+                            {data.content.sensibilisationTitle}
+                          </h1>
+                          <div className="bg-greenDDTV w-36 rounded-full m-auto">
+                            <Icons
+                              icons="happystar"
+                              className="fill-current text-white h-36"
+                            />
+                          </div>
+                          <p className="font-light text-lg mx-1">
+                            {useRichText(data.content.sensibilisationText)}
+                          </p>
+                        </div>
+                        <div className="col-span-4 space-y-5">
+                          <h1 className="text-xl font-bold text-orangeDDTV">
+                            {data.content.compostTitle}
+                          </h1>
+                          <div className="bg-greenDDTV w-36 rounded-full m-auto">
+                            <Icons
+                              icons="flowers"
+                              className="fill-current text-white h-36"
+                            />
+                          </div>
+                          <p className="font-light text-lg mx-1">
+                            {useRichText(data.content.compostText)}
                           </p>
                         </div>
                       </div>
@@ -233,6 +331,54 @@ const Home: NextPage = () => {
                   <Loading />
                 </>
               )}
+            </div>
+            <div className="flex-col justify-center items-center text-center mt-20">
+              <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 dark:bg-gradient-to-t dark:from-orangeDDTV dark:to-orange-600 transition">
+                {data.content.contactTitle}
+              </h1>
+              <footer className="relative pt-1">
+                <div className="container mx-auto xl:mx-40 lg:mx-36 2xl:mx-auto px-6">
+                  <div className="sm:flex sm:mt-8">
+                    <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
+                      <div className="flex flex-col">
+                        <h1 className="text-greenDDTV dark:text-orangeDDTV font-bold text-4xl text-left">
+                          NOUS APPELER
+                        </h1>
+                        <a
+                          href={`tel:${data.content.number}`}
+                          target="_blank"
+                          rel="noopener"
+                          className="text-left hover:text-orangeDDTV transition p-1"
+                        >
+                          {data.content.number}
+                        </a>
+                        <h1 className="text-greenDDTV dark:text-orangeDDTV font-bold text-4xl text-left">
+                          NOUS ÉCRIRE
+                        </h1>
+                        <a
+                          href={`mailo:${data.content.mail}`}
+                          target="_blank"
+                          rel="noopener"
+                          className="text-left hover:text-orangeDDTV transition p-1"
+                        >
+                          {data.content.mail}
+                        </a>
+                        <h1 className="text-greenDDTV dark:text-orangeDDTV font-bold text-4xl text-left">
+                          NOUS RENCONTRER
+                        </h1>
+                        <a
+                          href={`tel:${data.content.linkadress}`}
+                          target="_blank"
+                          rel="noopener"
+                          className="text-left hover:text-orangeDDTV transition p-1"
+                        >
+                          {useRichText(data.content.adress)}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
             </div>
           </Fade>
         </Fade>
