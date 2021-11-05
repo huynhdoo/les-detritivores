@@ -17,7 +17,7 @@ span {
 .jRFJkP,
 .cNNJIt,
 .lcUbOd {
-  @apply hidden !shadow-none;
+  @apply !hidden !shadow-none;
 }
 .eaptOe {
   @apply !shadow-none;
