@@ -5,16 +5,17 @@ import Fade from "react-reveal/Fade";
 import fetcher from "libs/fetcher";
 import FadeIn from "react-fade-in";
 import swal from "sweetalert";
+import Carousel from "react-elastic-carousel";
 
 import { Content } from "libs/types";
 import { useRichText } from "libs/storyblok";
 
 import Loading from "components/Loading";
 import Icons from "components/Icons";
+import { images } from "libs/constant";
 const Home: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -142,6 +143,98 @@ const Home: NextPage = () => {
               </div>
             </Fade>
           </div>
+          <Fade
+            left={isDesktop}
+            bottom={isMobile}
+            duration={500}
+            delay={500}
+            distance="30px"
+          >
+            <div className="bg-greenDDTV h-64 w-full m-0 dark:bg-orangeDDTV">
+              <div className="flex justify-center items-center">
+                <div className="my-12 inline-flex space-x-5 transition-all ease-in-out duration-1000 transform translate-x-0">
+                  <Carousel isRTL={true} enableAutoPlay={true}>
+                    {images.map((item) => {
+                      return (
+                        <img
+                          className="h-36 w-36 rounded-md"
+                          src={item.image}
+                        />
+                      );
+                    })}
+                  </Carousel>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex-col justify-center items-center text-center mt-10">
+              {data ? (
+                <Fade
+                  left={isDesktop}
+                  bottom={isMobile}
+                  duration={500}
+                  delay={500}
+                  distance="30px"
+                >
+                  <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-greenDDTV to-green-700 dark:bg-gradient-to-t dark:from-orangeDDTV dark:to-orange-600 transition -rotate-3">
+                    {data.content.ourEngagement}
+                  </h1>
+                  <div className="mt-5">
+                    <div className="">
+                      <div className="max-w-7xl mx-auto grid grid-cols-12 justify-center">
+                        <div className="col-span-4 space-y-5">
+                          <h1 className="text-xl font-bold text-orangeDDTV">
+                            {data.content.environementTitle}
+                          </h1>
+                          <div className="bg-orangeDDTV w-36 rounded-full m-auto">
+                            <Icons
+                              icons="bike"
+                              className="fill-current text-white h-36"
+                            />
+                          </div>
+                          <p className="font-light text-lg">
+                            {useRichText(data.content.environement)}
+                          </p>
+                        </div>
+                        <div className="col-span-4 space-y-5">
+                          <h1 className="text-xl font-bold text-orangeDDTV">
+                            {data.content.socialTitle}
+                          </h1>
+                          <div className="bg-orangeDDTV w-36 rounded-full m-auto">
+                            <Icons
+                              icons="together"
+                              className="fill-current text-white h-36"
+                            />
+                          </div>
+                          <p className="font-light text-lg">
+                            {useRichText(data.content.socialText)}
+                          </p>
+                        </div>
+                        <div className="col-span-4 space-y-5">
+                          <h1 className="text-xl font-bold text-orangeDDTV">
+                            {data.content.CooperationTitle}
+                          </h1>
+                          <div className="bg-orangeDDTV w-36 rounded-full m-auto">
+                            <Icons
+                              icons="hand"
+                              className="fill-current text-white h-36"
+                            />
+                          </div>
+                          <p className="font-light text-lg">
+                            {useRichText(data.content.CooperationText)}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Fade>
+              ) : (
+                <>
+                  <Loading />
+                </>
+              )}
+            </div>
+          </Fade>
         </Fade>
       )}
     </>

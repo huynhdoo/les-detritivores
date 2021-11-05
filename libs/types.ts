@@ -5,25 +5,13 @@ export type Content = {
     adress: string;
     number: string;
     mapsLink: string;
-    MoneyText: {
-      content: [
-        {
-          text: object;
-        }
-      ];
-    };
+    MoneyText: any;
     introText: any;
     MoneyTitle: string;
     introTitle: string;
     linkadress: string;
     offerTitle: string;
-    socialText: {
-      content: [
-        {
-          content: object;
-        }
-      ];
-    };
+    socialText: any;
     youtubeVideoLink: string;
     youtubeTitle: string;
     socialTitle: string;
@@ -35,5 +23,10 @@ export type Content = {
     restaurantCollective: string;
     collectivites: string;
     particular: string;
+    ourEngagement: string;
+    environementTitle: string;
+    CooperationTitle: string;
+    CooperationText: any;
+    environement: any;
   };
 };

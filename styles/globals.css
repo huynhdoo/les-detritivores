@@ -12,6 +12,14 @@ span {
   font-family: SF UI Display, sans-serif;
   @apply text-xl font-bold;
 }
+.jRFJkP,
+.cNNJIt,
+.lcUbOd {
+  @apply hidden !shadow-none;
+}
+.eaptOe {
+  @apply !shadow-none;
+}
 ::-webkit-scrollbar {
   display: none;
 }
