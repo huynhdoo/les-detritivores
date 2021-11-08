@@ -52,17 +52,9 @@ const Home: NextPage = () => {
             <div className="flex flex-col justify-center px-8 my-20 overflow-hidden items-center">
               <div className="flex-col justify-center items-center text-center mb-10">
                 {data ? (
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={500}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 transition -rotate-2">
-                      {data.content.introTitle}
-                    </h1>
-                  </Fade>
+                  <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 transition -rotate-2">
+                    {data.content.introTitle}
+                  </h1>
                 ) : (
                   <>
                     <Loading />
