@@ -43,5 +43,8 @@ export type Content = {
     gameSensibilisation: any;
     textSensibilisation: any;
     text2Sensibilisation: any;
+    compostSecondText: any;
+    compostTreeText: any;
+    compostFourText: any;
   };
 };

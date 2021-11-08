@@ -12,10 +12,14 @@ module.exports = {
       width: {
         250: "53.313rem",
         150: "30rem",
+        100: "40rem",
       },
       height: {
         250: "31.875rem",
         150: "25rem",
+      },
+      fontSize: {
+        vw: "calc(1.375rem + 0.5vw)",
       },
       keyframes: {
         wiggle: {
