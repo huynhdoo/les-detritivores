@@ -16,7 +16,10 @@ span {
 }
 .jRFJkP,
 .cNNJIt,
-.lcUbOd {
+.lcUbOd,
+.fVgyLU,
+.fViXLK,
+.bBjxWM {
   @apply !hidden !shadow-none;
 }
 .swal-modal {
@@ -28,7 +31,8 @@ span {
 .swal-text {
   @apply !text-gray-900 dark:!text-warmGray-50;
 }
-.eaptOe {
+.eaptOe,
+.gpDNSX {
   @apply !shadow-none;
 }
 ::-webkit-scrollbar {
