@@ -138,7 +138,12 @@ const Home: NextPage = () => {
             <div className="bg-greenDDTV h-64 w-full m-0 dark:bg-orangeDDTV">
               <div className="flex justify-center items-center">
                 <div className="my-12 inline-flex space-x-5 transition-all ease-in-out duration-1000 transform translate-x-0">
-                  <Carousel isRTL={true} enableAutoPlay={true}>
+                  <Carousel
+                    isRTL={true}
+                    enableAutoPlay={true}
+                    itemPosition="CENTER"
+                    enableSwipe={true} //only for test purpose.
+                  >
                     {images.map((item) => {
                       return (
                         <img
@@ -352,7 +357,7 @@ const Home: NextPage = () => {
                           NOUS RENCONTRER
                         </h1>
                         <a
-                          href={`tel:${data.content.linkadress}`}
+                          href={`${data.content.linkadress}`}
                           target="_blank"
                           rel="noopener"
                           className="text-left hover:text-orangeDDTV transition p-1"
