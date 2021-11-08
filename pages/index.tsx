@@ -317,7 +317,7 @@ const Home: NextPage = () => {
                                 icons="plus"
                                 className="text-white fill-current w-5 h-5 mr-1 mt-0.5"
                               />
-                              En savoir plus
+                              <Link href="/compostage">En savoir plus</Link>
                             </button>
                           </div>
                         </div>
