@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 import fetcher from "libs/fetcher";
 
 import { Content } from "libs/types";
-import { Convert, useRichText } from "libs/storyblok";
+import { useRichText } from "libs/storyblok";
 
 import Loading from "components/Loading";
 import Icons from "components/Icons";
