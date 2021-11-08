@@ -77,6 +77,22 @@ span {
   -webkit-clip-path: polygon(100% 3%, 0 100%, 100% 100%);
   clip-path: polygon(100% 3%, 0 100%, 100% 100%);
 }
+.bg-growing-underline-green {
+  background-size: 7% 0.15em;
+  background-position: 62%;
+  @apply transition-all duration-200 bg-gradient-to-t from-greenDDTV to-greenDDTV bg-no-repeat -rotate-1 !mt-1 !p-0 !h-2;
+}
+@media only screen and (max-width: 600px) {
+  .bg-growing-underline-green {
+    background-size: 18% 0.15em;
+    background-position: 79% 88%;
+  }
+}
+.bg-growing-underline-orange {
+  background-size: 17% 0.2em;
+  background-position: 100%;
+  @apply transition-all duration-200 bg-gradient-to-t from-orangeDDTV to-orangeDDTV bg-no-repeat -rotate-1 !mt-1 !p-0 !h-2;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

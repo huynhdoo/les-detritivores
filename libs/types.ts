@@ -35,5 +35,6 @@ export type Content = {
     linkFacebook: string;
     linkLinkedin: string;
     linkInstagram: string;
+    trustTitle: string;
   };
 };

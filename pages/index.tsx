@@ -52,8 +52,9 @@ const Home: NextPage = () => {
             <div className="flex flex-col justify-center px-8 my-20 overflow-hidden items-center">
               <div className="flex-col justify-center items-center text-center mb-10">
                 {data ? (
-                  <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 transition -rotate-2 h-16">
+                  <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 transition -rotate-2">
                     {data.content.introTitle}
+                    <div className="bg-growing-underline-orange">&nbsp;</div>
                   </h1>
                 ) : (
                   <>
@@ -135,6 +136,9 @@ const Home: NextPage = () => {
             delay={500}
             distance="30px"
           >
+            <h1 className="text-center pb-2 md:text-3xl text-xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 transition">
+              {data.content.trustTitle}
+            </h1>
             <div className="bg-greenDDTV h-64 w-full m-0 dark:bg-orangeDDTV">
               <div className="flex justify-center items-center">
                 <div className="my-12 inline-flex space-x-5 transition-all ease-in-out duration-1000 transform translate-x-0">
@@ -166,8 +170,9 @@ const Home: NextPage = () => {
                 distance="30px"
               >
                 <div className="flex-col justify-center items-center text-center mt-10">
-                  <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-greenDDTV to-green-700 dark:bg-gradient-to-t dark:from-orangeDDTV dark:to-orange-600 transition -rotate-3 h-24">
+                  <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-greenDDTV to-green-900 dark:bg-gradient-to-t dark:from-orangeDDTV dark:to-orange-600 transition -rotate-3 h-24">
                     {data.content.ourEngagement}
+                    <div className="bg-growing-underline-green">&nbsp;</div>
                   </h1>
                   <div className="mt-5">
                     <div className="">
@@ -186,7 +191,7 @@ const Home: NextPage = () => {
                             {useRichText(data.content.environement)}
                           </p>
                           <div className="justify-center">
-                            <button className="bg-orangeDDTV text-white p-2 rounded-2xl inline-flex ">
+                            <button className="bg-orangeDDTV hover:bg-orange-600 transition text-white p-2 rounded-2xl inline-flex">
                               <Icons
                                 icons="plus"
                                 className="text-white fill-current w-5 h-5 mr-1 mt-0.5"
@@ -209,7 +214,7 @@ const Home: NextPage = () => {
                             {useRichText(data.content.socialText)}
                           </p>
                           <div className="justify-center">
-                            <button className="bg-orangeDDTV text-white p-2 rounded-2xl inline-flex ">
+                            <button className="bg-orangeDDTV hover:bg-orange-600 transition text-white p-2 rounded-2xl inline-flex">
                               <Icons
                                 icons="plus"
                                 className="text-white fill-current w-5 h-5 mr-1 mt-0.5"
@@ -232,7 +237,7 @@ const Home: NextPage = () => {
                             {useRichText(data.content.CooperationText)}
                           </p>
                           <div className="justify-center">
-                            <button className="bg-orangeDDTV text-white p-2 rounded-2xl inline-flex ">
+                            <button className="bg-orangeDDTV hover:bg-orange-600 transition text-white p-2 rounded-2xl inline-flex">
                               <Icons
                                 icons="plus"
                                 className="text-white fill-current w-5 h-5 mr-1 mt-0.5"
