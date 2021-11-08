@@ -217,7 +217,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                     fill="#fff"
                     width="150"
                     height="150"
-                    className="text-white mt-2"
+                    className="text-white mt-2 focus:animate-wiggle hover:animate-wiggle transition-all"
                   >
                     <g id="Calque_2" data-name="Calque 2">
                       <g id="Calque_1-2" data-name="Calque 1">
