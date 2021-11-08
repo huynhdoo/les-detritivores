@@ -14,6 +14,8 @@ import Loading from "components/Loading";
 import Icons from "components/Icons";
 import { images } from "libs/constant";
 
+import Link from "next/link";
+
 const Home: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -66,8 +68,8 @@ const Home: NextPage = () => {
                 <p className="font-light text-xl text-center mx-0 smph:mx-4 sm:mx-12 md:mx-12">
                   {data ? useRichText(data.content.introText) : <Loading />}
                 </p>
-                <div className="flex justify-start sm:mx-12 md:mx-14 mx-0">
-                  <div className="block md:block sm:grid lg:grid grid-flow-col lg:grid-flow-col auto-rows-max md:space-x-0 lg:space-x-32">
+                <div className="flex justify-start sm:mx-12 md:mx-14 2xl:mx-14 mx-0">
+                  <div className="block md:block sm:grid lg:grid grid-flow-col lg:grid-flow-col auto-rows-max md:space-x-0 lg:space-x-32 2xl:space-x-20">
                     <div className="">
                       <iframe
                         src={data?.content.youtubeVideoLink}
@@ -77,7 +79,7 @@ const Home: NextPage = () => {
                         className="flex justify-start rounded-2xl w-72 lg:w-250 h-52 lg:h-250 md:w-96 md:h-72 sm:w-150 sm:h-150 sm:mx-12 md:mx-1 mx-16"
                       />
                     </div>
-                    <div className="flex flex-col items-center justify-center w-full">
+                    <div className="flex flex-col items-center justify-center">
                       <h1 className="pb-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600">
                         {data ? (
                           <FadeIn>{data?.content.usagesTitle}</FadeIn>
@@ -190,15 +192,6 @@ const Home: NextPage = () => {
                           <p className="font-light text-lg mx-1">
                             {useRichText(data.content.environement)}
                           </p>
-                          <div className="justify-center">
-                            <button className="bg-orangeDDTV hover:bg-orange-600 transition text-white p-2 rounded-2xl inline-flex">
-                              <Icons
-                                icons="plus"
-                                className="text-white fill-current w-5 h-5 mr-1 mt-0.5"
-                              />
-                              En savoir plus
-                            </button>
-                          </div>
                         </div>
                         <div className="col-span-4 space-y-5">
                           <h1 className="text-xl font-bold text-orangeDDTV">
@@ -213,15 +206,6 @@ const Home: NextPage = () => {
                           <p className="font-light text-lg mx-1">
                             {useRichText(data.content.socialText)}
                           </p>
-                          <div className="justify-center">
-                            <button className="bg-orangeDDTV hover:bg-orange-600 transition text-white p-2 rounded-2xl inline-flex">
-                              <Icons
-                                icons="plus"
-                                className="text-white fill-current w-5 h-5 mr-1 mt-0.5"
-                              />
-                              En savoir plus
-                            </button>
-                          </div>
                         </div>
                         <div className="col-span-4 space-y-5">
                           <h1 className="text-xl font-bold text-orangeDDTV">
@@ -236,15 +220,6 @@ const Home: NextPage = () => {
                           <p className="font-light text-lg mx-1">
                             {useRichText(data.content.CooperationText)}
                           </p>
-                          <div className="justify-center">
-                            <button className="bg-orangeDDTV hover:bg-orange-600 transition text-white p-2 rounded-2xl inline-flex">
-                              <Icons
-                                icons="plus"
-                                className="text-white fill-current w-5 h-5 mr-1 mt-0.5"
-                              />
-                              En savoir plus
-                            </button>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -288,6 +263,15 @@ const Home: NextPage = () => {
                           <p className="font-light text-lg mx-1">
                             {useRichText(data.content.collectText)}
                           </p>
+                          <div className="justify-center">
+                            <button className="bg-orangeDDTV hover:bg-orange-600 transition text-white p-2 rounded-2xl inline-flex">
+                              <Icons
+                                icons="plus"
+                                className="text-white fill-current w-5 h-5 mr-1 mt-0.5"
+                              />
+                              <Link href="/collecte">En savoir plus</Link>
+                            </button>
+                          </div>
                         </div>
                         <div className="col-span-4 space-y-5">
                           <h1 className="text-xl font-bold text-orangeDDTV">
@@ -302,6 +286,17 @@ const Home: NextPage = () => {
                           <p className="font-light text-lg mx-1">
                             {useRichText(data.content.sensibilisationText)}
                           </p>
+                          <div className="justify-center">
+                            <button className="bg-orangeDDTV hover:bg-orange-600 transition text-white p-2 rounded-2xl inline-flex">
+                              <Icons
+                                icons="plus"
+                                className="text-white fill-current w-5 h-5 mr-1 mt-0.5"
+                              />
+                              <Link href="/sensibilisation">
+                                En savoir plus
+                              </Link>
+                            </button>
+                          </div>
                         </div>
                         <div className="col-span-4 space-y-5">
                           <h1 className="text-xl font-bold text-orangeDDTV">
@@ -316,6 +311,15 @@ const Home: NextPage = () => {
                           <p className="font-light text-lg mx-1">
                             {useRichText(data.content.compostText)}
                           </p>
+                          <div className="justify-center">
+                            <button className="bg-orangeDDTV hover:bg-orange-600 transition text-white p-2 rounded-2xl inline-flex">
+                              <Icons
+                                icons="plus"
+                                className="text-white fill-current w-5 h-5 mr-1 mt-0.5"
+                              />
+                              En savoir plus
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>

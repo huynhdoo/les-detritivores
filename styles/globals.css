@@ -36,22 +36,22 @@ span {
   @apply !shadow-none;
 }
 ::-webkit-scrollbar {
-  display: none;
+  @apply !hidden;
 }
 ::-webkit-scrollbar-button {
-  display: none;
+  @apply !hidden;
 }
 ::-webkit-scrollbar-track {
-  display: none;
+  @apply !hidden;
 }
 ::-webkit-scrollbar-track-piece {
-  display: none;
+  @apply !hidden;
 }
 ::-webkit-scrollbar-thumb {
-  display: none;
+  @apply !hidden;
 }
 ::-webkit-scrollbar-corner {
-  display: none;
+  @apply !hidden;
 }
 .swal-button {
   @apply !bg-orangeDDTV;
@@ -92,6 +92,11 @@ span {
   background-size: 17% 0.2em;
   background-position: 100%;
   @apply transition-all duration-200 bg-gradient-to-t from-orangeDDTV to-orangeDDTV bg-no-repeat -rotate-1 !mt-1 !p-0 !h-2;
+}
+.bg-growing-underline-black {
+  background-size: 6rem 0.2em;
+  background-position: 13rem;
+  @apply transition-all duration-200 bg-gradient-to-t from-black to-black bg-no-repeat -rotate-1 !mt-1 !p-0 !h-2;
 }
 @tailwind base;
 @tailwind components;

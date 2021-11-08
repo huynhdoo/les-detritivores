@@ -36,5 +36,12 @@ export type Content = {
     linkLinkedin: string;
     linkInstagram: string;
     trustTitle: string;
+    collectMiniText: string;
+    collectFirstText: any;
+    collectSecondText: any;
+    collectTreeText: any;
+    gameSensibilisation: any;
+    textSensibilisation: any;
+    text2Sensibilisation: any;
   };
 };
