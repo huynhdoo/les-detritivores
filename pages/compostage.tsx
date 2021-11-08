@@ -75,6 +75,15 @@ const Compost: NextPage = () => {
                         className="w-60 rounded-2xl"
                       />
                     </div>
+                    <span className="flex space-x-2">
+                      <Icons
+                        icons="photo"
+                        className="w-6 h-6 text-black fill-current dark:text-white"
+                      />
+                      <p className="font-normal text-base mt-0.5">
+                        François Passerini
+                      </p>
+                    </span>
                   </div>
                 </>
               ) : (
