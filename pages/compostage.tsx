@@ -77,7 +77,7 @@ const Compost: NextPage = () => {
                 <button className="bg-greenDDTV text-white p-4 w-60 rounded-full font-normal text-xl m-auto uppercase">
                   <Link href="/devis">Commandez-le ici</Link>
                 </button>
-                <span className="text-center">ou</span>
+                <span className="text-center text-orangeDDTV">ou</span>
                 <button className="bg-greenDDTV text-white p-4 w-auto	 md:w-100 rounded-full font-normal text-md md:text-xl m-auto uppercase">
                   Retrouvez-le dans nos magasins partenaires
                 </button>
