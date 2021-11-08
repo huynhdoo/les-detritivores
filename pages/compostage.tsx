@@ -61,6 +61,20 @@ const Compost: NextPage = () => {
                         </div>
                       </div>
                     </div>
+                    <div className="grid justify-center space-y-2 md:inline-flex md:space-x-2">
+                      <img
+                        src="/static/images/DETRI_211007_399.jpg"
+                        className="w-60 rounded-2xl"
+                      />
+                      <img
+                        src="/static/images/IMG_0553.jpg"
+                        className="w-60 rounded-2xl"
+                      />
+                      <img
+                        src="/static/images/IMG_0278.jpg"
+                        className="w-60 rounded-2xl"
+                      />
+                    </div>
                   </div>
                 </>
               ) : (
