@@ -1,18 +1,72 @@
 import type { NextPage } from "next";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, ChangeEvent } from "react";
 import useSWR from "swr";
 import Fade from "react-reveal/Fade";
 import fetcher from "libs/fetcher";
 
 import { Content } from "libs/types";
-import { Convert, useRichText } from "libs/storyblok";
+import { useRichText } from "libs/storyblok";
 
 import Loading from "components/Loading";
-import Icons from "components/Icons";
+import { useForm } from "react-hook-form";
 
 const Devis: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [, setWho] = useState("");
+  const [, setNumbers] = useState("");
+  const [, setFonction] = useState("");
+  const [, setEmail] = useState("");
+  const [, setPhone] = useState("");
+  const [, setName] = useState("");
+  const [, setLastName] = useState("");
+  const [, setStructure] = useState("");
+  const [, setMessage] = useState("");
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitSuccessful },
+  } = useForm();
+  const onMailChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
+  const onWhoChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setWho(e.target.value);
+  };
+  const onNumberChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setNumbers(e.target.value);
+  };
+  const onPhoneChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setPhone(e.target.value);
+  };
+  const onStructureChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setStructure(e.target.value);
+  };
+  const onLastNameChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setLastName(e.target.value);
+  };
+  const onFonctionChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setFonction(e.target.value);
+  };
+  const onNameChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setName(e.target.value);
+  };
+  const onMessageChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
+    setMessage(e.target.value);
+  };
+
+  const onSubmit = (data) => {
+    fetch(`https://api-ddtv.herokuapp.com/send`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ ...data }),
+    })
+      .then((response) => response.json())
+      .then((body) => console.log(body));
+  };
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -34,10 +88,22 @@ const Devis: NextPage = () => {
       >
         <div className="max-w-screen my-3 justify-center content-center">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 mx-5 my-2 space-x-10">
-            <form className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 xl:w-100 md:w-96 sm:grid-cols-1 gap-1 justify-center">
+            <form
+              className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 xl:w-100 md:w-96 sm:grid-cols-1 gap-1 justify-center"
+              onSubmit={handleSubmit(onSubmit)}
+            >
               <div className="flex flex-col">
                 <label>Vous êtes:*</label>
-                <input className="bg-white border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md" />
+                <input
+                  className="bg-white border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md"
+                  {...register("who", { required: true })}
+                  onChange={onWhoChange}
+                />
+                {errors.who && (
+                  <span role="alert" className="alert">
+                    Champs obligatoire.
+                  </span>
+                )}
               </div>
               <div className="flex flex-col">
                 <label>Nombre de repas servis par jour:*</label>
