@@ -95,7 +95,7 @@ const Home: NextPage = () => {
                           className="text-white fill-current"
                         />
                       </div>
-                      <div className="flex flex-col justify-center items-center space-y-2 mt-2">
+                      <div className="flex flex-col justify-center items-center space-y-2 mt-2 w-max">
                         {data ? (
                           <>
                             <span>{data?.content.restaurantTitle}</span>
