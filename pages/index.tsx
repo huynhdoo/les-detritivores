@@ -138,7 +138,7 @@ const Home: NextPage = () => {
             delay={500}
             distance="30px"
           >
-            <h1 className="text-center pb-2 md:text-3xl text-xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 transition">
+            <h1 className="text-center pb-2 md:text-3xl text-xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 transition-all ">
               {data.content.trustTitle}
             </h1>
             <div className="bg-greenDDTV h-64 w-full m-0 dark:bg-orangeDDTV">

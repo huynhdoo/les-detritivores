@@ -73,7 +73,7 @@ span {
 }
 
 #footer {
-  @apply bg-greenDDTV bg-gradient-to-r from-greenDDTV to-greenDDTV dark:bg-gradient-to-r dark:from-orangeDDTV dark:to-orangeDDTV  h-40 md:h-44 sm:h-52 md:w-auto border-t-0 text-white overflow-y-hidden;
+  @apply bg-greenDDTV bg-gradient-to-r from-greenDDTV to-greenDDTV dark:bg-gradient-to-r dark:from-orangeDDTV dark:to-orangeDDTV md:w-auto border-t-0 text-white;
   -webkit-clip-path: polygon(100% 3%, 0 100%, 100% 100%);
   clip-path: polygon(100% 3%, 0 100%, 100% 100%);
 }
