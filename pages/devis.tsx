@@ -14,6 +14,15 @@ import Icons from "components/Icons";
 const Devis: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [showModal, setShowModal] = React.useState(true);
+  const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitSuccessful },
+  } = useForm();
+
   const [, setWho] = useState("");
   const [, setNumbers] = useState("");
   const [, setFonction] = useState("");
@@ -23,11 +32,6 @@ const Devis: NextPage = () => {
   const [, setLastName] = useState("");
   const [, setStructure] = useState("");
   const [, setMessage] = useState("");
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitSuccessful },
-  } = useForm();
   const onMailChange = (e: ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
   };
@@ -56,8 +60,6 @@ const Devis: NextPage = () => {
     setMessage(e.target.value);
   };
 
-  const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
-
   const onSubmit = () => {
     fetch(`https://api-ddtv.herokuapp.com/send`, {
       method: "POST",
@@ -79,7 +81,6 @@ const Devis: NextPage = () => {
       setIsDesktop(false);
     }
   }, []);
-  const [showModal, setShowModal] = React.useState(true);
   return (
     <>
       {isSubmitSuccessful && (

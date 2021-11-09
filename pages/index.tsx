@@ -19,6 +19,9 @@ import Icons from "components/Icons";
 const Home: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [showModal, setShowModal] = React.useState(true);
+
+  const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -28,9 +31,6 @@ const Home: NextPage = () => {
       setIsDesktop(false);
     }
   }, []);
-  const [showModal, setShowModal] = React.useState(true);
-
-  const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
   return (
     <>
       {showModal ? (

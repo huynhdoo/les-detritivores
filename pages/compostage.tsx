@@ -15,6 +15,7 @@ import Image from "next/image";
 const Compost: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -24,7 +25,6 @@ const Compost: NextPage = () => {
       setIsDesktop(false);
     }
   }, []);
-  const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
   return (
     <>
       <Fade

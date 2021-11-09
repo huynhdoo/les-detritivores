@@ -14,6 +14,8 @@ import Icons from "components/Icons";
 const Sensibilisation: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
+
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -23,7 +25,6 @@ const Sensibilisation: NextPage = () => {
       setIsDesktop(false);
     }
   }, []);
-  const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
   return (
     <>
       <Fade
