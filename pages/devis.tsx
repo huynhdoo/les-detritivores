@@ -32,6 +32,7 @@ const Devis: NextPage = () => {
   const [, setLastName] = useState("");
   const [, setStructure] = useState("");
   const [, setMessage] = useState("");
+
   const onMailChange = (e: ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
   };
