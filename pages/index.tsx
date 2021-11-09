@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import React, { useState, useEffect } from "react";
 import useSWR from "swr";
 import Fade from "react-reveal/Fade";
+import Rotate from "react-reveal/Rotate";
 import fetcher from "libs/fetcher";
 import FadeIn from "react-fade-in";
 import swal from "sweetalert";
@@ -231,13 +232,15 @@ const Home: NextPage = () => {
                 <Loading />
               </>
             )}
-            <div className="bg-greenDDTV dark:bg-orangeDDTV mt-20 -rotate-6 transform scale-125 h-20 !overflow-x-hidden">
-              <div className="flex items-center justify-center my-5">
-                <h1 className="text-white font-bold text-4xl">
-                  {data.content.offerTitle}
-                </h1>
+            <Rotate top left opposite cascade className="!overflow-y-hidden">
+              <div className="bg-greenDDTV dark:bg-orangeDDTV mt-20 !transition !duration-500 -rotate-6 transform scale-125 h-20 !overflow-x-hidden">
+                <div className="flex items-center justify-center my-5">
+                  <h1 className="text-white font-bold text-4xl">
+                    {data.content.offerTitle}
+                  </h1>
+                </div>
               </div>
-            </div>
+            </Rotate>
             {data ? (
               <Fade
                 left={isDesktop}
