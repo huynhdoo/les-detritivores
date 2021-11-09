@@ -14,6 +14,9 @@ module.exports = {
         150: "30rem",
         100: "40rem",
       },
+      transitionProperty: {
+        height: "height",
+      },
       height: {
         250: "31.875rem",
         150: "25rem",

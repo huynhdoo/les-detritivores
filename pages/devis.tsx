@@ -9,7 +9,7 @@ import { useRichText } from "libs/storyblok";
 
 import Loading from "components/Loading";
 import { useForm } from "react-hook-form";
-import swal from "sweetalert";
+import Icons from "components/Icons";
 const Devis: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -78,14 +78,65 @@ const Devis: NextPage = () => {
       setIsDesktop(false);
     }
   }, []);
+  const [showModal, setShowModal] = React.useState(true);
   return (
     <>
-      {isSubmitSuccessful &&
-        swal({
-          title: "Formulaire envoyer !",
-          icon: "success",
-          text: "Merci de votre confiance !",
-        }).then(() => {})}
+      {isSubmitSuccessful && (
+        <>
+          {showModal ? (
+            <div
+              className={`fixed z-10 inset-0 overflow-y-auto`}
+              onClick={() => setShowModal(false)}
+              aria-labelledby="modal-title"
+              role="dialog"
+              aria-modal="true"
+            >
+              <div
+                className={`flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0`}
+              >
+                <div
+                  className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                  aria-hidden="true"
+                ></div>
+
+                <span
+                  className="hidden sm:inline-block sm:align-middle sm:h-screen"
+                  aria-hidden="true"
+                >
+                  &#8203;
+                </span>
+
+                <div className="animate-wiggle inline-block align-bottom bg-black dark:bg-white rounded-lg text-left overflow-hidden shadow-xl transform sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                  <div className="bg-white dark:bg-gray-900 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div className="flex flex-col">
+                      <div className="mx-auto flex-shrink-0 flex items-center justify-center h-36 w-36">
+                        <Icons
+                          icons="logo"
+                          className="fill-current text-black dark:text-white"
+                        />
+                      </div>
+                      <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                        <h3
+                          className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-50"
+                          id="modal-title"
+                        >
+                          Merci de votre confiance !
+                        </h3>
+                        <div className="mt-2">
+                          <p className="text-sm text-gray-500 dark:text-white">
+                            Le formulaire à bien envoyer !
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-gray-50 dark:bg-gray-900 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse"></div>
+                </div>
+              </div>
+            </div>
+          ) : null}
+        </>
+      )}
       <Fade
         left={isDesktop}
         bottom={isMobile}
@@ -102,7 +153,7 @@ const Devis: NextPage = () => {
               <div className="flex flex-col">
                 <label>Vous êtes:*</label>
                 <input
-                  className="bg-white border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                   {...register("who", { required: true })}
                   autoComplete="off"
                   onChange={onWhoChange}
@@ -116,7 +167,7 @@ const Devis: NextPage = () => {
               <div className="flex flex-col">
                 <label>Nombre de repas servis par jour:*</label>
                 <input
-                  className="bg-white border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                   {...register("numbers", { required: true })}
                   autoComplete="off"
                   onChange={onNumberChange}
@@ -130,7 +181,7 @@ const Devis: NextPage = () => {
               <div className="flex flex-col">
                 <label>Structure:*</label>
                 <input
-                  className="bg-white border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                   {...register("structure", { required: true })}
                   autoComplete="off"
                   onChange={onStructureChange}
@@ -144,7 +195,7 @@ const Devis: NextPage = () => {
               <div className="flex flex-col">
                 <label>Fonction:*</label>
                 <input
-                  className="bg-white border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                   {...register("fonction", { required: true })}
                   autoComplete="off"
                   onChange={onFonctionChange}
@@ -158,7 +209,7 @@ const Devis: NextPage = () => {
               <div className="flex flex-col">
                 <label>Nom:*</label>
                 <input
-                  className="bg-white border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                   {...register("name", { required: true })}
                   autoComplete="off"
                   onChange={onNameChange}
@@ -172,7 +223,7 @@ const Devis: NextPage = () => {
               <div className="flex flex-col">
                 <label>Prénom:*</label>
                 <input
-                  className="bg-white border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                   {...register("lastName", { required: true })}
                   autoComplete="off"
                   onChange={onLastNameChange}
@@ -186,7 +237,7 @@ const Devis: NextPage = () => {
               <div className="flex flex-col">
                 <label>Email:*</label>
                 <input
-                  className="bg-white border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                   {...register("mail", { required: true })}
                   autoComplete="off"
                   onChange={onMailChange}
@@ -200,7 +251,7 @@ const Devis: NextPage = () => {
               <div className="flex flex-col">
                 <label>Téléphone:*</label>
                 <input
-                  className="bg-white border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                   {...register("phone", { required: true })}
                   autoComplete="off"
                   onChange={onPhoneChange}
@@ -214,7 +265,7 @@ const Devis: NextPage = () => {
               <div className="flex flex-col justify-center">
                 <label>Message:*</label>
                 <textarea
-                  className="w-full px-3 py-2 text-gray-700 focus:outline-none bg-white border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                  className="w-full px-3 py-2 text-gray-700 focus:outline-none bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                   {...register("message", { required: true })}
                   autoComplete="off"
                   onChange={onMessageChange}
