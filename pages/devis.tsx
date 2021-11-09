@@ -149,145 +149,147 @@ const Devis: NextPage = () => {
       >
         <div className="max-w-screen my-3 justify-center content-center">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 mx-5 my-2 space-x-10">
-            <form
-              className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 xl:w-100 md:w-96 sm:grid-cols-1 gap-x-2 gap-y-3 justify-center"
-              onSubmit={handleSubmit(onSubmit)}
-            >
-              <div className="flex flex-col">
-                <label>Vous êtes:*</label>
-                <input
-                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
-                  {...register("who", { required: true })}
-                  autoComplete="off"
-                  onChange={onWhoChange}
-                />
-                {errors.who && (
-                  <span role="alert" className="text-sm font-normal">
-                    Champs obligatoire.
-                  </span>
-                )}
-              </div>
-              <div className="flex flex-col">
-                <label>Nombre de repas servis par jour:*</label>
-                <input
-                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
-                  {...register("numbers", { required: true })}
-                  autoComplete="off"
-                  onChange={onNumberChange}
-                />
-                {errors.numbers && (
-                  <span role="alert" className="text-sm font-medium">
-                    Champs obligatoire.
-                  </span>
-                )}
-              </div>
-              <div className="flex flex-col">
-                <label>Structure:*</label>
-                <input
-                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
-                  {...register("structure", { required: true })}
-                  autoComplete="off"
-                  onChange={onStructureChange}
-                />
-                {errors.structure && (
-                  <span role="alert" className="text-sm font-medium">
-                    Champs obligatoire.
-                  </span>
-                )}
-              </div>
-              <div className="flex flex-col">
-                <label>Fonction:*</label>
-                <input
-                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
-                  {...register("fonction", { required: true })}
-                  autoComplete="off"
-                  onChange={onFonctionChange}
-                />
-                {errors.fonction && (
-                  <span role="alert" className="text-sm font-medium">
-                    Champs obligatoire.
-                  </span>
-                )}
-              </div>
-              <div className="flex flex-col">
-                <label>Nom:*</label>
-                <input
-                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
-                  {...register("name", { required: true })}
-                  autoComplete="off"
-                  onChange={onNameChange}
-                />
-                {errors.name && (
-                  <span role="alert" className="text-sm font-medium">
-                    Champs obligatoire.
-                  </span>
-                )}
-              </div>
-              <div className="flex flex-col">
-                <label>Prénom:*</label>
-                <input
-                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
-                  {...register("lastName", { required: true })}
-                  autoComplete="off"
-                  onChange={onLastNameChange}
-                />
-                {errors.lastName && (
-                  <span role="alert" className="text-sm font-medium">
-                    Champs obligatoire.
-                  </span>
-                )}
-              </div>
-              <div className="flex flex-col">
-                <label>Email:*</label>
-                <input
-                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
-                  {...register("mail", { required: true })}
-                  autoComplete="off"
-                  onChange={onMailChange}
-                />
-                {errors.mail && (
-                  <span role="alert" className="text-sm font-medium">
-                    Champs obligatoire.
-                  </span>
-                )}
-              </div>
-              <div className="flex flex-col">
-                <label>Téléphone:*</label>
-                <input
-                  className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
-                  {...register("phone", { required: true })}
-                  autoComplete="off"
-                  onChange={onPhoneChange}
-                />
-                {errors.phone && (
-                  <span role="alert" className="text-sm font-medium">
-                    Champs obligatoire.
-                  </span>
-                )}
-              </div>
-              <div className="flex flex-col justify-center">
-                <label>Message:*</label>
-                <textarea
-                  className="w-full px-3 py-2 text-gray-700 focus:outline-none bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
-                  {...register("message", { required: true })}
-                  autoComplete="off"
-                  onChange={onMessageChange}
-                />
-                {errors.message && (
-                  <span role="alert" className="text-sm font-medium">
-                    Champs obligatoire.
-                  </span>
-                )}
-                <div className="flex justify-center items-center p-2">
-                  <button
-                    className="bg-orangeDDTV transition hover:bg-orange-600 p-2 rounded-full text-white"
-                    type="submit"
-                  >
-                    Envoyer
-                  </button>
+            <div className="flex justify-center">
+              <form
+                className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 xl:w-100 md:w-96 sm:grid-cols-1 gap-x-2 gap-y-3 justify-center"
+                onSubmit={handleSubmit(onSubmit)}
+              >
+                <div className="flex flex-col">
+                  <label>Vous êtes:*</label>
+                  <input
+                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    {...register("who", { required: true })}
+                    autoComplete="off"
+                    onChange={onWhoChange}
+                  />
+                  {errors.who && (
+                    <span role="alert" className="text-sm font-normal">
+                      Champs obligatoire.
+                    </span>
+                  )}
                 </div>
-              </div>
-            </form>
+                <div className="flex flex-col">
+                  <label>Nombre de repas servis par jour:*</label>
+                  <input
+                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    {...register("numbers", { required: true })}
+                    autoComplete="off"
+                    onChange={onNumberChange}
+                  />
+                  {errors.numbers && (
+                    <span role="alert" className="text-sm font-medium">
+                      Champs obligatoire.
+                    </span>
+                  )}
+                </div>
+                <div className="flex flex-col">
+                  <label>Structure:*</label>
+                  <input
+                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    {...register("structure", { required: true })}
+                    autoComplete="off"
+                    onChange={onStructureChange}
+                  />
+                  {errors.structure && (
+                    <span role="alert" className="text-sm font-medium">
+                      Champs obligatoire.
+                    </span>
+                  )}
+                </div>
+                <div className="flex flex-col">
+                  <label>Fonction:*</label>
+                  <input
+                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    {...register("fonction", { required: true })}
+                    autoComplete="off"
+                    onChange={onFonctionChange}
+                  />
+                  {errors.fonction && (
+                    <span role="alert" className="text-sm font-medium">
+                      Champs obligatoire.
+                    </span>
+                  )}
+                </div>
+                <div className="flex flex-col">
+                  <label>Nom:*</label>
+                  <input
+                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    {...register("name", { required: true })}
+                    autoComplete="off"
+                    onChange={onNameChange}
+                  />
+                  {errors.name && (
+                    <span role="alert" className="text-sm font-medium">
+                      Champs obligatoire.
+                    </span>
+                  )}
+                </div>
+                <div className="flex flex-col">
+                  <label>Prénom:*</label>
+                  <input
+                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    {...register("lastName", { required: true })}
+                    autoComplete="off"
+                    onChange={onLastNameChange}
+                  />
+                  {errors.lastName && (
+                    <span role="alert" className="text-sm font-medium">
+                      Champs obligatoire.
+                    </span>
+                  )}
+                </div>
+                <div className="flex flex-col">
+                  <label>Email:*</label>
+                  <input
+                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    {...register("mail", { required: true })}
+                    autoComplete="off"
+                    onChange={onMailChange}
+                  />
+                  {errors.mail && (
+                    <span role="alert" className="text-sm font-medium">
+                      Champs obligatoire.
+                    </span>
+                  )}
+                </div>
+                <div className="flex flex-col">
+                  <label>Téléphone:*</label>
+                  <input
+                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    {...register("phone", { required: true })}
+                    autoComplete="off"
+                    onChange={onPhoneChange}
+                  />
+                  {errors.phone && (
+                    <span role="alert" className="text-sm font-medium">
+                      Champs obligatoire.
+                    </span>
+                  )}
+                </div>
+                <div className="flex flex-col justify-center">
+                  <label>Message:*</label>
+                  <textarea
+                    className="w-full px-3 py-2 text-gray-700 focus:outline-none bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    {...register("message", { required: true })}
+                    autoComplete="off"
+                    onChange={onMessageChange}
+                  />
+                  {errors.message && (
+                    <span role="alert" className="text-sm font-medium">
+                      Champs obligatoire.
+                    </span>
+                  )}
+                  <div className="flex justify-center items-center p-2">
+                    <button
+                      className="bg-orangeDDTV transition hover:bg-orange-600 p-2 rounded-full text-white"
+                      type="submit"
+                    >
+                      Envoyer
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
             <div className="flex flex-col space-x-10 justify-between">
               {data ? (
                 <>
