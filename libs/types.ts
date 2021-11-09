@@ -46,5 +46,6 @@ export type StoryBlok = {
     compostSecondText: any;
     compostTreeText: any;
     compostFourText: any;
+    titleSectionSensibilisation: string;
   };
 };
