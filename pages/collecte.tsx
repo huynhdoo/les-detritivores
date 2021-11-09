@@ -38,7 +38,7 @@ const Collecte: NextPage = () => {
               {data ? (
                 <>
                   <div>
-                    <div className="rounded-lg w-80">
+                    <div className="rounded-lg w-80 m-auto md:m-0 sm:m-0">
                       <Image
                         width="320"
                         height="200"
@@ -48,7 +48,7 @@ const Collecte: NextPage = () => {
                     </div>
                   </div>
                   <div>
-                    <div className="w-80">
+                    <div className="rounded-lg w-80 m-auto md:m-0 sm:m-0">
                       <Image
                         width="320"
                         height="200"
@@ -58,7 +58,7 @@ const Collecte: NextPage = () => {
                     </div>
                   </div>
                   <div>
-                    <div className="rounded-lg w-80">
+                    <div className="rounded-lg w-80 m-auto md:m-0 sm:m-0">
                       <Image
                         width="320"
                         height="200"
@@ -68,7 +68,7 @@ const Collecte: NextPage = () => {
                     </div>
                   </div>
                   <div>
-                    <div className="rounded-lg w-80">
+                    <div className="rounded-lg w-80 m-auto md:m-0 sm:m-0">
                       <Image
                         width="320"
                         height="200"
