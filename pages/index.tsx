@@ -6,15 +6,15 @@ import Rotate from "react-reveal/Rotate";
 import fetcher from "libs/fetcher";
 import FadeIn from "react-fade-in";
 import Carousel from "react-elastic-carousel";
+import Image from "next/image";
+import Link from "next/link";
 
 import { StoryBlok } from "libs/types";
 import { Convert, useRichText } from "libs/storyblok";
+import { images } from "libs/constant";
 
 import Loading from "components/Loading";
 import Icons from "components/Icons";
-import { images } from "libs/constant";
-
-import Link from "next/link";
 
 const Home: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -221,11 +221,15 @@ const Home: NextPage = () => {
                       >
                         {images.map((item) => {
                           return (
-                            <img
-                              className="h-36 w-36 rounded-md"
-                              src={item.image}
-                              loading="lazy"
-                            />
+                            <div className="rounded-md">
+                              <Image
+                                className="h-36 !w-40 rounded-md bg-cover"
+                                src={item.image}
+                                width="350"
+                                height="350"
+                                loading="lazy"
+                              />
+                            </div>
                           );
                         })}
                       </Carousel>
