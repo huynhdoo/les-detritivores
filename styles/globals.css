@@ -102,27 +102,6 @@ span {
   background-position: 55%;
   @apply transition-all duration-200 bg-gradient-to-t from-orangeDDTV to-orangeDDTV bg-no-repeat -rotate-3 !mt-1 !p-0 !h-2;
 }
-@-webkit-keyframes rotateInDownLeft {
-  0% {
-    @apply -rotate-3 opacity-0;
-  }
-  to {
-    @apply opacity-100;
-  }
-}
-@keyframes rotateInDownLeft {
-  0% {
-    @apply -rotate-3 opacity-0;
-  }
-  to {
-    @apply opacity-100;
-  }
-}
-.animate__rotateInDownLeft {
-  -webkit-animation-name: rotateInDownLeft;
-  animation-name: rotateInDownLeft;
-  transition: all 0.5s ease-in;
-}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
