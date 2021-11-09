@@ -2,11 +2,12 @@ import type { NextPage } from "next";
 import React, { useState, useEffect } from "react";
 import useSWR from "swr";
 import Fade from "react-reveal/Fade";
-import fetcher from "libs/fetcher";
+import Image from "next/image";
 
+import fetcher from "libs/fetcher";
 import { StoryBlok } from "libs/types";
 import { useRichText } from "libs/storyblok";
-import Image from "next/image";
+
 import Loading from "components/Loading";
 import Icons from "components/Icons";
 

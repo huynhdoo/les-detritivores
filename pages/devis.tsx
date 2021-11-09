@@ -3,13 +3,14 @@ import React, { useState, useEffect, ChangeEvent } from "react";
 import useSWR from "swr";
 import Fade from "react-reveal/Fade";
 import fetcher from "libs/fetcher";
+import { useForm } from "react-hook-form";
 
 import { StoryBlok } from "libs/types";
 import { useRichText } from "libs/storyblok";
 
 import Loading from "components/Loading";
-import { useForm } from "react-hook-form";
 import Icons from "components/Icons";
+
 const Devis: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);

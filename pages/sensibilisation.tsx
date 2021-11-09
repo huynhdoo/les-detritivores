@@ -4,6 +4,7 @@ import useSWR from "swr";
 import Fade from "react-reveal/Fade";
 import fetcher from "libs/fetcher";
 import Image from "next/image";
+
 import { StoryBlok } from "libs/types";
 import { useRichText } from "libs/storyblok";
 

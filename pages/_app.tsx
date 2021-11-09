@@ -1,18 +1,21 @@
 import "styles/globals.css";
+
 import type { AppProps } from "next/app";
 import React from "react";
 import { ThemeProvider } from "next-themes";
 import useSWR from "swr";
-import { StoryBlok } from "libs/types";
-import fetcher from "libs/fetcher";
-import Loading from "components/Loading";
 import useKeypress from "react-use-keypress";
-import ToggleTheme from "components/toggleTheme";
 import Link from "next/link";
 import useSound from "use-sound";
+
+import { StoryBlok } from "libs/types";
+import fetcher from "libs/fetcher";
+
+import Loading from "components/Loading";
+import ToggleTheme from "components/toggleTheme";
+
 function MyApp({ Component, pageProps }: AppProps) {
   const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
-
   const [play] = useSound(`static/sounds/sound.mp3`);
 
   useKeypress(["s", "altGraphKey"], () => {
