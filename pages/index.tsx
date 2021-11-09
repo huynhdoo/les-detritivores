@@ -258,7 +258,7 @@ const Home: NextPage = () => {
                 <div className="flex-col justify-center items-center text-center mt-20">
                   <div className="mt-5">
                     <div className="">
-                      <div className="max-w-7xl mx-auto grid md:grid-cols-12 grid-cols-3 justify-center">
+                      <div className="max-w-7xl mx-auto grid md:grid-cols-12 grid-cols-3 justify-center space-y-4 md:space-y-0 sm:space-y-0">
                         <div className="col-span-4 space-y-5">
                           <h1 className="text-xl font-bold text-orangeDDTV">
                             {data.content.collectTitle}
