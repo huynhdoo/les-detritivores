@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import useSWR from "swr";
 import Fade from "react-reveal/Fade";
 import fetcher from "libs/fetcher";
-
+import Image from "next/image";
 import { StoryBlok } from "libs/types";
 import { useRichText } from "libs/storyblok";
 
@@ -37,10 +37,12 @@ const Sensibilisation: NextPage = () => {
             <div className="flex flex-col space-y-2">
               {data ? (
                 <>
-                  <div>
-                    <img
-                      className="rounded-2xl w-auto"
+                  <div className="w-auto">
+                    <Image
+                      className="rounded-2xl"
                       src="/static/images/IMG_0324[736].jpg"
+                      width="900"
+                      height="700"
                     />
                   </div>
                 </>

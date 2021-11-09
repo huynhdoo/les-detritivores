@@ -10,6 +10,7 @@ import { useRichText } from "libs/storyblok";
 import Loading from "components/Loading";
 import Icons from "components/Icons";
 import Link from "next/link";
+import Image from "next/image";
 
 const Compost: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -61,19 +62,31 @@ const Compost: NextPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="grid justify-center space-y-2 md:inline-flex md:space-x-2">
-                      <img
-                        src="/static/images/DETRI_211007_399.jpg"
-                        className="w-60 rounded-2xl"
-                      />
-                      <img
-                        src="/static/images/IMG_0553.jpg"
-                        className="w-60 rounded-2xl"
-                      />
-                      <img
-                        src="/static/images/IMG_0278.jpg"
-                        className="w-60 rounded-2xl"
-                      />
+                    <div className="grid justify-center space-x-0 md:inline-flex md:space-x-2 sm:space-x-0">
+                      <div className="w-60">
+                        <Image
+                          className="rounded-2xl"
+                          width="240"
+                          height="180"
+                          src="/static/images/DETRI_211007_399.jpg"
+                        />
+                      </div>
+                      <div className="w-60">
+                        <Image
+                          className="rounded-2xl"
+                          width="240"
+                          height="180"
+                          src="/static/images/IMG_0553.jpg"
+                        />
+                      </div>
+                      <div className="w-60">
+                        <Image
+                          className="rounded-2xl"
+                          width="240"
+                          height="180"
+                          src="/static/images/IMG_0278.jpg"
+                        />
+                      </div>
                     </div>
                     <span className="flex space-x-2">
                       <Icons

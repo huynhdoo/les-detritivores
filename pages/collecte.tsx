@@ -6,7 +6,7 @@ import fetcher from "libs/fetcher";
 
 import { StoryBlok } from "libs/types";
 import { useRichText } from "libs/storyblok";
-
+import Image from "next/image";
 import Loading from "components/Loading";
 import Icons from "components/Icons";
 
@@ -38,28 +38,44 @@ const Collecte: NextPage = () => {
               {data ? (
                 <>
                   <div>
-                    <img
-                      className="rounded-lg w-80"
-                      src="/static/images/DETRI_211007_137.jpg"
-                    />
+                    <div className="rounded-lg w-80">
+                      <Image
+                        width="320"
+                        height="200"
+                        className="rounded-lg"
+                        src="/static/images/DETRI_211007_137.jpg"
+                      />
+                    </div>
                   </div>
                   <div>
-                    <img
-                      className="rounded-lg w-80"
-                      src="/static/images/DETRI_211007_336.jpg"
-                    />
+                    <div className="w-80">
+                      <Image
+                        width="320"
+                        height="200"
+                        className="rounded-lg"
+                        src="/static/images/DETRI_211007_336.jpg"
+                      />
+                    </div>
                   </div>
                   <div>
-                    <img
-                      className="rounded-lg w-80"
-                      src="/static/images/IMG_0099.jpg"
-                    />
+                    <div className="rounded-lg w-80">
+                      <Image
+                        width="320"
+                        height="200"
+                        className="rounded-lg"
+                        src="/static/images/IMG_0099.jpg"
+                      />
+                    </div>
                   </div>
                   <div>
-                    <img
-                      className="rounded-lg w-80"
-                      src="/static/images/DETRI_211007_623.jpg"
-                    />
+                    <div className="rounded-lg w-80">
+                      <Image
+                        width="320"
+                        height="200"
+                        className="rounded-lg"
+                        src="/static/images/DETRI_211007_623.jpg"
+                      />
+                    </div>
                   </div>
                 </>
               ) : (
