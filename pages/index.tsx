@@ -348,7 +348,7 @@ const Home: NextPage = () => {
                 </div>
               </h1>
               <footer className="relative pt-1">
-                <div className="container mx-auto xl:mx-40 lg:mx-36 2xl:mx-auto px-6">
+                <div className="container mx-auto px-6">
                   <div className="sm:flex sm:mt-8">
                     <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
                       <div className="flex flex-col">
