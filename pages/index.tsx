@@ -71,7 +71,7 @@ const Home: NextPage = () => {
                 </p>
                 <div className="flex justify-center m-auto">
                   <div className="flex justify-center items-center content-center">
-                    <div className="grid auto-cols-max grid-rows-1 grid-cols-1 space-x-0 space-y-0 md:space-y-2 sm:space-y-2 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2 xl:space-x-5 2xl:space-x-20 max-w-max w-max">
+                    <div className="grid auto-cols-max grid-rows-1 grid-cols-1 space-x-0 space-y-0 sm:space-y-2 md:space-y-2 xl:space-y-0 xxl:space-y-0 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2 xl:space-x-5 2xl:space-x-20 max-w-max w-max">
                       <div className="flex justify-self-start">
                         <iframe
                           src={data?.content.youtubeVideoLink}
