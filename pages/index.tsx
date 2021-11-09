@@ -337,6 +337,9 @@ const Home: NextPage = () => {
             <div className="flex-col justify-center items-center text-center mt-20">
               <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 dark:bg-gradient-to-t dark:from-orangeDDTV dark:to-orange-600 transition">
                 {data.content.contactTitle}
+                <div className="bg-growing-underline-orange-contact">
+                  &nbsp;
+                </div>
               </h1>
               <footer className="relative pt-1">
                 <div className="container mx-auto xl:mx-40 lg:mx-36 2xl:mx-auto px-6">

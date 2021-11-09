@@ -97,6 +97,11 @@ span {
   background-position: 13rem;
   @apply transition-all duration-200 bg-gradient-to-t from-black to-black bg-no-repeat -rotate-1 !mt-1 !p-0 !h-2;
 }
+.bg-growing-underline-orange-contact {
+  background-size: 5% 0.2em;
+  background-position: 55%;
+  @apply transition-all duration-200 bg-gradient-to-t from-orangeDDTV to-orangeDDTV bg-no-repeat -rotate-3 !mt-1 !p-0 !h-2;
+}
 @-webkit-keyframes rotateInDownLeft {
   0% {
     @apply -rotate-3 opacity-0;
