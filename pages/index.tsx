@@ -128,7 +128,7 @@ const Home: NextPage = () => {
                     )}
                   </div>
                   <div className="flex flex-col items-start justify-center max-w-xl lg:max-w-6xl mb-16 dark:text-white space-y-10 smph:text-xs md:px-10 lg:px-10">
-                    <p className="font-light text-xl text-center mx-0 smph:mx-6 sm:mx-12 md:mx-12">
+                    <p className="font-light text-xl text-center mx-0 sm:mx-12 md:mx-12">
                       {data ? useRichText(data.content.introText) : <Loading />}
                     </p>
                     <div className="flex justify-center m-auto">
