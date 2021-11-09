@@ -224,6 +224,7 @@ const Home: NextPage = () => {
                             <img
                               className="h-36 w-36 rounded-md"
                               src={item.image}
+                              loading="lazy"
                             />
                           );
                         })}

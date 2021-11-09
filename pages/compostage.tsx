@@ -69,6 +69,7 @@ const Compost: NextPage = () => {
                           width="240"
                           height="180"
                           src="/static/images/DETRI_211007_399.jpg"
+                          loading="lazy"
                         />
                       </div>
                       <div className="w-60">
@@ -77,6 +78,7 @@ const Compost: NextPage = () => {
                           width="240"
                           height="180"
                           src="/static/images/IMG_0553.jpg"
+                          loading="lazy"
                         />
                       </div>
                       <div className="w-60">
@@ -85,6 +87,7 @@ const Compost: NextPage = () => {
                           width="240"
                           height="180"
                           src="/static/images/IMG_0278.jpg"
+                          loading="lazy"
                         />
                       </div>
                     </div>

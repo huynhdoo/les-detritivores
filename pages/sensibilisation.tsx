@@ -43,6 +43,7 @@ const Sensibilisation: NextPage = () => {
                       src="/static/images/IMG_0324[736].jpg"
                       width="900"
                       height="700"
+                      loading="lazy"
                     />
                   </div>
                 </>

@@ -22,7 +22,9 @@ const Collecte: NextPage = () => {
       setIsDesktop(false);
     }
   }, []);
+
   const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
+
   return (
     <>
       <Fade
@@ -44,6 +46,7 @@ const Collecte: NextPage = () => {
                         height="200"
                         className="rounded-lg"
                         src="/static/images/DETRI_211007_137.jpg"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -64,6 +67,7 @@ const Collecte: NextPage = () => {
                         height="200"
                         className="rounded-lg"
                         src="/static/images/IMG_0099.jpg"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -74,6 +78,7 @@ const Collecte: NextPage = () => {
                         height="200"
                         className="rounded-lg"
                         src="/static/images/DETRI_211007_623.jpg"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -184,3 +189,6 @@ const Collecte: NextPage = () => {
   );
 };
 export default Collecte;
+function dynamic(arg0: () => Promise<typeof import("next/image")>) {
+  throw new Error("Function not implemented.");
+}
