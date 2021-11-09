@@ -15,6 +15,7 @@
     "next-superjson": "^0.0.2",
     "next-themes": "^0.0.15",
     "react": "^18.0.0-alpha-6c3dcc7a4-20211027",
+    "react-cookie-consent": "^6.4.1",
     "react-dom": "^18.0.0-alpha-6c3dcc7a4-20211027",
     "react-elastic-carousel": "^0.11.5",
     "react-fade-in": "^2.0.1",
