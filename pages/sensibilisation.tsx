@@ -39,12 +39,12 @@ const Sensibilisation: NextPage = () => {
             <div className="flex flex-col space-y-2">
               {data ? (
                 <>
-                  <div className="w-auto">
+                  <div className="flex justify-center">
                     <Image
                       className="rounded-2xl"
                       src="/static/images/IMG_0324[736].jpg"
-                      width="900"
-                      height="700"
+                      width="750"
+                      height="500"
                       loading="lazy"
                     />
                   </div>
@@ -79,7 +79,7 @@ const Sensibilisation: NextPage = () => {
               {data ? (
                 <>
                   <div className="space-y-4">
-                    <h1 className="text-left pb-2 md:text-6xl text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 transition -rotate-2">
+                    <h1 className="text-left pb-2 md:text-4xl lg:text-5xl text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 transition -rotate-2">
                       {data?.content.titleSectionSensibilisation}
                       <div className="bg-growing-underline-black hidden">
                         &nbsp;
