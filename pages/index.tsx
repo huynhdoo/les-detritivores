@@ -162,7 +162,6 @@ const Home: NextPage = () => {
                                 {data ? (
                                   <>
                                     <span>{data?.content.restaurantTitle}</span>
-                                    <div className="fancy !border-orangeDDTV -rotate-6 ml-52" />
                                   </>
                                 ) : (
                                   <Loading />
@@ -172,7 +171,6 @@ const Home: NextPage = () => {
                                     <span>
                                       {data?.content.restaurantCollective}
                                     </span>
-                                    <div className="fancy !border-orangeDDTV -rotate-6 ml-72" />
                                   </>
                                 ) : (
                                   <Loading />
@@ -180,7 +178,6 @@ const Home: NextPage = () => {
                                 {data ? (
                                   <>
                                     <span>{data?.content.collectivites}</span>
-                                    <div className="fancy !border-orangeDDTV -rotate-6 ml-40" />
                                   </>
                                 ) : (
                                   <Loading />
@@ -188,7 +185,6 @@ const Home: NextPage = () => {
                                 {data ? (
                                   <>
                                     <span>{data?.content.particular}</span>
-                                    <div className="fancy !border-orangeDDTV -rotate-6 ml-40" />
                                   </>
                                 ) : (
                                   <Loading />
@@ -250,7 +246,6 @@ const Home: NextPage = () => {
                     <div className="flex-col justify-center items-center text-center mt-10">
                       <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-greenDDTV to-green-900 dark:bg-gradient-to-t dark:from-orangeDDTV dark:to-orange-600 transition -rotate-3 h-24">
                         {data.content.ourEngagement}
-                        <div className="fancy-title !border-greenDDTV -rotate-3 p-0.5 hidden" />
                       </h1>
                       <div className="mt-5">
                         <div className="">
@@ -418,7 +413,6 @@ const Home: NextPage = () => {
                 <div className="flex-col justify-center items-center text-center mt-20">
                   <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 dark:bg-gradient-to-t dark:from-orangeDDTV dark:to-orange-600 transition">
                     {data.content.contactTitle}
-                    <div className="fancy-title !border-orangeDDTV -rotate-3 flex justify-end p-0.5 m-auto w-32 hidden" />
                   </h1>
                   <footer className="relative pt-1">
                     <div className="container md:container mx-auto px-6">
