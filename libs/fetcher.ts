@@ -1,3 +1,5 @@
+import fetch from "isomorphic-unfetch";
+// should support safari (?)
 export default async function fetcher<JSON = any>(
   input: RequestInfo,
   init?: RequestInit
