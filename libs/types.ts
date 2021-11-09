@@ -1,4 +1,4 @@
-export type Content = {
+export type StoryBlok = {
   content: {
     mail: string;
     Title: string;

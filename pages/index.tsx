@@ -7,7 +7,7 @@ import FadeIn from "react-fade-in";
 import swal from "sweetalert";
 import Carousel from "react-elastic-carousel";
 
-import { Content } from "libs/types";
+import { StoryBlok } from "libs/types";
 import { Convert, useRichText } from "libs/storyblok";
 
 import Loading from "components/Loading";
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
       text: "Psst... Notre site est en cours de développement",
     }).then(() => {});
   }, []);
-  const { data } = useSWR<Content>(`/api/storyblok`, fetcher);
+  const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
   return (
     <>
       {data && (

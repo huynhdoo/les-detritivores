@@ -4,7 +4,7 @@ import useSWR from "swr";
 import Fade from "react-reveal/Fade";
 import fetcher from "libs/fetcher";
 
-import { Content } from "libs/types";
+import { StoryBlok } from "libs/types";
 import { useRichText } from "libs/storyblok";
 
 import Loading from "components/Loading";
@@ -55,6 +55,8 @@ const Devis: NextPage = () => {
     setMessage(e.target.value);
   };
 
+  const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
+
   const onSubmit = (data) => {
     fetch(`https://api-ddtv.herokuapp.com/send`, {
       method: "POST",
@@ -76,7 +78,6 @@ const Devis: NextPage = () => {
       setIsDesktop(false);
     }
   }, []);
-  const { data } = useSWR<Content>(`/api/storyblok`, fetcher);
   return (
     <>
       <Fade
