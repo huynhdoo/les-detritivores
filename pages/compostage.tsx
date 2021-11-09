@@ -35,8 +35,8 @@ const Compost: NextPage = () => {
         distance="30px"
       >
         <div className="max-w-screen my-3 justify-center content-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 mx-5 my-2">
-            <div className="flex flex-col space-y-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 mx-5 my-2 space-y-2">
+            <div className="flex flex-col space-y-4">
               {data ? (
                 <>
                   <div className="space-y-4">
@@ -88,7 +88,7 @@ const Compost: NextPage = () => {
                         />
                       </div>
                     </div>
-                    <span className="flex space-x-2">
+                    <span className="flex space-x-2 justify-center 2xl:justify-start xl:justify-start sm:justify-start md:justify-start">
                       <Icons
                         icons="photo"
                         className="w-6 h-6 text-black fill-current dark:text-white"
@@ -103,7 +103,7 @@ const Compost: NextPage = () => {
                 <Loading />
               )}
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col space-y-2">
               <h1 className="text-center pb-2 md:text-vw text-vw font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 transition">
                 Vous souhaitez acheter du compost auprès de
                 <br /> la SCIC SA LES DETRITIVORES ?
@@ -114,7 +114,7 @@ const Compost: NextPage = () => {
                   <Link href="/devis">Commandez-le ici</Link>
                 </button>
                 <span className="text-center text-orangeDDTV">ou</span>
-                <button className="bg-greenDDTV transition hover:bg-green-900 dark:hover:bg-orange-600 dark:bg-orangeDDTV text-white p-4 w-auto	 md:w-100 rounded-full font-normal text-md md:text-xl m-auto uppercase">
+                <button className="bg-greenDDTV transition hover:bg-green-900 dark:hover:bg-orange-600 dark:bg-orangeDDTV text-white p-4 w-auto sm:w-auto xl:w-100 2xl:w-100 md:w-auto rounded-full font-normal text-md md:text-xl m-auto uppercase">
                   Retrouvez-le dans nos magasins partenaires
                 </button>
               </div>

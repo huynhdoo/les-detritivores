@@ -62,7 +62,7 @@ const Sensibilisation: NextPage = () => {
                   </div>
                 </>
               )}
-              <span className="inline-flex space-x-2 justify-start">
+              <span className="inline-flex space-x-2 justify-center">
                 <Icons
                   icons="photo"
                   className="w-6 h-6 text-black fill-current dark:text-white"

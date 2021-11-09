@@ -94,7 +94,7 @@ const Collecte: NextPage = () => {
                   </div>
                 </>
               )}
-              <span className="inline-flex space-x-2">
+              <span className="inline-flex justify-center 2xl:justify-start xl:justify-start sm:justify-start md:justify-start space-x-2">
                 <Icons
                   icons="photo"
                   className="w-6 h-6 text-black fill-current dark:text-white"
