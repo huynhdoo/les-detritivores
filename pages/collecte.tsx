@@ -162,24 +162,21 @@ const Collecte: NextPage = () => {
                 <Loading />
               )}
             </div>
-            {/*<div>
-            <h1 className="big-font-size">
-              Où intervenons-nous ?
-              <span className="linesmall-46 bg-black" />
-            </h1>
-            <div className="wtf">
-              <iframe
-                title="Maps"
-                src={data?.content.mapsLink}
-                width="700"
-                height="580"
-                className="maps"
-                loading="lazy"
-                style={{ border: 0 }}
-                allowFullScreen
-              />
+            <div className="space-y-2 hidden">
+              <h1 className="text-2xl font-medium text-center ">
+                Où intervenons-nous ?
+              </h1>
+              <div className="flex justify-center">
+                <iframe
+                  title="Maps"
+                  src={data?.content.mapsLink}
+                  className="w-96 h-80 sm:w-52 sm:h-52 md:w-80 md:h-150 lg:w-200 lg:200 rounded-2xl"
+                  loading="lazy"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                />
+              </div>
             </div>
-          </div> */}
           </div>
         </div>
       </Fade>

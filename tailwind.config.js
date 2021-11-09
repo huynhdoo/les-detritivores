@@ -13,6 +13,7 @@ module.exports = {
         250: "53.313rem",
         150: "30rem",
         100: "40rem",
+        200: "32rem",
       },
       transitionProperty: {
         height: "height",
@@ -20,6 +21,7 @@ module.exports = {
       height: {
         250: "31.875rem",
         150: "25rem",
+        200: "32rem",
       },
       fontSize: {
         vw: "calc(1.375rem + 0.5vw)",
