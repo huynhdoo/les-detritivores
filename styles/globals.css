@@ -79,7 +79,7 @@ span {
 .bg-growing-underline-green {
   background-size: 7% 0.15em;
   background-position: 62%;
-  @apply transition-all duration-200 bg-gradient-to-t from-greenDDTV to-greenDDTV bg-no-repeat -rotate-1 !mt-1 !p-0 !h-2;
+  @apply transition-all duration-200 bg-gradient-to-t from-greenDDTV to-greenDDTV dark:bg-gradient-to-t dark:from-orangeDDTV dark:to-orangeDDTV bg-no-repeat -rotate-1 !mt-1 !p-0 !h-2;
 }
 @media only screen and (max-width: 600px) {
   .bg-growing-underline-green {
