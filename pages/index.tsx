@@ -69,62 +69,68 @@ const Home: NextPage = () => {
                 <p className="font-light text-xl text-center mx-0 smph:mx-6 sm:mx-12 md:mx-12">
                   {data ? useRichText(data.content.introText) : <Loading />}
                 </p>
-                <div className="flex justify-start sm:mx-12 md:mx-14 2xl:mx-14 mx-0">
-                  <div className="block md:block sm:grid lg:grid grid-flow-col lg:grid-flow-col auto-rows-max md:space-x-0 lg:space-x-32 2xl:space-x-20">
-                    <div className="">
-                      <iframe
-                        src={data?.content.youtubeVideoLink}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        title={data?.content.youtubeTitle}
-                        className="flex justify-start rounded-2xl w-72 lg:w-250 h-52 lg:h-250 md:w-96 md:h-72 sm:w-150 sm:h-150 sm:mx-12 md:mx-1 mx-16"
-                      />
-                    </div>
-                    <div className="flex flex-col items-center justify-center">
-                      <h1 className="pb-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600">
-                        {data ? (
-                          <FadeIn>{data?.content.usagesTitle}</FadeIn>
-                        ) : (
-                          <>
-                            <Loading />
-                          </>
-                        )}
-                      </h1>
-                      <div className="bg-orangeDDTV rounded-full">
-                        <Icons
-                          icons="people"
-                          className="text-white fill-current"
+                <div className="flex justify-center m-auto">
+                  <div className="flex justify-center items-center content-center">
+                    <div className="grid auto-cols-max grid-rows-1 grid-cols-1 space-x-0 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2 xl:space-x-5 2xl:space-x-5 max-w-max w-max">
+                      <div className="flex justify-self-start">
+                        <iframe
+                          src={data?.content.youtubeVideoLink}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          title={data?.content.youtubeTitle}
+                          className="flex justify-start rounded-2xl w-72 lg:w-250 h-52 lg:h-250 md:w-96 md:h-72 sm:w-150 sm:h-150"
                         />
                       </div>
-                      <div className="flex flex-col justify-center items-center space-y-2 mt-2 w-max">
-                        {data ? (
-                          <>
-                            <span>{data?.content.restaurantTitle}</span>
-                          </>
-                        ) : (
-                          <Loading />
-                        )}
-                        {data ? (
-                          <>
-                            <span>{data?.content.restaurantCollective}</span>
-                          </>
-                        ) : (
-                          <Loading />
-                        )}
-                        {data ? (
-                          <>
-                            <span>{data?.content.collectivites}</span>
-                          </>
-                        ) : (
-                          <Loading />
-                        )}
-                        {data ? (
-                          <>
-                            <span>{data?.content.particular}</span>
-                          </>
-                        ) : (
-                          <Loading />
-                        )}
+                      <div className="flex items-center 2xl:justify-self-start xl:justify-self-start justify-center xl:justify-end sm:justify-center md:justify-center">
+                        <div className="flex flex-col items-center justify-center w-auto">
+                          <h1 className="pb-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600">
+                            {data ? (
+                              <FadeIn>{data?.content.usagesTitle}</FadeIn>
+                            ) : (
+                              <>
+                                <Loading />
+                              </>
+                            )}
+                          </h1>
+                          <div className="bg-orangeDDTV rounded-full">
+                            <Icons
+                              icons="people"
+                              className="text-white fill-current"
+                            />
+                          </div>
+                          <div className="flex flex-col justify-center items-center space-y-2 mt-2 w-max">
+                            {data ? (
+                              <>
+                                <span>{data?.content.restaurantTitle}</span>
+                              </>
+                            ) : (
+                              <Loading />
+                            )}
+                            {data ? (
+                              <>
+                                <span>
+                                  {data?.content.restaurantCollective}
+                                </span>
+                              </>
+                            ) : (
+                              <Loading />
+                            )}
+                            {data ? (
+                              <>
+                                <span>{data?.content.collectivites}</span>
+                              </>
+                            ) : (
+                              <Loading />
+                            )}
+                            {data ? (
+                              <>
+                                <span>{data?.content.particular}</span>
+                              </>
+                            ) : (
+                              <Loading />
+                            )}
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
