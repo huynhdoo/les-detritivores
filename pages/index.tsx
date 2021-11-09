@@ -65,7 +65,7 @@ const Home: NextPage = () => {
                 )}
               </div>
               <div className="flex flex-col items-start justify-center max-w-xl lg:max-w-6xl mb-16 dark:text-white space-y-10 smph:text-xs md:px-10 lg:px-10">
-                <p className="font-light text-xl text-center mx-0 smph:mx-4 sm:mx-12 md:mx-12">
+                <p className="font-light text-xl text-center mx-0 smph:mx-6 sm:mx-12 md:mx-12">
                   {data ? useRichText(data.content.introText) : <Loading />}
                 </p>
                 <div className="flex justify-start sm:mx-12 md:mx-14 2xl:mx-14 mx-0">
@@ -189,7 +189,7 @@ const Home: NextPage = () => {
                               className="fill-current text-white h-36"
                             />
                           </div>
-                          <p className="font-light text-lg mx-1">
+                          <p className="font-light text-lg mx-0 smph:mx-2">
                             {useRichText(data.content.environement)}
                           </p>
                         </div>
@@ -203,7 +203,7 @@ const Home: NextPage = () => {
                               className="fill-current text-white h-36"
                             />
                           </div>
-                          <p className="font-light text-lg mx-1">
+                          <p className="font-light text-lg mx-0 smph:mx-2">
                             {useRichText(data.content.socialText)}
                           </p>
                         </div>
@@ -217,7 +217,7 @@ const Home: NextPage = () => {
                               className="fill-current text-white h-36"
                             />
                           </div>
-                          <p className="font-light text-lg mx-1">
+                          <p className="font-light text-lg mx-0 smph:mx-2">
                             {useRichText(data.content.CooperationText)}
                           </p>
                         </div>
@@ -260,7 +260,7 @@ const Home: NextPage = () => {
                               className="fill-current text-white h-36"
                             />
                           </div>
-                          <p className="font-light text-lg mx-1">
+                          <p className="font-light text-lg mx-0 smph:mx-2">
                             {useRichText(data.content.collectText)}
                           </p>
                           <div className="justify-center">
@@ -283,7 +283,7 @@ const Home: NextPage = () => {
                               className="fill-current text-white h-36"
                             />
                           </div>
-                          <p className="font-light text-lg mx-1">
+                          <p className="font-light text-lg mx-0 smph:mx-2">
                             {useRichText(data.content.sensibilisationText)}
                           </p>
                           <div className="justify-center">
@@ -308,7 +308,7 @@ const Home: NextPage = () => {
                               className="fill-current text-white h-36"
                             />
                           </div>
-                          <p className="font-light text-lg mx-1">
+                          <p className="font-light text-lg mx-0 smph:mx-2">
                             {useRichText(data.content.compostText)}
                           </p>
                           <div className="justify-center">
