@@ -47,6 +47,21 @@ span {
 .fPDpuU {
   @apply !m-0;
 }
+h1:after,
+h1:before {
+  content: "";
+  @apply block m-0;
+}
+.fancy {
+  border-width: 0 0 3px;
+  border-style: solid;
+  width: 5rem;
+}
+.fancy-title {
+  border-width: 0 0 5px;
+  border-style: solid;
+  width: 6rem;
+}
 #start {
   @apply bg-greenDDTV bg-gradient-to-r from-greenDDTV to-greenDDTV dark:bg-gradient-to-r dark:from-orangeDDTV dark:to-orangeDDTV h-48 border-t-0 text-white pb-1;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 42%, 0% 100%) !important;

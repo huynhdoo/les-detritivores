@@ -116,9 +116,7 @@ const Collecte: NextPage = () => {
                   <div className="space-y-4">
                     <h1 className="text-left pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 transition -rotate-2">
                       COLLECTE
-                      <div className="bg-growing-underline-black hidden">
-                        &nbsp;
-                      </div>
+                      <div className="fancy-title !border-orangeDDTV -rotate-3 ml-auto p-0.5 hidden" />
                     </h1>
                     <div className="space-y-4">
                       <p className="text-xl font-bold">
