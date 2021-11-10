@@ -7,7 +7,6 @@ import useSWR from "swr";
 import useKeypress from "react-use-keypress";
 import Link from "next/link";
 import useSound from "use-sound";
-import CookieConsent from "react-cookie-consent";
 
 import { StoryBlok } from "libs/types";
 import fetcher from "libs/fetcher";
@@ -97,26 +96,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
           {data ? (
             <>
-              <CookieConsent
-                location="bottom"
-                buttonText="D'accord"
-                cookieName="myAwesomeCookieName2"
-                style={{ background: "#18181B" }}
-                buttonStyle={{
-                  color: "#fff",
-                  fontSize: "13px",
-                  borderRadius: "2rem",
-                  backgroundColor: "#e94e1a",
-                }}
-                expires={150}
-              >
-                <div className="text-center">
-                  <p>
-                    Ce site utilise des cookies pour améliorer l'expérience
-                    utilisateur.
-                  </p>
-                </div>
-              </CookieConsent>
               <footer id="footer">
                 <div className="grid grid-cols-2 gap-4 justify-end items-center">
                   <div className="flex justify-end"></div>
