@@ -4,7 +4,6 @@ import useSWR from "swr";
 import Fade from "react-reveal/Fade";
 import Rotate from "react-reveal/Rotate";
 import fetcher from "libs/fetcher";
-import FadeIn from "react-fade-in";
 import Carousel from "react-elastic-carousel";
 import Image from "next/image";
 import Link from "next/link";
@@ -143,9 +142,9 @@ const Home: NextPage = () => {
                           </div>
                           <div className="flex items-center 2xl:justify-self-start xl:justify-self-start justify-center xl:justify-end sm:justify-center md:justify-center">
                             <div className="flex flex-col items-center justify-center w-auto">
-                              <h1 className="pb-2 text-2xl font-bold text-transparent text-orangeDDTV">
+                              <h1 className="pb-2 text-2xl font-bold text-orangeDDTV">
                                 {data ? (
-                                  <FadeIn>{data?.content.usagesTitle}</FadeIn>
+                                  data?.content.usagesTitle
                                 ) : (
                                   <>
                                     <Loading />
