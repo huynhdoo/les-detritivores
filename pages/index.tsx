@@ -30,6 +30,7 @@ const Home: NextPage = () => {
       setIsDesktop(false);
     }
   }, []);
+
   return (
     <>
       {showModal ? (
