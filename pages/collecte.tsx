@@ -114,7 +114,7 @@ const Collecte: NextPage = () => {
               {data ? (
                 <>
                   <div className="space-y-4">
-                    <h1 className="text-left pb-2 md:text-6xl text-3xl font-bold bg-orangeDDTV -rotate-2">
+                    <h1 className="text-left pb-2 md:text-6xl text-3xl font-bold text-orangeDDTV -rotate-2">
                       COLLECTE
                     </h1>
                     <div className="space-y-4">

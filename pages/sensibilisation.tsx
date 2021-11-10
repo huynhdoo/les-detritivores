@@ -79,7 +79,7 @@ const Sensibilisation: NextPage = () => {
               {data ? (
                 <>
                   <div className="space-y-4">
-                    <h1 className="text-left pb-2 md:text-4xl lg:text-5xl text-2xl font-bold bg-orangeDDTV -rotate-2">
+                    <h1 className="text-left pb-2 md:text-4xl lg:text-5xl text-2xl font-bold text-orangeDDTV -rotate-2">
                       {data?.content.titleSectionSensibilisation}
                       <div className="bg-growing-underline-black hidden">
                         &nbsp;

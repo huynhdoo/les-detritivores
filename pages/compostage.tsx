@@ -40,7 +40,7 @@ const Compost: NextPage = () => {
               {data ? (
                 <>
                   <div className="space-y-4">
-                    <h1 className="text-left pb-2 md:text-6xl text-2xl font-bold bg-orangeDDTV -rotate-2">
+                    <h1 className="text-left pb-2 md:text-6xl text-2xl font-bold text-orangeDDTV -rotate-2">
                       COMPOSTAGE
                       <div className="bg-growing-underline-black hidden">
                         &nbsp;
@@ -107,7 +107,7 @@ const Compost: NextPage = () => {
               )}
             </div>
             <div className="flex flex-col space-y-2">
-              <h1 className="text-center pb-2 md:text-vw text-vw font-bold bg-orangeDDTV">
+              <h1 className="text-center pb-2 md:text-vw text-vw font-bold text-orangeDDTV">
                 Vous souhaitez acheter du compost auprès de
                 <br /> la SCIC SA LES DETRITIVORES ?
                 <div className="bg-growing-underline-black hidden">&nbsp;</div>
