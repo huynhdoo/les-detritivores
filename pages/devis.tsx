@@ -111,27 +111,29 @@ const Devis: NextPage = () => {
 
                 <div className="animate-wiggle inline-block align-bottom bg-black dark:bg-white rounded-lg text-left overflow-hidden shadow-xl transform sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
                   <div className="bg-white dark:bg-gray-900 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                    <div className="flex flex-col">
-                      <div className="mx-auto flex-shrink-0 flex items-center justify-center h-36 w-36">
-                        <Icons
-                          icons="logo"
-                          className="fill-current text-black dark:text-white"
-                        />
-                      </div>
-                      <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                        <h3
-                          className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-50"
-                          id="modal-title"
-                        >
-                          Merci de votre confiance !
-                        </h3>
-                        <div className="mt-2">
-                          <p className="text-sm text-gray-500 dark:text-white">
-                            Le formulaire à bien envoyer !
-                          </p>
+                    <Fade top>
+                      <div className="flex flex-col">
+                        <div className="mx-auto flex-shrink-0 flex items-center justify-center h-36 w-36">
+                          <Icons
+                            icons="logo"
+                            className="fill-current text-black dark:text-white"
+                          />
+                        </div>
+                        <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                          <h3
+                            className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-50"
+                            id="modal-title"
+                          >
+                            Merci de votre confiance !
+                          </h3>
+                          <div className="mt-2">
+                            <p className="text-sm text-gray-500 dark:text-white">
+                              Le formulaire à bien envoyer !
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </Fade>
                   </div>
                   <div className="bg-gray-50 dark:bg-gray-900 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse"></div>
                 </div>
@@ -269,7 +271,7 @@ const Devis: NextPage = () => {
                 <div className="flex flex-col justify-center">
                   <label>Message:*</label>
                   <textarea
-                    className="w-full px-3 py-2 text-gray-700 focus:outline-none bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    className="w-full h-auto px-3 py-2 focus:outline-none bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition text-black dark:text-white"
                     {...register("message", { required: true })}
                     autoComplete="off"
                     onChange={onMessageChange}

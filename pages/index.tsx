@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import React, { useState, useEffect } from "react";
 import useSWR from "swr";
 import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 import Rotate from "react-reveal/Rotate";
 import fetcher from "libs/fetcher";
 import Carousel from "react-elastic-carousel";
@@ -61,33 +62,35 @@ const Home: NextPage = () => {
 
             <div className="animate-wiggle inline-block align-bottom bg-black dark:bg-white rounded-lg text-left overflow-hidden shadow-xl transform sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
               <div className="bg-white dark:bg-gray-900 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                <div className="flex flex-col">
-                  <div className="mx-auto flex-shrink-0 flex items-center justify-center h-36 w-36">
-                    <Icons
-                      icons="logo"
-                      className="fill-current text-black dark:text-white"
-                    />
-                  </div>
-                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                    <h3
-                      className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-50"
-                      id="modal-title"
-                    >
-                      Bienvenue chez Les Détritivores !
-                    </h3>
-                    <div className="mt-2">
-                      <p className="text-sm text-gray-500 dark:text-white">
-                        Psst... Notre site est en cours de développement
-                      </p>
+                <Slide top>
+                  <div className="flex flex-col">
+                    <div className="mx-auto flex-shrink-0 flex items-center justify-center h-36 w-36">
+                      <Icons
+                        icons="logo"
+                        className="fill-current text-black dark:text-white"
+                      />
+                    </div>
+                    <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                      <h3
+                        className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-50"
+                        id="modal-title"
+                      >
+                        Bienvenue chez Les Détritivores !
+                      </h3>
+                      <div className="mt-2">
+                        <p className="text-sm text-gray-500 dark:text-white">
+                          Psst... Notre site est en cours de développement
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Slide>
               </div>
               <div className="bg-gray-50 dark:bg-gray-900 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                 <button
                   type="button"
                   onClick={() => setShowModal(false)}
-                  className="transition mt-3 w-full inline-flex justify-center rounded-md border border-greenDDTV bg-greenDDTV hover:bg-green-800 dark:border-orangeDDTV shadow-sm px-4 py-2 dark:bg-orangeDDTV dark:hover:bg-orange-600 text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                  className="transition mt-3 w-full inline-flex justify-center rounded-md border border-greenDDTV bg-greenDDTV hover:bg-green-800 dark:border-orangeDDTV shadow-sm px-4 py-2 dark:bg-orangeDDTV dark:hover:bg-orange-600 text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-greenDDTV dark:focus:ring-orangeDDTV sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
                 >
                   Ok
                 </button>
