@@ -20,8 +20,8 @@ const Home: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [showModal, setShowModal] = React.useState(true);
-
   const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
+
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -115,7 +115,7 @@ const Home: NextPage = () => {
                 <div className="flex flex-col justify-center px-8 my-20 overflow-hidden items-center">
                   <div className="flex-col justify-center items-center text-center mb-10">
                     {data ? (
-                      <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 transition -rotate-2">
+                      <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold bg-orangeDDTV -rotate-2">
                         {data.content.introTitle}
                         <div className="fancy-title !border-orangeDDTV -rotate-3 ml-auto p-0.5" />
                       </h1>
@@ -205,7 +205,7 @@ const Home: NextPage = () => {
                 delay={500}
                 distance="30px"
               >
-                <h1 className="text-center pb-2 md:text-3xl text-xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 transition-all ">
+                <h1 className="text-center pb-2 md:text-3xl text-xl font-bold bg-orangeDDTV-all ">
                   {data.content.trustTitle}
                 </h1>
                 <div className="bg-greenDDTV h-64 w-full m-0 dark:bg-orangeDDTV">
@@ -244,7 +244,7 @@ const Home: NextPage = () => {
                     distance="30px"
                   >
                     <div className="flex-col justify-center items-center text-center mt-10">
-                      <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-greenDDTV to-green-900 dark:bg-gradient-to-t dark:from-orangeDDTV dark:to-orange-600 transition -rotate-3 h-24">
+                      <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-greenDDTV -rotate-3 h-24">
                         {data.content.ourEngagement}
                       </h1>
                       <div className="mt-5">
