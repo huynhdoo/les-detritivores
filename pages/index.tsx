@@ -219,14 +219,16 @@ const Home: NextPage = () => {
                             return (
                               <div
                                 key={item.id}
-                                className={`rounded-md ${item.width} ${item.height}`}
+                                className={`!rounded-md ${item.width} ${item.height}`}
                               >
                                 <Image
-                                  className="rounded-md"
+                                  className="!rounded-md"
                                   src={item.image}
                                   width="350"
                                   height="350"
                                   loading="lazy"
+                                  blurDataURL={item.image}
+                                  placeholder="blur"
                                 />
                               </div>
                             );

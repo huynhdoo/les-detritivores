@@ -10,12 +10,12 @@ import { useRichText } from "libs/storyblok";
 
 import Loading from "components/Loading";
 import Icons from "components/Icons";
+import clsx from "clsx";
 
 const Collecte: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
-
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -41,44 +41,53 @@ const Collecte: NextPage = () => {
               {data ? (
                 <>
                   <div>
-                    <div className="rounded-lg w-80 m-auto md:m-0 sm:m-0">
+                    <div className="!rounded-lg w-80 m-auto md:m-0 sm:m-0">
                       <Image
                         width="320"
                         height="200"
-                        className="rounded-lg"
+                        className="!rounded-lg"
                         src="/static/images/DETRI_211007_137.jpg"
                         loading="lazy"
+                        blurDataURL="/static/images/DETRI_211007_137.jpg"
+                        placeholder="blur"
                       />
                     </div>
                   </div>
                   <div>
-                    <div className="rounded-lg w-80 m-auto md:m-0 sm:m-0">
+                    <div className="!rounded-lg w-80 m-auto md:m-0 sm:m-0">
                       <Image
                         width="320"
                         height="200"
-                        className="rounded-lg"
+                        className="!rounded-lg"
                         src="/static/images/DETRI_211007_336.jpg"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <div className="rounded-lg w-80 m-auto md:m-0 sm:m-0">
-                      <Image
-                        width="320"
-                        height="200"
-                        className="rounded-lg"
-                        src="/static/images/IMG_0099.jpg"
+                        blurDataURL="/static/images/DETRI_211007_336.jpg"
+                        placeholder="blur"
                         loading="lazy"
                       />
                     </div>
                   </div>
                   <div>
-                    <div className="rounded-lg w-80 m-auto md:m-0 sm:m-0">
+                    <div className="!rounded-lg w-80 m-auto md:m-0 sm:m-0">
                       <Image
                         width="320"
                         height="200"
-                        className="rounded-lg"
+                        className="!rounded-lg"
+                        src="/static/images/IMG_0099.jpg"
+                        blurDataURL="/static/images/IMG_0099.jpg"
+                        placeholder="blur"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="!rounded-lg w-80 m-auto md:m-0 sm:m-0">
+                      <Image
+                        width="320"
+                        height="200"
+                        className="!rounded-lg"
                         src="/static/images/DETRI_211007_623.jpg"
+                        blurDataURL="/static/images/DETRI_211007_623.jpg"
+                        placeholder="blur"
                         loading="lazy"
                       />
                     </div>

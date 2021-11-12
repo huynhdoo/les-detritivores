@@ -65,28 +65,34 @@ const Compost: NextPage = () => {
                     <div className="grid justify-center space-x-0 md:inline-flex md:space-x-2 sm:space-x-0">
                       <div className="w-60">
                         <Image
-                          className="rounded-2xl"
+                          className="!rounded-2xl"
                           width="240"
                           height="180"
                           src="/static/images/DETRI_211007_399.jpg"
+                          blurDataURL="/static/images/DETRI_211007_399.jpg"
+                          placeholder="blur"
                           loading="lazy"
                         />
                       </div>
                       <div className="w-60">
                         <Image
-                          className="rounded-2xl"
+                          className="!rounded-2xl"
                           width="240"
                           height="180"
                           src="/static/images/IMG_0553.jpg"
+                          blurDataURL="/static/images/IMG_0553.jpg"
                           loading="lazy"
+                          placeholder="blur"
                         />
                       </div>
                       <div className="w-60">
                         <Image
-                          className="rounded-2xl"
+                          className="!rounded-2xl"
                           width="240"
                           height="180"
                           src="/static/images/IMG_0278.jpg"
+                          blurDataURL="/static/images/IMG_0278.jpg"
+                          placeholder="blur"
                           loading="lazy"
                         />
                       </div>

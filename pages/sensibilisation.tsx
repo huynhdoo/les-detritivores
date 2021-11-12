@@ -46,6 +46,8 @@ const Sensibilisation: NextPage = () => {
                       width="750"
                       height="500"
                       loading="lazy"
+                      blurDataURL="/static/images/IMG_0324[736].jpg"
+                      placeholder="blur"
                     />
                   </div>
                 </>
