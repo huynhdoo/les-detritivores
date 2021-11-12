@@ -116,6 +116,9 @@ const Collecte: NextPage = () => {
                   <div className="space-y-4">
                     <h1 className="text-left pb-2 md:text-6xl text-3xl font-bold text-orangeDDTV -rotate-2">
                       COLLECTE
+                      <div className="flex justify-start md:justify-center md:space-x-2 space-x-0 mr-10 md:mr-0 md:ml-10 sm:mr-42 xl:mr-auto hidden">
+                        <div className="fancy-title !border-greenDDTV dark:!border-orangeDDTV fixed -rotate-3 p-0.5" />
+                      </div>
                     </h1>
                     <div className="space-y-4">
                       <p className="text-xl font-bold">

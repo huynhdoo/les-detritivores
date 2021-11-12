@@ -218,10 +218,10 @@ const Home: NextPage = () => {
                           {images.map((item) => {
                             return (
                               <div
+                                key={item.id}
                                 className={`rounded-md ${item.width} ${item.height}`}
                               >
                                 <Image
-                                  key={item.id}
                                   className="rounded-md"
                                   src={item.image}
                                   width="350"
@@ -248,6 +248,9 @@ const Home: NextPage = () => {
                     <div className="flex-col justify-center items-center text-center mt-10">
                       <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent text-greenDDTV dark:text-orangeDDTV -rotate-3 h-24">
                         {data.content.ourEngagement}
+                        <div className="flex justify-center md:space-x-2 space-x-0">
+                          <div className="fancy-title !border-greenDDTV dark:!border-orangeDDTV ml-52 md:ml-96 -rotate-3 p-0.5" />
+                        </div>
                       </h1>
                       <div className="mt-5">
                         <div className="">
@@ -415,8 +418,11 @@ const Home: NextPage = () => {
                 <div className="flex-col justify-center items-center text-center mt-20">
                   <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-orangeDDTV to-orange-600 dark:bg-gradient-to-t dark:from-orangeDDTV dark:to-orange-600 transition">
                     {data.content.contactTitle}
+                    <div className="flex justify-center md:space-x-2 space-x-0">
+                      <div className="fancy-title !border-orangeDDTV ml-20 md:ml-48 -rotate-3 p-0.5" />
+                    </div>
                   </h1>
-                  <footer className="relative pt-1">
+                  <footer className="relative pt-1 max-w-7xl m-auto">
                     <div className="container md:container mx-auto px-6">
                       <div className="sm:flex sm:mt-8">
                         <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">

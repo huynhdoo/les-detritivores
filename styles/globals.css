@@ -57,12 +57,10 @@ h1:before {
   @apply !m-0;
 }
 .fancy {
-  border-width: 0 0 3px;
-  @apply w-20 border-solid;
+  @apply w-20 border-solid border-t-4;
 }
 .fancy-title {
-  border-width: 0 0 5px;
-  @apply w-24 border-solid;
+  @apply w-16 md:w-24 border-solid border-t-4;
 }
 #start {
   @apply bg-greenDDTV bg-gradient-to-r from-greenDDTV to-greenDDTV dark:bg-gradient-to-r dark:from-orangeDDTV dark:to-orangeDDTV h-48 border-t-0 text-white pb-1;
