@@ -36,7 +36,7 @@ const Sensibilisation: NextPage = () => {
       >
         <div className="max-w-screen my-3 justify-center content-center">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 mx-5 my-2 space-x-10">
-            <div className="flex flex-col space-y-2">
+            <div className="flex flex-col space-y-2 justify-center">
               {data ? (
                 <>
                   <div className="flex justify-center">
