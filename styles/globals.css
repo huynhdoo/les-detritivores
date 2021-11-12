@@ -65,6 +65,9 @@ h1:before {
 ::filter {
   @apply !rounded-lg;
 }
+img {
+  @apply transition duration-300;
+}
 #start {
   @apply bg-greenDDTV bg-gradient-to-r from-greenDDTV to-greenDDTV dark:bg-gradient-to-r dark:from-orangeDDTV dark:to-orangeDDTV h-48 border-t-0 text-white pb-1;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 42%, 0% 100%) !important;
