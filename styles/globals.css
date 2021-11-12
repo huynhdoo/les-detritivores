@@ -99,6 +99,17 @@ h1:before {
   background-position: 55%;
   @apply transition-all duration-200 bg-gradient-to-t from-orangeDDTV to-orangeDDTV bg-no-repeat -rotate-3 !mt-1 !p-0 !h-2;
 }
+#nprogress .bar {
+  @apply !bg-white;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #fff, 0 0 5px #fff;
+}
+
+#nprogress .spinner-icon {
+  @apply !border-l-white !border-t-white;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

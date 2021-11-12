@@ -7,12 +7,20 @@ import useSWR from "swr";
 import useKeypress from "react-use-keypress";
 import Link from "next/link";
 import useSound from "use-sound";
+import NProgress from "nprogress";
+import { Router } from "next/router";
 
 import { StoryBlok } from "libs/types";
 import fetcher from "libs/fetcher";
 
 import Loading from "components/Loading";
 import ToggleTheme from "components/toggleTheme";
+
+import "nprogress/nprogress.css";
+
+Router.events.on("routeChangeStart", () => NProgress.start());
+Router.events.on("routeChangeComplete", () => NProgress.done());
+Router.events.on("routeChangeError", () => NProgress.done());
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);

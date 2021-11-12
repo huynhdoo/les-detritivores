@@ -1,4 +1,6 @@
 const colors = require("tailwindcss/colors");
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   important: true,
   mode: "jit",
@@ -68,5 +70,50 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities, theme, config }) {
+      const themeColors = theme("colors");
+      const individualBorderColors = Object.keys(themeColors).map(
+        (colorName) => {
+          if (typeof themeColors[colorName] == "string") {
+            return {
+              [`.border-b-${colorName}`]: {
+                borderBottomColor: themeColors[colorName],
+              },
+              [`.border-t-${colorName}`]: {
+                borderTopColor: themeColors[colorName],
+              },
+              [`.border-l-${colorName}`]: {
+                borderLeftColor: themeColors[colorName],
+              },
+              [`.border-r-${colorName}`]: {
+                borderRightColor: themeColors[colorName],
+              },
+            };
+          }
+
+          const colors = {};
+
+          Object.keys(themeColors[colorName]).forEach((level) => {
+            colors[`.border-b-${colorName}-${level}`] = {
+              borderBottomColor: themeColors[colorName][level],
+            };
+            colors[`.border-t-${colorName}-${level}`] = {
+              borderTopColor: themeColors[colorName][level],
+            };
+            colors[`.border-l-${colorName}-${level}`] = {
+              borderLeftColor: themeColors[colorName][level],
+            };
+            colors[`.border-r-${colorName}-${level}`] = {
+              borderRightColor: themeColors[colorName][level],
+            };
+          });
+
+          return colors;
+        }
+      );
+
+      addUtilities(individualBorderColors);
+    }),
+  ],
 };
