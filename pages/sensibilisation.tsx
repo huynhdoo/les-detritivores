@@ -28,92 +28,91 @@ const Sensibilisation: NextPage = () => {
   }, []);
   return (
     <>
-      <ScrollToTop>
-        <Fade
-          left={isDesktop}
-          bottom={isMobile}
-          duration={500}
-          delay={500}
-          distance="30px"
-        >
-          <div className="max-w-screen my-3 justify-center content-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 mx-5 my-2 space-x-10">
-              <div className="flex flex-col space-y-2 justify-center">
-                {data ? (
-                  <>
-                    <div className="flex justify-center">
-                      <Image
-                        className="rounded-2xl"
-                        src="/static/images/IMG_0324[736].jpg"
-                        width="750"
-                        height="500"
-                        loading="lazy"
-                        blurDataURL="/static/images/IMG_0324[736].jpg"
-                        placeholder="blur"
-                      />
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div>
-                      <div className="rounded-lg w-80 bg-greenDDTV" />
-                    </div>
-                    <div>
-                      <div className="rounded-lg w-80 bg-greenDDTV" />
-                    </div>
-                    <div>
-                      <div className="rounded-lg w-80 bg-greenDDTV" />
-                    </div>
-                    <div>
-                      <div className="rounded-lg w-80 bg-greenDDTV" />
-                    </div>
-                  </>
-                )}
-                <span className="inline-flex space-x-2 justify-center">
-                  <Icons
-                    icons="photo"
-                    className="w-6 h-6 text-black fill-current dark:text-white"
-                  />
-                  <p className="font-normal text-base mt-0.5">
-                    François Passerini
-                  </p>
-                </span>
-              </div>
-              <div className="flex flex-col space-x-10 justify-between">
-                {data ? (
-                  <>
+      <ScrollToTop />
+      <Fade
+        left={isDesktop}
+        bottom={isMobile}
+        duration={500}
+        delay={500}
+        distance="30px"
+      >
+        <div className="max-w-screen my-3 justify-center content-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 mx-5 my-2 space-x-10">
+            <div className="flex flex-col space-y-2 justify-center">
+              {data ? (
+                <>
+                  <div className="flex justify-center">
+                    <Image
+                      className="rounded-2xl"
+                      src="/static/images/IMG_0324[736].jpg"
+                      width="750"
+                      height="500"
+                      loading="lazy"
+                      blurDataURL="/static/images/IMG_0324[736].jpg"
+                      placeholder="blur"
+                    />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div>
+                    <div className="rounded-lg w-80 bg-greenDDTV" />
+                  </div>
+                  <div>
+                    <div className="rounded-lg w-80 bg-greenDDTV" />
+                  </div>
+                  <div>
+                    <div className="rounded-lg w-80 bg-greenDDTV" />
+                  </div>
+                  <div>
+                    <div className="rounded-lg w-80 bg-greenDDTV" />
+                  </div>
+                </>
+              )}
+              <span className="inline-flex space-x-2 justify-center">
+                <Icons
+                  icons="photo"
+                  className="w-6 h-6 text-black fill-current dark:text-white"
+                />
+                <p className="font-normal text-base mt-0.5">
+                  François Passerini
+                </p>
+              </span>
+            </div>
+            <div className="flex flex-col space-x-10 justify-between">
+              {data ? (
+                <>
+                  <div className="space-y-4">
+                    <h1 className="text-left pb-2 md:text-4xl lg:text-5xl text-2xl font-bold text-orangeDDTV -rotate-2">
+                      {data?.content.titleSectionSensibilisation}
+                      <div className="bg-growing-underline-black hidden">
+                        &nbsp;
+                      </div>
+                    </h1>
                     <div className="space-y-4">
-                      <h1 className="text-left pb-2 md:text-4xl lg:text-5xl text-2xl font-bold text-orangeDDTV -rotate-2">
-                        {data?.content.titleSectionSensibilisation}
-                        <div className="bg-growing-underline-black hidden">
-                          &nbsp;
-                        </div>
-                      </h1>
-                      <div className="space-y-4">
-                        <p className="text-xl sm:text-md font-bold">
-                          {useRichText(data?.content.textSensibilisation)}
+                      <p className="text-xl sm:text-md font-bold">
+                        {useRichText(data?.content.textSensibilisation)}
+                      </p>
+                      <div className="flex flex-col space-y-2">
+                        <p className="font-light text-xl p-4 space-y-2 pl-10">
+                          {useRichText(data?.content.text2Sensibilisation)}
                         </p>
-                        <div className="flex flex-col space-y-2">
-                          <p className="font-light text-xl p-4 space-y-2 pl-10">
-                            {useRichText(data?.content.text2Sensibilisation)}
+                        <div>
+                          <p className="font-bold text-xl">
+                            {useRichText(data?.content.gameSensibilisation)}
                           </p>
-                          <div>
-                            <p className="font-bold text-xl">
-                              {useRichText(data?.content.gameSensibilisation)}
-                            </p>
-                          </div>
                         </div>
                       </div>
                     </div>
-                  </>
-                ) : (
-                  <Loading />
-                )}
-              </div>
+                  </div>
+                </>
+              ) : (
+                <Loading />
+              )}
             </div>
           </div>
-        </Fade>
-      </ScrollToTop>
+        </div>
+      </Fade>
     </>
   );
 };
