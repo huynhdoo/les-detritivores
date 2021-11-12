@@ -1,25 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;900&display=swap");
 @import url("//fonts.cdnfonts.com/css/sf-ui-display");
-@layer base {
-  html {
-    @apply overflow-x-hidden;
-  }
-  body {
-    font-family: "Fira Sans", sans-serif;
-    @apply bg-white dark:bg-gray-900 overflow-x-hidden transition w-screen;
-  }
-  p {
-    font-family: SF UI Display, sans-serif;
-  }
-  span {
-    font-family: SF UI Display, sans-serif;
-    @apply text-xl font-bold;
-  }
-  h1:after,
-  h1:before {
-    content: "";
-    @apply block m-0;
-  }
+html {
+  @apply overflow-x-hidden;
+}
+body {
+  font-family: "Fira Sans", sans-serif;
+  @apply bg-white dark:bg-gray-900 overflow-x-hidden transition w-screen;
+}
+p {
+  font-family: SF UI Display, sans-serif;
+}
+span {
+  font-family: SF UI Display, sans-serif;
+  @apply text-xl font-bold;
+}
+h1:after,
+h1:before {
+  content: "";
+  @apply block m-0;
 }
 .jRFJkP,
 .cNNJIt,
