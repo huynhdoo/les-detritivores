@@ -16,21 +16,10 @@ import Icons from "components/Icons";
 import CookieNotice from "components/CookieNotice";
 
 const Home: NextPage = () => {
-  const cookieName = "toggledcookie";
-
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [showModal, setShowModal] = React.useState(true);
-  const [cookie, setCookie] = useState(cookieName);
   const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
 
-  () => {
-    if (typeof window !== "undefined") {
-      document.cookie = `${cookieName}=${origin}`;
-      setCookie(cookieName);
-      return showModal && cookie != cookieName;
-    }
-  };
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -39,6 +28,9 @@ const Home: NextPage = () => {
       setIsMobile(true);
       setIsDesktop(false);
     }
+  });
+  images.filter(function (elem, pos) {
+    return images.indexOf(elem) == pos;
   });
   return (
     <>
@@ -160,24 +152,28 @@ const Home: NextPage = () => {
                   <div className="my-12 inline-flex space-x-5 transition-all ease-in-out duration-1000 transform translate-x-0">
                     <div className="slider">
                       <div className="slide-track">
-                        {images.map((item) => {
-                          return (
-                            <div
-                              key={item.id}
-                              className={`!rounded-md ${item.width} ${item.height}`}
-                            >
-                              <Image
-                                className="!rounded-md"
-                                src={item.image}
-                                width="350"
-                                height="350"
-                                loading="lazy"
-                                blurDataURL={item.image}
-                                placeholder="blur"
-                              />
-                            </div>
-                          );
-                        })}
+                        {Array.from(
+                          new Set(
+                            images.map((item, index) => {
+                              return (
+                                <div
+                                  key={index}
+                                  className={`!rounded-md ${item.width} ${item.height}`}
+                                >
+                                  <Image
+                                    className="!rounded-md"
+                                    src={item.image}
+                                    width="350"
+                                    height="350"
+                                    loading="lazy"
+                                    blurDataURL={item.image}
+                                    placeholder="blur"
+                                  />
+                                </div>
+                              );
+                            })
+                          )
+                        ).sort()}
                       </div>
                     </div>
                   </div>
