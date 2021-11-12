@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/hoist-non-react-statics": "^3.3.1",
     "axios": "^0.24.0",
     "isomorphic-unfetch": "^3.1.0",
     "js-cookie": "^3.0.1",
