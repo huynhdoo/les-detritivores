@@ -10,7 +10,6 @@ import { useRichText } from "libs/storyblok";
 
 import Loading from "components/Loading";
 import Icons from "components/Icons";
-import clsx from "clsx";
 
 const Collecte: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
