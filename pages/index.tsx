@@ -9,7 +9,7 @@ import Link from "next/link";
 
 import { StoryBlok } from "libs/types";
 import { Convert, useRichText } from "libs/storyblok";
-import { images } from "libs/constant";
+import { Images } from "util/Images";
 
 import Loading from "components/Loading";
 import Icons from "components/Icons";
@@ -28,9 +28,6 @@ const Home: NextPage = () => {
       setIsMobile(true);
       setIsDesktop(false);
     }
-  });
-  images.filter(function (elem, pos) {
-    return images.indexOf(elem) == pos;
   });
   return (
     <>
@@ -152,9 +149,10 @@ const Home: NextPage = () => {
                   <div className="my-12 inline-flex space-x-5 transition-all ease-in-out duration-1000 transform translate-x-0">
                     <div className="slider">
                       <div className="slide-track">
-                        {Array.from(
+                        {
                           new Set(
-                            images.map((item, index) => {
+                            Images.map((item, index) => {
+                              console.log(item + "\n" + index);
                               return (
                                 <div
                                   key={index}
@@ -171,9 +169,9 @@ const Home: NextPage = () => {
                                   />
                                 </div>
                               );
-                            })
+                            }).slice(0, 9)
                           )
-                        ).sort()}
+                        }
                       </div>
                     </div>
                   </div>
