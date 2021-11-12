@@ -247,7 +247,7 @@ const Home: NextPage = () => {
                     distance="30px"
                   >
                     <div className="flex-col justify-center items-center text-center mt-10">
-                      <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent text-greenDDTV -rotate-3 h-24">
+                      <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent text-greenDDTV dark:text-orangeDDTV -rotate-3 h-24">
                         {data.content.ourEngagement}
                       </h1>
                       <div className="mt-5">
