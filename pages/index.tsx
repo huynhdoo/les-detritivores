@@ -152,7 +152,6 @@ const Home: NextPage = () => {
                         {
                           new Set(
                             Images.map((item, index) => {
-                              console.log(item + "\n" + index);
                               return (
                                 <div
                                   key={index}
