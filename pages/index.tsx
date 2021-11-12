@@ -5,7 +5,6 @@ import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import Rotate from "react-reveal/Rotate";
 import fetcher from "libs/fetcher";
-import Carousel from "react-elastic-carousel";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -214,26 +213,26 @@ const Home: NextPage = () => {
                 <div className="bg-greenDDTV h-64 w-full m-0 dark:bg-orangeDDTV">
                   <div className="flex justify-center items-center">
                     <div className="my-12 inline-flex space-x-5 transition-all ease-in-out duration-1000 transform translate-x-0">
-                      <Carousel
-                        isRTL={true}
-                        enableAutoPlay={true}
-                        itemPosition="CENTER"
-                        enableSwipe={true} //only for test purpose.
-                      >
-                        {images.map((item) => {
-                          return (
-                            <div className="rounded-md">
-                              <Image
-                                className="h-36 !w-40 rounded-md bg-cover"
-                                src={item.image}
-                                width="350"
-                                height="350"
-                                loading="lazy"
-                              />
-                            </div>
-                          );
-                        })}
-                      </Carousel>
+                      <div className="slider">
+                        <div className="slide-track">
+                          {images.map((item) => {
+                            return (
+                              <div
+                                className={`rounded-md ${item.width} ${item.height}`}
+                              >
+                                <Image
+                                  key={item.id}
+                                  className="rounded-md"
+                                  src={item.image}
+                                  width="350"
+                                  height="350"
+                                  loading="lazy"
+                                />
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

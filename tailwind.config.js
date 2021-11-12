@@ -29,6 +29,10 @@ module.exports = {
         vw: "calc(1.375rem + 0.5vw)",
       },
       keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(calc(-250px * 7))" },
+        },
         wiggle: {
           "0%, 100%": { transform: "rotate(-3deg)" },
           "50%": { transform: "rotate(3deg)" },
@@ -36,6 +40,10 @@ module.exports = {
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
+        scroll: "scroll 40s linear infinite",
+      },
+      other: {
+        content: "",
       },
       colors: {
         transparent: "transparent",
