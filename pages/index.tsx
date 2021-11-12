@@ -7,7 +7,6 @@ import Rotate from "react-reveal/Rotate";
 import fetcher from "libs/fetcher";
 import Image from "next/image";
 import Link from "next/link";
-import cookieCutter from "cookie-cutter";
 
 import { StoryBlok } from "libs/types";
 import { Convert, useRichText } from "libs/storyblok";
