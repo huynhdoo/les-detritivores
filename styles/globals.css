@@ -139,7 +139,7 @@ img {
   @apply !w-screen;
 }
 .width {
-  @apply !w-40;
+  @apply !w-36;
 }
 .height {
   @apply !h-36;
