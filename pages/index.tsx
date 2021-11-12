@@ -160,15 +160,15 @@ const Home: NextPage = () => {
                                   <Image
                                     className="!rounded-md"
                                     src={item.image}
-                                    width="350"
-                                    height="350"
+                                    width={item.imageWidth}
+                                    height={item.imageHeight}
                                     loading="lazy"
                                     blurDataURL={item.image}
                                     placeholder="blur"
                                   />
                                 </div>
                               );
-                            }).slice(0, 9)
+                            })
                           )
                         }
                       </div>
