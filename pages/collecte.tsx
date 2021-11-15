@@ -10,7 +10,6 @@ import { useRichText } from "libs/storyblok";
 
 import Loading from "components/Loading";
 import Icons from "components/Icons";
-import ScrollToTop from "components/ScrollToTop";
 
 const Collecte: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -24,11 +23,18 @@ const Collecte: NextPage = () => {
       setIsMobile(true);
       setIsDesktop(false);
     }
+
+    if (typeof window != "undefined") {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
   }, []);
 
   return (
     <>
-      <ScrollToTop />
       <Fade
         left={isDesktop}
         bottom={isMobile}
