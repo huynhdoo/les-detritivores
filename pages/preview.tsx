@@ -158,7 +158,7 @@ const Home: NextPage = () => {
                                   className={`!rounded-md ${item.width} ${item.height}`}
                                 >
                                   <Image
-                                    className="!rounded-md"
+                                    className="!rounded-md object-contain"
                                     src={item.image}
                                     width={item.imageWidth}
                                     height={item.imageHeight}
