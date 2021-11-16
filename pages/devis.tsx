@@ -291,7 +291,7 @@ const Devis: NextPage = () => {
                 </div>
               </form>
             </div>
-            <div className="flex flex-col space-x-10 justify-between">
+            <div className="flex flex-col space-x-10">
               {data ? (
                 <>
                   <div className="space-y-4">
