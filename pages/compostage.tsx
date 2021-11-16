@@ -7,7 +7,7 @@ import fetcher from "libs/fetcher";
 import { StoryBlok } from "libs/types";
 import { useRichText } from "libs/storyblok";
 
-import Icons from "components/Icons";
+import { Icons } from "components/Icons";
 import Link from "next/link";
 import Image from "next/image";
 
