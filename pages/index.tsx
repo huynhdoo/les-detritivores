@@ -51,7 +51,7 @@ const Home: NextPage = () => {
               <div className="flex flex-col justify-center px-8 my-20 overflow-hidden items-center">
                 <div className="flex-col justify-center items-center text-center mb-10">
                   {data ? (
-                    <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-orangeDDTV -rotate-2">
+                    <h1 className="text-center pb-2 pt-2 md:text-6xl text-3xl font-bold text-orangeDDTV -rotate-2">
                       {data.content.introTitle}
                       <div className="fancy-title !border-orangeDDTV -rotate-3 ml-auto p-0.5" />
                     </h1>

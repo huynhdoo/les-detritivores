@@ -19,6 +19,9 @@ span {
   font-family: SF UI Display, sans-serif;
   @apply text-xl font-bold;
 }
+h1 {
+  font-family: "Fira Sans", sans-serif;
+}
 h1:after,
 h1:before {
   @apply block m-0 content;
