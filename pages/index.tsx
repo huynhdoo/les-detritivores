@@ -21,13 +21,8 @@ const Home: NextPage = () => {
   const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
 
   useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
+    window.innerWidth > 769 ? setIsDesktop(true) : setIsMobile(false);
+    window.innerWidth < 769 ? setIsDesktop(false) : setIsMobile(true);
   });
   return (
     <>
@@ -66,7 +61,7 @@ const Home: NextPage = () => {
                     {data ? (
                       useRichText(data.content.introText)
                     ) : (
-                      <Loading title="Chargement.." />
+                      <Loading title="Chargement..." />
                     )}
                   </p>
                   <div className="flex justify-center m-auto">

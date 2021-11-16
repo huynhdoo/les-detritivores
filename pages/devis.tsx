@@ -73,13 +73,8 @@ const Devis: NextPage = () => {
       .then((body) => console.log(body));
   };
   useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
+    window.innerWidth > 769 ? setIsDesktop(true) : setIsMobile(false);
+    window.innerWidth < 769 ? setIsDesktop(false) : setIsMobile(true);
   }, []);
   return (
     <>

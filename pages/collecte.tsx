@@ -15,13 +15,8 @@ const Collecte: NextPage = () => {
   const [isMobile, setIsMobile] = useState(false);
   const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
   useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
+    window.innerWidth > 769 ? setIsDesktop(true) : setIsMobile(false);
+    window.innerWidth < 769 ? setIsDesktop(false) : setIsMobile(true);
 
     if (typeof window !== "undefined") {
       document.body.scrollTop = 0;
