@@ -1,13 +1,5 @@
 export const Images = [
   {
-    id: 0,
-    width: "null",
-    height: "null",
-    imageWidth: "350",
-    imageHeight: "350",
-    image: "/static/image/partener/r.png",
-  },
-  {
     id: 1,
     width: "width",
     height: "height",

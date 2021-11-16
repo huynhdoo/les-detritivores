@@ -29,6 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   useKeypress(["s", "altGraphKey"], () => {
     play();
   });
+
   return (
     <>
       <title>{data ? data?.content.Title : "Chargement..."}</title>
