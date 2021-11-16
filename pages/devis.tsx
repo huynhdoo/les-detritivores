@@ -14,7 +14,7 @@ const Devis: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [showModal, setShowModal] = React.useState(true);
-  const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
+  //const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
 
   const {
     register,
@@ -60,7 +60,7 @@ const Devis: NextPage = () => {
     setMessage(e.target.value);
   };
 
-  const onSubmit = () => {
+  const onSubmit = (data) => {
     fetch(`https://api-ddtv.herokuapp.com/send`, {
       method: "POST",
       headers: {
