@@ -376,7 +376,7 @@ const Home: NextPage = () => {
                             NOUS ÉCRIRE
                           </h1>
                           <a
-                            href={`mailo:${data.content.mail}`}
+                            href={`mailto:${data.content.mail}`}
                             target="_blank"
                             rel="noopener"
                             className="text-left hover:text-orangeDDTV transition p-1"
