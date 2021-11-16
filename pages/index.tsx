@@ -84,7 +84,7 @@ const Home: NextPage = () => {
                                 data?.content.usagesTitle
                               ) : (
                                 <>
-                                  <Loading />
+                                  <Loading title="Chargement.." />
                                 </>
                               )}
                             </h1>
@@ -490,7 +490,7 @@ const Home: NextPage = () => {
             </Fade>
           </Fade>
         ) : (
-          <Loading />
+          <Loading title="Chargement.." />
         )}
       </>
     </>
