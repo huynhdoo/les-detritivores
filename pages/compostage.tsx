@@ -23,6 +23,9 @@ const Compost: NextPage = () => {
       setIsMobile(true);
       setIsDesktop(false);
     }
+    if (typeof window !== "undefined") {
+      document.body.scrollTop = 0;
+    }
   }, []);
   return (
     <>
