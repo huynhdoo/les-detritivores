@@ -8,7 +8,6 @@ import fetcher from "libs/fetcher";
 import { StoryBlok } from "libs/types";
 import { useRichText } from "libs/storyblok";
 
-import Loading from "components/Loading";
 import Icons from "components/Icons";
 
 const Devis: NextPage = () => {
@@ -315,7 +314,16 @@ const Devis: NextPage = () => {
                   </div>
                 </>
               ) : (
-                <Loading />
+                <div className="space-y-4">
+                  <h1 className="text-left pb-2 text-2xl lg:text-3xl md:!text-4xl sm:text-3xl xl:!text-6xl 2xl:!text-6xl font-bold text-orangeDDTV -rotate-2 bg-gray-100 dark:bg-gray-800 h-20 rounded-lg animate-pulse"></h1>
+                  <br />
+                  <div className="space-y-4">
+                    <p className="text-xl sm:text-md font-bold bg-gray-100 dark:bg-gray-800 h-28 rounded-lg animate-pulse"></p>
+                    <div className="flex flex-col space-y-2">
+                      <p className="font-light text-xl space-y-2 bg-gray-100 dark:bg-gray-800 h-20 rounded-lg animate-pulse"></p>
+                    </div>
+                  </div>
+                </div>
               )}
             </div>
           </div>

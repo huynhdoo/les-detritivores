@@ -8,7 +8,6 @@ import Image from "next/image";
 import { StoryBlok } from "libs/types";
 import { useRichText } from "libs/storyblok";
 
-import Loading from "components/Loading";
 import Icons from "components/Icons";
 
 const Sensibilisation: NextPage = () => {
@@ -112,7 +111,19 @@ const Sensibilisation: NextPage = () => {
                   </div>
                 </>
               ) : (
-                <Loading />
+                <div className="space-y-4">
+                  <h1 className="text-left pb-2 md:text-4xl lg:text-5xl text-2xl font-bold text-orangeDDTV -rotate-2 bg-gray-100 dark:bg-gray-800 h-20 rounded-lg animate-pulse"></h1>
+                  <br />
+                  <div className="space-y-4">
+                    <p className="text-xl sm:text-md font-bold bg-gray-100 dark:bg-gray-800 h-20 rounded-lg animate-pulse"></p>
+                    <div className="flex flex-col space-y-2">
+                      <p className="font-light text-xl p-4 space-y-2 pl-10 bg-gray-100 dark:bg-gray-800 h-40 rounded-lg animate-pulse"></p>
+                      <div>
+                        <p className="font-bold text-xl bg-gray-100 dark:bg-gray-800 h-14 rounded-lg animate-pulse"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               )}
             </div>
           </div>

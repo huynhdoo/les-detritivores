@@ -33,7 +33,7 @@ const Home: NextPage = () => {
     <>
       <CookieNotice cookiePrefix={"toggled"} />
       <>
-        {data && (
+        {data ? (
           <Fade
             left={isDesktop}
             bottom={isMobile}
@@ -454,6 +454,8 @@ const Home: NextPage = () => {
               </div>
             </Fade>
           </Fade>
+        ) : (
+          <Loading />
         )}
       </>
     </>

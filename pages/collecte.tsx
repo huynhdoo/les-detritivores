@@ -8,7 +8,6 @@ import fetcher from "libs/fetcher";
 import { StoryBlok } from "libs/types";
 import { useRichText } from "libs/storyblok";
 
-import Loading from "components/Loading";
 import Icons from "components/Icons";
 
 const Collecte: NextPage = () => {
@@ -178,7 +177,29 @@ const Collecte: NextPage = () => {
                   </div>
                 </>
               ) : (
-                <Loading />
+                <div className="space-y-4">
+                  <h1 className="text-left pb-2 md:text-6xl text-3xl font-bold text-orangeDDTV -rotate-2 bg-gray-100 dark:bg-gray-800 rounded-lg animate-pulse h-20"></h1>
+                  <div className="space-y-4 bg-gray-100  dark:bg-gray-800 rounded-lg animate-pulse">
+                    <p className="text-xl font-bold bg-gray-100 dark:bg-gray-800 "></p>
+                    <div className="flex flex-col items-center content-center space-y-2">
+                      <div className="flex space-x-2">
+                        <div className="text-orangeDDTV text-3xl border-b-4 border-orangeDDTV -rotate-3 h-10 animate-pulse bg-gray-100"></div>
+                        <p className="text-xl font-light bg-gray-100 dark:bg-gray-800  h-20"></p>
+                      </div>
+                      <div className="flex space-x-2">
+                        <span className="text-orangeDDTV text-3xl border-b-4 bg-gray-100  dark:bg-gray-800 border-orangeDDTV -rotate-3 h-10"></span>
+                        <p className="text-xl font-light bg-gray-100 dark:bg-gray-800  animate-pulse"></p>
+                      </div>
+                      <div className="flex space-x-2">
+                        <span className="text-orangeDDTV text-3xl border-b-4 bg-gray-100 dark:bg-gray-800  border-orangeDDTV -rotate-3 h-10"></span>
+                        <p className="text-xl font-light space-y-2 bg-gray-100 dark:bg-gray-800  animate-pulse"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-gray-100 dark:bg-gray-800 animate-pulse rounded-lg h-40">
+                    <p className="font-bold text-xl bg-gray-200 dark:bg-gray-800 "></p>
+                  </div>
+                </div>
               )}
             </div>
             <div className="space-y-2 hidden">

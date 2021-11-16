@@ -7,7 +7,6 @@ import fetcher from "libs/fetcher";
 import { StoryBlok } from "libs/types";
 import { useRichText } from "libs/storyblok";
 
-import Loading from "components/Loading";
 import Icons from "components/Icons";
 import Link from "next/link";
 import Image from "next/image";
@@ -109,7 +108,33 @@ const Compost: NextPage = () => {
                   </div>
                 </>
               ) : (
-                <Loading />
+                <div className="space-y-4">
+                  <h1 className="text-left pb-4 md:text-6xl text-2xl font-bold text-orangeDDTV animate-pulse -rotate-2 bg-gray-100 dark:bg-gray-800 rounded-lg h-20"></h1>
+                  <br />
+                  <div className="space-y-6">
+                    <p className="text-xl sm:text-md font-bold bg-gray-100 dark:bg-gray-800 rounded-lg h-10 animate-pulse"></p>
+                    <div className="flex flex-col space-y-2">
+                      <p className="font-light text-xl p-4 space-y-2 pl-10 rounded-lg animate-pulse bg-gray-100 h-20"></p>
+                      <div className="inline-flex space-x-2 rounded-lg animate-pulse bg-gray-100 dark:bg-gray-800">
+                        <p className="font-bold text-xl text-orangeDDTV h-20"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid justify-center space-x-0 md:inline-flex md:space-x-2 sm:space-x-0">
+                    <div className="w-60">
+                      <div className="!rounded-2xl w-60 h-44 animate-pulse bg-gray-100 dark:bg-gray-800" />
+                    </div>
+                    <div className="w-60">
+                      <div className="!rounded-2xl w-60 h-44 animate-pulse bg-gray-100 dark:bg-gray-800" />
+                    </div>
+                    <div className="w-60">
+                      <div className="!rounded-2xl w-60 h-44 animate-pulse bg-gray-100 dark:bg-gray-800" />
+                    </div>
+                  </div>
+                  <span className="flex space-x-2 justify-center 2xl:justify-start xl:justify-start sm:justify-start md:justify-start">
+                    <p className="font-normal text-base mt-0.5 bg-gray-100 dark:bg-gray-800"></p>
+                  </span>
+                </div>
               )}
             </div>
             <div className="flex flex-col space-y-2">
