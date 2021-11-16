@@ -1,4 +1,4 @@
-const Icons = ({ icons, className }) => {
+export const Icons = ({ icons, className }) => {
   switch (icons) {
     case "logo":
       return (
@@ -337,4 +337,3 @@ const Icons = ({ icons, className }) => {
   }
   return icons;
 };
-export default Icons;

@@ -12,7 +12,7 @@ import { Convert, useRichText } from "libs/storyblok";
 import { Images } from "util/Images";
 
 import Loading from "components/Loading";
-import Icons from "components/Icons";
+import { Icons } from "components/Icons";
 import CookieNotice from "components/CookieNotice";
 
 const Home: NextPage = () => {
