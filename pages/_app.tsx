@@ -118,7 +118,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                       fill="#fff"
                       width="150"
                       height="150"
-                      className="text-white mt-2 focus:animate-wiggle hover:animate-wiggle transition-all"
+                      className="text-white mt-2 focus:animate-pulse hover:animate-pulse transition-all"
                     >
                       <path d="M96.16,6.73c-.72-1.82-1.72-4.24-4-4.34-2.68-.12-4.33,2.16-5.11,3.68a21.72,21.72,0,0,0-2,12c.46,2.79,3.71,3.39,4.29,5.08s.07,7-.21,8.3c0,0,1.53-2.31,3.86-1.94,0-2.28-.75-4.47-.19-6.74.41-1.65,2.57-2.57,3.62-4.41,1.88-3.31.82-8.68-.34-11.62M92.72,20.54c1.52-2.06,3.94-4.23,3-7.82,0-.25.16-.3.16-.5l.5-.08c.69,3.73-.71,7.07-3.61,8.4" />
                       <path d="M68.21,0c-2.94.42-3.74,9.22-4.1,13.92A113.32,113.32,0,0,0,64,29.79c.14,1.79,1.66,5.17,1.8,6.08,0,0,.65-1.67,3.81-2,.25-2.48.13-18.63.12-26.93,0-2.24.77-7.29-1.49-7m-.12,31.69c-.79.06.35-.54.33-.85.11-1.3-.22-2.95.16-4,.57.92,1.07,4.32-.49,4.88" />
@@ -162,7 +162,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               </footer>
             </>
           ) : (
-            <Loading />
+            <Loading title="Chargement.." />
           )}
         </div>
       </ThemeProvider>
