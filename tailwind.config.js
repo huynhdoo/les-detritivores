@@ -20,6 +20,10 @@ module.exports = {
       transitionProperty: {
         height: "height",
       },
+      fontFamily: {
+        "sf-ui": ["SF UI Display", "sans-serif"],
+        fira: ["Fira Sans", "sans-serif"],
+      },
       height: {
         250: "31.875rem",
         150: "25rem",

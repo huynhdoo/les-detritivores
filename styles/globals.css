@@ -9,15 +9,13 @@ html {
   @apply overflow-x-hidden;
 }
 body {
-  font-family: "Fira Sans", sans-serif;
-  @apply bg-white dark:bg-gray-900 overflow-x-hidden transition w-screen;
+  @apply bg-white dark:bg-gray-900 overflow-x-hidden transition w-screen font-fira;
 }
 p {
-  font-family: SF UI Display, sans-serif;
+  @apply font-sf-ui;
 }
 span {
-  font-family: SF UI Display, sans-serif;
-  @apply text-xl font-bold;
+  @apply text-xl font-bold font-sf-ui;
 }
 h1 {
   font-family: "Fira Sans", sans-serif;
