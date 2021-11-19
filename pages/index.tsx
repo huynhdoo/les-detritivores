@@ -16,33 +16,14 @@ import { Icons } from "components/Icons";
 import CookieNotice from "components/CookieNotice";
 
 const Home: NextPage = () => {
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
   const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
-
-  useEffect(() => {
-    window.innerWidth > 769 ? setIsDesktop(true) : setIsMobile(false);
-    window.innerWidth > 350 ? setIsDesktop(false) : setIsMobile(true);
-  });
   return (
     <>
       <CookieNotice cookiePrefix={"toggled"} />
       <>
         {data ? (
-          <Fade
-            left={isDesktop}
-            bottom={isMobile}
-            duration={500}
-            delay={500}
-            distance="30px"
-          >
-            <Fade
-              left={isDesktop}
-              bottom={isMobile}
-              duration={500}
-              delay={500}
-              distance="30px"
-            >
+          <Fade duration={500} delay={500} distance="30px">
+            <Fade duration={500} delay={500} distance="30px">
               <div className="flex flex-col justify-center px-8 my-20 overflow-hidden items-center">
                 <div className="flex-col justify-center items-center text-center mb-10">
                   {data ? (
@@ -133,13 +114,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </Fade>
-            <Fade
-              left={isDesktop}
-              bottom={isMobile}
-              duration={500}
-              delay={500}
-              distance="30px"
-            >
+            <Fade duration={500} delay={500} distance="30px">
               <h1 className="text-center pb-2 md:text-3xl text-xl font-bold text-orangeDDTV">
                 {data.content.trustTitle}
               </h1>
@@ -176,13 +151,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
 
-              <Fade
-                left={isDesktop}
-                bottom={isMobile}
-                duration={500}
-                delay={500}
-                distance="30px"
-              >
+              <Fade duration={500} delay={500} distance="30px">
                 <div className="flex-col justify-center items-center text-center mt-10">
                   <h1 className="text-center pb-2 md:text-6xl text-3xl font-bold text-transparent text-greenDDTV dark:text-orangeDDTV -rotate-3 h-24">
                     {data.content.ourEngagement}
@@ -273,13 +242,7 @@ const Home: NextPage = () => {
                 </div>
               </Rotate>
 
-              <Fade
-                left={isDesktop}
-                bottom={isMobile}
-                duration={500}
-                delay={500}
-                distance="30px"
-              >
+              <Fade duration={500} delay={500} distance="30px">
                 <div className="flex-col justify-center items-center text-center mt-20">
                   <div className="mt-5">
                     <div className="">
