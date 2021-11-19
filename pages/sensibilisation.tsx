@@ -16,7 +16,13 @@ const Sensibilisation: NextPage = () => {
   const { data } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
 
   useEffect(() => {
-    window.innerWidth > 769 ? setIsDesktop(true) : setIsMobile(false);
+    if (window.innerWidth > 769) {
+      setIsDesktop(true);
+      setIsMobile(false);
+    } else {
+      setIsMobile(true);
+      setIsDesktop(false);
+    }
 
     if (typeof window !== "undefined") {
       document.body.scrollTop = 0;
