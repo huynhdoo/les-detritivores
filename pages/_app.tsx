@@ -13,7 +13,7 @@ import { Router } from "next/router";
 import { StoryBlok } from "libs/types";
 import fetcher from "libs/fetcher";
 
-import Loading from "components/Loading";
+import Loading from "components/loading";
 import ToggleTheme from "components/toggleTheme";
 
 import "nprogress/nprogress.css";
