@@ -7,13 +7,13 @@ export const getTexts = async () => {
   return await axios.get(endpoint);
 };
 
-export const richText = async (data: Richtext) => {
+export const richText = (data: Richtext) => {
   const story = new StoryBlokClient({
     accessToken: token,
   });
   return parser(story.richTextResolver.render(data));
 };
 
-export const convert = async (data: string) => {
+export const convert = (data: string) => {
   return parser(data);
 };
