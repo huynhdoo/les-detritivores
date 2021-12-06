@@ -6,7 +6,7 @@ import fetcher from "libs/fetcher";
 import Image from "next/image";
 
 import { StoryBlok } from "libs/types";
-import { useRichText } from "libs/storyblok";
+import { richText } from "libs/storyblok";
 
 import { Icons } from "components/icons";
 
@@ -92,15 +92,15 @@ const Sensibilisation: NextPage = () => {
                     </h1>
                     <div className="space-y-4">
                       <p className="text-xl sm:text-md font-bold">
-                        {useRichText(data?.content.textSensibilisation)}
+                        {richText(data?.content.textSensibilisation)}
                       </p>
                       <div className="flex flex-col space-y-2">
                         <p className="font-light text-xl p-4 space-y-2 pl-10">
-                          {useRichText(data?.content.text2Sensibilisation)}
+                          {richText(data?.content.text2Sensibilisation)}
                         </p>
                         <div>
                           <p className="font-bold text-xl">
-                            {useRichText(data?.content.gameSensibilisation)}
+                            {richText(data?.content.gameSensibilisation)}
                           </p>
                         </div>
                       </div>

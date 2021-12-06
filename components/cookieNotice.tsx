@@ -33,8 +33,6 @@ const CookieNotice = ({
   }, [toggleVisibility]);
 
   useEffect(() => {
-    // execute effect only one time
-
     if (options.init === false) {
       const getCookie = (name) => {
         let cookieValue = Cookies.get(cookiePrefix + name, cookieOptions);
@@ -47,24 +45,18 @@ const CookieNotice = ({
         return cookieValue;
       };
 
-      // find default cookie
       const defaultCookie = availableCookies.filter(
         (cookie) => cookie.default === true
       );
-
-      // check if default cookie is available
       if (defaultCookie.length > 0) {
-        // get value of default cookie, if set. Only the first default cookie will be considered
         const cookieValue = getCookie(defaultCookie[0].name);
 
         if (cookieValue === undefined) {
-          // show cookie notice if default cookie is not set
           setOptions((state) => ({
             ...state,
             visible: true,
           }));
         } else {
-          // hide cookie notice if default cookie is set
           setOptions((state) => ({
             ...state,
             visible: false,
@@ -83,7 +75,6 @@ const CookieNotice = ({
           init: true,
         }));
 
-        // get current values from available cookies
         const availableCookiesOnInit = availableCookies.map((value) => {
           value = { ...value, checked: getCookie(value.name) === "true" };
           return value;
@@ -118,7 +109,6 @@ const CookieNotice = ({
     }
   };
   const acceptAllCookies = () => {
-    // set all cookies and mark all cookies as checked
     setAavailableCookies((state) => {
       const newAvailableCookies = state.map((value) => {
         setCookie(value.name, true);

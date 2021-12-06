@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 
 import fetcher from "libs/fetcher";
 import { StoryBlok } from "libs/types";
-import { useRichText } from "libs/storyblok";
+import { richText } from "libs/storyblok";
 
 import { Icons } from "components/icons";
 
@@ -307,7 +307,7 @@ const Devis: NextPage = () => {
                       </p>
                       <div className="flex flex-col space-y-2">
                         <p className="font-light text-xl space-y-2">
-                          {useRichText(data?.content.MoneyText)}
+                          {richText(data?.content.MoneyText)}
                         </p>
                       </div>
                     </div>

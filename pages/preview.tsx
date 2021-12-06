@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { StoryBlok } from "libs/types";
-import { Convert, useRichText } from "libs/storyblok";
+import { convert, richText } from "libs/storyblok";
 import { Images } from "util/Images";
 
 import Loading from "components/loading";
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
                 <div className="flex flex-col items-start justify-center max-w-xl lg:max-w-6xl mb-16 dark:text-white space-y-10 smph:text-xs md:px-10 lg:px-10">
                   <p className="font-light text-xl text-center mx-0 sm:mx-12 md:mx-12">
                     {data ? (
-                      useRichText(data.content.introText)
+                      richText(data.content.introText)
                     ) : (
                       <Loading title="Chargement.." />
                     )}
@@ -211,7 +211,7 @@ const Home: NextPage = () => {
                                 />
                               </div>
                               <p className="font-light text-lg mx-0 smph:mx-2">
-                                {useRichText(data.content.environement)}
+                                {richText(data.content.environement)}
                               </p>
                             </div>
                             <div className="col-span-4 space-y-5">
@@ -225,7 +225,7 @@ const Home: NextPage = () => {
                                 />
                               </div>
                               <p className="font-light text-lg mx-0 smph:mx-2">
-                                {useRichText(data.content.socialText)}
+                                {richText(data.content.socialText)}
                               </p>
                             </div>
                             <div className="col-span-4 space-y-5">
@@ -239,7 +239,7 @@ const Home: NextPage = () => {
                                 />
                               </div>
                               <p className="font-light text-lg mx-0 smph:mx-2">
-                                {useRichText(data.content.CooperationText)}
+                                {richText(data.content.CooperationText)}
                               </p>
                             </div>
                           </>
@@ -302,7 +302,7 @@ const Home: NextPage = () => {
                                 />
                               </div>
                               <p className="font-light text-lg mx-0 smph:mx-2">
-                                {useRichText(data.content.collectText)}
+                                {richText(data.content.collectText)}
                               </p>
                               <div className="justify-center">
                                 <button className="bg-orangeDDTV hover:bg-orange-600 transition text-white p-2 rounded-2xl inline-flex">
@@ -325,7 +325,7 @@ const Home: NextPage = () => {
                                 />
                               </div>
                               <p className="font-light text-lg mx-0 smph:mx-2">
-                                {useRichText(data.content.sensibilisationText)}
+                                {richText(data.content.sensibilisationText)}
                               </p>
                               <div className="justify-center">
                                 <button className="bg-orangeDDTV hover:bg-orange-600 transition text-white p-2 rounded-2xl inline-flex">
@@ -350,7 +350,7 @@ const Home: NextPage = () => {
                                 />
                               </div>
                               <p className="font-light text-lg mx-0 smph:mx-2">
-                                {useRichText(data.content.compostText)}
+                                {richText(data.content.compostText)}
                               </p>
                               <div className="justify-center">
                                 <button className="bg-orangeDDTV hover:bg-orange-600 transition text-white p-2 rounded-2xl inline-flex">
@@ -431,7 +431,7 @@ const Home: NextPage = () => {
                             rel="noopener"
                             className="text-left hover:text-orangeDDTV transition p-1"
                           >
-                            {Convert(data.content.adress)}
+                            {convert(data.content.adress)}
                           </a>
                         </div>
                         <div className="flex flex-col"></div>

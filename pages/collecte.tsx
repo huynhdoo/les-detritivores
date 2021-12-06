@@ -6,7 +6,7 @@ import Image from "next/image";
 
 import fetcher from "libs/fetcher";
 import { StoryBlok } from "libs/types";
-import { useRichText } from "libs/storyblok";
+import { richText } from "libs/storyblok";
 
 import { Icons } from "components/icons";
 
@@ -138,7 +138,7 @@ const Collecte: NextPage = () => {
                             1
                           </span>
                           <p className="text-xl font-light">
-                            {useRichText(data?.content.collectFirstText)}
+                            {richText(data?.content.collectFirstText)}
                           </p>
                         </div>
                         <div className="flex space-x-2">
@@ -146,7 +146,7 @@ const Collecte: NextPage = () => {
                             2
                           </span>
                           <p className="text-xl font-light">
-                            {useRichText(data?.content.collectSecondText)}
+                            {richText(data?.content.collectSecondText)}
                           </p>
                         </div>
                         <div className="flex space-x-2">
@@ -154,7 +154,7 @@ const Collecte: NextPage = () => {
                             3
                           </span>
                           <p className="text-xl font-light space-y-2">
-                            {useRichText(data?.content.collectTreeText)}
+                            {richText(data?.content.collectTreeText)}
                           </p>
                         </div>
                         <div>

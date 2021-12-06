@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 import fetcher from "libs/fetcher";
 
 import { StoryBlok } from "libs/types";
-import { useRichText } from "libs/storyblok";
+import { richText } from "libs/storyblok";
 
 import { Icons } from "components/icons";
 import Link from "next/link";
@@ -51,16 +51,16 @@ const Compost: NextPage = () => {
                     </h1>
                     <div className="space-y-4">
                       <p className="text-xl sm:text-md font-bold">
-                        {useRichText(data?.content.compostSecondText)}
+                        {richText(data?.content.compostSecondText)}
                       </p>
                       <div className="flex flex-col space-y-2">
                         <p className="font-light text-xl p-4 space-y-2 pl-10">
-                          {useRichText(data?.content.compostTreeText)}
+                          {richText(data?.content.compostTreeText)}
                         </p>
                         <div className="inline-flex space-x-2">
                           <Icons icons="check" className="w-5 h-5" />
                           <p className="font-bold text-xl text-orangeDDTV">
-                            {useRichText(data?.content.compostFourText)}
+                            {richText(data?.content.compostFourText)}
                           </p>
                         </div>
                       </div>
