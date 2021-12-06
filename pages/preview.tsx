@@ -11,9 +11,9 @@ import { StoryBlok } from "libs/types";
 import { Convert, useRichText } from "libs/storyblok";
 import { Images } from "util/Images";
 
-import Loading from "components/Loading";
-import { Icons } from "components/Icons";
-import CookieNotice from "components/CookieNotice";
+import Loading from "components/loading";
+import { Icons } from "components/icons";
+import CookieNotice from "components/cookieNotice";
 
 const Home: NextPage = () => {
   const [isDesktop, setIsDesktop] = useState(false);

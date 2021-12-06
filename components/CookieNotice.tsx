@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import Slide from "react-reveal/Slide";
-import { Icons } from "./Icons";
+import { Icons } from "./icons";
 
 const CookieNotice = ({
   cookies,
