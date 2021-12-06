@@ -1,8 +1,8 @@
 import { NextApiResponse } from "next";
-import { getTexts } from "../../libs/storyblok";
+import { texts } from "../../libs/storyblok";
 
 export default async (_, res: NextApiResponse) => {
-  const response = await getTexts();
+  const response = await texts();
 
   const content = response.data.story.content;
 
