@@ -195,14 +195,14 @@ const Collecte: NextPage = () => {
                 </div>
               )}
             </div>
-            <div className="space-y-2 hidden">
+            <div className="space-y-2">
               <h1 className="text-2xl font-medium text-center ">
                 Où intervenons-nous ?
               </h1>
               <div className="flex justify-center">
                 <iframe
                   title="Maps"
-                  src={data?.content.mapsLink}
+                  src="https://www.google.com/maps/d/embed?mid=1olZRTAgF9fAuYSYS-eFXcWhBzopWmh3g&ehbc=2E312F"
                   className="w-96 h-80 sm:w-52 sm:h-52 md:w-80 md:h-150 lg:w-200 lg:200 rounded-2xl"
                   loading="lazy"
                   style={{ border: 0 }}

@@ -60,6 +60,9 @@ h1:before {
 .fancy {
   @apply w-20 border-solid border-t-4;
 }
+.SfQLQb-QClCJf-giiMnc .i4ewOd-pzNkMb-QClCJf-giiMnc-xJzy8c {
+  @apply hidden;
+}
 .fancy-title {
   @apply w-16 md:w-24 border-solid border-t-4;
 }

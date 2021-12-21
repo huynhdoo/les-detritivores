@@ -75,7 +75,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           </div>
         </Slide>
       )}
-      {!error ? (
+      {error ? (
         <>
           <div id="start">
             <div className="grid grid-cols-3 gap-4">
@@ -160,6 +160,8 @@ function MyApp({ Component, pageProps }: AppProps) {
                     <a
                       className="text-md lg:text-xl text-orangeDDTV"
                       href="mailto:bonjour@les-detritivores.co"
+                      rel="noopener noreferrer"
+                      target="_blank"
                     >
                       bonjour@les-detritivores.co
                     </a>
