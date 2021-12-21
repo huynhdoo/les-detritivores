@@ -97,7 +97,7 @@ const Devis: NextPage = () => {
                 className={`flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0`}
               >
                 <div
-                  className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                  className="fixed inset-0 bg-neutral-500 bg-opacity-75 transition-opacity"
                   aria-hidden="true"
                 ></div>
 
@@ -109,7 +109,7 @@ const Devis: NextPage = () => {
                 </span>
 
                 <div className="animate-wiggle inline-block align-bottom bg-black dark:bg-white rounded-lg text-left overflow-hidden shadow-xl transform sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-                  <div className="bg-white dark:bg-gray-900 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                  <div className="bg-white dark:bg-neutral-900 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                     <Fade top>
                       <div className="flex flex-col">
                         <div className="mx-auto flex-shrink-0 flex items-center justify-center h-36 w-36">
@@ -120,13 +120,13 @@ const Devis: NextPage = () => {
                         </div>
                         <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                           <h3
-                            className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-50"
+                            className="text-lg leading-6 font-medium text-neutral-900 dark:text-neutral-50"
                             id="modal-title"
                           >
                             Merci de votre confiance !
                           </h3>
                           <div className="mt-2">
-                            <p className="text-sm text-gray-500 dark:text-white">
+                            <p className="text-sm text-neutral-500 dark:text-white">
                               Le formulaire à bien envoyer !
                             </p>
                           </div>
@@ -134,7 +134,7 @@ const Devis: NextPage = () => {
                       </div>
                     </Fade>
                   </div>
-                  <div className="bg-gray-50 dark:bg-gray-900 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse"></div>
+                  <div className="bg-neutral-50 dark:bg-neutral-900 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse"></div>
                 </div>
               </div>
             </div>
@@ -158,7 +158,7 @@ const Devis: NextPage = () => {
                 <div className="flex flex-col">
                   <label>Vous êtes:*</label>
                   <input
-                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    className="bg-white dark:bg-neutral-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                     {...register("who", { required: true })}
                     autoComplete="off"
                     onChange={onWhoChange}
@@ -172,7 +172,7 @@ const Devis: NextPage = () => {
                 <div className="flex flex-col">
                   <label>Nombre de repas servis par jour:*</label>
                   <input
-                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    className="bg-white dark:bg-neutral-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                     {...register("numbers", { required: true })}
                     autoComplete="off"
                     onChange={onNumberChange}
@@ -186,7 +186,7 @@ const Devis: NextPage = () => {
                 <div className="flex flex-col">
                   <label>Structure:*</label>
                   <input
-                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    className="bg-white dark:bg-neutral-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                     {...register("structure", { required: true })}
                     autoComplete="off"
                     onChange={onStructureChange}
@@ -200,7 +200,7 @@ const Devis: NextPage = () => {
                 <div className="flex flex-col">
                   <label>Fonction:*</label>
                   <input
-                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    className="bg-white dark:bg-neutral-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                     {...register("fonction", { required: true })}
                     autoComplete="off"
                     onChange={onFonctionChange}
@@ -214,7 +214,7 @@ const Devis: NextPage = () => {
                 <div className="flex flex-col">
                   <label>Nom:*</label>
                   <input
-                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    className="bg-white dark:bg-neutral-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                     {...register("name", { required: true })}
                     autoComplete="off"
                     onChange={onNameChange}
@@ -228,7 +228,7 @@ const Devis: NextPage = () => {
                 <div className="flex flex-col">
                   <label>Prénom:*</label>
                   <input
-                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    className="bg-white dark:bg-neutral-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                     {...register("lastName", { required: true })}
                     autoComplete="off"
                     onChange={onLastNameChange}
@@ -242,7 +242,7 @@ const Devis: NextPage = () => {
                 <div className="flex flex-col">
                   <label>Email:*</label>
                   <input
-                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    className="bg-white dark:bg-neutral-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                     {...register("mail", { required: true })}
                     autoComplete="off"
                     onChange={onMailChange}
@@ -256,7 +256,7 @@ const Devis: NextPage = () => {
                 <div className="flex flex-col">
                   <label>Téléphone:*</label>
                   <input
-                    className="bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
+                    className="bg-white dark:bg-neutral-900 border-2 border-orangeDDTV w-26 h-12 p-3 rounded-md transition"
                     {...register("phone", { required: true })}
                     autoComplete="off"
                     onChange={onPhoneChange}
@@ -270,7 +270,7 @@ const Devis: NextPage = () => {
                 <div className="flex flex-col justify-center">
                   <label>Message:*</label>
                   <textarea
-                    className="w-full h-auto px-3 py-2 focus:outline-none bg-white dark:bg-gray-900 border-2 border-orangeDDTV w-26 p-3 rounded-md transition text-black dark:text-white"
+                    className="w-full h-auto px-3 py-2 focus:outline-none bg-white dark:bg-neutral-900 border-2 border-orangeDDTV w-26 p-3 rounded-md transition text-black dark:text-white"
                     {...register("message", { required: true })}
                     autoComplete="off"
                     onChange={onMessageChange}
@@ -315,12 +315,12 @@ const Devis: NextPage = () => {
                 </>
               ) : (
                 <div className="space-y-4">
-                  <h1 className="text-left pb-2 text-2xl lg:text-3xl md:!text-4xl sm:text-3xl xl:!text-6xl 2xl:!text-6xl font-bold text-orangeDDTV -rotate-2 bg-gray-100 dark:bg-gray-800 h-20 rounded-lg animate-pulse"></h1>
+                  <h1 className="text-left pb-2 text-2xl lg:text-3xl md:!text-4xl sm:text-3xl xl:!text-6xl 2xl:!text-6xl font-bold text-orangeDDTV -rotate-2 bg-neutral-100 dark:bg-neutral-800 h-20 rounded-lg animate-pulse"></h1>
                   <br />
                   <div className="space-y-4">
-                    <p className="text-xl sm:text-md font-bold bg-gray-100 dark:bg-gray-800 h-28 rounded-lg animate-pulse"></p>
+                    <p className="text-xl sm:text-md font-bold bg-neutral-100 dark:bg-neutral-800 h-28 rounded-lg animate-pulse"></p>
                     <div className="flex flex-col space-y-2">
-                      <p className="font-light text-xl space-y-2 bg-gray-100 dark:bg-gray-800 h-20 rounded-lg animate-pulse"></p>
+                      <p className="font-light text-xl space-y-2 bg-neutral-100 dark:bg-neutral-800 h-20 rounded-lg animate-pulse"></p>
                     </div>
                   </div>
                 </div>

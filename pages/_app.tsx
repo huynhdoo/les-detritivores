@@ -57,7 +57,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       {show && (
         <Slide top>
-          <div className="absolute p-6 max-w-sm bg-white dark:bg-gray-900 rounded-xl shadow-lg flex justify-start mx-2 my-2 items-center space-x-4 z-50">
+          <div className="absolute p-6 max-w-sm bg-white dark:bg-neutral-900 rounded-xl shadow-lg flex justify-start mx-2 my-2 items-center space-x-4 z-50">
             <div className="shrink-0">
               <Icons
                 icons="logo"
@@ -68,7 +68,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               <div className="text-xl font-medium text-black dark:text-white">
                 Bienvenue !
               </div>
-              <p className="text-gray-500 dark:text-gray-50">
+              <p className="text-neutral-500 dark:text-neutral-50">
                 Psst... Notre site est en cours de développement
               </p>
             </div>
@@ -151,11 +151,11 @@ function MyApp({ Component, pageProps }: AppProps) {
                   <h3 className="font-medium font-fira text-3xl lg:text-5xl text-orangeDDTV">
                     Erreur côté du serveur
                   </h3>
-                  <p className="text-lg lg:text-xl text-gray-600">
+                  <p className="text-lg lg:text-xl text-neutral-600">
                     Une erreur est survenue lors de la récupération des données.
                     Veuillez réessayer plus tard.
                   </p>
-                  <p className="text-lg lg:text-xl text-gray-600">
+                  <p className="text-lg lg:text-xl text-neutral-600">
                     contactez-nous si le problème persiste par mail à{" "}
                     <a
                       className="text-md lg:text-xl text-orangeDDTV"

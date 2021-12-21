@@ -109,14 +109,14 @@ const Sensibilisation: NextPage = () => {
                 </>
               ) : (
                 <div className="space-y-4">
-                  <h1 className="text-left pb-2 md:text-4xl lg:text-5xl text-2xl font-bold text-orangeDDTV -rotate-2 bg-gray-100 dark:bg-gray-800 h-20 rounded-lg animate-pulse"></h1>
+                  <h1 className="text-left pb-2 md:text-4xl lg:text-5xl text-2xl font-bold text-orangeDDTV -rotate-2 bg-neutral-100 dark:bg-neutral-800 h-20 rounded-lg animate-pulse"></h1>
                   <br />
                   <div className="space-y-4">
-                    <p className="text-xl sm:text-md font-bold bg-gray-100 dark:bg-gray-800 h-20 rounded-lg animate-pulse"></p>
+                    <p className="text-xl sm:text-md font-bold bg-neutral-100 dark:bg-neutral-800 h-20 rounded-lg animate-pulse"></p>
                     <div className="flex flex-col space-y-2">
-                      <p className="font-light text-xl p-4 space-y-2 pl-10 bg-gray-100 dark:bg-gray-800 h-40 rounded-lg animate-pulse"></p>
+                      <p className="font-light text-xl p-4 space-y-2 pl-10 bg-neutral-100 dark:bg-neutral-800 h-40 rounded-lg animate-pulse"></p>
                       <div>
-                        <p className="font-bold text-xl bg-gray-100 dark:bg-gray-800 h-14 rounded-lg animate-pulse"></p>
+                        <p className="font-bold text-xl bg-neutral-100 dark:bg-neutral-800 h-14 rounded-lg animate-pulse"></p>
                       </div>
                     </div>
                   </div>

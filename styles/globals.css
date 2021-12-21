@@ -9,7 +9,7 @@ html {
   @apply overflow-x-hidden;
 }
 body {
-  @apply bg-white dark:bg-gray-900 overflow-x-hidden transition w-screen font-fira;
+  @apply bg-white dark:bg-neutral-900 overflow-x-hidden transition w-screen font-fira;
 }
 p {
   @apply font-sf-ui;

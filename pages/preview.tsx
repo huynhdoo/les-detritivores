@@ -54,7 +54,7 @@ const Home: NextPage = () => {
                     </h1>
                   ) : (
                     <>
-                      <h1 className="text-center pb-2 pt-2 md:text-6xl text-3xl font-bold text-orangeDDTV -rotate-2 bg-gray-100 dark:bg-gray-800 w-150 h-20 rounded-lg animate-pulse"></h1>
+                      <h1 className="text-center pb-2 pt-2 md:text-6xl text-3xl font-bold text-orangeDDTV -rotate-2 bg-neutral-100 dark:bg-neutral-800 w-150 h-20 rounded-lg animate-pulse"></h1>
                     </>
                   )}
                 </div>
@@ -101,7 +101,7 @@ const Home: NextPage = () => {
                                   <span>{data?.content.restaurantTitle}</span>
                                 </>
                               ) : (
-                                <div className="bg-gray-100 dark:bg-gray-800 h-10 w-60 rounded-lg animate-pulse"></div>
+                                <div className="bg-neutral-100 dark:bg-neutral-800 h-10 w-60 rounded-lg animate-pulse"></div>
                               )}
                               {data ? (
                                 <>
@@ -110,21 +110,21 @@ const Home: NextPage = () => {
                                   </span>
                                 </>
                               ) : (
-                                <div className="bg-gray-100 dark:bg-gray-800 h-10 w-72 rounded-lg animate-pulse"></div>
+                                <div className="bg-neutral-100 dark:bg-neutral-800 h-10 w-72 rounded-lg animate-pulse"></div>
                               )}
                               {data ? (
                                 <>
                                   <span>{data?.content.collectivites}</span>
                                 </>
                               ) : (
-                                <div className="bg-gray-100 dark:bg-gray-800 h-10 w-40 rounded-lg animate-pulse"></div>
+                                <div className="bg-neutral-100 dark:bg-neutral-800 h-10 w-40 rounded-lg animate-pulse"></div>
                               )}
                               {data ? (
                                 <>
                                   <span>{data?.content.particular}</span>
                                 </>
                               ) : (
-                                <div className="bg-gray-100 dark:bg-gray-800 h-10 w-40 rounded-lg animate-pulse"></div>
+                                <div className="bg-neutral-100 dark:bg-neutral-800 h-10 w-40 rounded-lg animate-pulse"></div>
                               )}
                             </div>
                           </div>
@@ -242,18 +242,18 @@ const Home: NextPage = () => {
                           </>
                         ) : (
                           <>
-                            <div className="col-span-4 space-x-5 bg-gray-100 dark:bg-gray-800 rounded-2xl h-80 animate-pulse">
+                            <div className="col-span-4 space-x-5 bg-neutral-100 dark:bg-neutral-800 rounded-2xl h-80 animate-pulse">
                               <h1 className="text-xl font-bold text-orangeDDTV"></h1>
                               <div className="bg-orangeDDTV w-36 rounded-full m-auto"></div>
                               <p className="font-light text-lg mx-0 smph:mx-2"></p>
                             </div>
 
-                            <div className="col-span-4 space-y-5 bg-gray-100 dark:bg-gray-800 rounded-2xl animate-pulse">
+                            <div className="col-span-4 space-y-5 bg-neutral-100 dark:bg-neutral-800 rounded-2xl animate-pulse">
                               <h1 className="text-xl font-bold text-orangeDDTV"></h1>
                               <div className="bg-orangeDDTV w-36 rounded-full m-auto"></div>
                               <p className="font-light text-lg mx-0 smph:mx-2"></p>
                             </div>
-                            <div className="col-span-4 space-y-5 bg-gray-100 dark:bg-gray-800 rounded-2xl animate-pulse">
+                            <div className="col-span-4 space-y-5 bg-neutral-100 dark:bg-neutral-800 rounded-2xl animate-pulse">
                               <h1 className="text-xl font-bold text-orangeDDTV"></h1>
                               <div className="bg-orangeDDTV w-36 rounded-full m-auto"></div>
                               <p className="font-light text-lg mx-0 smph:mx-2"></p>
@@ -362,18 +362,18 @@ const Home: NextPage = () => {
                           </>
                         ) : (
                           <>
-                            <div className="col-span-4 space-x-5 bg-gray-100 dark:bg-gray-800 rounded-2xl h-80 animate-pulse">
+                            <div className="col-span-4 space-x-5 bg-neutral-100 dark:bg-neutral-800 rounded-2xl h-80 animate-pulse">
                               <h1 className="text-xl font-bold text-orangeDDTV"></h1>
                               <div className="bg-orangeDDTV w-36 rounded-full m-auto"></div>
                               <p className="font-light text-lg mx-0 smph:mx-2"></p>
                             </div>
 
-                            <div className="col-span-4 space-y-5 bg-gray-100 dark:bg-gray-800 rounded-2xl animate-pulse">
+                            <div className="col-span-4 space-y-5 bg-neutral-100 dark:bg-neutral-800 rounded-2xl animate-pulse">
                               <h1 className="text-xl font-bold text-orangeDDTV"></h1>
                               <div className="bg-orangeDDTV w-36 rounded-full m-auto"></div>
                               <p className="font-light text-lg mx-0 smph:mx-2"></p>
                             </div>
-                            <div className="col-span-4 space-y-5 bg-gray-100 dark:bg-gray-800 rounded-2xl animate-pulse">
+                            <div className="col-span-4 space-y-5 bg-neutral-100 dark:bg-neutral-800 rounded-2xl animate-pulse">
                               <h1 className="text-xl font-bold text-orangeDDTV"></h1>
                               <div className="bg-orangeDDTV w-36 rounded-full m-auto"></div>
                               <p className="font-light text-lg mx-0 smph:mx-2"></p>
