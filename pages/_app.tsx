@@ -1,7 +1,7 @@
 import "styles/globals.css";
 
 import type { AppProps } from "next/app";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ThemeProvider } from "next-themes";
 import useSWR from "swr";
 import useKeypress from "react-use-keypress";
@@ -9,14 +9,15 @@ import Link from "next/link";
 import useSound from "use-sound";
 import NProgress from "nprogress";
 import { Router } from "next/router";
-
-import { StoryBlok } from "libs/types";
+import Slide from "react-reveal/Slide";
 import fetcher from "libs/fetcher";
 
 import Loading from "components/loading";
 import ToggleTheme from "components/toggleTheme";
 
 import "nprogress/nprogress.css";
+import { Icons } from "components/icons";
+import { StoryBlok } from "libs/types";
 
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
@@ -25,14 +26,56 @@ Router.events.on("routeChangeError", () => NProgress.done());
 function MyApp({ Component, pageProps }: AppProps) {
   const { data, error } = useSWR<StoryBlok>(`/api/storyblok`, fetcher);
   const [play] = useSound(`static/sounds/sound.mp3`);
-
+  const [show, setShow] = useState(false);
   useKeypress(["s", "altGraphKey"], () => {
     play();
   });
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const cookie = window.localStorage.getItem("modalCookie");
+      if (cookie === null) {
+        window.localStorage.setItem("modalCookie", "true");
+        setInterval(() => {
+          setShow(true);
+        }, 3500);
+        setInterval(() => {
+          setShow(false);
+        }, 3500);
+      }
+      if (cookie === "true") {
+        setInterval(() => {
+          setShow(false);
+        }, 3500);
+      }
+      if (!cookie) {
+        window.localStorage.setItem("modalCookie", "true");
+      }
+    }
+  }, []);
 
   return (
     <>
-      {error ? (
+      {show && (
+        <Slide top>
+          <div className="absolute p-6 max-w-sm bg-white dark:bg-gray-900 rounded-xl shadow-lg flex justify-start mx-2 my-2 items-center space-x-4 z-50">
+            <div className="shrink-0">
+              <Icons
+                icons="logo"
+                className="h-12 w-12 fill-current text-black dark:text-white"
+              />
+            </div>
+            <div>
+              <div className="text-xl font-medium text-black dark:text-white">
+                Bienvenue !
+              </div>
+              <p className="text-gray-500 dark:text-gray-50">
+                Psst... Notre site est en cours de développement
+              </p>
+            </div>
+          </div>
+        </Slide>
+      )}
+      {!error ? (
         <>
           <div id="start">
             <div className="grid grid-cols-3 gap-4">
@@ -101,41 +144,43 @@ function MyApp({ Component, pageProps }: AppProps) {
               </div>
             </div>
           </div>
-          <div className="flex justify-center my-20">
-            <div className="grid grid-cols-2">
-              <div className="space-y-1">
-                <h3 className="font-medium text-5xl text-orangeDDTV">
-                  Erreur côté du serveur
-                </h3>
-                <p className="text-xl text-gray-600">
-                  Une erreur est survenue lors de la récupération des données.
-                  Veuillez réessayer plus tard.
-                </p>
-                <p className="text-xl text-gray-600">
-                  contactez-nous si le problème persiste par mail à{" "}
-                  <a
-                    className="text-orangeDDTV"
-                    href="mailto:bonjour@les-detritivores.co"
+          <div className="container mx-auto">
+            <div className="flex justify-center my-20">
+              <div className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="space-y-1 mx-10">
+                  <h3 className="font-medium font-fira text-3xl lg:text-5xl text-orangeDDTV">
+                    Erreur côté du serveur
+                  </h3>
+                  <p className="text-lg lg:text-xl text-gray-600">
+                    Une erreur est survenue lors de la récupération des données.
+                    Veuillez réessayer plus tard.
+                  </p>
+                  <p className="text-lg lg:text-xl text-gray-600">
+                    contactez-nous si le problème persiste par mail à{" "}
+                    <a
+                      className="text-md lg:text-xl text-orangeDDTV"
+                      href="mailto:bonjour@les-detritivores.co"
+                    >
+                      bonjour@les-detritivores.co
+                    </a>
+                    .
+                    <div className="flex justify-center">
+                      <span>Merci.</span>
+                    </div>
+                  </p>
+                </div>
+                <div className="flex justify-center">
+                  <svg
+                    className="w-28 h-28 lg:w-60 lg:h-60 text-orangeDDTV"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"
                   >
-                    bonjour@les-detritivores.co
-                  </a>
-                  .
-                  <div className="flex justify-center">
-                    <span>Merci.</span>
-                  </div>
-                </p>
-              </div>
-              <div className="flex justify-center">
-                <svg
-                  className="w-60 h-60 text-orangeDDTV"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
-                  />
-                </svg>
+                    <path
+                      fill="currentColor"
+                      d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
